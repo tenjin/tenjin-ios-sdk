@@ -9,7 +9,7 @@ Xcode integration instructions:
 4. Include the linker flags `-ObjC` and `-all_load` under your project -> "Build Settings" -> "Linking"
 4. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`
 5. Get your `API_KEY` from cfarm@tenjin.io
-6. In your `didFinishLaunchingWithOptions` method add: `[TenjinSDK sharedInstanceWithToken:@"<API_KEY>""];`
+6. In your `didFinishLaunchingWithOptions` method add: `[TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];`
 
 Here's an example of what your integration should look like in your `AppDelegate.m` file:
 
