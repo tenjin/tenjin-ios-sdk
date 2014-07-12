@@ -8,7 +8,7 @@ Xcode integration instructions:
 3. Add `AdSupport.framework` by clicking on your project -> "Build Phases" -> "Link Binary With Libraries" -> "+"
 4. Include the linker flags `-ObjC` and `-all_load` under your project -> "Build Settings" -> "Linking"
 4. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`
-5. Get your `API_KEY` from cfarm@tenjin.io
+5. Get your `API_KEY` from https://tenjin.io/dashboard/organizations
 6. In your `didFinishLaunchingWithOptions` method add: `[TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];`
 
 Here's an example of what your integration should look like in your `AppDelegate.m` file:
