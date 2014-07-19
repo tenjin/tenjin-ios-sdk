@@ -1,7 +1,7 @@
 Tenjin iOS SDK
 ==============
 
-Xcode integration instructions:
+Tenjin install/session integration instructions:
 -------------------------------
 1. Download and unzip the .zip file from https://github.com/Ordinance/tenjin-ios-sdk/archive/master.zip
 2. Drag and drop `libTenjinSDKUniversal.a` and `TenjinSDK.h` to your project (most people stick this in a folder called `TenjinSDK`)
@@ -28,4 +28,19 @@ Here's an example of what your integration should look like in your `AppDelegate
     [self.window makeKeyAndVisible];
     return YES;
 }
+```
+
+Tenjin custom event integration instructions:
+--------
+There are two handlers that you can use to pass custom events: `sendEventWithName: (NSString *)eventName` and `sendEventWithName:(NSString*)eventName andEventValue:(NSString*)eventValue`.
+
+You can use these to pass Tenjin custom interactions with your app to tie this to user level cost from each acquisition source that you use through Tenjin's platform. Here are some examples of usage:
+
+```
+//send a revenue event with a value when a user purchases an item
+[TenjinSDK sendEventWithName:@"revenue" andEventValue:@"0.99"];
+
+//send a particular event for when someone swipes on a part of your app
+[TenjinSDK sendEventWithName:@"swipe_right"];
+
 ```
