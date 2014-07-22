@@ -20,7 +20,7 @@ Here's an example of what your integration should look like in your `AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [TenjinSDK sharedInstanceWithToken:@"X6SJQRU3UE3PXWJDEQB2S17GE7YZ3S08"];
+    [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
