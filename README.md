@@ -4,8 +4,8 @@ Tenjin iOS SDK (iOS 6.0+)
 Tenjin install/session integration instructions:
 -------------------------------
 1. Download and unzip the .zip file from https://github.com/Ordinance/tenjin-ios-sdk/archive/master.zip
-2. Drag and drop `libTenjinSDKUniversal.a` and `TenjinSDK.h` to your project (most people stick this in a folder called `TenjinSDK`)
-2a. If you are using cocoapods - simply add `pod 'TenjinSDK', '~> 1.0'` to your `Podfile` and run `pod install`.
+2. Drag and drop `libTenjinSDKUniversal.a` and `TenjinSDK.h` to your project (most people stick this in a folder called `TenjinSDK`) 
+3. If you are using cocoapods - simply add `pod 'TenjinSDK', '~> 1.0'` to your `Podfile` and run `pod install`.
 3. Add `AdSupport.framework` by clicking on your project -> "Build Phases" -> "Link Binary With Libraries" -> "+"
 4. Include the linker flags `-ObjC` and `-all_load` under your project -> "Build Settings" -> "Linking" -> "Other Linker Flags"
 4. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`
