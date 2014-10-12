@@ -44,3 +44,11 @@ You can use these to pass Tenjin custom interactions with your app to tie this t
 [TenjinSDK sendEventWithName:@"swipe_right"];
 
 ```
+
+Tenjin revenue event integration instructions:
+--------
+You can use the custom event handler to send revenue events: `sendEventWithName: (NSString *)eventName andEventValue:(NSString *)eventValue`.
+```
+//send a revenue event with a value when a user purchases an item in app
+[TenjinSDK sendEventWithName:@"revenue" andEventValue:@"0.99"];
+```
