@@ -39,8 +39,8 @@ There are two handlers that you can use to pass custom events: `sendEventWithNam
 You can use these to pass Tenjin custom interactions with your app to tie this to user level cost from each acquisition source that you use through Tenjin's platform. Here are some examples of usage:
 
 ```
-//send a revenue event with a value when a user purchases an item
-[TenjinSDK sendEventWithName:@"revenue" andEventValue:@"0.99"];
+//send a revenue event with a value when a user purchases an item the value needs to be an integer in cents
+[TenjinSDK sendEventWithName:@"revenue" andEventValue:@"99"];
 
 //send a particular event for when someone swipes on a part of your app
 [TenjinSDK sendEventWithName:@"swipe_right"];
@@ -51,6 +51,6 @@ Tenjin revenue event integration instructions:
 --------
 You can use the custom event handler to send revenue events: `sendEventWithName: (NSString *)eventName andEventValue:(NSString *)eventValue`.
 ```
-//send a revenue event with a value when a user purchases an item in app
-[TenjinSDK sendEventWithName:@"revenue" andEventValue:@"0.99"];
+//send a revenue event with a value when a user purchases an item in app - value needs to be in cents
+[TenjinSDK sendEventWithName:@"revenue" andEventValue:@"99"];
 ```
