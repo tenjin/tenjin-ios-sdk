@@ -24,27 +24,24 @@ Here's an example of what your integration should look like in your `AppDelegate
 {
     [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
+    //All your other stuff
+    ...
 }
 ```
 
 
 Tenjin purchase event integration instructions:
 --------
-There are two ways to handle revenue events. By passing Tenjin a `transaction` object or manually passing Tenjin a `productName`, the `currencyCode`, `quantity`, and unit `price`.
+There are two ways to handle revenue events: 1. pass Tenjin a `SKPaymentTransaction` object or 2. manually pass Tenjin a `productName`, the `currencyCode`, `quantity`, and unit `price`.
 
-######Passing a `transaction` object:
+######1. Pass a `(SKPaymentTransaction *) transaction` object:
 After a purchase has been verified and `SKPaymentTransactionStatePurchased` you can pass Tenjin the transaction which was purchased:
 ```
 [TenjinSDK transaction: transaction];
 ```
 
-######Passing a transaction manually (usually this is necessary if purchases are not handled by Apple):
-To use this method, you will need a `productName`, `currencyCode`, `quantity` of items purchased, and the unit `price` of the transaction:
+######2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
+To use this method, you will need a `productName`, `currencyCode`, `quantity`, and the unit `price` of the transaction:
 
 ```
 NSString *productName = @"product_1";
