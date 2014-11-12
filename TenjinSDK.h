@@ -23,6 +23,6 @@
 + (void)transaction:(SKPaymentTransaction *)transaction;
 
 //use transactionWithProductName... when you don't use Apple's SKPaymentTransaction and need to pass revenue directly
-+ (void)transactionWithProductName:(NSString *)productName andCurrencyLocale:(NSString *)locale andQuantity:(NSInteger)quantity andUnitPrice:(NSDecimalNumber *)price;
++ (void)transactionWithProductName:(NSString *)productName andCurrencyCode:(NSString *)currencyCode andQuantity:(NSInteger)quantity andUnitPrice:(NSDecimalNumber *)price;
 
 @end

@@ -35,7 +35,7 @@ Here's an example of what your integration should look like in your `AppDelegate
 
 Tenjin purchase event integration instructions:
 --------
-There are two ways to handle revenue events. By passing Tenjin a `transaction` object or manually passing Tenjin a `productName`, the currency `locale`, `quantity`, and unit `price`.
+There are two ways to handle revenue events. By passing Tenjin a `transaction` object or manually passing Tenjin a `productName`, the `currencyCode`, `quantity`, and unit `price`.
 
 ######Passing a `transaction` object:
 After a purchase has been verified and `SKPaymentTransactionStatePurchased` you can pass Tenjin the transaction which was purchased:
@@ -44,17 +44,17 @@ After a purchase has been verified and `SKPaymentTransactionStatePurchased` you 
 ```
 
 ######Passing a transaction manually (usually this is necessary if purchases are not handled by Apple):
-To use this method, you will need a `productName`, currency `locale`, `quantity` of items purchased, and the unit `price` of the transaction:
+To use this method, you will need a `productName`, `currencyCode`, `quantity` of items purchased, and the unit `price` of the transaction:
 
 ```
 NSString *productName = @"product_1";
-NSString *currenyCode = @"USD";
+NSString *currencyCode = @"USD";
 NSDecimalNumber *price = [NSDecimalNumber decimalNumberWithString:@"0.99"];
 NSInteger quantity = 1;
 
 [TenjinSDK  transactionWithProductName: productName 
-            andCurrencyLocale: currenyCode 
-            andQuantity:quantity 
+            andCurrencyCode: currencyCode 
+            andQuantity: quantity 
             andUnitPrice: price];
 ```
 
