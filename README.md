@@ -32,6 +32,33 @@ Here's an example of what your integration should look like in your `AppDelegate
 }
 ```
 
+
+Tenjin purchase event integration instructions:
+--------
+There are two ways to handle revenue events. By passing Tenjin a `transaction` object or manually passing Tenjin a `productName`, the `currencyCode`, `quantity`, and unit `price`.
+
+######Passing a `transaction` object:
+After a purchase has been verified and `SKPaymentTransactionStatePurchased` you can pass Tenjin the transaction which was purchased:
+```
+[TenjinSDK transaction: transaction];
+```
+
+######Passing a transaction manually (usually this is necessary if purchases are not handled by Apple):
+To use this method, you will need a `productName`, `currencyCode`, `quantity` of items purchased, and the unit `price` of the transaction:
+
+```
+NSString *productName = @"product_1";
+NSString *currencyCode = @"USD";
+NSDecimalNumber *price = [NSDecimalNumber decimalNumberWithString:@"0.99"];
+NSInteger quantity = 1;
+
+[TenjinSDK  transactionWithProductName: productName 
+            andCurrencyCode: currencyCode 
+            andQuantity: quantity 
+            andUnitPrice: price];
+```
+
+
 Tenjin custom event integration instructions:
 --------
 There are two handlers that you can use to pass custom events: `sendEventWithName: (NSString *)eventName` and `sendEventWithName:(NSString*)eventName andEventValue:(NSString*)eventValue`.
@@ -39,18 +66,10 @@ There are two handlers that you can use to pass custom events: `sendEventWithNam
 You can use these to pass Tenjin custom interactions with your app to tie this to user level cost from each acquisition source that you use through Tenjin's platform. Here are some examples of usage:
 
 ```
-//send a revenue event with a value when a user purchases an item the value needs to be an integer in cents
-[TenjinSDK sendEventWithName:@"revenue" andEventValue:@"99"];
+//send a particular event when you award points to a user (in this case 100 points are awarded to a user)
+[TenjinSDK sendEventWithName:@"points_awarded" andEventValue:@"100"];
 
 //send a particular event for when someone swipes on a part of your app
 [TenjinSDK sendEventWithName:@"swipe_right"];
 
-```
-
-Tenjin revenue event integration instructions:
---------
-You can use the custom event handler to send revenue events: `sendEventWithName: (NSString *)eventName andEventValue:(NSString *)eventValue`.
-```
-//send a revenue event with a value when a user purchases an item in app - value needs to be in cents
-[TenjinSDK sendEventWithName:@"revenue" andEventValue:@"99"];
 ```
