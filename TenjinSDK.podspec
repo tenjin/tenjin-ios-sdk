@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TenjinSDK"
-  s.version      = "1.0.2"
+  s.version      = "1.0.2.1"
   s.summary      = "TenjinSDK"
   s.description  = <<-DESC
                    All of your mobile ad networks. One dashboard.
