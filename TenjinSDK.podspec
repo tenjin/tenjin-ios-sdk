@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.author       = { "Christopher Farm" => "cfarm@tenjin.io" }
   s.platform     = :ios, "6.0"
   
-  s.source       = { :git => "https://github.com/Ordinance/tenjin-ios-sdk.git", :tag => "v1.0.2" }
+  s.source       = { :git => "https://github.com/Ordinance/tenjin-ios-sdk.git", :tag => "v1.0.2.1" }
   s.source_files = "*.{h,m}"
   s.ios.vendored_library = "libTenjinSDKUniversal.a"
 
