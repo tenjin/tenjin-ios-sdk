@@ -5,13 +5,13 @@ Tenjin install/session integration instructions:
 -------------------------------
 - If you use pods add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 5!
 
-1. Download and unzip the .zip file from https://github.com/Ordinance/tenjin-ios-sdk/archive/master.zip
+1. Download and unzip the .zip file from <a href="https://github.com/Ordinance/tenjin-ios-sdk/archive/master.zip"> here</a>
 2. Drag and drop `libTenjinSDKUniversal.a` and `TenjinSDK.h` to your project (most people stick this in a folder called `TenjinSDK`) 
-3. Add `AdSupport.framework` by clicking on your project -> "Build Phases" -> "Link Binary With Libraries" -> "+"
+3. Add the `AdSupport.framework` and `iAd.framework` to your project. (Click on your Project -> "Build Phases" -> "Link Binary With Libraries" -> "+")
 4. Include the linker flags `-ObjC` and `-all_load` under your project -> "Build Settings" -> "Linking" -> "Other Linker Flags"
-4. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`
-5. Get your `API_KEY` from https://tenjin.io/dashboard/organizations
-6. In your `didFinishLaunchingWithOptions` method add: `[TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];`
+5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`
+6. Get your `API_KEY` from https://tenjin.io/dashboard/organizations
+7. In your `didFinishLaunchingWithOptions` method add: `[TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];`
 
 Here's an example of what your integration should look like in your `AppDelegate.m` file:
 
