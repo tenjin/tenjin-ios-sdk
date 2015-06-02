@@ -1,4 +1,4 @@
-Tenjin iOS SDK (iOS 6.0+)
+Tenjin iOS SDK (Deployment Version 7.0+)
 ==============
 
 Tenjin install/session integration instructions:
