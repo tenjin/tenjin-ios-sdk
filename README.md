@@ -19,7 +19,8 @@ Tenjin install/session integration instructions:
 
 ######5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
 ######6. Get your `API_KEY` from your <a href="https://tenjin.io/dashboard/organizations">Tenjin Organization tab.</a>
-######7. In your `didFinishLaunchingWithOptions` method add: `[TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];`.
+######7. In your `didFinishLaunchingWithOptions` method add: 
+`[TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];`.
 
 Here's an example of what your integration should look like in your `AppDelegate.m` file:
 
