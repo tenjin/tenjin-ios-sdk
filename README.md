@@ -20,11 +20,13 @@ Tenjin install/session integration instructions:
 ######5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
 ######6. Get your `API_KEY` from your <a href="https://tenjin.io/dashboard/organizations">Tenjin Organization tab.</a>
 ######7. In your `didFinishLaunchingWithOptions` method add: 
-`[TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];`.
+```objectivec
+[TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
+```
 
 Here's an example of what your integration should look like in your `AppDelegate.m` file:
 
-```
+```objectivec
 #import "TenjinSDK.h"
 
 @implementation TJNAppDelegate
@@ -46,14 +48,14 @@ There are two ways to handle revenue events: 1. pass Tenjin a `SKPaymentTransact
 
 ######1. Pass a `(SKPaymentTransaction *) transaction` object:
 After a purchase has been verified and `SKPaymentTransactionStatePurchased` you can pass Tenjin the transaction which was purchased:
-```
+```objectivec
 [TenjinSDK transaction: transaction];
 ```
 
 ######2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
 To use this method, you will need a `productName`, `currencyCode`, `quantity`, and the unit `price` of the transaction:
 
-```
+```objectivec
 NSString *productName = @"product_1";
 NSString *currencyCode = @"USD";
 NSDecimalNumber *price = [NSDecimalNumber decimalNumberWithString:@"0.99"];
@@ -72,7 +74,7 @@ There are two handlers that you can use to pass custom events: `sendEventWithNam
 
 You can use these to pass Tenjin custom interactions with your app to tie this to user level cost from each acquisition source that you use through Tenjin's platform. Here are some examples of usage:
 
-```
+```objectivec
 //send a particular event when you award points to a user (in this case 100 points are awarded to a user)
 [TenjinSDK sendEventWithName:@"points_awarded" andEventValue:@"100"];
 
