@@ -39,7 +39,7 @@ Here's an example of what your integration should look like in your `AppDelegate
     ...
 }
 ```
-#####8. Check to make sure Tenjin is receiving events from the <a href="https://tenjin.io/dashboard/sdk_diagnostics"> Diagnostic tab.</a>
+#####8. Make sure Tenjin is receives all your events in the <a href="https://tenjin.io/dashboard/sdk_diagnostics"> Tenjin Diagnostic tab.</a>
 
 
 Tenjin purchase event integration instructions:
