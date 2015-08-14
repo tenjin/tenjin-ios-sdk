@@ -68,16 +68,12 @@ NSInteger quantity = 1;
 
 Tenjin custom event integration instructions:
 --------
-There are two handlers that you can use to pass custom events: 
+You can also use the Tenjin SDK to pass a custom event: 
 - ```sendEventWithName: (NSString *)eventName``` and 
-- ```sendEventWithName:(NSString*)eventName andEventValue:(NSString*)eventValue```
 
 You can use these to pass Tenjin custom interactions with your app to tie this to user level cost from each acquisition source that you use through Tenjin's platform. Here are some examples of usage:
 
 ```objectivec
-//send a particular event when you award points to a user (in this case 100 points are awarded to a user)
-[TenjinSDK sendEventWithName:@"points_awarded" andEventValue:@"100"];
-
 //send a particular event for when someone swipes on a part of your app
 [TenjinSDK sendEventWithName:@"swipe_right"];
 
