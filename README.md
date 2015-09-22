@@ -5,7 +5,7 @@ Tenjin install/session integration instructions:
 -------------------------------
 - If you use pods add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 5!
 
-#####1. Download the SDK <a href="https://github.com/Ordinance/tenjin-ios-sdk/archive/master.zip"> here</a>.
+#####1. Download the SDK's contents <a href="https://github.com/Ordinance/tenjin-ios-sdk/archive/master.zip"> here</a>.
 #####2. Drag `libTenjinSDKUniversal.a` and `TenjinSDK.h` to your project. 
 #####3. Add the following Frameworks to your project:
   - `AdSupport.framework`
@@ -39,7 +39,7 @@ Here's an example of what your integration should look like in your `AppDelegate
     ...
 }
 ```
-#####8. Check to make sure Tenjin is receiving events from the <a href="https://tenjin.io/dashboard/sdk_diagnostics"> Diagnostic tab.</a>
+#####8. Validate your live events by <a href="https://tenjin.io/dashboard/debug_app_users">adding your Test Device</a> and observing your events come through in the live <a href="https://tenjin.io/dashboard/sdk_diagnostics/live"> Tenjin Diagnostic tab.</a>
 
 
 Tenjin purchase event integration instructions:
@@ -68,16 +68,12 @@ NSInteger quantity = 1;
 
 Tenjin custom event integration instructions:
 --------
-There are two handlers that you can use to pass custom events: 
+You can also use the Tenjin SDK to pass a custom event: 
 - ```sendEventWithName: (NSString *)eventName``` and 
-- ```sendEventWithName:(NSString*)eventName andEventValue:(NSString*)eventValue```
 
 You can use these to pass Tenjin custom interactions with your app to tie this to user level cost from each acquisition source that you use through Tenjin's platform. Here are some examples of usage:
 
 ```objectivec
-//send a particular event when you award points to a user (in this case 100 points are awarded to a user)
-[TenjinSDK sendEventWithName:@"points_awarded" andEventValue:@"100"];
-
 //send a particular event for when someone swipes on a part of your app
 [TenjinSDK sendEventWithName:@"swipe_right"];
 
