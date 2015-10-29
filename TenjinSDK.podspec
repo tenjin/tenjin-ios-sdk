@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TenjinSDK"
-  s.version      = "1.1.3"
+  s.version      = "1.1.4"
   s.summary      = "TenjinSDK"
   s.description  = <<-DESC
                    All of your mobile ad networks. One dashboard.
@@ -34,10 +34,10 @@ Pod::Spec.new do |s|
 
   s.author       = { "Christopher Farm" => "cfarm@tenjin.io" }
   s.platform     = :ios, "6.0"
-  
-  s.source       = { :git => "https://github.com/Ordinance/tenjin-ios-sdk.git", :tag => "v1.1.3" }
+
+  s.source       = { :git => "https://github.com/Ordinance/tenjin-ios-sdk.git", :tag => "v1.1.4" }
   s.source_files = "*.{h,m}"
-  s.ios.vendored_library = "libTenjinSDKUniversal.a"
+  s.ios.vendored_library = "libTenjinSDK.a"
 
   s.frameworks = "AdSupport", "StoreKit", "iAd"
   s.xcconfig = { "OTHER_LINKER_FLAGS" => "-ObjC -all_load" }
