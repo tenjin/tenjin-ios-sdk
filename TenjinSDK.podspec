@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/Ordinance/tenjin-ios-sdk.git", :tag => "v1.1.4" }
   s.source_files = "*.{h,m}"
-  s.ios.vendored_library = "libTenjinSDK.a"
+  s.ios.vendored_library = "libTenjinSDKUniversal.a"
 
   s.frameworks = "AdSupport", "StoreKit", "iAd"
   s.xcconfig = { "OTHER_LINKER_FLAGS" => "-ObjC -all_load" }
