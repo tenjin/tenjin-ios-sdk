@@ -68,7 +68,8 @@ NSInteger quantity = 1;
 - `CurrencyCode` -> The currency of your price
 - `Quantity` -> The number of transactions that will be counted
 - `UnitPrice` -> The price of each transaction
-As a result the Total Revenue that will be counted here is: `TotalRevenue` = `Quantity`*`UnitPrice`
+
+Total Revenue that will be counted here is: `TotalRevenue` = `Quantity`*`UnitPrice`
 
 Tenjin custom event integration instructions:
 --------
