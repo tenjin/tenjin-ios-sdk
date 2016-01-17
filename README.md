@@ -78,3 +78,5 @@ You can use these to pass Tenjin custom interactions with your app to tie this t
 [TenjinSDK sendEventWithName:@"swipe_right"];
 
 ```
+
+Custom events can also pass an `NSString` `eventValue`. Tenjin will use this `eventValue` as a count or sum for all custom events with the same `eventName`. The `eventValue` MUST BE AN INTEGER. If the `eventValue` is not an integer, we will not send the event. 
