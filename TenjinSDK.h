@@ -16,8 +16,8 @@
 //use sendEventWithName for custom event names
 + (void)sendEventWithName:(NSString *)eventName;
 
-//use sendEventWithName: andEventValue: when you neeed to pass a key: value custom event
-+ (void)sendEventWithName:(NSString *)eventName andEventValue:(NSString*)eventValue;
+//This method checks to make sure integers are passed as values.
++ (void)sendEventWithName:(NSString *)eventName andEventValue:(NSString *)eventValue;
 
 //use transaction: when you would like us to automatically validate and collect data about your SKPaymentTransaction
 + (void)transaction:(SKPaymentTransaction *)transaction;
