@@ -45,10 +45,15 @@ Here's an example of what your integration should look like in your `AppDelegate
 Tenjin purchase event integration instructions:
 --------
 There are two ways to handle revenue events:
-#####1. Pass a `(SKPaymentTransaction *) transaction` object:
+#####1. Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object:
 After a purchase has been verified and `SKPaymentTransactionStatePurchased` you can pass Tenjin the transaction which was purchased:
 ```objectivec
-[TenjinSDK transaction: transaction];
+//Get the NSData receipt
+NSURL *receiptURL = [[NSBundle mainBundle] appStoreReceiptURL];
+NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
+
+//Pass the transaction and the receiptData to Tenjin
+[TenjinSDK transaction: transaction andReceipt: receiptData];
 ```
 OR
 #####2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
