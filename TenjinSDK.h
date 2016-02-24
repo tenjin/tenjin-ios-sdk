@@ -19,10 +19,12 @@
 //This method checks to make sure integers are passed as values.
 + (void)sendEventWithName:(NSString *)eventName andEventValue:(NSString *)eventValue;
 
-//use transaction: when you would like us to automatically validate and collect data about your SKPaymentTransaction
-+ (void)transaction:(SKPaymentTransaction *)transaction;
+//This method is deprecated in favor of [transaction: andReceipt:], so Tenjin can verify your transactions
++ (void)transaction:(SKPaymentTransaction *)transaction __attribute__((deprecated));
+
+//Use this method to submit a transaction to Tenjin, we will also attempt to verify it for our records
++ (void)transaction:(SKPaymentTransaction *)transaction andReceipt:(NSData *)receipt;
 
 //use transactionWithProductName... when you don't use Apple's SKPaymentTransaction and need to pass revenue directly
 + (void)transactionWithProductName:(NSString *)productName andCurrencyCode:(NSString *)currencyCode andQuantity:(NSInteger)quantity andUnitPrice:(NSDecimalNumber *)price;
-
 @end

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TenjinSDK"
-  s.version      = "1.2.0"
+  s.version      = "1.3.0"
   s.summary      = "TenjinSDK"
   s.description  = <<-DESC
                    All of your mobile ad networks. One dashboard.
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.author       = { "Christopher Farm" => "cfarm@tenjin.io" }
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/Ordinance/tenjin-ios-sdk.git", :tag => "v1.2.0" }
+  s.source       = { :git => "https://github.com/Ordinance/tenjin-ios-sdk.git", :tag => "v1.3.0" }
   s.source_files = "*.{h,m}"
   s.ios.vendored_library = "libTenjinSDKUniversal.a"
 
