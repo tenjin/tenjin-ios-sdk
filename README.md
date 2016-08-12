@@ -9,7 +9,6 @@ Tenjin install/session integration instructions:
 #####2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project. 
 #####3. Add the following Frameworks to your project:
   - `AdSupport.framework`
-  - `iAd.framework`
   - `StoreKit.framework`
 
 ![Dashboard](https://s3.amazonaws.com/tenjin-instructions/ios_link_binary.png "dashboard")
