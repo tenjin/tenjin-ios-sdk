@@ -2,7 +2,7 @@
 //  TenjinSDK.h
 //  TenjinSDK
 //
-//  Copyright (c) 2014 Tenjin. All rights reserved.
+//  Copyright (c) 2016 Tenjin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -27,4 +27,7 @@
 
 //use transactionWithProductName... when you don't use Apple's SKPaymentTransaction and need to pass revenue directly
 + (void)transactionWithProductName:(NSString *)productName andCurrencyCode:(NSString *)currencyCode andQuantity:(NSInteger)quantity andUnitPrice:(NSDecimalNumber *)price;
+
+//use transactionWithProductName...when you don't use Apple's SKPaymentTransaction and need to pass revenue directly with a receipt
++ (void)transactionWithProductName:(NSString *)productName andCurrencyCode:(NSString *)currencyCode andQuantity:(NSInteger)quantity andUnitPrice:(NSDecimalNumber *)price andTransactionId:(NSString *)transactionId andReceipt:(NSData *)receipt;
 @end
