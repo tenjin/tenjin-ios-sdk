@@ -10,6 +10,7 @@ Tenjin install/session integration instructions:
 #####3. Add the following Frameworks to your project:
   - `AdSupport.framework`
   - `StoreKit.framework`
+  - `iAd.framework`
 
 ![Dashboard](https://s3.amazonaws.com/tenjin-instructions/ios_link_binary.png "dashboard")
 
