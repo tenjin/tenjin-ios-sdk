@@ -28,6 +28,9 @@
 //use transactionWithProductName... when you don't use Apple's SKPaymentTransaction and need to pass revenue directly
 + (void)transactionWithProductName:(NSString *)productName andCurrencyCode:(NSString *)currencyCode andQuantity:(NSInteger)quantity andUnitPrice:(NSDecimalNumber *)price;
 
-//use transactionWithProductName...when you don't use Apple's SKPaymentTransaction and need to pass revenue directly with a receipt
+//use transactionWithProductName...when you don't use Apple's SKPaymentTransaction and need to pass revenue directly with a NSData binary receipt
 + (void)transactionWithProductName:(NSString *)productName andCurrencyCode:(NSString *)currencyCode andQuantity:(NSInteger)quantity andUnitPrice:(NSDecimalNumber *)price andTransactionId:(NSString *)transactionId andReceipt:(NSData *)receipt;
+
+//use this method when you want to pass in a base64 receipt instead of a NSData receipt
++ (void)transactionWithProductName:(NSString *)productName andCurrencyCode:(NSString *)currencyCode andQuantity:(NSInteger) quantity andUnitPrice:(NSDecimalNumber *)price andTransactionId:(NSString *)transactionId andBase64Receipt:(NSString *)receipt;
 @end
