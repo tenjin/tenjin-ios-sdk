@@ -1,3 +1,5 @@
+For Unity-specific instructions, please visit https://github.com/Ordinance/tenjin-unity-sdk.
+
 Tenjin iOS SDK (Deployment Version 6.0+)
 ==============
 
