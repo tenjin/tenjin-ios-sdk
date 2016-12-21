@@ -3,7 +3,7 @@ For Unity-specific instructions, please visit https://github.com/Ordinance/tenji
 Tenjin iOS SDK (Deployment Version 6.0+)
 ==============
 
-Tenjin install/session integration instructions:
+Tenjin initialization:
 -------------------------------
 - If you use pods add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 5!
 
@@ -76,10 +76,12 @@ NSInteger quantity = 1;
 - `Quantity` -> The number of products that are counted for this purchase event
 - `UnitPrice` -> The price of each product
 
-Total Revenue calculated is: `TotalRevenue` = `Quantity`*`UnitPrice`
+Total Revenue calculated is: `TotalRevenue` = `Quantity` * `UnitPrice`
 
 Tenjin custom event integration instructions:
 --------
+NOTE: **DO NOT SEND CUSTOM EVENTS BEFORE THE INITIALIZATION** event (above). 
+
 You can also use the Tenjin SDK to pass a custom event:
 - ```sendEventWithName: (NSString *)eventName``` and
 
