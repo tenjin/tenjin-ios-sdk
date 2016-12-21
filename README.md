@@ -80,7 +80,7 @@ Total Revenue calculated is: `TotalRevenue` = `Quantity` * `UnitPrice`
 
 Tenjin custom event integration instructions:
 --------
-NOTE: **DO NOT SEND CUSTOM EVENTS BEFORE THE INITIALIZATION** event (above). 
+NOTE: **DO NOT SEND CUSTOM EVENTS BEFORE THE INITIALIZATION** event (above). The initialization must come before any custom events are sent. 
 
 You can also use the Tenjin SDK to pass a custom event:
 - ```sendEventWithName: (NSString *)eventName``` and
