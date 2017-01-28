@@ -41,7 +41,7 @@ Here's an example of what your integration should look like in your `AppDelegate
     ...
 }
 ```
-#####8. Validate your live events by <a href="https://tenjin.io/dashboard/debug_app_users">adding your Test Device</a> and observing your events come through in the live <a href="https://tenjin.io/dashboard/sdk_diagnostics/live"> Tenjin Diagnostic tab.</a>
+#####8. Validate your live events by <a href="https://tenjin.io/dashboard/debug_app_users">adding your Test Device</a> and observing your events come through in the live <a href="https://tenjin.io/dashboard/sdk_diagnostics"> Tenjin Diagnostic tab.</a>
 
 
 Tenjin purchase event integration instructions:
