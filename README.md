@@ -94,3 +94,30 @@ You can use these to pass Tenjin custom interactions with your app to tie this t
 ```
 
 Custom events can also pass an `NSString` `eventValue`. Tenjin will use this `eventValue` as a count or sum for all custom events with the same `eventName`. The `eventValue` MUST BE AN INTEGER. If the `eventValue` is not an integer, we will not send the event. 
+
+Tenjin deferred deeplink integration instructions (beta):
+-------
+Tenjin supports the ability to direct users to a specific part of your app after an attribted install based on a click through a Tenjin's campaign tracking URL. You can utilize the `registerDeepLinkHandler` handler to access the deferred deeplink through `params[@"deferred_deeplink_url"]` that is passed on the Tenjin campaign tracking URLs.
+
+```objectivec
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    //initialize the Tenjin SDK like you normally would for attribution
+    [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
+
+    //If you want to utilize the deeplink capabilities in Tenjin, utilize the registerDeepLinkHandler to retrieve the deferred_deeplink_url from the params NSDictionary object
+    [[TenjinSDK sharedInstance] registerDeepLinkHandler:^(NSDictionary *params, NSError *error) {
+        if([params[@"clicked_tenjin_link"] boolValue]){
+            if([params[@"is_first_session"] boolValue]){
+                
+                //use the params to retrieve deferred_deeplink_url through params[@"deferred_deeplink_url"]
+                //use the deferred_deeplink_url to direct the user to a specific part of your app
+                
+            } else{
+
+            }
+        }
+    }];
+}
+```
