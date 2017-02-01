@@ -112,6 +112,7 @@ Tenjin supports the ability to direct users to a specific part of your app after
             if([params[@"is_first_session"] boolValue]){
                 
                 //use the params to retrieve deferred_deeplink_url through params[@"deferred_deeplink_url"]
+                //use the deferred_deeplink_url to direct the user to a specific part of your app
                 
             } else{
 
