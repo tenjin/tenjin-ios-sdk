@@ -13,6 +13,9 @@
 //required to initialize the Tenjin SDK
 + (TenjinSDK *)sharedInstanceWithToken:(NSString *)apiToken;
 
+//returns the shared Tenjin SDK instance
++ (TenjinSDK *)sharedInstance;
+
 //use sendEventWithName for custom event names
 + (void)sendEventWithName:(NSString *)eventName;
 
@@ -33,4 +36,8 @@
 
 //use this method when you want to pass in a base64 receipt instead of a NSData receipt
 + (void)transactionWithProductName:(NSString *)productName andCurrencyCode:(NSString *)currencyCode andQuantity:(NSInteger) quantity andUnitPrice:(NSDecimalNumber *)price andTransactionId:(NSString *)transactionId andBase64Receipt:(NSString *)receipt;
+
+//use this method to register the attribution callback
+- (void)registerDeepLinkHandler:(void (^)(NSDictionary * params, NSError * error))deeplinkHandler;
+
 @end
