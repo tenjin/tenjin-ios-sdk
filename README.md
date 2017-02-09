@@ -47,6 +47,7 @@ If you'd like to use the Facebook SDK (requires Facebook SDK installation) to ha
 
 ```objectivec
 #import "TenjinSDK.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @implementation TJNAppDelegate
 
