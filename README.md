@@ -21,7 +21,7 @@ Tenjin initialization:
 
 #####5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
 #####6. Get your `API_KEY` from your <a href="https://tenjin.io/dashboard/organizations">Tenjin Organization tab.</a>
-#####7. In your `didFinishLaunchingWithOptions` method add:
+#####7a. In your `didFinishLaunchingWithOptions` method add:
 ```objectivec
 [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
 ```
@@ -41,6 +41,37 @@ Here's an example of what your integration should look like in your `AppDelegate
     ...
 }
 ```
+
+#####7b. Alternate initialization with Facebook (DO NOT USE 7a and 7b. You need to use only one.)
+If you'd like to use the Facebook SDK (requires Facebook SDK installation) to handle deferred deeplinks you can use this alternative implementation with Tenjin.
+
+```objectivec
+#import "TenjinSDK.h"
+
+@implementation TJNAppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [FBSDKAppLinkUtility fetchDeferredAppLink:^(NSURL *url, NSError *error) {
+          if (error) {
+              NSLog(@"Received error while fetching deferred app link %@", error);
+          }
+          if (url) {
+              [TenjinSDK sharedInstanceWithToken:@"<API_KEY>" andDeferredDeeplink: url];
+              //other logic you would like to handle with the returned url
+              
+          }
+          else{
+              [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
+          }
+    }];
+
+
+    //All your other stuff
+    ...
+}
+```
+
 #####8. Validate your live events by <a href="https://tenjin.io/dashboard/debug_app_users">adding your Test Device</a> and observing your events come through in the live <a href="https://tenjin.io/dashboard/sdk_diagnostics"> Tenjin Diagnostic tab.</a>
 
 
