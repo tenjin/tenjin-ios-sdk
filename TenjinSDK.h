@@ -13,6 +13,9 @@
 //required to initialize the Tenjin SDK
 + (TenjinSDK *)sharedInstanceWithToken:(NSString *)apiToken;
 
+//requierd to initialize the Tenjin SDK by caputuring a Facebook deeplink
++ (TenjinSDK *)sharedInstanceWithToken:(NSString *)apiToken andDeferredDeeplink:(NSURL *) url;
+
 //returns the shared Tenjin SDK instance
 + (TenjinSDK *)sharedInstance;
 
