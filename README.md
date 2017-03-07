@@ -153,3 +153,26 @@ Tenjin supports the ability to direct users to a specific part of your app after
     }];
 }
 ```
+
+You can also use the v1.7.2+ SDK for handling post-install logic using the `params` provided in this `registerDeepLinkHandler`. For example, if you have a paid app, you can register your paid app install in the following way:
+
+```objectivec
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    //initialize the Tenjin SDK like you normally would for attribution
+    [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
+
+    //If you want to utilize the deeplink capabilities in Tenjin, utilize the registerDeepLinkHandler to retrieve the deferred_deeplink_url from the params NSDictionary object
+    [[TenjinSDK sharedInstance] registerDeepLinkHandler:^(NSDictionary *params, NSError *error) {
+        
+          if([params[@"is_first_session"] boolValue]){
+              //send paid app price and revenue to Tenjin
+              
+          } else{
+
+          }
+        
+    }];
+}
+```
