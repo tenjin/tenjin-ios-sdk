@@ -7,21 +7,21 @@ Tenjin initialization:
 -------------------------------
 - If you use pods add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 5!
 
-#####1. Download the SDK's contents <a href="https://github.com/Ordinance/tenjin-ios-sdk/archive/master.zip"> here</a>.
-#####2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project. 
-#####3. Add the following Frameworks to your project:
+##### 1. Download the SDK's contents [here](https://github.com/Ordinance/tenjin-ios-sdk/archive/master.zip)
+##### 2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project. 
+##### 3. Add the following Frameworks to your project:
   - `AdSupport.framework`
   - `StoreKit.framework`
   - `iAd.framework`
 
 ![Dashboard](https://s3.amazonaws.com/tenjin-instructions/ios_link_binary.png "dashboard")
 
-#####4. Include the linker flags `-ObjC` and `-all_load` under your Build Settings
+##### 4. Include the linker flags `-ObjC` and `-all_load` under your Build Settings
 ![Dashboard](https://s3.amazonaws.com/tenjin-instructions/ios_linker_flags.png "dashboard")
 
-#####5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
-#####6. Get your `API_KEY` from your <a href="https://tenjin.io/dashboard/organizations">Tenjin Organization tab.</a>
-#####7a. In your `didFinishLaunchingWithOptions` method add:
+##### 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
+##### 6. Get your `API_KEY` from your [Tenjin Organization tab](https://tenjin.io/dashboard/organizations).
+##### 7a. In your `didFinishLaunchingWithOptions` method add:
 ```objectivec
 [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
 ```
@@ -42,7 +42,7 @@ Here's an example of what your integration should look like in your `AppDelegate
 }
 ```
 
-#####7b. Alternate initialization with Facebook (DO NOT USE 7a and 7b. You need to use only one.)
+##### 7b. Alternate initialization with Facebook (DO NOT USE 7a and 7b. You need to use only one.)
 If you'd like to use the Facebook SDK (requires Facebook SDK installation) to handle deferred deeplinks you can use this alternative implementation with Tenjin.
 
 ```objectivec
@@ -73,13 +73,13 @@ If you'd like to use the Facebook SDK (requires Facebook SDK installation) to ha
 }
 ```
 
-#####8. Validate your live events by <a href="https://tenjin.io/dashboard/debug_app_users">adding your Test Device</a> and observing your events come through in the live <a href="https://tenjin.io/dashboard/sdk_diagnostics"> Tenjin Diagnostic tab.</a>
+##### 8. Validate your live events by <a href="https://tenjin.io/dashboard/debug_app_users">adding your Test Device</a> and observing your events come through in the live <a href="https://tenjin.io/dashboard/sdk_diagnostics"> Tenjin Diagnostic tab.</a>
 
 
 Tenjin purchase event integration instructions:
 --------
 There are two ways to handle revenue events:
-#####1. Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object:
+##### 1. Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object:
 After a purchase has been verified and `SKPaymentTransactionStatePurchased` you can pass Tenjin the transaction which was purchased:
 ```objectivec
 //Get the NSData receipt
@@ -90,7 +90,7 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 [TenjinSDK transaction: transaction andReceipt: receiptData];
 ```
 OR
-#####2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
+##### 2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
 To use this method, you will need a `productName`, `currencyCode`, `quantity`, and the unit `price` of the transaction:
 ```objectivec
 NSString *productName = @"product_1";
