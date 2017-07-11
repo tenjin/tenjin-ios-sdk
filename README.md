@@ -1,3 +1,5 @@
+Please see our [Release Notes](https://github.com/Ordinance/tenjin-ios-sdk/wiki) to see detailed version history.
+
 For Unity-specific instructions, please visit https://github.com/Ordinance/tenjin-unity-sdk.
 
 Tenjin iOS SDK (Deployment Version 6.0+)
