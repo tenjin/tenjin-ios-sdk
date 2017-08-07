@@ -44,7 +44,7 @@ Here's an example of what your integration should look like in your `AppDelegate
 }
 ```
 
-##### 7b. Alternate initialization with to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
+##### 7b. Alternate initialization to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
 If you use other services to produce deferred deep links, you can pass tenjin those deep links to handle the attribution logic with your tenjin enabled deep links. 
 
 ```objectivec
