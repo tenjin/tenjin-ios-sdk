@@ -44,31 +44,27 @@ Here's an example of what your integration should look like in your `AppDelegate
 }
 ```
 
-##### 7b. Alternate initialization with Facebook (DO NOT USE 7a and 7b. You need to use only one.)
-If you'd like to use the Facebook SDK (requires Facebook SDK installation) to handle deferred deeplinks you can use this alternative implementation with Tenjin.
+##### 7b. Alternate initialization with to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
+If you use other services to produce deferred deep links, you can pass tenjin those deep links to handle the attribution logic with your tenjin enabled deep links. 
 
 ```objectivec
 #import "TenjinSDK.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @implementation TJNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [FBSDKAppLinkUtility fetchDeferredAppLink:^(NSURL *url, NSError *error) {
-          if (error) {
-              NSLog(@"Received error while fetching deferred app link %@", error);
-          }
-          if (url) {
-              [TenjinSDK sharedInstanceWithToken:@"<API_KEY>" andDeferredDeeplink: url];
-              //other logic you would like to handle with the returned url
-              
-          }
-          else{
-              [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
-          }
-    }];
-
+  
+    //get your deep link from your other 3rd party service
+    NSURL *url = [NSURL withString: @"your_deep_link"];
+    
+    //if you have a deep link that's generated from a third party service then pass it to tenjin to handle the attribution of deep links holistically
+    if(url) {
+      [TenjinSDK sharedInstanceWithToken:@"<API_KEY>" andDeferredDeeplink: url];
+    }
+    else{
+      [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"]
+    }
 
     //All your other stuff
     ...
