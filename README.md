@@ -87,6 +87,9 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 //Pass the transaction and the receiptData to Tenjin
 [TenjinSDK transaction: transaction andReceipt: receiptData];
 ```
+
+###### If you have subscription receipts, please be sure to add your IAP shared secret to your appropriate app in the <a href="https://www.tenjin.io/dashboard/apps">Tenjin Apps Dashboard</a>
+
 OR
 ##### 2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
 To use this method, you will need a `productName`, `currencyCode`, `quantity`, and the unit `price` of the transaction:
