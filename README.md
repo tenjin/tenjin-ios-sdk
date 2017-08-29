@@ -77,6 +77,7 @@ If you use other services to produce deferred deep links, you can pass tenjin th
 Tenjin purchase event integration instructions:
 --------
 There are two ways to handle revenue events:
+
 ##### 1. Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object:
 After a purchase has been verified and `SKPaymentTransactionStatePurchased` you can pass Tenjin the transaction which was purchased:
 ```objectivec
@@ -88,9 +89,10 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 [TenjinSDK transaction: transaction andReceipt: receiptData];
 ```
 
-##### If you have subscription receipts, please be sure to add your IAP shared secret to your appropriate app in the <a href="https://www.tenjin.io/dashboard/apps">Tenjin Apps Dashboard</a>
+**If you have subscription receipts, please be sure to add your IAP shared secret to your appropriate app in the <a href="https://www.tenjin.io/dashboard/apps">Tenjin Apps Dashboard</a>**
 
 OR
+
 ##### 2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
 To use this method, you will need a `productName`, `currencyCode`, `quantity`, and the unit `price` of the transaction:
 ```objectivec
