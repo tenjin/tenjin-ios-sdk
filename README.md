@@ -73,8 +73,8 @@ If you use other services to produce deferred deep links, you can pass tenjin th
 
 ##### 8. Validate your live events by <a href="https://tenjin.io/dashboard/debug_app_users">adding your Test Device</a> and observing your events come through in the live <a href="https://tenjin.io/dashboard/sdk_diagnostics"> Tenjin Diagnostic tab.</a>
 
-
 Tenjin purchase event integration instructions:
+
 --------
 There are two ways to handle revenue events:
 
@@ -89,7 +89,7 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 [TenjinSDK transaction: transaction andReceipt: receiptData];
 ```
 
-**If you have subscription receipts, please be sure to add your IAP shared secret to your appropriate app in the <a href="https://www.tenjin.io/dashboard/apps">Tenjin Apps Dashboard</a>**
+**If you have subscription receipts, please be sure to add your IAP shared secret to your appropriate app in the <a href="https://www.tenjin.io/dashboard/apps">Tenjin Apps Dashboard.</a>**
 
 OR
 
