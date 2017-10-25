@@ -18,7 +18,7 @@ Tenjin initialization:
 
 ![Dashboard](https://s3.amazonaws.com/tenjin-instructions/ios_link_binary.png "dashboard")
 
-##### 4. Include the linker flags `-ObjC` and `-all_load` under your Build Settings
+##### 4. Include the linker flags `-ObjC` under your Build Settings
 ![Dashboard](https://s3.amazonaws.com/tenjin-instructions/ios_linker_flags.png "dashboard")
 
 ##### 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
