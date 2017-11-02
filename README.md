@@ -4,6 +4,7 @@ For Unity-specific instructions, please visit https://github.com/Ordinance/tenji
 
 Tenjin iOS SDK (Deployment Version 6.0+)
 ==============
+Note: We recommend using the latest version of <a href="https://developer.apple.com/xcode/">Xcode</a> when integrating our SDK.
 
 Tenjin initialization:
 -------------------------------
