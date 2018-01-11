@@ -90,7 +90,7 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 [TenjinSDK transaction: transaction andReceipt: receiptData];
 ```
 
-**If you have subscription receipts, please be sure to add your IAP shared secret to your appropriate app in the <a href="https://www.tenjin.io/dashboard/apps">Tenjin Apps Dashboard.</a>**
+**If you have subscription receipts, please be sure to add your IAP shared secret to your appropriate app in the <a href="https://www.tenjin.io/dashboard/apps">Tenjin Apps Dashboard.</a>** Please note that you are responsible to send subscription transaction one time during each subscription interval (i.e. For example, for a monthly subscription, you will need to send us 1 transaction per month).  
 
 OR
 
