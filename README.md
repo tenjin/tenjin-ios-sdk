@@ -1,6 +1,8 @@
-Please see our [Release Notes](https://github.com/Ordinance/tenjin-ios-sdk/wiki) to see detailed version history.
 
-For Unity-specific instructions, please visit https://github.com/Ordinance/tenjin-unity-sdk.
+
+Please see our [Release Notes](https://github.com/tenjin/tenjin-ios-sdk/wiki) to see detailed version history.
+
+For Unity-specific instructions, please visit https://github.com/tenjin/tenjin-unity-sdk.
 
 Tenjin iOS SDK (268KB) (Deployment Version 6.0+)
 ==============
@@ -10,7 +12,7 @@ Tenjin initialization:
 -------------------------------
 - If you use pods add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 5!
 
-##### 1. Download the SDK's contents [here](https://github.com/Ordinance/tenjin-ios-sdk/archive/master.zip)
+##### 1. Download the SDK's contents [here](https://github.com/tenjin/tenjin-ios-sdk/archive/master.zip)
 ##### 2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project. Note: If you are testing with 32-bit iOS Simulator devices (i386), you will need to use `libTenjinSDKUniversal.a` instead of `libTenjinSDK.a`.
 ##### 3. Add the following Frameworks to your project:
   - `AdSupport.framework`
