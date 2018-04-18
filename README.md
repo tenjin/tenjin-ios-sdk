@@ -28,7 +28,8 @@ Tenjin initialization:
 ##### 6. Get your `API_KEY` from your [Tenjin Organization tab](https://tenjin.io/dashboard/organizations).
 ##### 7a. In your `didFinishLaunchingWithOptions` method add:
 ```objectivec
-[TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
+[TenjinSDK init:@"<API_KEY>"];
+[TenjinSDK connect];
 ```
 
 Here's an example of what your integration should look like in your `AppDelegate.m` file:
@@ -40,7 +41,8 @@ Here's an example of what your integration should look like in your `AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
+    [TenjinSDK init:@"<API_KEY>"];
+    [TenjinSDK connect];
 
     //All your other stuff
     ...
@@ -48,7 +50,7 @@ Here's an example of what your integration should look like in your `AppDelegate
 ```
 
 ##### 7b. Alternate initialization to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
-If you use other services to produce deferred deep links, you can pass tenjin those deep links to handle the attribution logic with your tenjin enabled deep links. 
+If you use other services to produce deferred deep links, you can pass Tenjin those deep links to handle the attribution logic with your Tenjin enabled deep links. 
 
 ```objectivec
 #import "TenjinSDK.h"
@@ -58,27 +60,110 @@ If you use other services to produce deferred deep links, you can pass tenjin th
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   
+    [TenjinSDK init:@"<API_KEY>"];
+
     //get your deep link from your other 3rd party service
     NSURL *url = [NSURL withString: @"your_deep_link"];
     
     //if you have a deep link that's generated from a third party service then pass it to tenjin to handle the attribution of deep links holistically
     if(url) {
-      [TenjinSDK sharedInstanceWithToken:@"<API_KEY>" andDeferredDeeplink: url];
+      [TenjinSDK connectWithDeferredDeeplink:url];
     }
     else{
-      [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"]
+      [TenjinSDK connect];
     }
 
     //All your other stuff
-    ...
+    //...
 }
 ```
 
 ##### 8. Validate your live events by <a href="https://tenjin.io/dashboard/debug_app_users">adding your Test Device</a> and observing your events come through in the live <a href="https://tenjin.io/dashboard/sdk_diagnostics"> Tenjin Diagnostic tab.</a>
 
-Tenjin purchase event integration instructions:
+Tenjin GDPR:
+-------
+As part of GDPR compliance, with Tenjin's SDK you can opt-in, opt-out devices/users, or select which specific device-related params to opt-in or opt-out.  `OptOut()` will not send any API requests to Tenjin and we will not process any events.
 
---------
+To opt-in/opt-out:
+
+```objectivec
+#import "TenjinSDK.h"
+
+@implementation TJNAppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+  
+  [TenjinSDK init:@"<API_KEY>"];
+
+  if ([self checkOptInValue]) {
+      [TenjinSDK optIn];
+  }
+  else {
+      [TenjinSDK optOut];
+  }
+
+  [TenjinSDK connect];
+
+  //All your other stuff
+  //..
+}
+
+-(BOOL) checkOptInValue
+{
+  // check opt-in value
+  // return YES; // if user opted-in
+  return NO;
+}
+```
+
+To opt-in/opt-out specific device-related parameters, you can use the `OptInParams()` or `OptOutParams()`.  `OptInParams()` will only send device-related parameters that are specified.  `OptOutParams()` will send all device-related parameters except ones that are specified.  Please note that we require at least `ip_address`, `advertising_id`, `developer_device_id`, `limit_ad_tracking`, `referrer` (Android), and `iad` (iOS) to properly track devices in Tenjin's system.
+
+If you want to only get specific device-related parameters, use `OptInParams()`. In example below, we will only these device-related parameters: `ip_address`, `advertising_id`, `developer_device_id`, `limit_ad_tracking`, `referrer`, and `iad`:
+
+```objectivec
+[TenjinSDK init:@"<API_KEY>"];
+
+NSArray *optInParams = @[@"ip_address", @"advertising_id", @"developer_device_id", @"limit_ad_tracking", @"referrer", @"iad"];
+[TenjinSDK optInParams:optInParams];
+
+[TenjinSDK connect];
+```
+
+If you want to send ALL parameters except specfic device-related parameters, use `OptOutParams()`.  In example below, we will send ALL device-related parameters except: `locale`, `timezone`, and `build_id` parameters.
+```objectivec
+[TenjinSDK init:@"<API_KEY>"];
+
+NSArray *optOutParams = @[@"country", @"timezone", @"language"];
+[TenjinSDK optOutParams:optOutParams];
+
+[TenjinSDK connect];
+```
+
+#### Device-Related Parameters
+
+| Param  | Description | Reference |
+| ------------- | ------------- | ------------- |
+| advertising_id  | Device Advertising ID | [iOS](https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614151-advertisingidentifier) |
+| developer_device_id | ID for Vendor | [iOS](https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor) |
+| limit_ad_tracking  | limit ad tracking enabled | [iOS](https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614148-isadvertisingtrackingenabled) |
+| platform | platform  | iOS |
+| iad | Apple Search Ad parameters | [iOS](https://searchads.apple.com/advanced/help/measure-results/#attribution-api) |
+| os_version | Operating system version | [iOS](https://developer.apple.com/documentation/uikit/uidevice/1620043-systemversion) |
+| device | device name | [iOS (hw.machine)](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html) |
+| device_model | device model | [iOS (hw.model)](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html) |
+| device_model_name | device machine  | [iOS (hw.model)](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html) |
+| device_cpu | device cpu name | [iOS (hw.cputype)](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html) |
+| os_version_release | operating system version | [iOS](https://developer.apple.com/documentation/uikit/uidevice/1620043-systemversion) |
+| build_id | build ID | [iOS (kern.osversion)](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html) |
+| locale | device locale | [iOS](https://developer.apple.com/documentation/foundation/nslocalekey) |
+| country | locale country | [iOS](https://developer.apple.com/documentation/foundation/nslocalecountrycode) |
+| timezone | timezone | [iOS](https://developer.apple.com/documentation/foundation/nstimezone/1387209-localtimezone) |
+
+
+Tenjin purchase event integration instructions:
+-------
+
 There are two ways to handle revenue events:
 
 ##### 1. Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object:
@@ -142,7 +227,8 @@ Tenjin supports the ability to direct users to a specific part of your app after
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //initialize the Tenjin SDK like you normally would for attribution
-    [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
+    [TenjinSDK init:@"<API_KEY>"];
+    [TenjinSDK connect]
 
     //If you want to utilize the deeplink capabilities in Tenjin, utilize the registerDeepLinkHandler to retrieve the deferred_deeplink_url from the params NSDictionary object
     [[TenjinSDK sharedInstance] registerDeepLinkHandler:^(NSDictionary *params, NSError *error) {
@@ -167,7 +253,8 @@ You can also use the v1.7.2+ SDK for handling post-install logic using the `para
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //initialize the Tenjin SDK like you normally would for attribution
-    [TenjinSDK sharedInstanceWithToken:@"<API_KEY>"];
+    [TenjinSDK init:@"<API_KEY>"];
+    [TenjinSDK connect]
 
     //If you want to utilize the deeplink capabilities in Tenjin, utilize the registerDeepLinkHandler to retrieve the deferred_deeplink_url from the params NSDictionary object
     [[TenjinSDK sharedInstance] registerDeepLinkHandler:^(NSDictionary *params, NSError *error) {
