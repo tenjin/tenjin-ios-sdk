@@ -80,7 +80,7 @@ If you use other services to produce deferred deep links, you can pass Tenjin th
 
 ##### 8. Validate your live events by <a href="https://tenjin.io/dashboard/debug_app_users">adding your Test Device</a> and observing your events come through in the live <a href="https://tenjin.io/dashboard/sdk_diagnostics"> Tenjin Diagnostic tab.</a>
 
-Tenjin GDPR:
+Tenjin and GDPR:
 -------
 As part of GDPR compliance, with Tenjin's SDK you can opt-in, opt-out devices/users, or select which specific device-related params to opt-in or opt-out.  `OptOut()` will not send any API requests to Tenjin and we will not process any events.
 
