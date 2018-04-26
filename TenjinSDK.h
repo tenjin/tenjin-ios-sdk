@@ -10,14 +10,26 @@
 
 @interface TenjinSDK : NSObject
 
-//required to initialize the Tenjin SDK
-+ (TenjinSDK *)sharedInstanceWithToken:(NSString *)apiToken;
+// initialize the Tenjin SDK
++ (TenjinSDK *)init:(NSString *)apiToken;
 
-//requierd to initialize the Tenjin SDK by caputuring a Facebook deeplink
-+ (TenjinSDK *)sharedInstanceWithToken:(NSString *)apiToken andDeferredDeeplink:(NSURL *) url;
+//initialize the Tenjin SDK with shared secret
++ (TenjinSDK *)init:(NSString *)apiToken sharedSecret:(NSString *) secret;
+
+//initialize the Tenjin SDK + connect
++ (TenjinSDK *)sharedInstanceWithToken:(NSString *)apiToken __deprecated_msg("use `init` and `connect`");
+
+//initialize the Tenjin SDK + connect with a third party deeplink
++ (TenjinSDK *)sharedInstanceWithToken:(NSString *)apiToken andDeferredDeeplink:(NSURL *)url __deprecated_msg("use `init` and `connectWithDeferredDeeplink`");
 
 //returns the shared Tenjin SDK instance
 + (TenjinSDK *)sharedInstance;
+
+//use connect to send connect call. sharedInstanceWithToken automatically does a connect
++ (void)connect;
+
+//use connect to send connect call. sharedInstanceWithToken automatically does a connect
++ (void)connectWithDeferredDeeplink:(NSURL *)url;
 
 //use sendEventWithName for custom event names
 + (void)sendEventWithName:(NSString *)eventName;
@@ -42,5 +54,17 @@
 
 //use this method to register the attribution callback
 - (void)registerDeepLinkHandler:(void (^)(NSDictionary * params, NSError * error))deeplinkHandler;
+
+// GDPR opt-out
++ (void)optOut;
+
+// GDPR opt-in
++ (void)optIn;
+
+// GDPR opt-out of list of params
++ (void)optOutParams:(NSArray *)params;
+
+// GDPR opt-in with list of params
++ (void)optInParams:(NSArray *)params;
 
 @end
