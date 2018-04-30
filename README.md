@@ -144,6 +144,7 @@ NSArray *optOutParams = @[@"country", @"timezone", @"language"];
 
 | Param  | Description | Reference |
 | ------------- | ------------- | ------------- |
+| ip_address  | IP Address | |
 | advertising_id  | Device Advertising ID | [iOS](https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614151-advertisingidentifier) |
 | developer_device_id | ID for Vendor | [iOS](https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor) |
 | limit_ad_tracking  | limit ad tracking enabled | [iOS](https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614148-isadvertisingtrackingenabled) |
