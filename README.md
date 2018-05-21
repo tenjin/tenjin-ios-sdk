@@ -177,10 +177,11 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 //Pass the transaction and the receiptData to Tenjin
 [TenjinSDK transaction: transaction andReceipt: receiptData];
 ```
+**Important:** If you have subscription IAP, you will need to add your app's public key in the <a href="https://www.tenjin.io/dashboard/apps" target="_new"> Tenjin dashboard</a>. You can retreive your iOS App-Specific Shared Secret from the <a href="https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/887212194/addons">iTunes Connect Console</a> > Select your app > Features > In-App Purchases > App-Specific Shared Secret.
 
-**If you have subscription receipts, please be sure to add your IAP shared secret to your appropriate app in the <a href="https://www.tenjin.io/dashboard/apps">Tenjin Apps Dashboard.</a>** Please note that you are responsible to send subscription transaction one time during each subscription interval (i.e. For example, for a monthly subscription, you will need to send us 1 transaction per month).  
+**Please note that you are responsible to send subscription transaction one time during each subscription interval (i.e. For example, for a monthly subscription, you will need to send us 1 transaction per month).**
 
-OR
+OR altertnatively, you can send non-validated IAP purchase events:
 
 ##### 2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
 To use this method, you will need a `productName`, `currencyCode`, `quantity`, and the unit `price` of the transaction:
