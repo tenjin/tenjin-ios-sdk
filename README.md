@@ -178,7 +178,7 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 //Pass the transaction and the receiptData to Tenjin
 [TenjinSDK transaction: transaction andReceipt: receiptData];
 ```
-**Important:** If you have subscription IAP, you will need to add your app's public key in the <a href="https://www.tenjin.io/dashboard/apps" target="_new"> Tenjin dashboard</a>. You can retreive your iOS App-Specific Shared Secret from the <a href="https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/887212194/addons">iTunes Connect Console</a> > Select your app > Features > In-App Purchases > App-Specific Shared Secret.
+**IMPORTANT:** If you have subscription IAP, you will need to add your app's public key in the <a href="https://www.tenjin.io/dashboard/apps" target="_new"> Tenjin dashboard</a>. You can retreive your iOS App-Specific Shared Secret from the <a href="https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/887212194/addons">iTunes Connect Console</a> > Select your app > Features > In-App Purchases > App-Specific Shared Secret.
 
 **Please note that you are responsible to send subscription transaction one time during each subscription interval (i.e. For example, for a monthly subscription, you will need to send us 1 transaction per month).**
 
@@ -206,7 +206,7 @@ Total Revenue calculated is: `TotalRevenue` = `Quantity` * `UnitPrice`
 
 Tenjin custom event integration instructions:
 --------
-NOTE: **DO NOT SEND CUSTOM EVENTS BEFORE THE INITIALIZATION** event (above). The initialization must come before any custom events are sent. 
+**IMPORTANT: DO NOT SEND CUSTOM EVENTS BEFORE THE CONNECT/INITIALIZATION** event (above). The initialization must come before any custom events are sent. 
 
 You can also use the Tenjin SDK to pass a custom event:
 - ```sendEventWithName: (NSString *)eventName``` and
