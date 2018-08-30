@@ -4,7 +4,7 @@ Please see our [Release Notes](https://github.com/tenjin/tenjin-ios-sdk/wiki) to
 
 For Unity-specific instructions, please visit https://github.com/tenjin/tenjin-unity-sdk.
 
-Tenjin iOS SDK (v1.7.8) (268KB) (Deployment Version 6.0+)
+Tenjin iOS SDK (v1.7.9) (268KB) (Deployment Version 6.0+)
 ==============
 Note: We recommend using the latest version of <a href="https://developer.apple.com/xcode/">Xcode</a> when integrating our SDK.
 
