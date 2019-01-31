@@ -67,4 +67,7 @@
 // GDPR opt-in with list of params
 + (void)optInParams:(NSArray *)params;
 
+// Appends app subversion to app version
++ (void)appendAppSubversion:(NSString *)subversion;
+
 @end
