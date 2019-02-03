@@ -68,6 +68,6 @@
 + (void)optInParams:(NSArray *)params;
 
 // Appends app subversion to app version
-+ (void)appendAppSubversion:(NSString *)subversion;
++ (void)appendAppSubversion:(NSNumber *)subversion;
 
 @end
