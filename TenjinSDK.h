@@ -14,7 +14,13 @@
 + (TenjinSDK *)init:(NSString *)apiToken;
 
 //initialize the Tenjin SDK with shared secret
-+ (TenjinSDK *)init:(NSString *)apiToken sharedSecret:(NSString *) secret;
++ (TenjinSDK *)init:(NSString *)apiToken andSharedSecret:(NSString *)secret;
+
+//initialize the Tenjin SDK with app subversion
++ (TenjinSDK *)init:(NSString *)apiToken andAppSubversion:(NSNumber *)subversion;
+
+//initialize the Tenjin SDK with shared secret and app subversion
++ (TenjinSDK *)init:(NSString *)apiToken andSharedSecret:(NSString *)secret andAppSubversion:(NSNumber *)subversion;
 
 //initialize the Tenjin SDK + connect
 + (TenjinSDK *)sharedInstanceWithToken:(NSString *)apiToken __deprecated_msg("use `init` and `connect`");
