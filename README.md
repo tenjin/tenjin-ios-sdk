@@ -1,5 +1,3 @@
-
-
 Please see our [Release Notes](https://github.com/tenjin/tenjin-ios-sdk/wiki) to see detailed version history.
 
 For Unity-specific instructions, please visit https://github.com/tenjin/tenjin-unity-sdk.
@@ -283,4 +281,15 @@ You can also use the v1.7.2+ SDK for handling post-install logic using the `para
         
     }];
 }
+```
+
+App Subversion parameter for A/B Testing
+-------
+
+If you are running A/B tests and want to report the differences, we can append a numeric value to your app version using the `appendAppSubversion` method.  For example, if your app version `1.0.1`, and set `appendAppSubversion: @8888`, it will report as `1.0.1.8888`.
+
+```
+[TenjinSDK init:@"<API_KEY>"];
+[TenjinSDK appendAppSubversion:@8888];
+[TenjinSDK connect];
 ```
