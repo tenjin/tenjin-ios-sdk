@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TenjinSDK"
-  s.version      = "1.9.1"
+  s.version      = "1.10.0"
   s.summary      = "TenjinSDK"
   s.description  = <<-DESC
                    Tenjin is a unique growth infrastructure platform that helps you streamline your mobile marketing.
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/tenjin/tenjin-ios-sdk.git", :tag => "#{s.version}" }
   s.source_files = "*.{h,m}"
-  s.ios.vendored_library = "libTenjinSDKUniversal.a"
+  s.ios.vendored_library = "libTenjinSDK-Universal.a"
 
   s.frameworks = "AdSupport", "StoreKit", "iAd"
   s.xcconfig = { "OTHER_LINKER_FLAGS" => "-ObjC -all_load" }
