@@ -1,5 +1,12 @@
 version: 2
 jobs:
+  dummy:
+    docker:
+        - image: circleci/ruby:2.6.2
+    steps:
+      - run:
+          name: "test"
+          command: "echo string"
   release:
     docker:
         - image: circleci/ruby:2.6.2
@@ -27,6 +34,8 @@ workflows:
   version: 2
   release_flow:
     jobs:
+        - dummy:
+
         - approve_release:
             type: approval
         - release:
