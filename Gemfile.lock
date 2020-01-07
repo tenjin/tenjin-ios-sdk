@@ -1,3 +1,12 @@
+GIT
+  remote: git@github.com:tenjin/sdk-ci-gem
+  revision: 4f22d12a991b736b1780d3a0ecc82dc53d6f88e7
+  specs:
+    sdk-ci (0.1.0)
+      faraday (~> 0.15)
+      octokit (~> 4.14)
+      thor (~> 0.20)
+
 GEM
   specs:
     CFPropertyList (3.0.0)
@@ -72,6 +81,7 @@ GEM
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
+    thor (0.20.3)
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
@@ -90,6 +100,7 @@ DEPENDENCIES
   octokit
   pry
   rake
+  sdk-ci!
 
 BUNDLED WITH
    1.17.2
