@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
                    Tenjin is a unique growth infrastructure platform that helps you streamline your mobile marketing.
                    DESC
 
-  s.homepage     = "https://tenjin.io"
+  s.homepage     = "https://tenjin.com"
   s.license      = { :type => 'MIT', :text => <<-LICENSE
                       The MIT License (MIT)
 
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
                       LICENSE
                   }
 
-  s.author       = { "Tenjin" => "engineering@tenjin.io" }
+  s.author       = { "Tenjin" => "engineering@tenjin.com" }
   s.platform     = :ios, "6.0"
 
   s.source       = { :git => "https://github.com/tenjin/tenjin-ios-sdk.git", :tag => "#{s.version}" }

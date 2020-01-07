@@ -5,8 +5,12 @@ require 'sdk/ci'
 
 INTERNAL_REPO = "tenjin/ios-sdk"
 INTERNAL_REPO_RELEASE_NOTES = "README.md"
+COCOAPODS_FILE = "TenjinSDK.podspec"
 
 RELEASE_NOTES = "RELEASE_NOTES.md"
+RELEASE_BRANCH = "master"
+
+DELAY = 3
 
 def get_release
   @client = Octokit::Client.new(access_token: ENV["GITHUB_TOKEN"])
@@ -23,15 +27,24 @@ def get_release
 end
 
 def update_pod(version)
+  version_regex = /^\s*s\.version/
+  extracted_semver = version.scan(/(\d+\.\d+\.\d+)/).flatten.first
+  new_version = "  s.version      = \"#{extracted_semver}\""
 
+  Sdk::Ci::Util.replace_line_in_file COCOAPODS_FILE, version_regex,  new_version
 end
 
 def commit_and_tag(version)
-
+  Sdk::Ci::Github.commit_and_push version, RELEASE_BRANCH unless ENV["DRY_RUN"]
 end
 
 def push_pod
+  #cocoapods internally depends upon github tags on the remote repo
+  puts "Giving tags a chance to propogate on github..."
+  sleep DELAY
 
+  #hand over process to cocoapods push
+  exec "bundle exec pod trunk push" unless ENV["DRY_RUN"]
 end
 
 def update_release_notes tag
