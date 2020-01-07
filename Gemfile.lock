@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/tenjin/sdk-ci-gem.git
-  revision: 4f22d12a991b736b1780d3a0ecc82dc53d6f88e7
+  remote: git@github.com:tenjin/sdk-ci-gem
+  revision: 44798733d590cbd28c1f71e759e5b20dcb8c617b
   specs:
     sdk-ci (0.1.0)
       faraday (~> 0.15)
