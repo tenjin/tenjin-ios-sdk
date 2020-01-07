@@ -7,6 +7,7 @@ jobs:
       - run:
           name: "test"
           command: "echo string"
+          
   release:
     docker:
         - image: circleci/ruby:2.6.2
@@ -34,7 +35,7 @@ workflows:
   version: 2
   release_flow:
     jobs:
-        - dummy:
+        - dummy
 
         - approve_release:
             type: approval
