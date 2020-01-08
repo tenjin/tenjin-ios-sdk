@@ -1,6 +1,5 @@
-require 'pry'
+require 'pry-byebug'
 require 'octokit'
-require 'tmpdir'
 require 'sdk/ci'
 
 REPO_NAME = "tenjin/tenjin-ios-sdk"
@@ -74,7 +73,6 @@ def update_readme version
 end
 
 def push_github_release version, description
-  binding.pry
 
   Sdk::Ci::Github.push_release REPO_NAME, version, description, RELEASE_ASSETS unless ENV["DRY_RUN"]
 end
@@ -90,6 +88,7 @@ task :release do
   commit_and_tag tag
   push_github_release tag, notes
 
-  push_pod()
+  #this execs the process and must be called last
+  push_pod
 end
 
