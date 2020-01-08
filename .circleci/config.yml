@@ -21,7 +21,7 @@ jobs:
             - "vendor/bundle"
       - run:
           name: "Release public sdk"
-          command: "DRY_RUN=yes bundle exec rake release"
+          command: "bundle exec rake release"
 
 workflows:
   version: 2
