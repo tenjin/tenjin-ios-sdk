@@ -3,12 +3,16 @@ require 'octokit'
 require 'tmpdir'
 require 'sdk/ci'
 
+REPO_NAME = "tenjin/tenjin-ios-sdk"
+
 INTERNAL_REPO = "tenjin/ios-sdk"
 INTERNAL_REPO_RELEASE_NOTES = "README.md"
 COCOAPODS_FILE = "TenjinSDK.podspec"
 
 RELEASE_NOTES = "RELEASE_NOTES.md"
 RELEASE_BRANCH = "master"
+
+RELEASE_ASSETS = %w(libTenjinSDK.a libTenjinSDKUniversal.a TenjinSDK.h)
 
 DELAY = 3
 
@@ -23,7 +27,7 @@ def get_release
     File.open(a[:name],"wb"){|file| file << f}
   end
 
-  [version, assets, notes]
+  [version,  notes]
 end
 
 def update_pod(version)
@@ -69,16 +73,22 @@ def update_readme version
   Sdk::Ci::Util.replace_line_in_file "README.md", title_regex, "Tenjin iOS SDK v#{version}"
 end
 
+def push_github_release version, description
+  binding.pry
+
+  Sdk::Ci::Github.push_release REPO_NAME, version, description, RELEASE_ASSETS unless ENV["DRY_RUN"]
+end
+
 desc "Get new release assets, update details and publish"
 task :release do
-  tag, assets, notes = get_release
+  tag, notes = get_release
 
   update_readme tag
   update_release_notes tag
-
   update_pod tag
 
   commit_and_tag tag
+  push_github_release tag, notes
 
   push_pod()
 end
