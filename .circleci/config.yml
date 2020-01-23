@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  release:
+    docker:
+        - image: circleci/ruby:2.6.2
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "a2:58:29:01:f0:5e:a7:49:63:86:c3:b9:0e:d6:af:0f"
+      - checkout:
+      - restore_cache:
+          keys:
+            - gem-cache-v2-{{ checksum "Gemfile.lock" }}
+            - gem-cache-v2-
+      - run:
+          name: "Bundle install"
+          command: "bundle install --path vendor/bundle"
+      - save_cache:
+          key: gem-cache-v2-{{ checksum "Gemfile.lock" }}
+          paths:
+            - "vendor/bundle"
+      - run:
+          name: "Release public sdk"
+          command: "bundle exec rake release"
+
+workflows:
+  version: 2
+  release_flow:
+    jobs:
+        - approve_release:
+            type: approval
+        - release:
+            requires:
+                - approve_release
+

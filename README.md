@@ -1,12 +1,11 @@
-Please see our [Release Notes](https://github.com/tenjin/tenjin-ios-sdk/wiki) to see detailed version history.
-
-For Unity instructions, please visit https://github.com/tenjin/tenjin-unity-sdk.
-
-For CocoaPods instructions, please visit https://cocoapods.org/pods/TenjinSDK.
-
-Tenjin iOS SDK (v1.9.1) (268KB) (Deployment Version 6.0+)
+Tenjin iOS SDK v1.9.1
 ==============
-Note: We recommend using the latest version of <a href="https://developer.apple.com/xcode/">Xcode</a> when integrating our SDK.
+
+The native iOS SDK for Tenjin. Integrate this into your iOS app or game to get access to the functionality offered at https://www.tenjin.com/.
+
+> If you're using Unity, please take a look at our Unity SDK at https://github.com/tenjin/tenjin-unity-sdk for an easier integration and C# API
+
+> Check out the [release notes](RELEASE_NOTES.md) for a detailed version history
 
 Tenjin initialization:
 -------------------------------
