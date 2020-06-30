@@ -263,6 +263,20 @@ Tenjin supports the ability to direct users to a specific part of your app after
 }
 ```
 
+Below are the parameters, if available, that returned in the deferred deeplink callback:
+
+| Parameter             | Description                                                      |
+|-----------------------|------------------------------------------------------------------|
+| advertising_id        | IDFA of the device                                               |
+| developer_device_id   | IDFV of the device                                               |
+| ad_network            | Ad Network of the campaign                                       |
+| campaign_id           | Tenjin campaign ID                                               |
+| campaign_name         | Tenjin campaign name                                             |
+| site_id               | Site ID of source app                                            |
+| deferred_deeplink_url | The deferred deep-link of the campaign                           |
+| clicked_tenjin_link   | Boolean representing if the device was tracked by Tenjin         |
+| is_first_session      | Boolean representing if this is the first session for the device |    
+
 You can also use the v1.7.2+ SDK for handling post-install logic using the `params` provided in this `registerDeepLinkHandler`. For example, if you have a paid app, you can register your paid app install in the following way:
 
 ```objectivec
