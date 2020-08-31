@@ -85,6 +85,49 @@ If you use other services to produce deferred deep links, you can pass Tenjin th
 You can verify if the integration is working through our <a href="https://www.tenjin.io/dashboard/sdk_diagnostics">Live Test Device Data Tool</a>. Add your `advertising_id` or `IDFA/GAID` to the list of test devices. You can find this under Support -> <a href="https://www.tenjin.io/dashboard/debug_app_users">Test Devices</a>.  Go to the <a href="https://www.tenjin.io/dashboard/sdk_diagnostics">SDK Live page</a> and send a test events from your app.  You should see live events come in:
 ![](https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png)
 
+Tenjin initialization with ATTrackingManager and SKAdNetwork:
+-------------------------------
+
+Starting with iOS 14, you will need to call Tenjin `connect()` after the initial <a href="">ATTrackingManager</a> permissions prompt and selection.  If the device accepts tracking permission, the `connect()` method will send the IDFA to our servers.  As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper methods for `registerAppForAdNetworkAttribution()` and `updateConversionValue(_:)`.  Our methods will register the equivalent SKAdNetwork methods and also send the conversion values on our servers.
+
+```objectivec
+
+    [TenjinSDK init:@"<API_KEY>"];
+
+    // This will call [SKAdNetwork registerAppForAdNetworkAttribution]
+    //
+    [TenjinSDK registerAppForAdNetworkAttribution];
+    
+    if (@available(iOS 14, *)) {
+        NSUInteger status = [ATTrackingManager trackingAuthorizationStatus];
+
+        if (status == ATTrackingManagerAuthorizationStatusNotDetermined){
+            [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+                [TenjinSDK connect];
+            }];
+        }
+        else {
+            [TenjinSDK connect];
+        }
+    } else {
+        [TenjinSDK connect];
+    }
+
+    // This will send [SKAdNetwork updateConversionValue: 1] and 
+    // also send conversoin value to our servers
+    //
+    [TenjinSDK updateSkAdNetworkConversionValue: 1];
+
+```
+
+If you are running non-SKAdNetwork campaigns you can also send the equivalent conversion values to our servers.  For example:
+
+```objectivec
+    
+    // Send Non-SKAdNetwork conversion value to Tenjin
+    [TenjinSDK updateConversionValue: 1];
+```
+
 Tenjin and GDPR:
 -------
 As part of GDPR compliance, with Tenjin's SDK you can opt-in, opt-out devices/users, or select which specific device-related params to opt-in or opt-out.  `OptOut()` will not send any API requests to Tenjin and we will not process any events.
