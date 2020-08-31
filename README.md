@@ -120,7 +120,7 @@ Starting with iOS 14, you will need to call Tenjin `connect()` after the initial
 
 ```
 
-If you are running non-SKAdNetwork campaigns you can also send the equivalent conversion values to our servers.  For example:
+If you are running non-SKAdNetwork campaigns, you can also send the equivalent conversion values to our servers.  For example:
 
 ```objectivec
     
