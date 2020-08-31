@@ -208,3 +208,9 @@ v1.11.0
 ----
 - Send wrapper sdk version prepended to sdk_version
 
+v1.12.0
+----
+- iOS 14 support including SKAdNetwork 2.0 and ATTrackingManager
+- Added wrapper methods for SKAdNetwork registerAppForAdNetworkAttribution() and updateConversionValue(_:) 
+- Upgrade Apple Search Ads Attribution API
+
