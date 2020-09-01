@@ -106,21 +106,9 @@ Starting with iOS 14, you will need to call Tenjin `connect()` after the initial
     [TenjinSDK registerAppForAdNetworkAttribution];
     
     if (@available(iOS 14, *)) {
-        //
-        // Get current App Tracking Transparency status
-        //
-        NSUInteger status = [ATTrackingManager trackingAuthorizationStatus];
-        //
-        // If App Tracking Transparency has not been determined yet, prompt device for permission
-        //
-        if (status == ATTrackingManagerAuthorizationStatusNotDetermined){
-            [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-                [TenjinSDK connect];
-            }];
-        }
-        else {
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
             [TenjinSDK connect];
-        }
+        }];
     } else {
         [TenjinSDK connect];
     }
