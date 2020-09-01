@@ -91,16 +91,28 @@ Tenjin initialization with ATTrackingManager and SKAdNetwork:
 Starting with iOS 14, you will need to call Tenjin `connect()` after the initial <a href="">ATTrackingManager</a> permissions prompt and selection.  If the device accepts tracking permission, the `connect()` method will send the IDFA to our servers.  As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper methods for `registerAppForAdNetworkAttribution()` and `updateConversionValue(_:)`.  Our methods will register the equivalent SKAdNetwork methods and also send the conversion values on our servers.
 
 ```objectivec
+#import "TenjinSDK.h"
+
+@implementation TJNAppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
 
     [TenjinSDK init:@"<API_KEY>"];
 
+    //
     // This will call [SKAdNetwork registerAppForAdNetworkAttribution]
     //
     [TenjinSDK registerAppForAdNetworkAttribution];
     
     if (@available(iOS 14, *)) {
+        //
+        // Get current App Tracking Transparency status
+        //
         NSUInteger status = [ATTrackingManager trackingAuthorizationStatus];
-
+        //
+        // If App Tracking Transparency has not been determined yet, prompt device for permission
+        //
         if (status == ATTrackingManagerAuthorizationStatusNotDetermined){
             [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
                 [TenjinSDK connect];
@@ -113,18 +125,23 @@ Starting with iOS 14, you will need to call Tenjin `connect()` after the initial
         [TenjinSDK connect];
     }
 
-    // This will send [SKAdNetwork updateConversionValue: 1] and 
-    // also send conversoin value to our servers
+    //
+    // This will send [SKAdNetwork updateConversionValue: 1] 
+    // and also send conversion value to our servers.
+    //
+    // Please use a value between 0-63.
     //
     [TenjinSDK updateSkAdNetworkConversionValue: 1];
-
+}
 ```
 
 If you are running non-SKAdNetwork campaigns, you can also send the equivalent conversion values to our servers.  For example:
 
 ```objectivec
     
+    //
     // Send Non-SKAdNetwork conversion value to Tenjin
+    //
     [TenjinSDK updateConversionValue: 1];
 ```
 
