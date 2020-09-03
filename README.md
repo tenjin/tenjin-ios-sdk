@@ -117,20 +117,10 @@ Starting with iOS 14, you will need to call Tenjin `connect()` after the initial
     // This will send [SKAdNetwork updateConversionValue: 1] 
     // and also send conversion value to our servers.
     //
-    // Please use a value between 0-63.
-    //
-    [TenjinSDK updateSkAdNetworkConversionValue: 1];
-}
-```
-
-If you are running non-SKAdNetwork campaigns, you can also send the equivalent conversion values to our servers.  For example:
-
-```objectivec
-    
-    //
-    // Send Non-SKAdNetwork conversion value to Tenjin
+    // You will need to use a value between 0-63.
     //
     [TenjinSDK updateConversionValue: 1];
+}
 ```
 
 Tenjin and GDPR:
