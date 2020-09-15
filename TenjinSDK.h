@@ -2,7 +2,7 @@
 //  TenjinSDK.h
 //  TenjinSDK
 //
-//  Version 1.12.0
+//  Version 1.12.2
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -147,10 +147,10 @@ andDeferredDeeplink:(NSURL *)url
 // Appends app subversion to app version
 + (void)appendAppSubversion:(NSNumber *)subversion;
 
-// SKAdNetwork conversion value
-+ (void)updateSkAdNetworkConversionValue:(int)conversionValue;
+// deprecated
++ (void)updateSkAdNetworkConversionValue:(int)conversionValue __deprecated_msg("use `updateConversionValue:`");
 
-// non-SKAdNetwork conversion value
+// Update conversion value
 + (void)updateConversionValue:(int)conversionValue;
 
 #pragma mark Util
@@ -169,6 +169,8 @@ andDeferredDeeplink:(NSURL *)url
           forKey:(NSString *)key;
 
 + (void)registerAppForAdNetworkAttribution;
+
++ (void)requestTrackingAuthorizationWithCompletionHandler:(void (^)(NSUInteger status))completion;
 @end
 //
 // Created by Tenjin on 2019-05-17.
