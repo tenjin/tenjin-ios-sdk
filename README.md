@@ -1,34 +1,37 @@
-Please see our <a href="https://github.com/tenjin/tenjin-ios-sdk/wiki">Release Notes</a> to see detailed version history.
+Please see our <a href="https://github.com/tenjin/tenjin-ios-sdk/blob/master/RELEASE_NOTES.md">Release Notes</a> to see detailed version history.
 
 For Unity-specific instructions, please visit https://github.com/tenjin/tenjin-unity-sdk.
 
 For any issues or support, please contact: support@tenjin.com
 
-Tenjin iOS SDK (v1.12.0)
-=========
+# Tenjin iOS SDK (v1.12.2)
 
-The native iOS SDK for Tenjin. Integrate this into your iOS app or game to get access to the functionality offered at https://www.tenjin.com/.
+The native iOS SDK for Tenjin. Integrate this into your iOS project to get access to the functionality offered at https://www.tenjin.com.
 
+### Notes:
 
-Tenjin initialization:
--------------------------------
-- If you use pods add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 5!
+  - Xcode 12 is required if using iOS SDK v1.12.0 and higher.
+  - For AppTrackingTransparency, be sure update your project `.plist` file and add `Privacy - Tracking Usage Description` <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/nsusertrackingusagedescription" target="_new">(NSUserTrackingUsageDescription)</a> along with the text message you want to display to users.
 
-##### 1. Download the SDK's contents [here](https://github.com/tenjin/tenjin-ios-sdk/archive/master.zip)
-##### 2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project. Note: If you are testing with 32-bit iOS Simulator devices (i386), you will need to use `libTenjinSDKUniversal.a` instead of `libTenjinSDK.a`.
-##### 3. Add the following Frameworks to your project:
+## Tenjin initialization:
+- If you use pods add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 5.
+
+###  1. Download the latest SDK release [here](https://github.com/tenjin/tenjin-ios-sdk/releases).
+###  2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project. Note: If you are testing with 32-bit iOS Simulator devices (i386), you will need to use `libTenjinSDKUniversal.a` instead of `libTenjinSDK.a`.
+### 3. Add the following Frameworks to your project:
   - `AdSupport.framework`
-  - `StoreKit.framework`
+  - `AppTrackingTransparency.framework`
   - `iAd.framework`
+  - `StoreKit.framework`
 
-![Dashboard](https://s3.amazonaws.com/tenjin-instructions/ios_link_binary.png "dashboard")
+![Dashboard](assets/ios_link_binary.png?raw=true "dashboard")
 
-##### 4. Include the linker flags `-ObjC` under your Build Settings
-![Dashboard](https://s3.amazonaws.com/tenjin-instructions/ios_linker_flags.png "dashboard")
+### 4. Include the linker flags `-ObjC` under your Build Settings
+![Dashboard](assets/ios_linker_flags.png?raw=true "dashboard")
 
-##### 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
-##### 6. Get your `API_KEY` from your [Tenjin Organization tab](https://tenjin.io/dashboard/organizations).
-##### 7a. In your `didFinishLaunchingWithOptions` method add:
+### 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
+### 6. Get your `API_KEY` from your [Tenjin Organization tab](https://tenjin.io/dashboard/organizations).
+### 7a. In your `didFinishLaunchingWithOptions` method add:
 ```objectivec
 [TenjinSDK init:@"<API_KEY>"];
 [TenjinSDK connect];
@@ -53,7 +56,7 @@ Here's an example of what your integration should look like in your `AppDelegate
 
 NOTE: If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app](https://github.com/tenjin/tenjin-ios-sdk-swift)
 
-##### 7b. Alternate initialization to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
+### 7b. Alternate initialization to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
 If you use other services to produce deferred deep links, you can pass Tenjin those deep links to handle the attribution logic with your Tenjin enabled deep links. 
 
 ```objectivec
@@ -83,11 +86,10 @@ If you use other services to produce deferred deep links, you can pass Tenjin th
 ```
 
 You can verify if the integration is working through our <a href="https://www.tenjin.io/dashboard/sdk_diagnostics">Live Test Device Data Tool</a>. Add your `advertising_id` or `IDFA/GAID` to the list of test devices. You can find this under Support -> <a href="https://www.tenjin.io/dashboard/debug_app_users">Test Devices</a>.  Go to the <a href="https://www.tenjin.io/dashboard/sdk_diagnostics">SDK Live page</a> and send a test events from your app.  You should see live events come in:
+
 ![](https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png)
 
-Tenjin initialization with ATTrackingManager and SKAdNetwork:
--------------------------------
-
+## Tenjin initialization with ATTrackingManager and SKAdNetwork:
 Starting with iOS 14, you will need to call Tenjin `connect()` after the initial <a href="">ATTrackingManager</a> permissions prompt and selection.  If the device accepts tracking permission, the `connect()` method will send the IDFA to our servers.  As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper methods for `registerAppForAdNetworkAttribution()` and `updateConversionValue(_:)`.  Our methods will register the equivalent SKAdNetwork methods and also send the conversion values on our servers.
 
 ```objectivec
@@ -123,8 +125,7 @@ Starting with iOS 14, you will need to call Tenjin `connect()` after the initial
 }
 ```
 
-Tenjin and GDPR:
--------
+## Tenjin and GDPR:
 As part of GDPR compliance, with Tenjin's SDK you can opt-in, opt-out devices/users, or select which specific device-related params to opt-in or opt-out.  `OptOut()` will not send any API requests to Tenjin and we will not process any events.
 
 To opt-in/opt-out:
@@ -183,7 +184,7 @@ NSArray *optOutParams = @[@"country", @"timezone", @"language"];
 [TenjinSDK connect];
 ```
 
-#### Device-Related Parameters
+### Device-Related Parameters
 
 | Param  | Description | Reference |
 | ------------- | ------------- | ------------- |
@@ -205,12 +206,11 @@ NSArray *optOutParams = @[@"country", @"timezone", @"language"];
 | timezone | timezone | [iOS](https://developer.apple.com/documentation/foundation/nstimezone/1387209-localtimezone) |
 
 
-Tenjin purchase event integration instructions:
--------
+## Tenjin purchase event integration instructions:
 
 There are two ways to handle revenue events:
 
-##### 1. Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object:
+### 1. Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object:
 After a purchase has been verified and `SKPaymentTransactionStatePurchased` you can pass Tenjin the transaction which was purchased:
 ```objectivec
 //Get the NSData receipt
@@ -221,7 +221,7 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 [TenjinSDK transaction: transaction andReceipt: receiptData];
 ```
 
-### Subscription IAP
+## Subscription IAP
 **IMPORTANT:** If you have subscription IAP, you will need to add your app's public key in the <a href="https://www.tenjin.io/dashboard/apps" target="_new"> Tenjin dashboard</a>. You can retreive your iOS App-Specific Shared Secret from the <a href="https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/887212194/addons">iTunes Connect Console</a> > Select your app > Features > In-App Purchases > App-Specific Shared Secret.
 
 **Please note that you are responsible to send subscription transaction one time during each subscription interval (i.e. For example, for a monthly subscription, you will need to send us 1 transaction per month).**  
@@ -236,7 +236,7 @@ For more information on subscriptions, please see: <a href="https://developer.ap
 
 OR altertnatively, you can send non-validated IAP purchase events:
 
-##### 2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
+### 2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
 To use this method, you will need a `productName`, `currencyCode`, `quantity`, and the unit `price` of the transaction:
 ```objectivec
 NSString *productName = @"product_1";
@@ -256,8 +256,7 @@ NSInteger quantity = 1;
 
 Total Revenue calculated is: `TotalRevenue` = `Quantity` * `UnitPrice`
 
-Tenjin custom event integration instructions:
---------
+## Tenjin custom event integration instructions:
 **IMPORTANT: DO NOT SEND CUSTOM EVENTS BEFORE THE CONNECT/INITIALIZATION** event (above). The initialization must come before any custom events are sent. 
 
 You can also use the Tenjin SDK to pass a custom event:
@@ -273,8 +272,7 @@ You can use these to pass Tenjin custom interactions with your app to tie this t
 
 Custom events can also pass an `NSString` `eventValue`. Tenjin will use this `eventValue` as a count or sum for all custom events with the same `eventName`. The `eventValue` MUST BE AN INTEGER. If the `eventValue` is not an integer, we will not send the event. 
 
-Tenjin deferred deeplink integration instructions:
--------
+## Tenjin deferred deeplink integration instructions: 
 Tenjin supports the ability to direct users to a specific part of your app after a new attributed install via Tenjin's campaign tracking URLs. You can utilize the `registerDeepLinkHandler` handler to access the deferred deeplink through `params[@"deferred_deeplink_url"]` that is passed on the Tenjin campaign tracking URLs. To test you can follow the instructions found <a href="http://help.tenjin.io/t/how-do-i-use-and-test-deferred-deeplinks-with-my-campaigns/547">here</a>.
 
 ```objectivec
@@ -301,7 +299,7 @@ Tenjin supports the ability to direct users to a specific part of your app after
 }
 ```
 
-Below are the parameters, if available, that returned in the deferred deeplink callback:
+### Below are the parameters, if available, that returned in the deferred deeplink callback:
 
 | Parameter             | Description                                                      |
 |-----------------------|------------------------------------------------------------------|
@@ -314,6 +312,7 @@ Below are the parameters, if available, that returned in the deferred deeplink c
 | deferred_deeplink_url | The deferred deep-link of the campaign                           |
 | clicked_tenjin_link   | Boolean representing if the device was tracked by Tenjin         |
 | is_first_session      | Boolean representing if this is the first session for the device |    
+
 
 You can also use the v1.7.2+ SDK for handling post-install logic using the `params` provided in this `registerDeepLinkHandler`. For example, if you have a paid app, you can register your paid app install in the following way:
 
@@ -339,8 +338,7 @@ You can also use the v1.7.2+ SDK for handling post-install logic using the `para
 }
 ```
 
-App Subversion parameter for A/B Testing (requires DataVault)
--------
+## App Subversion parameter for A/B Testing (requires DataVault)
 
 If you are running A/B tests and want to report the differences, we can append a numeric value to your app version using the `appendAppSubversion` method.  For example, if your app version `1.0.1`, and set `appendAppSubversion: @8888`, it will report as `1.0.1.8888`.
 
