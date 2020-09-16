@@ -14,11 +14,14 @@ The native iOS SDK for Tenjin. Integrate this into your iOS project to get acces
   - For AppTrackingTransparency, be sure update your project `.plist` file and add `Privacy - Tracking Usage Description` <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/nsusertrackingusagedescription" target="_new">(NSUserTrackingUsageDescription)</a> along with the text message you want to display to users.
 
 ## Tenjin initialization:
-- If you use pods add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 5.
 
-###  1. Download the latest SDK release [here](https://github.com/tenjin/tenjin-ios-sdk/releases).
-###  2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project. Note: If you are testing with 32-bit iOS Simulator devices (i386), you will need to use `libTenjinSDKUniversal.a` instead of `libTenjinSDK.a`.
-### 3. Add the following Frameworks to your project:
+##### If you use pods add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 5.
+
+#####  1. Download the latest SDK release [here](https://github.com/tenjin/tenjin-ios-sdk/releases).
+
+#####  2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project. Note: If you are testing with 32-bit iOS Simulator devices (i386), you will need to use `libTenjinSDKUniversal.a` instead of `libTenjinSDK.a`.
+
+##### 3. Add the following Frameworks to your project:
   - `AdSupport.framework`
   - `AppTrackingTransparency.framework`
   - `iAd.framework`
@@ -26,12 +29,16 @@ The native iOS SDK for Tenjin. Integrate this into your iOS project to get acces
 
 ![Dashboard](assets/ios_link_binary.png?raw=true "dashboard")
 
-### 4. Include the linker flags `-ObjC` under your Build Settings
+
+##### 4. Include the linker flags `-ObjC` under your Build Settings
 ![Dashboard](assets/ios_linker_flags.png?raw=true "dashboard")
 
-### 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
-### 6. Get your `API_KEY` from your [Tenjin Organization tab](https://tenjin.io/dashboard/organizations).
-### 7a. In your `didFinishLaunchingWithOptions` method add:
+
+##### 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
+
+##### 6. Get your `API_KEY` from your [Tenjin Organization tab](https://tenjin.io/dashboard/organizations).
+
+##### 7a. In your `didFinishLaunchingWithOptions` method add:
 ```objectivec
 [TenjinSDK init:@"<API_KEY>"];
 [TenjinSDK connect];
@@ -56,7 +63,8 @@ Here's an example of what your integration should look like in your `AppDelegate
 
 NOTE: If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app](https://github.com/tenjin/tenjin-ios-sdk-swift)
 
-### 7b. Alternate initialization to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
+
+##### 7b. Alternate initialization to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
 If you use other services to produce deferred deep links, you can pass Tenjin those deep links to handle the attribution logic with your Tenjin enabled deep links. 
 
 ```objectivec
@@ -210,7 +218,7 @@ NSArray *optOutParams = @[@"country", @"timezone", @"language"];
 
 There are two ways to handle revenue events:
 
-### 1. Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object:
+##### 1. Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object:
 After a purchase has been verified and `SKPaymentTransactionStatePurchased` you can pass Tenjin the transaction which was purchased:
 ```objectivec
 //Get the NSData receipt
@@ -236,7 +244,7 @@ For more information on subscriptions, please see: <a href="https://developer.ap
 
 OR altertnatively, you can send non-validated IAP purchase events:
 
-### 2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
+##### 2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
 To use this method, you will need a `productName`, `currencyCode`, `quantity`, and the unit `price` of the transaction:
 ```objectivec
 NSString *productName = @"product_1";
