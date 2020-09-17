@@ -97,8 +97,34 @@ You can verify if the integration is working through our <a href="https://www.te
 
 ![](https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png)
 
-## Tenjin initialization with ATTrackingManager and SKAdNetwork:
-Starting with iOS 14, you will need to call Tenjin `connect()` after the initial <a href="">ATTrackingManager</a> permissions prompt and selection.  If the device accepts tracking permission, the `connect()` method will send the IDFA to our servers.  As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper methods for `registerAppForAdNetworkAttribution()` and `updateConversionValue(_:)`.  Our methods will register the equivalent SKAdNetwork methods and also send the conversion values on our servers.
+## Tenjin initialization with ATTrackingManager:
+Starting with iOS 14, you have the option show the initial <a href="">ATTrackingManager</a> permissions prompt and selection to opt in/opt out users. 
+If the device doesn't accept tracking permission, IDFA will become zero. If the device accepts tracking permission, the `connect()` method will send the IDFA to our servers. 
+You can also still call Tenjin `connect()`, without using ATTrackingManager. 
+
+```objectivec
+#import "TenjinSDK.h"
+
+@implementation TJNAppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+
+    [TenjinSDK init:@"<API_KEY>"];
+
+    if (@available(iOS 14, *)) {
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            [TenjinSDK connect];
+        }];
+    } else {
+        [TenjinSDK connect];
+    }
+}
+```
+
+## SKAdNetwork and Conversion value:
+As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper methods for `registerAppForAdNetworkAttribution()` and `updateConversionValue(_:)`.
+Our methods will register the equivalent SKAdNetwork methods and also send the conversion values on our servers.
 
 ```objectivec
 #import "TenjinSDK.h"
@@ -115,13 +141,7 @@ Starting with iOS 14, you will need to call Tenjin `connect()` after the initial
     //
     [TenjinSDK registerAppForAdNetworkAttribution];
     
-    if (@available(iOS 14, *)) {
-        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-            [TenjinSDK connect];
-        }];
-    } else {
-        [TenjinSDK connect];
-    }
+    [TenjinSDK connect];
 
     //
     // This will send [SKAdNetwork updateConversionValue: 1] 
