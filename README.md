@@ -98,7 +98,7 @@ You can verify if the integration is working through our <a href="https://www.te
 ![](https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png)
 
 ## Tenjin initialization with ATTrackingManager:
-Starting with iOS 14, you have the option show the initial <a href="">ATTrackingManager</a> permissions prompt and selection to opt in/opt out users. 
+Starting with iOS 14, you have the option to show the initial <a href="">ATTrackingManager</a> permissions prompt and selection to opt in/opt out users. 
 If the device doesn't accept tracking permission, IDFA will become zero. If the device accepts tracking permission, the `connect()` method will send the IDFA to our servers. 
 You can also still call Tenjin `connect()`, without using ATTrackingManager. 
 
