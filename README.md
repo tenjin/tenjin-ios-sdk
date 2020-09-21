@@ -27,11 +27,11 @@ The native iOS SDK for Tenjin. Integrate this into your iOS project to get acces
   - `iAd.framework`
   - `StoreKit.framework`
 
-![Dashboard](assets/ios_link_binary.png?raw=true "dashboard")
+![Dashboard](https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard")
 
 
 ##### 4. Include the linker flags `-ObjC` under your Build Settings
-![Dashboard](assets/ios_linker_flags.png?raw=true "dashboard")
+![Dashboard](https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard")
 
 
 ##### 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
