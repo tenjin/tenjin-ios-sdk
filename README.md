@@ -256,33 +256,9 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 
 In the example timeline below, a transaction event should only be sent at the "First Charge" and "Renewal" events. During the trial period, do not send Tenjin the transaction event.  Tenjin does not de-dupe duplicate transactions.
 
-
-<img src="https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Art/subscription_timeline_2x.png" />
-
+<img src="https://docs-assets.developer.apple.com/published/6631e50f32/110c0e3f-e0e3-4dbd-bc28-d8db4b28bd1c.png" />
 
 For more information on subscriptions, please see: <a href="https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Chapters/Subscriptions.html">Apple documentation on Working with Subscriptions</a>
-
-OR altertnatively, you can send non-validated IAP purchase events:
-
-##### 2. Pass a transaction manually (usually this is necessary if purchases are not handled by Apple):
-To use this method, you will need a `productName`, `currencyCode`, `quantity`, and the unit `price` of the transaction:
-```objectivec
-NSString *productName = @"product_1";
-NSString *currencyCode = @"USD";
-NSDecimalNumber *price = [NSDecimalNumber decimalNumberWithString:@"0.99"];
-NSInteger quantity = 1;
-
-[TenjinSDK  transactionWithProductName: productName
-            andCurrencyCode: currencyCode
-            andQuantity: quantity
-            andUnitPrice: price];
-```
-- `ProductName` -> The name or ID of your product
-- `CurrencyCode` -> The currency of your unit price
-- `Quantity` -> The number of products that are counted for this purchase event
-- `UnitPrice` -> The price of each product
-
-Total Revenue calculated is: `TotalRevenue` = `Quantity` * `UnitPrice`
 
 ## Tenjin custom event integration instructions:
 **IMPORTANT: DO NOT SEND CUSTOM EVENTS BEFORE THE CONNECT/INITIALIZATION** event (above). The initialization must come before any custom events are sent. 
