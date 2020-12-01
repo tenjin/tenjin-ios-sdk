@@ -100,7 +100,7 @@ You can verify if the integration is working through our <a href="https://www.te
 ## Tenjin initialization with ATTrackingManager:
 Starting with iOS 14, you have the option to show the initial <a href="">ATTrackingManager</a> permissions prompt and selection to opt in/opt out users. 
 If the device doesn't accept tracking permission, IDFA will become zero. If the device accepts tracking permission, the `connect()` method will send the IDFA to our servers. 
-You can also still call Tenjin `connect()`, without using ATTrackingManager. 
+You can also still call Tenjin `connect()`, without using ATTrackingManager. ATTrackingManager permissions prompt is not obligatory until the start of 2021
 
 ```objectivec
 #import "TenjinSDK.h"
@@ -123,8 +123,12 @@ You can also still call Tenjin `connect()`, without using ATTrackingManager.
 ```
 
 ## SKAdNetwork and Conversion value:
-As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper methods for `registerAppForAdNetworkAttribution()` and `updateConversionValue(_:)`.
+As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper methods for `registerAppForAdNetworkAttribution()` and <a href="https://developer.apple.com/documentation/storekit/skadnetwork/3566697-updateconversionvalue">`updateConversionValue(_:)`</a>.
 Our methods will register the equivalent SKAdNetwork methods and also send the conversion values on our servers.
+
+updateConversionValue(_:) 6 bit value should correspond to the in-app event and shouldn’t be entered as binary representation: 
+- <a href="https://docs.google.com/spreadsheets/d/1jrRrTP6YX62of2WaJamtPBSWZJ-97IpTWn0IwTroH6Y/edit#gid=1596716780">Examples for IAP based games </a>
+- <a href="https://docs.google.com/spreadsheets/d/15JaN44yQyW7dqqRGi5Wwnq2P6ng-4n6EztMmMj5A7c4/edit#gid=0">Examples for Ad revenue based games </a>
 
 ```objectivec
 #import "TenjinSDK.h"
@@ -144,12 +148,12 @@ Our methods will register the equivalent SKAdNetwork methods and also send the c
     [TenjinSDK connect];
 
     //
-    // This will send [SKAdNetwork updateConversionValue: 1] 
+    // This will call [SKAdNetwork updateConversionValue: <YOUR 6 bit value>] 
     // and also send conversion value to our servers.
     //
-    // You will need to use a value between 0-63.
+    // You will need to use a value between 0-63 for <YOUR 6 bit value>.
     //
-    [TenjinSDK updateConversionValue: 1];
+    [TenjinSDK updateConversionValue: <YOUR 6 bit value>];
 }
 ```
 

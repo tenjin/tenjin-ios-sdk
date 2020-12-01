@@ -1,3 +1,7 @@
+v1.12.2
+----
+- Update support for iOS 14
+
 v1.12.0
 ----
 - iOS 14 support including SKAdNetwork 2.0 and ATTrackingManager
