@@ -1,3 +1,7 @@
+v1.12.4
+----
+- Fix memory bug related to sample code
+
 v1.12.2
 ----
 - Update support for iOS 14
@@ -5,7 +9,7 @@ v1.12.2
 v1.12.0
 ----
 - iOS 14 support including SKAdNetwork 2.0 and ATTrackingManager
-- Added wrapper methods for SKAdNetwork registerAppForAdNetworkAttribution() and updateConversionValue(_:) 
+- Added wrapper methods for SKAdNetwork registerAppForAdNetworkAttribution() and updateConversionValue(_:)
 - Upgrade Apple Search Ads Attribution API
 
 v1.11.0
@@ -110,7 +114,7 @@ v1.4.8
 
 v1.4.7
 ----
-- Go back to zero delay in cookie tracking for viewcontroller. Don't need to worry about deleting the cookie on app open. 
+- Go back to zero delay in cookie tracking for viewcontroller. Don't need to worry about deleting the cookie on app open.
 
 v1.4.6
 ----
@@ -154,7 +158,7 @@ v1.3.0
 - Pass `receipt` to server to validate transaction
 - Deprecate just accepting SKPaymentTransaction. If you pass SKPaymentTransaction we will also require a receipt
 - Pass `transaction_id` to server
-- Refactor 
+- Refactor
 
 v1.2.0
 ----
