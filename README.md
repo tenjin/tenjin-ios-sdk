@@ -4,7 +4,7 @@ For Unity-specific instructions, please visit https://github.com/tenjin/tenjin-u
 
 For any issues or support, please contact: support@tenjin.com
 
-# Tenjin iOS SDK (v1.12.2)
+# Tenjin iOS SDK (v1.12.4)
 
 The native iOS SDK for Tenjin. Integrate this into your iOS project to get access to the functionality offered at https://www.tenjin.com.
 
@@ -65,7 +65,7 @@ NOTE: If you are using Swift 5, use the `getInstance()` method instead of `init(
 
 
 ##### 7b. Alternate initialization to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
-If you use other services to produce deferred deep links, you can pass Tenjin those deep links to handle the attribution logic with your Tenjin enabled deep links. 
+If you use other services to produce deferred deep links, you can pass Tenjin those deep links to handle the attribution logic with your Tenjin enabled deep links.
 
 ```objectivec
 #import "TenjinSDK.h"
@@ -74,12 +74,12 @@ If you use other services to produce deferred deep links, you can pass Tenjin th
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  
+
     [TenjinSDK init:@"<API_KEY>"];
 
     //get your deep link from your other 3rd party service
     NSURL *url = [NSURL withString: @"your_deep_link"];
-    
+
     //if you have a deep link that's generated from a third party service then pass it to tenjin to handle the attribution of deep links holistically
     if(url) {
       [TenjinSDK connectWithDeferredDeeplink:url];
@@ -98,8 +98,8 @@ You can verify if the integration is working through our <a href="https://www.te
 ![](https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png)
 
 ## Tenjin initialization with ATTrackingManager:
-Starting with iOS 14, you have the option to show the initial <a href="">ATTrackingManager</a> permissions prompt and selection to opt in/opt out users. 
-If the device doesn't accept tracking permission, IDFA will become zero. If the device accepts tracking permission, the `connect()` method will send the IDFA to our servers. 
+Starting with iOS 14, you have the option to show the initial <a href="">ATTrackingManager</a> permissions prompt and selection to opt in/opt out users.
+If the device doesn't accept tracking permission, IDFA will become zero. If the device accepts tracking permission, the `connect()` method will send the IDFA to our servers.
 You can also still call Tenjin `connect()`, without using ATTrackingManager. ATTrackingManager permissions prompt is not obligatory until the start of 2021
 
 ```objectivec
@@ -126,7 +126,7 @@ You can also still call Tenjin `connect()`, without using ATTrackingManager. ATT
 As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper methods for `registerAppForAdNetworkAttribution()` and <a href="https://developer.apple.com/documentation/storekit/skadnetwork/3566697-updateconversionvalue">`updateConversionValue(_:)`</a>.
 Our methods will register the equivalent SKAdNetwork methods and also send the conversion values on our servers.
 
-updateConversionValue(_:) 6 bit value should correspond to the in-app event and shouldn’t be entered as binary representation: 
+updateConversionValue(_:) 6 bit value should correspond to the in-app event and shouldn’t be entered as binary representation:
 - <a href="https://docs.google.com/spreadsheets/d/1jrRrTP6YX62of2WaJamtPBSWZJ-97IpTWn0IwTroH6Y/edit#gid=1596716780">Examples for IAP based games </a>
 - <a href="https://docs.google.com/spreadsheets/d/15JaN44yQyW7dqqRGi5Wwnq2P6ng-4n6EztMmMj5A7c4/edit#gid=0">Examples for Ad revenue based games </a>
 
@@ -144,11 +144,11 @@ updateConversionValue(_:) 6 bit value should correspond to the in-app event and 
     // This will call [SKAdNetwork registerAppForAdNetworkAttribution]
     //
     [TenjinSDK registerAppForAdNetworkAttribution];
-    
+
     [TenjinSDK connect];
 
     //
-    // This will call [SKAdNetwork updateConversionValue: <YOUR 6 bit value>] 
+    // This will call [SKAdNetwork updateConversionValue: <YOUR 6 bit value>]
     // and also send conversion value to our servers.
     //
     // You will need to use a value between 0-63 for <YOUR 6 bit value>.
@@ -169,7 +169,7 @@ To opt-in/opt-out:
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  
+
   [TenjinSDK init:@"<API_KEY>"];
 
   if ([self checkOptInValue]) {
@@ -256,7 +256,7 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 ## Subscription IAP
 **IMPORTANT:** If you have subscription IAP, you will need to add your app's public key in the <a href="https://www.tenjin.io/dashboard/apps" target="_new"> Tenjin dashboard</a>. You can retreive your iOS App-Specific Shared Secret from the <a href="https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/887212194/addons">iTunes Connect Console</a> > Select your app > Features > In-App Purchases > App-Specific Shared Secret.
 
-**Please note that you are responsible to send subscription transaction one time during each subscription interval (i.e. For example, for a monthly subscription, you will need to send us 1 transaction per month).**  
+**Please note that you are responsible to send subscription transaction one time during each subscription interval (i.e. For example, for a monthly subscription, you will need to send us 1 transaction per month).**
 
 In the example timeline below, a transaction event should only be sent at the "First Charge" and "Renewal" events. During the trial period, do not send Tenjin the transaction event.  Tenjin does not de-dupe duplicate transactions.
 
@@ -265,7 +265,7 @@ In the example timeline below, a transaction event should only be sent at the "F
 For more information on subscriptions, please see: <a href="https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Chapters/Subscriptions.html">Apple documentation on Working with Subscriptions</a>
 
 ## Tenjin custom event integration instructions:
-**IMPORTANT: DO NOT SEND CUSTOM EVENTS BEFORE THE CONNECT/INITIALIZATION** event (above). The initialization must come before any custom events are sent. 
+**IMPORTANT: DO NOT SEND CUSTOM EVENTS BEFORE THE CONNECT/INITIALIZATION** event (above). The initialization must come before any custom events are sent.
 
 You can also use the Tenjin SDK to pass a custom event:
 - ```sendEventWithName: (NSString *)eventName``` and
@@ -278,9 +278,9 @@ You can use these to pass Tenjin custom interactions with your app to tie this t
 
 ```
 
-Custom events can also pass an `NSString` `eventValue`. Tenjin will use this `eventValue` as a count or sum for all custom events with the same `eventName`. The `eventValue` MUST BE AN INTEGER. If the `eventValue` is not an integer, we will not send the event. 
+Custom events can also pass an `NSString` `eventValue`. Tenjin will use this `eventValue` as a count or sum for all custom events with the same `eventName`. The `eventValue` MUST BE AN INTEGER. If the `eventValue` is not an integer, we will not send the event.
 
-## Tenjin deferred deeplink integration instructions: 
+## Tenjin deferred deeplink integration instructions:
 Tenjin supports the ability to direct users to a specific part of your app after a new attributed install via Tenjin's campaign tracking URLs. You can utilize the `registerDeepLinkHandler` handler to access the deferred deeplink through `params[@"deferred_deeplink_url"]` that is passed on the Tenjin campaign tracking URLs. To test you can follow the instructions found <a href="http://help.tenjin.io/t/how-do-i-use-and-test-deferred-deeplinks-with-my-campaigns/547">here</a>.
 
 ```objectivec
@@ -295,10 +295,10 @@ Tenjin supports the ability to direct users to a specific part of your app after
     [[TenjinSDK sharedInstance] registerDeepLinkHandler:^(NSDictionary *params, NSError *error) {
         if([params[@"clicked_tenjin_link"] boolValue]){
             if([params[@"is_first_session"] boolValue]){
-                
+
                 //use the params to retrieve deferred_deeplink_url through params[@"deferred_deeplink_url"]
                 //use the deferred_deeplink_url to direct the user to a specific part of your app
-                
+
             } else{
 
             }
@@ -319,7 +319,7 @@ Tenjin supports the ability to direct users to a specific part of your app after
 | site_id               | Site ID of source app                                            |
 | deferred_deeplink_url | The deferred deep-link of the campaign                           |
 | clicked_tenjin_link   | Boolean representing if the device was tracked by Tenjin         |
-| is_first_session      | Boolean representing if this is the first session for the device |    
+| is_first_session      | Boolean representing if this is the first session for the device |
 
 
 You can also use the v1.7.2+ SDK for handling post-install logic using the `params` provided in this `registerDeepLinkHandler`. For example, if you have a paid app, you can register your paid app install in the following way:
@@ -334,14 +334,14 @@ You can also use the v1.7.2+ SDK for handling post-install logic using the `para
 
     //If you want to utilize the deeplink capabilities in Tenjin, utilize the registerDeepLinkHandler to retrieve the deferred_deeplink_url from the params NSDictionary object
     [[TenjinSDK sharedInstance] registerDeepLinkHandler:^(NSDictionary *params, NSError *error) {
-        
+
           if([params[@"is_first_session"] boolValue]){
               //send paid app price and revenue to Tenjin
-              
+
           } else{
 
           }
-        
+
     }];
 }
 ```
@@ -350,7 +350,7 @@ You can also use the v1.7.2+ SDK for handling post-install logic using the `para
 
 If you are running A/B tests and want to report the differences, we can append a numeric value to your app version using the `appendAppSubversion` method.  For example, if your app version `1.0.1`, and set `appendAppSubversion: @8888`, it will report as `1.0.1.8888`.
 
-This data will appear within DataVault where you will be able to run reports using the app subversion values. 
+This data will appear within DataVault where you will be able to run reports using the app subversion values.
 
 ```
 [TenjinSDK init:@"<API_KEY>"];

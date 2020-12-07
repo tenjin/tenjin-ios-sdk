@@ -2,7 +2,7 @@
 //  TenjinSDK.h
 //  TenjinSDK
 //
-//  Version 1.12.2
+//  Version 1.12.4
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
