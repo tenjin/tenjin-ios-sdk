@@ -39,7 +39,8 @@ Pod::Spec.new do |s|
   s.source_files = "*.{h,m}"
   s.ios.vendored_library = "libTenjinSDKUniversal.a"
 
-  s.frameworks = "AdSupport", "StoreKit", "iAd"
+  s.frameworks = "AdSupport", "AppTrackingTransparency", "iAd", "StoreKit"
   s.xcconfig = { "OTHER_LINKER_FLAGS" => "-ObjC -all_load" }
-
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
