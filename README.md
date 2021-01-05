@@ -267,6 +267,8 @@ For more information on subscriptions, please see: <a href="https://developer.ap
 ## Tenjin custom event integration instructions:
 **IMPORTANT: DO NOT SEND CUSTOM EVENTS BEFORE THE CONNECT/INITIALIZATION** event (above). The initialization must come before any custom events are sent.
 
+**IMPORTANT: Limit custom event names to less than 80 characters. Do not exceed 500 unique custom event names.**
+
 You can also use the Tenjin SDK to pass a custom event:
 - ```sendEventWithName: (NSString *)eventName``` and
 
