@@ -344,7 +344,7 @@ You can also use the v1.7.2+ SDK for handling post-install logic using the `para
 }
 ```
 ## Server-to-server integration
-Tenjin offers server-to-server integration. If you want to access to the documentation, please send email to support@tenjin.com
+Tenjin offers server-to-server integration. If you want to access to the documentation, please send email to support@tenjin.com.
 
 ## App Subversion parameter for A/B Testing (requires DataVault)
 
