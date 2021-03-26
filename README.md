@@ -100,7 +100,7 @@ You can verify if the integration is working through our <a href="https://www.te
 ## Tenjin initialization with ATTrackingManager:
 Starting with iOS 14, you have the option to show the initial <a href="">ATTrackingManager</a> permissions prompt and selection to opt in/opt out users.
 If the device doesn't accept tracking permission, IDFA will become zero. If the device accepts tracking permission, the `connect()` method will send the IDFA to our servers.
-You can also still call Tenjin `connect()`, without using ATTrackingManager. ATTrackingManager permissions prompt is not obligatory until the start of 2021
+You can also still call Tenjin `connect()`, without using ATTrackingManager. ATTrackingManager permissions prompt is not obligatory until the early spring of 2021.
 
 ```objectivec
 #import "TenjinSDK.h"
@@ -238,9 +238,7 @@ NSArray *optOutParams = @[@"country", @"timezone", @"language"];
 
 ## Tenjin purchase event integration instructions:
 
-There are two ways to handle revenue events:
-
-##### 1. Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object:
+##### Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object:
 After a purchase has been verified and `SKPaymentTransactionStatePurchased` you can pass Tenjin the transaction which was purchased:
 ```objectivec
 //Get the NSData receipt
@@ -345,6 +343,8 @@ You can also use the v1.7.2+ SDK for handling post-install logic using the `para
     }];
 }
 ```
+## Server-to-server integration
+Tenjin offers server-to-server integration. If you want to access to the documentation, please send email to support@tenjin.com
 
 ## App Subversion parameter for A/B Testing (requires DataVault)
 
