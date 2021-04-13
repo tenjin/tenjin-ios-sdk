@@ -4,7 +4,7 @@ For Unity-specific instructions, please visit https://github.com/tenjin/tenjin-u
 
 For any issues or support, please contact: support@tenjin.com
 
-# Tenjin iOS SDK (v1.12.4)
+# Tenjin iOS SDK (v1.12.5)
 
 The native iOS SDK for Tenjin. Integrate this into your iOS project to get access to the functionality offered at https://www.tenjin.com.
 
