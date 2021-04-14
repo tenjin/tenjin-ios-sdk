@@ -1,3 +1,7 @@
+v1.12.5
+----
+- Remove unused parameters
+
 v1.12.4
 ----
 - Fix memory bug related to sample code
