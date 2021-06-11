@@ -248,7 +248,7 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 //Pass the transaction and the receiptData to Tenjin
 [TenjinSDK transaction: transaction andReceipt: receiptData];
 ```
-**Disclaimer:** If you implement purchase event on Tenjin at the first time, make sure to verify the data with other tools you’re using before you start scaling up you user acquisition campaigns using purchase data.
+**Disclaimer:** If you are implementing purchase events on Tenjin for the first time, make sure to verify the data with other tools you’re using before you start scaling up you user acquisition campaigns using purchase data.
 
 ## Subscription IAP
 **IMPORTANT:** If you have subscription IAP, you will need to add your app's public key in the <a href="https://www.tenjin.io/dashboard/apps" target="_new"> Tenjin dashboard</a>. You can retreive your iOS App-Specific Shared Secret from the <a href="https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/887212194/addons">iTunes Connect Console</a> > Select your app > Features > In-App Purchases > App-Specific Shared Secret.
