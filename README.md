@@ -155,6 +155,18 @@ updateConversionValue(_:) 6 bit value should correspond to the in-app event and 
 }
 ```
 
+## SKAdNetwork and iOS 15+ Advertiser Postbacks
+
+To specify Tenjin as the destination for your [SK Ad Network postbacks](https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks), do the following:
+
+1. Select `Info.plist` in the Project navigator in Xcode.
+2. Click the Add button (+) beside a key in the property list editor and press Return.
+3. Type the key name `NSAdvertisingAttributionEndpoint`.
+4. Choose String from the pop-up menu in the Type column.
+5. Enter `https://tenjin-skan.com`
+
+These steps are adapted from Apple's instructions at [https://developer.apple.com/documentation/storekit/skadnetwork/configuring_an_advertised_app](https://developer.apple.com/documentation/storekit/skadnetwork/configuring_an_advertised_app).
+
 ## Tenjin and GDPR:
 As part of GDPR compliance, with Tenjin's SDK you can opt-in, opt-out devices/users, or select which specific device-related params to opt-in or opt-out.  `OptOut()` will not send any API requests to Tenjin and we will not process any events.
 
