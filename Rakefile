@@ -17,11 +17,6 @@ DELAY = 3
 
 def get_release
   @client = Octokit::Client.new(access_token: ENV["GITHUB_TOKEN"])
-  puts @client.repos.inspect
-
-  puts @client.latest_release "tenjin/ios-sdk"
-  puts INTERNAL_REPO
-
   release = @client.latest_release INTERNAL_REPO
   notes, version, assets = release[:body], release[:tag_name], release[:assets]
 
@@ -83,14 +78,14 @@ end
 
 desc "Get new release assets, update details and publish"
 task :release do
-  tag, notes = get_release
+  # tag, notes = get_release
 
-  update_readme tag
-  update_release_notes tag
-  update_pod tag
+  # update_readme tag
+  # update_release_notes tag
+  # update_pod tag
 
-  commit_and_tag tag
-  push_github_release tag, notes
+  # commit_and_tag tag
+  # push_github_release tag, notes
 
   #this execs the process and must be called last
   push_pod
