@@ -17,6 +17,10 @@ DELAY = 3
 
 def get_release
   @client = Octokit::Client.new(access_token: ENV["GITHUB_TOKEN"])
+  puts @client.repos.inspect
+
+  puts @client.latest_release "tenjin/ios-sdk"
+  puts INTERNAL_REPO
 
   release = @client.latest_release INTERNAL_REPO
   notes, version, assets = release[:body], release[:tag_name], release[:assets]

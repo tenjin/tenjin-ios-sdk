@@ -1,10 +1,13 @@
+
+[![CircleCI](https://circleci.com/gh/tenjin/k8s-collector.svg?style=svg&circle-token=140d5619ed4c940b8ee8f2079d8bef4aaf00acbe)](https://circleci.com/gh/tenjin/tenjin-ios-sdk)
+
 Please see our <a href="https://github.com/tenjin/tenjin-ios-sdk/blob/master/RELEASE_NOTES.md">Release Notes</a> to see detailed version history.
 
 For Unity-specific instructions, please visit https://github.com/tenjin/tenjin-unity-sdk.
 
 For any issues or support, please contact: support@tenjin.com
 
-# Tenjin iOS SDK (v1.12.5)
+# Tenjin iOS SDK (v1.12.6)
 
 The native iOS SDK for Tenjin. Integrate this into your iOS project to get access to the functionality offered at https://www.tenjin.com.
 
@@ -12,6 +15,7 @@ The native iOS SDK for Tenjin. Integrate this into your iOS project to get acces
 
   - Xcode 12 is required if using iOS SDK v1.12.0 and higher.
   - For AppTrackingTransparency, be sure update your project `.plist` file and add `Privacy - Tracking Usage Description` <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/nsusertrackingusagedescription" target="_new">(NSUserTrackingUsageDescription)</a> along with the text message you want to display to users.
+  - For <a href="https://developer.apple.com/documentation/iad/setting_up_apple_search_ads_attribution" target="_new">Apple Search Ads Attribution</a> support, please be sure to upgrade to v1.12.6+ and add the `AdServices.framework` library.
 
 ## Tenjin initialization:
 
@@ -22,6 +26,7 @@ The native iOS SDK for Tenjin. Integrate this into your iOS project to get acces
 #####  2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project. Note: If you are testing with 32-bit iOS Simulator devices (i386), you will need to use `libTenjinSDKUniversal.a` instead of `libTenjinSDK.a`.
 
 ##### 3. Add the following Frameworks to your project:
+  - `AdServices.framework`
   - `AdSupport.framework`
   - `AppTrackingTransparency.framework`
   - `iAd.framework`
