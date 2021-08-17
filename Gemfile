@@ -5,4 +5,6 @@ gem 'rake'
 gem 'octokit'
 gem 'pry-byebug'
 
-gem 'sdk-ci', git: 'git@github.com:tenjin/sdk-ci-gem'
+source 'https://gem.fury.io/tenjin' do
+  gem 'sdk-ci'
+end
