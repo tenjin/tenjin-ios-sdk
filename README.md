@@ -1,3 +1,6 @@
+
+[![CircleCI](https://circleci.com/gh/tenjin/k8s-collector.svg?style=svg&circle-token=140d5619ed4c940b8ee8f2079d8bef4aaf00acbe)](https://circleci.com/gh/tenjin/tenjin-ios-sdk)
+
 Please see our <a href="https://github.com/tenjin/tenjin-ios-sdk/blob/master/RELEASE_NOTES.md">Release Notes</a> to see detailed version history.
 
 For Unity-specific instructions, please visit https://github.com/tenjin/tenjin-unity-sdk.
