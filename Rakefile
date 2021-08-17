@@ -4,7 +4,7 @@ require 'sdk/ci'
 
 REPO_NAME = "tenjin/tenjin-ios-sdk"
 
-INTERNAL_REPO = "tenjin/tenjin-ios-sdk"
+INTERNAL_REPO = "tenjin/ios-sdk"
 INTERNAL_REPO_RELEASE_NOTES = "README.md"
 COCOAPODS_FILE = "TenjinSDK.podspec"
 
@@ -16,10 +16,10 @@ RELEASE_ASSETS = %w(libTenjinSDK.a libTenjinSDKUniversal.a TenjinSDK.h)
 DELAY = 3
 
 def get_release
-  puts "token: "
-  puts ENV["GITHUB_TOKEN"]
   @client = Octokit::Client.new(access_token: ENV["GITHUB_TOKEN"])
-  puts @client
+  puts @client.repos.inspect
+
+  puts @client.latest_release "tenjin/ios-sdk"
   puts INTERNAL_REPO
 
   release = @client.latest_release INTERNAL_REPO
