@@ -207,10 +207,9 @@ To opt-in/opt-out:
 
 To opt-in/opt-out specific device-related parameters, you can use the `OptInParams()` or `OptOutParams()`.  `OptInParams()` will only send device-related parameters that are specified.  `OptOutParams()` will send all device-related parameters except ones that are specified.  
 
-- Please note that we require the following parameters to properly track devices in Tenjin's system. If one of these mandatory parameters is missing the event will not be processed or recorded.
+- Please note that we require the following parameter to properly track devices in Tenjin's system. If the mandatory parameter is missing the event will not be processed or recorded.
 
-    - `ip_address`
-    - `advertising_id` and/or `developer_device_id`
+    - `developer_device_id`
 
 If you plan on using Google Ads, you will also need to add: `platform`, `os_version`, `locale`, `device_model`, and `build_id`.
 
