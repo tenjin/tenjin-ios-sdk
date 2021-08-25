@@ -4,7 +4,7 @@ For Unity-specific instructions, please visit https://github.com/tenjin/tenjin-u
 
 For any issues or support, please contact: support@tenjin.com
 
-# Tenjin iOS SDK (v1.12.6)
+# Tenjin iOS SDK
 
 The native iOS SDK for Tenjin. Integrate this into your iOS project to get access to the functionality offered at https://www.tenjin.com.
 
@@ -63,8 +63,9 @@ Here's an example of what your integration should look like in your `AppDelegate
 }
 ```
 
-NOTE: If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app](https://github.com/tenjin/tenjin-ios-sdk-swift)
+If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app](https://github.com/tenjin/tenjin-ios-sdk-swift)
 
+**NOTE:** Please make sure you implement this code on every `didFinishLaunchingWithOptions`, not only on the first app open of the app. If we notice that you don't follow our recommendation, we can't give you the proper support or your account might be suspended.
 
 ##### 7b. Alternate initialization to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
 If you use other services to produce deferred deep links, you can pass Tenjin those deep links to handle the attribution logic with your Tenjin enabled deep links.
