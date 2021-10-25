@@ -219,3 +219,7 @@ v1.12.5
 v1.12.6
 ----
 - Apple Ads Attribution Token https://adromance.atlassian.net/browse/TENJIN-7382
+
+v1.12.7
+----
+- Update Appcenter library version
