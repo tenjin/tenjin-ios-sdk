@@ -1,0 +1,5 @@
+Gemfile export-ignore
+Gemfile.lock export-ignore
+Rakefile export-ignore
+TenjinSDK.podspec export-ignore
+.gitattributes export-ignore
