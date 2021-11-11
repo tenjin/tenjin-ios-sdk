@@ -379,3 +379,16 @@ This data will appear within DataVault where you will be able to run reports usi
 [TenjinSDK appendAppSubversion:@8888];
 [TenjinSDK connect];
 ```
+
+Tenjin + MoPub Impression Level Ad Revenue Integration
+-------
+
+Tenjin supports the ability to integrate with the Impression Level Ad Revenue feature from MoPub, which allows you to receive events which correspond to your ad revenue is affected by each advertisment show to a user. To enable this, simply follow the below instuctions.
+
+> *NOTE* Please ensure you have the latest MoPub iOS SDK installed (> 5.7.0) and Impression Level Ad Revenue is enabled for your MoPub Account
+
+```
+[TenjinSDK init:@"TENJIN_API_KEY"];
+[TenjinSDK subscribeMoPubImpressions];
+
+```
