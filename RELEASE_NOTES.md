@@ -223,3 +223,7 @@ v1.12.6
 v1.12.7
 ----
 - Update Appcenter library version
+
+v1.12.8
+ ----
+ - AppLovin Impression Level Ad Revenue and pull request  https://github.com/tenjin/ios-sdk/pull/142
