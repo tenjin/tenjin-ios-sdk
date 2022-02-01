@@ -226,4 +226,4 @@ v1.12.7
 
 v1.12.8
  ----
- - AppLovin Impression Level Ad Revenue and pull request  https://github.com/tenjin/ios-sdk/pull/142
+ - AppLovin Impression Level Ad Revenue and pull request
