@@ -1,8 +1,6 @@
 //
-//  TenjinSDK.h
-//  TenjinSDK
-//
-//  Version 1.12.7
+// Created by Tenjin on 2016-05-20.
+//  Version 1.12.8
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -177,13 +175,23 @@ andDeferredDeeplink:(NSURL *)url
 // Copyright (c) 2019 Tenjin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "TenjinSDK.h"
-
+#import <Foundation/Foundation.h>
 
 @interface TenjinSDK (MoPubILRD)
 + (void)subscribeMoPubImpressions;
-
 + (void)mopubImpressionFromJSON:(NSString *)jsonString;
+@end
+//
+// Created by Tenjin
+// Copyright (c) 2022 Tenjin. All rights reserved.
+//
+
+#import "TenjinSDK.h"
+#import <Foundation/Foundation.h>
+
+@interface TenjinSDK (AppLovinILRD)
++ (void)subscribeAppLovinImpressions;
++ (void)appLovinImpressionFromJSON:(NSString *)jsonString;
 @end
 
