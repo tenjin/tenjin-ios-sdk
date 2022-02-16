@@ -417,7 +417,7 @@ This feature allows you to receive events which correspond to your ad revenue is
 
 ## <a id="applovin"></a>Tenjin + AppLovin Impression Level Ad Revenue Integration
 
-> *NOTE* Please ensure you have the latest AppLovin Android SDK installed (> 10.3.7)
+> *NOTE* Please ensure you have the latest AppLovin iOS SDK installed (> 11.0.0)
 
 ```objectivec
 [TenjinSDK init:@"TENJIN_API_KEY"];
