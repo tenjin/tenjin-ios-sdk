@@ -27,6 +27,7 @@ The native iOS SDK for Tenjin. To learn more about Tenjin and our product offeri
 - [Impression Level Ad Revenue Integration](#ilrd)
   - [Tenjin + MoPub Impression Level Ad Revenue Integration](#mopub)
   - [Tenjin + AppLovin Impression Level Ad Revenue Integration](#applovin)
+  - [Tenjin + IronSource Impression Level Ad Revenue Integration](#ironsource)
 
 # <a id="sdk-integration"></a> SDK Integration
 
@@ -402,6 +403,7 @@ This data will appear within DataVault where you will be able to run reports usi
 Tenjin supports the ability to integrate with the Impression Level Ad Revenue (ILRD) feature from,
 - MoPub
 - AppLovin
+- IronSource
 
 This feature allows you to receive events which correspond to your ad revenue is affected by each advertisment show to a user. To enable this feature, follow the below instuctions.
 
@@ -422,5 +424,15 @@ This feature allows you to receive events which correspond to your ad revenue is
 ```objectivec
 [TenjinSDK init:@"TENJIN_API_KEY"];
 [TenjinSDK subscribeAppLovinImpressions];
+
+```
+
+## <a id="ironsource"></a>Tenjin + IronSource Impression Level Ad Revenue Integration
+
+> *NOTE* Please ensure you have the latest IronSource iOS SDK installed (> 7.1.14)
+
+```objectivec
+[TenjinSDK init:@"TENJIN_API_KEY"];
+[TenjinSDK subscribeIronSourceImpressions];
 
 ```
