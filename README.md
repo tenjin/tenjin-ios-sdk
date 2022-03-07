@@ -15,6 +15,8 @@ The native iOS SDK for Tenjin. To learn more about Tenjin and our product offeri
 # Table of contents
 - [SDK Integration](#sdk-integration)
     - [Tenjin initialization with ATTrackingManager](#attrackingmanager)
+        - [Displaying an ATT permission prompt](#displayattprompt)
+            - [Configuring a user tracking description](#configureusertrackdescription)
     - [SKAdNetwork and Conversion value](#skadnetwork-and-conversion-value)
         - [SKAdNetwork and iOS 15+ Advertiser Postbacks](#skadnetwork-and-ios15-plus-advertiser-postbacks)
     - [Tenjin and GDPR](#gdpr)
@@ -116,7 +118,7 @@ You can verify if the integration is working through our <a href="https://www.te
 
 Starting with iOS 14, you have the option to show the initial <a href="">ATTrackingManager</a> permissions prompt and selection to opt in/opt out users.
 If the device doesn't accept tracking permission, IDFA will become zero. If the device accepts tracking permission, the `connect()` method will send the IDFA to our servers.
-You can also still call Tenjin `connect()`, without using ATTrackingManager. ATTrackingManager permissions prompt is not obligatory until the early spring of 2021.
+You can also still call Tenjin `connect()`, without using ATTrackingManager only in below iOS 14. ATTrackingManager permissions prompt is obligatory from the end of spring 2021.
 
 ```objectivec
 #import "TenjinSDK.h"
@@ -137,6 +139,26 @@ You can also still call Tenjin `connect()`, without using ATTrackingManager. ATT
     }
 }
 ```
+
+### <a id="displayattprompt"></a>Displaying an ATT permission prompt
+
+To comply with Apple’s ATT guidelines, you must provide a description for the ATT permission prompt, then implement the permission request in your application.
+
+> Note: You must implement the permission request prior to serving ads in your game.
+
+#### <a id="configureusertrackdescription"></a> Configuring a user tracking description
+Apple requires a description for the ATT permission prompt. You need to set the description with the `NSUserTrackingUsageDescription` key in the `Info.plist` file of your Xcode project. You need to provide a message that informs the user why you are requesting permission to use device tracking data:
+
+- In your Xcode project navigator, open the `Info.plist` file.
+- Click the add button (+) beside any key in the property list editor to create a new property key.
+- Enter the key name `NSUserTrackingUsageDescription`.
+- Select a string value type.
+- Enter the app tracking transparency message in the value field. Some examples include:
+    - "We will use your data to provide a better and personalized ad experience."
+    - "We try to show ads for apps and products that will be most interesting to you based on the apps you use, the device you are on, and the country you are in."
+    - "We try to show ads for apps and products that will be most interesting to you based on the apps you use."
+
+> Note: Apple provides specific [app store guidelines](https://developer.apple.com/app-store/user-privacy-and-data-use/) that define acceptable use and messaging for all end-user facing privacy-related features. Tenjin does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.
 
 ## <a id="skadnetwork-and-conversion-value"></a> SKAdNetwork and Conversion value
 
