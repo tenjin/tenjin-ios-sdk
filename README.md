@@ -30,6 +30,8 @@ The native iOS SDK for Tenjin. To learn more about Tenjin and our product offeri
   - [Tenjin + MoPub Impression Level Ad Revenue Integration](#mopub)
   - [Tenjin + AppLovin Impression Level Ad Revenue Integration](#applovin)
   - [Tenjin + IronSource Impression Level Ad Revenue Integration](#ironsource)
+  - [Tenjin + HyperBid Impression Level Ad Revenue Integration](#hyperbid)
+  - [Tenjin + AdMob Impression Level Ad Revenue Integration](#admob)
 
 # <a id="sdk-integration"></a> SDK Integration
 
@@ -426,6 +428,8 @@ Tenjin supports the ability to integrate with the Impression Level Ad Revenue (I
 - MoPub
 - AppLovin
 - IronSource
+- HyperBid
+- AdMob
 
 This feature allows you to receive events which correspond to your ad revenue is affected by each advertisment show to a user. To enable this feature, follow the below instuctions.
 
@@ -457,4 +461,20 @@ This feature allows you to receive events which correspond to your ad revenue is
 [TenjinSDK init:@"TENJIN_API_KEY"];
 [TenjinSDK subscribeIronSourceImpressions];
 
+```
+
+## <a id="hyperbid"></a>Tenjin + HyperBid Impression Level Ad Revenue Integration
+
+> *NOTE* Please ensure you have the latest HyperBid iOS SDK installed (> 5.7.79)
+
+```objectivec
+[TenjinSDK handleHyperBidILRD:(NSDictionary)adImpression];
+```
+
+## <a id="admob"></a>Tenjin + AdMob Impression Level Ad Revenue Integration
+
+> *NOTE* Please ensure you have the latest Google-Mobile-Ads-SDK iOS SDK installed (> 8.10.0)
+
+```objectivec
+[TenjinSDK handleAdMobILRD:(GADBannerView)bannerView :(GADAdValue)value];
 ```
