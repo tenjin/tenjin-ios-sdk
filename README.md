@@ -32,6 +32,7 @@ The native iOS SDK for Tenjin. To learn more about Tenjin and our product offeri
   - [Tenjin + IronSource Impression Level Ad Revenue Integration](#ironsource)
   - [Tenjin + HyperBid Impression Level Ad Revenue Integration](#hyperbid)
   - [Tenjin + AdMob Impression Level Ad Revenue Integration](#admob)
+  - [Tenjin + TopOn Impression Level Ad Revenue Integration](#topon)
 
 # <a id="sdk-integration"></a> SDK Integration
 
@@ -430,6 +431,7 @@ Tenjin supports the ability to integrate with the Impression Level Ad Revenue (I
 - IronSource
 - HyperBid
 - AdMob
+- TopOn
 
 This feature allows you to receive events which correspond to your ad revenue is affected by each advertisment show to a user. To enable this feature, follow the below instuctions.
 
@@ -477,4 +479,12 @@ This feature allows you to receive events which correspond to your ad revenue is
 
 ```objectivec
 [TenjinSDK handleAdMobILRD:(GADBannerView)bannerView :(GADAdValue)value];
+```
+
+## <a id="topon"></a>Tenjin + TopOn Impression Level Ad Revenue Integration
+
+> *NOTE* Please ensure you have the latest AnyThinkiOS iOS SDK installed (> 5.7.99)
+
+```objectivec
+[TenjinSDK handleTopOnILRD:(NSDictionary)adImpression];
 ```
