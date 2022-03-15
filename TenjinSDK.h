@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.12.8
+//  Version 1.12.11
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -193,5 +193,42 @@ andDeferredDeeplink:(NSURL *)url
 @interface TenjinSDK (AppLovinILRD)
 + (void)subscribeAppLovinImpressions;
 + (void)appLovinImpressionFromJSON:(NSString *)jsonString;
+@end
+//
+// Created by Tenjin
+// Copyright (c) 2022 Tenjin. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "TenjinSDK.h"
+
+@interface TenjinSDK (HyperBidILRD)
++ (void)handleHyperBidILRD:(NSDictionary *)adImpression;
+@end
+//
+// Created by Tenjin
+// Copyright (c) 2022 Tenjin. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "TenjinSDK.h"
+
+@class GADAdValue;
+
+@interface TenjinSDK (AdMobILRD)
++ (void)handleAdMobILRD:(NSObject *)adView :(GADAdValue *)adValue;
++ (void)adMobImpressionFromJSON:(NSString *)jsonString;
+@end
+//
+// Created by Tenjin
+// Copyright (c) 2022 Tenjin. All rights reserved.
+//
+
+#import "TenjinSDK.h"
+#import <Foundation/Foundation.h>
+
+@interface TenjinSDK (IronSourceILRD)
++ (void)subscribeIronSourceImpressions;
++ (void)ironSourceImpressionFromJSON:(NSString *)jsonString;
 @end
 
