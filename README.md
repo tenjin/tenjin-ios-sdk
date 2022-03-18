@@ -27,11 +27,11 @@ The native iOS SDK for Tenjin. To learn more about Tenjin and our product offeri
 - [Deferred Deeplink](#deferred-deeplink)
 - [App Subversion](#subversion)
 - [Impression Level Ad Revenue Integration](#ilrd)
-  - [Tenjin + MoPub Impression Level Ad Revenue Integration](#mopub)
-  - [Tenjin + AppLovin Impression Level Ad Revenue Integration](#applovin)
-  - [Tenjin + IronSource Impression Level Ad Revenue Integration](#ironsource)
-  - [Tenjin + HyperBid Impression Level Ad Revenue Integration](#hyperbid)
-  - [Tenjin + AdMob Impression Level Ad Revenue Integration](#admob)
+  - [MoPub Impression Level Ad Revenue Integration](#mopub)
+  - [AppLovin Impression Level Ad Revenue Integration](#applovin)
+  - [IronSource Impression Level Ad Revenue Integration](#ironsource)
+  - [HyperBid Impression Level Ad Revenue Integration](#hyperbid)
+  - [AdMob Impression Level Ad Revenue Integration](#admob)
 
 # <a id="sdk-integration"></a> SDK Integration
 
@@ -433,7 +433,7 @@ Tenjin supports the ability to integrate with the Impression Level Ad Revenue (I
 
 This feature allows you to receive events which correspond to your ad revenue is affected by each advertisment show to a user. To enable this feature, follow the below instuctions.
 
-## <a id="mopub"></a>Tenjin + MoPub Impression Level Ad Revenue Integration
+## <a id="mopub"></a>MoPub Impression Level Ad Revenue Integration
 
 > *NOTE* Please ensure you have the latest MoPub iOS SDK installed (> 5.7.0) and Impression Level Ad Revenue is enabled for your MoPub Account
 
@@ -443,7 +443,7 @@ This feature allows you to receive events which correspond to your ad revenue is
 
 ```
 
-## <a id="applovin"></a>Tenjin + AppLovin Impression Level Ad Revenue Integration
+## <a id="applovin"></a>AppLovin Impression Level Ad Revenue Integration
 
 > *NOTE* Please ensure you have the latest AppLovin iOS SDK installed (> 11.0.0)
 
@@ -453,7 +453,7 @@ This feature allows you to receive events which correspond to your ad revenue is
 
 ```
 
-## <a id="ironsource"></a>Tenjin + IronSource Impression Level Ad Revenue Integration
+## <a id="ironsource"></a>IronSource Impression Level Ad Revenue Integration
 
 > *NOTE* Please ensure you have the latest IronSource iOS SDK installed (> 7.1.14)
 
@@ -463,7 +463,7 @@ This feature allows you to receive events which correspond to your ad revenue is
 
 ```
 
-## <a id="hyperbid"></a>Tenjin + HyperBid Impression Level Ad Revenue Integration
+## <a id="hyperbid"></a>HyperBid Impression Level Ad Revenue Integration
 
 > *NOTE* Please ensure you have the latest HyperBid iOS SDK installed (> 5.7.79)
 
@@ -471,7 +471,7 @@ This feature allows you to receive events which correspond to your ad revenue is
 [TenjinSDK handleHyperBidILRD:(NSDictionary)adImpression];
 ```
 
-## <a id="admob"></a>Tenjin + AdMob Impression Level Ad Revenue Integration
+## <a id="admob"></a>AdMob Impression Level Ad Revenue Integration
 
 > *NOTE* Please ensure you have the latest Google-Mobile-Ads-SDK iOS SDK installed (> 8.10.0)
 

@@ -227,3 +227,15 @@ v1.12.7
 v1.12.8
  ----
  - AppLovin Impression Level Ad Revenue
+
+ v1.12.9
+----
+- IronSource Impression Level Ad Revenue
+
+v1.12.10
+----
+- AdMob Impression Level Ad Revenue
+
+v1.12.11
+----
+- HyperBid Impression Level Ad Revenue
