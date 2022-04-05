@@ -28,12 +28,11 @@ The native iOS SDK for Tenjin. To learn more about Tenjin and our product offeri
 - [Deferred Deeplink][12]
 - [App Subversion][13]
 - [Impression Level Ad Revenue Integration][14]
-  - [MoPub Impression Level Ad Revenue Integration][15]
-  - [AppLovin Impression Level Ad Revenue Integration][16]
-  - [IronSource Impression Level Ad Revenue Integration][17]
-  - [HyperBid Impression Level Ad Revenue Integration][18]
-  - [AdMob Impression Level Ad Revenue Integration][19]
-  - [Topon Impression Level Ad Revenue Integration][41]
+  - [AppLovin Impression Level Ad Revenue Integration][15]
+  - [IronSource Impression Level Ad Revenue Integration][16]
+  - [HyperBid Impression Level Ad Revenue Integration][17]
+  - [AdMob Impression Level Ad Revenue Integration][18]
+  - [Topon Impression Level Ad Revenue Integration][19]
 
 # <a id="sdk-integration"></a> SDK Integration
 
@@ -84,7 +83,7 @@ Here's an example of what your integration should look like in your `AppDelegate
 
 If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app][22]
 
-**NOTE:** Please ensure you implement this code on every `didFinishLaunchingWithOptions`, not only on the first app open of the app. If we notice that you don't follow our recommendation, we can't give you the proper support or your account might be suspended.
+**NOTE:** Please ensure you implement this code on every `didFinishLaunchingWithOptions`, not only on the first app open of the app. If we notice that you don't follow our recommendation, we can't give you the proper support or your account might be under suspension.
 
 7. b. Alternate initialization to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
 If you use other services to produce deferred deep links, you can pass Tenjin those deep links to handle the attribution logic with your Tenjin enabled deep links.
@@ -209,7 +208,7 @@ To specify Tenjin as the destination for your [SK Ad Network postbacks][25], do 
 4. Choose String from the pop-up menu in the Type column.
 5. Enter `https://tenjin-skan.com`
 
-These steps are adapted from Apple's instructions at [https://developer.apple.com/documentation/storekit/skadnetwork/configuring\_an\_advertised\_app][26].
+These steps are an adaption from Apple's instructions at [https://developer.apple.com/documentation/storekit/skadnetwork/configuring\_an\_advertised\_app][26].
 
 ## <a id="gdpr"></a> Tenjin and GDPR
 
@@ -327,7 +326,7 @@ For more information on subscriptions, please see: <a href="https://developer.ap
 
 # <a id="custom-events"></a>Custom Events
 
-**IMPORTANT: DO NOT SEND CUSTOM EVENTS BEFORE THE CONNECT/INITIALIZATION** event (above). The initialization must come before any custom events are sent.
+**IMPORTANT: DO NOT SEND CUSTOM EVENTS BEFORE THE CONNECT/INITIALIZATION** event (above). The initialization must come before sending any custom events.
 
 **IMPORTANT: Limit custom event names to less than 80 characters. Do not exceed 500 unique custom event names.**
 
@@ -433,7 +432,7 @@ Tenjin supports the ability to integrate with the Impression Level Ad Revenue (I
 - AdMob
 - TopOn
 
-This feature allows you to receive events which correspond to your ad revenue is affected by each advertisement show to a user. To enable this feature, follow the below instructions.
+This feature allows you to receive events which correspond to your ad revenue that is affected by each advertisement show to a user. To enable this feature, follow the below instructions.
 
 ## <a id="applovin"></a>AppLovin Impression Level Ad Revenue Integration
 
@@ -473,7 +472,7 @@ This feature allows you to receive events which correspond to your ad revenue is
 
 ## <a id="topon"></a>TopOn Impression Level Ad Revenue Integration
 
-> *NOTE* Please ensure you have the latest AnyThinkiOS iOS SDK installed (> 5.7.99)
+> *NOTE*, Please ensure you have the latest AnyThinkiOS iOS SDK installed (\> 5.7.99)
 
 ```objectivec
 [TenjinSDK handleTopOnILRD:(NSDictionary)adImpression];
@@ -493,11 +492,11 @@ This feature allows you to receive events which correspond to your ad revenue is
 [12]:	#deferred-deeplink
 [13]:	#subversion
 [14]:	#ilrd
-[15]:	#mopub
-[16]:	#applovin
-[17]:	#ironsource
-[18]:	#hyperbid
-[19]:	#admob
+[15]:	#applovin
+[16]:	#ironsource
+[17]:	#hyperbid
+[18]:	#admob
+[19]:	#topon
 [20]:	https://github.com/tenjin/tenjin-ios-sdk/releases
 [21]:	https://tenjin.io/dashboard/organizations
 [22]:	https://github.com/tenjin/tenjin-ios-sdk-swift
@@ -519,7 +518,6 @@ This feature allows you to receive events which correspond to your ad revenue is
 [38]:	https://developer.apple.com/documentation/foundation/nslocalekey
 [39]:	https://developer.apple.com/documentation/foundation/nslocalecountrycode
 [40]:	https://developer.apple.com/documentation/foundation/nstimezone/1387209-localtimezone
-[41]:	#topon
 
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
