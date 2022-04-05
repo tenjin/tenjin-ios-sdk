@@ -29,11 +29,11 @@ The native iOS SDK for Tenjin. To learn more about Tenjin and our product offeri
 - [Server-to-server integration][13]
 - [App Subversion][14]
 - [Impression Level Ad Revenue Integration][15]
-  - [AppLovin Impression Level Ad Revenue Integration][17]
-  - [IronSource Impression Level Ad Revenue Integration][18]
-  - [HyperBid Impression Level Ad Revenue Integration][19]
-  - [AdMob Impression Level Ad Revenue Integration][20]
-  - [Topon Impression Level Ad Revenue Integration][42]
+  - [AppLovin Impression Level Ad Revenue Integration][16]
+  - [IronSource Impression Level Ad Revenue Integration][17]
+  - [HyperBid Impression Level Ad Revenue Integration][18]
+  - [AdMob Impression Level Ad Revenue Integration][19]
+  - [Topon Impression Level Ad Revenue Integration][20]
 
 # <a id="sdk-integration"></a> SDK Integration
 
@@ -209,7 +209,7 @@ To specify Tenjin as the destination for your [SK Ad Network postbacks][26], do 
 4. Choose String from the pop-up menu in the Type column.
 5. Enter `https://tenjin-skan.com`
 
-These steps are an adaption from Apple's instructions at [https://developer.apple.com/documentation/storekit/skadnetwork/configuring\_an\_advertised\_app][26].
+These steps are an adaption from Apple's instructions at [https://developer.apple.com/documentation/storekit/skadnetwork/configuring\_an\_advertised\_app][27].
 
 ## <a id="gdpr"></a> Tenjin and GDPR
 
@@ -301,7 +301,7 @@ NSArray *optOutParams = @[@"country", @"timezone", @"language"];
 
 # <a id="purchase-events"></a>Purchase Events
 
-Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object, after a purchase has been verified, and then you can pass `SKPaymentTransactionStatePurchased` to Tenjin for the transaction which was purchased:
+Pass `(SKPaymentTransaction *) transaction` and `(NSData *)receipt` object, after the verification of the purchase, and then you can pass `SKPaymentTransactionStatePurchased` to Tenjin for the transaction which was purchased:
 ```objectivec
 //Get the NSData receipt
 NSURL *receiptURL = [[NSBundle mainBundle] appStoreReceiptURL];
@@ -496,11 +496,11 @@ This feature allows you to receive events which correspond to your ad revenue th
 [13]:	#server-to-server
 [14]:	#subversion
 [15]:	#ilrd
-[16]:	#mopub
-[17]:	#applovin
-[18]:	#ironsource
-[19]:	#hyperbid
-[20]:	#admob
+[16]:	#applovin
+[17]:	#ironsource
+[18]:	#hyperbid
+[19]:	#admob
+[20]:	#topon
 [21]:	https://github.com/tenjin/tenjin-ios-sdk/releases
 [22]:	https://tenjin.io/dashboard/organizations
 [23]:	https://github.com/tenjin/tenjin-ios-sdk-swift
@@ -522,7 +522,6 @@ This feature allows you to receive events which correspond to your ad revenue th
 [39]:	https://developer.apple.com/documentation/foundation/nslocalekey
 [40]:	https://developer.apple.com/documentation/foundation/nslocalecountrycode
 [41]:	https://developer.apple.com/documentation/foundation/nstimezone/1387209-localtimezone
-[42]:	#topon
 
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
