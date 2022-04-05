@@ -25,19 +25,20 @@ The native iOS SDK for Tenjin. To learn more about Tenjin and our product offeri
 	- [Subscription IAP][10]
 - [Custom Events][11]
 - [Deferred Deeplink][12]
-- [App Subversion][13]
-- [Impression Level Ad Revenue Integration][14]
-  - [MoPub Impression Level Ad Revenue Integration][15]
-  - [AppLovin Impression Level Ad Revenue Integration][16]
-  - [IronSource Impression Level Ad Revenue Integration][17]
-  - [HyperBid Impression Level Ad Revenue Integration][18]
-  - [AdMob Impression Level Ad Revenue Integration][19]
+- [Server-to-server integration][13]
+- [App Subversion][14]
+- [Impression Level Ad Revenue Integration][15]
+  - [MoPub Impression Level Ad Revenue Integration][16]
+  - [AppLovin Impression Level Ad Revenue Integration][17]
+  - [IronSource Impression Level Ad Revenue Integration][18]
+  - [HyperBid Impression Level Ad Revenue Integration][19]
+  - [AdMob Impression Level Ad Revenue Integration][20]
 
 # <a id="sdk-integration"></a> SDK Integration
 
 If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 5.
 
-1. Download the latest SDK release [here][20].
+1. Download the latest SDK release [here][21].
 
 2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project. Note: If you are testing with 32-bit iOS Simulator devices (i386), you will need to use `libTenjinSDKUniversal.a` instead of `libTenjinSDK.a`.
 
@@ -55,7 +56,7 @@ If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` 
 
 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
 
-6. Get your `API_KEY` from your [Tenjin Organization tab][21].
+6. Get your `API_KEY` from your [Tenjin Organization tab][22].
 
 7. a. In your `didFinishLaunchingWithOptions` method add:
 ```objectivec
@@ -80,7 +81,7 @@ Here's an example of what your integration should look like in your `AppDelegate
 }
 ```
 
-If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app][22]
+If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app][23]
 
 **NOTE:** Please ensure you implement this code on every `didFinishLaunchingWithOptions`, not only on the first app open of the app. If we notice that you don't follow our recommendation, we can't give you the proper support or your account might be suspended.
 
@@ -161,14 +162,14 @@ Apple requires a description for the ATT permission prompt. You need to set the 
 	- "We try to show ads for apps and products that will be most interesting to you based on the apps you use, the device you are on, and the country you are in."
 	- "We try to show ads for apps and products that will be most interesting to you based on the apps you use."
 
-> Note: Apple provides specific [app store guidelines][23] that define acceptable use and messaging for all end-user facing privacy-related features. Tenjin does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.
+> Note: Apple provides specific [app store guidelines][24] that define acceptable use and messaging for all end-user facing privacy-related features. Tenjin does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.
 
 ## <a id="skadnetwork-and-conversion-value"></a> SKAdNetwork and Conversion value
 
 As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper methods for `registerAppForAdNetworkAttribution()` and <a href="https://developer.apple.com/documentation/storekit/skadnetwork/3566697-updateconversionvalue">`updateConversionValue(_:)`</a>.
 Our methods will register the equivalent SKAdNetwork methods and also send the conversion values to our servers.
 
-updateConversionValue(\_:) 6 bit value should correspond to the in-app event and shouldn’t be entered as binary representation but 0-63 integer. Please refer to [this][24] page for how to implement conversion values.
+updateConversionValue(\_:) 6 bit value should correspond to the in-app event and shouldn’t be entered as binary representation but 0-63 integer. Please refer to [this][25] page for how to implement conversion values.
 
 ```objectivec
 #import "TenjinSDK.h"
@@ -199,7 +200,7 @@ updateConversionValue(\_:) 6 bit value should correspond to the in-app event and
 
 ### <a id="skadnetwork-and-ios15-plus-advertiser-postbacks"></a> SKAdNetwork and iOS 15+ Advertiser Postbacks
 
-To specify Tenjin as the destination for your [SK Ad Network postbacks][25], do the following:
+To specify Tenjin as the destination for your [SK Ad Network postbacks][26], do the following:
 
 1. Select `Info.plist` in the Project navigator in Xcode.
 2. Click the Add button (+) beside a key in the property list editor and press Return.
@@ -207,7 +208,7 @@ To specify Tenjin as the destination for your [SK Ad Network postbacks][25], do 
 4. Choose String from the pop-up menu in the Type column.
 5. Enter `https://tenjin-skan.com`
 
-These steps are adapted from Apple's instructions at [https://developer.apple.com/documentation/storekit/skadnetwork/configuring\_an\_advertised\_app][26].
+These steps are adapted from Apple's instructions at [https://developer.apple.com/documentation/storekit/skadnetwork/configuring\_an\_advertised\_app][27].
 
 ## <a id="gdpr"></a> Tenjin and GDPR
 
@@ -280,21 +281,21 @@ NSArray *optOutParams = @[@"country", @"timezone", @"language"];
 | Param  | Description | Reference |
 | ------------- | ------------- | ------------- |
 | ip\_address  | IP Address | |
-| advertising\_id  | Device Advertising ID | [iOS][27] |
-| developer\_device\_id | ID for Vendor | [iOS][28] |
-| limit\_ad\_tracking  | limit ad tracking enabled | [iOS][29] |
+| advertising\_id  | Device Advertising ID | [iOS][28] |
+| developer\_device\_id | ID for Vendor | [iOS][29] |
+| limit\_ad\_tracking  | limit ad tracking enabled | [iOS][30] |
 | platform | platform  | iOS |
-| iad | Apple Search Ad parameters | [iOS][30] |
-| os\_version | operating system version | [iOS][31] |
-| device | device name | [iOS (hw.machine)][32] |
-| device\_model | device model | [iOS (hw.model)][33] |
-| device\_model\_name | device machine  | [iOS (hw.model)][34] |
-| device\_cpu | device cpu name | [iOS (hw.cputype)][35] |
-| os\_version\_release | operating system version | [iOS][36] |
-| build\_id | build ID | [iOS (kern.osversion)][37] |
-| locale | device locale | [iOS][38] |
-| country | locale country | [iOS][39] |
-| timezone | timezone | [iOS][40] |
+| iad | Apple Search Ad parameters | [iOS][31] |
+| os\_version | operating system version | [iOS][32] |
+| device | device name | [iOS (hw.machine)][33] |
+| device\_model | device model | [iOS (hw.model)][34] |
+| device\_model\_name | device machine  | [iOS (hw.model)][35] |
+| device\_cpu | device cpu name | [iOS (hw.cputype)][36] |
+| os\_version\_release | operating system version | [iOS][37] |
+| build\_id | build ID | [iOS (kern.osversion)][38] |
+| locale | device locale | [iOS][39] |
+| country | locale country | [iOS][40] |
+| timezone | timezone | [iOS][41] |
 
 
 # <a id="purchase-events"></a>Purchase Events
@@ -482,34 +483,35 @@ This feature allows you to receive events which correspond to your ad revenue is
 [10]:	#subscription-iap
 [11]:	#custom-events
 [12]:	#deferred-deeplink
-[13]:	#subversion
-[14]:	#ilrd
-[15]:	#mopub
-[16]:	#applovin
-[17]:	#ironsource
-[18]:	#hyperbid
-[19]:	#admob
-[20]:	https://github.com/tenjin/tenjin-ios-sdk/releases
-[21]:	https://tenjin.io/dashboard/organizations
-[22]:	https://github.com/tenjin/tenjin-ios-sdk-swift
-[23]:	https://developer.apple.com/app-store/user-privacy-and-data-use/
-[24]:	https://docs.tenjin.com/en/tracking/sk_adnetwork.html#cv
-[25]:	https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks
-[26]:	https://developer.apple.com/documentation/storekit/skadnetwork/configuring_an_advertised_app
-[27]:	https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614151-advertisingidentifier
-[28]:	https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor
-[29]:	https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614148-isadvertisingtrackingenabled
-[30]:	https://searchads.apple.com/advanced/help/measure-results/#attribution-api
-[31]:	https://developer.apple.com/documentation/uikit/uidevice/1620043-systemversion
-[32]:	https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html
+[13]:	#server-to-server
+[14]:	#subversion
+[15]:	#ilrd
+[16]:	#mopub
+[17]:	#applovin
+[18]:	#ironsource
+[19]:	#hyperbid
+[20]:	#admob
+[21]:	https://github.com/tenjin/tenjin-ios-sdk/releases
+[22]:	https://tenjin.io/dashboard/organizations
+[23]:	https://github.com/tenjin/tenjin-ios-sdk-swift
+[24]:	https://developer.apple.com/app-store/user-privacy-and-data-use/
+[25]:	https://docs.tenjin.com/en/tracking/sk_adnetwork.html#cv
+[26]:	https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks
+[27]:	https://developer.apple.com/documentation/storekit/skadnetwork/configuring_an_advertised_app
+[28]:	https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614151-advertisingidentifier
+[29]:	https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor
+[30]:	https://developer.apple.com/documentation/adsupport/asidentifiermanager/1614148-isadvertisingtrackingenabled
+[31]:	https://searchads.apple.com/advanced/help/measure-results/#attribution-api
+[32]:	https://developer.apple.com/documentation/uikit/uidevice/1620043-systemversion
 [33]:	https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html
 [34]:	https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html
 [35]:	https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html
-[36]:	https://developer.apple.com/documentation/uikit/uidevice/1620043-systemversion
-[37]:	https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html
-[38]:	https://developer.apple.com/documentation/foundation/nslocalekey
-[39]:	https://developer.apple.com/documentation/foundation/nslocalecountrycode
-[40]:	https://developer.apple.com/documentation/foundation/nstimezone/1387209-localtimezone
+[36]:	https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html
+[37]:	https://developer.apple.com/documentation/uikit/uidevice/1620043-systemversion
+[38]:	https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man3/sysctl.3.html
+[39]:	https://developer.apple.com/documentation/foundation/nslocalekey
+[40]:	https://developer.apple.com/documentation/foundation/nslocalecountrycode
+[41]:	https://developer.apple.com/documentation/foundation/nstimezone/1387209-localtimezone
 
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
