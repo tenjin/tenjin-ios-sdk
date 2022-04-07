@@ -243,3 +243,7 @@ v1.12.11
 v1.12.12
 ----
 - TopOn Impression Level Ad Revenue
+
+v1.12.13
+----
+- Added public method `getAttributionInfo`

@@ -34,6 +34,7 @@ The native iOS SDK for Tenjin. To learn more about Tenjin and our product offeri
   - [HyperBid Impression Level Ad Revenue Integration][18]
   - [AdMob Impression Level Ad Revenue Integration][19]
   - [Topon Impression Level Ad Revenue Integration][20]
+- [Attribution Info][42]
 
 # <a id="sdk-integration"></a> SDK Integration
 
@@ -481,6 +482,14 @@ This feature allows you to receive events which correspond to your ad revenue th
 [TenjinSDK handleTopOnILRD:(NSDictionary)adImpression];
 ```
 
+## <a id="attributionInfo"></a>Attribution Info
+
+```objectivec
+[[TenjinSDK sharedInstance] getAttributionInfo:^(NSMutableDictionary *attributionInfo) {
+    NSLog(@"TenjinSDK getAttributionInfo result: %@", attributionInfo);
+}];    
+```
+
 [1]:	#sdk-integration
 [2]:	#attrackingmanager
 [3]:	#displayattprompt
@@ -522,6 +531,7 @@ This feature allows you to receive events which correspond to your ad revenue th
 [39]:	https://developer.apple.com/documentation/foundation/nslocalekey
 [40]:	https://developer.apple.com/documentation/foundation/nslocalecountrycode
 [41]:	https://developer.apple.com/documentation/foundation/nstimezone/1387209-localtimezone
+[42]:	#attributionInfo
 
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
