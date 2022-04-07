@@ -482,7 +482,7 @@ This feature allows you to receive events which correspond to your ad revenue th
 [TenjinSDK handleTopOnILRD:(NSDictionary)adImpression];
 ```
 
-## <a id="attributionInfo"></a>Attribution Info
+# <a id="attributionInfo"></a>Attribution Info
 
 ```objectivec
 [[TenjinSDK sharedInstance] getAttributionInfo:^(NSMutableDictionary *attributionInfo) {
