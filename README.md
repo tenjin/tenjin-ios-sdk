@@ -445,7 +445,6 @@ This feature allows you to receive events which correspond to your ad revenue th
 ```objectivec
 [TenjinSDK init:@"TENJIN_API_KEY"];
 [TenjinSDK subscribeAppLovinImpressions];
-
 ```
 
 ## <a id="ironsource"></a>IronSource Impression Level Ad Revenue Integration
@@ -455,7 +454,6 @@ This feature allows you to receive events which correspond to your ad revenue th
 ```objectivec
 [TenjinSDK init:@"TENJIN_API_KEY"];
 [TenjinSDK subscribeIronSourceImpressions];
-
 ```
 
 ## <a id="hyperbid"></a>HyperBid Impression Level Ad Revenue Integration
@@ -463,7 +461,7 @@ This feature allows you to receive events which correspond to your ad revenue th
 > *NOTE,* Please ensure you have the latest HyperBid iOS SDK installed (\> 5.7.79)
 
 ```objectivec
-[TenjinSDK handleHyperBidILRD:(NSDictionary)adImpression];
+[TenjinSDK hyperBidImpressionFromDict:(NSDictionary)adImpression];
 ```
 
 ## <a id="admob"></a>AdMob Impression Level Ad Revenue Integration
@@ -479,7 +477,7 @@ This feature allows you to receive events which correspond to your ad revenue th
 > *NOTE*, Please ensure you have the latest AnyThinkiOS iOS SDK installed (\> 5.7.99)
 
 ```objectivec
-[TenjinSDK handleTopOnILRD:(NSDictionary)adImpression];
+[TenjinSDK topOnImpressionFromDict:(NSDictionary)adImpression];
 ```
 
 # <a id="attributionInfo"></a>Attribution Info
