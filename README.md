@@ -445,7 +445,6 @@ This feature allows you to receive events which correspond to your ad revenue th
 ```objectivec
 [TenjinSDK init:@"TENJIN_API_KEY"];
 [TenjinSDK subscribeAppLovinImpressions];
-[TenjinSDK appLovinImpressionFromJSON:(NSString)jsonString];
 ```
 
 ## <a id="ironsource"></a>IronSource Impression Level Ad Revenue Integration
@@ -455,7 +454,6 @@ This feature allows you to receive events which correspond to your ad revenue th
 ```objectivec
 [TenjinSDK init:@"TENJIN_API_KEY"];
 [TenjinSDK subscribeIronSourceImpressions];
-[TenjinSDK ironSourceImpressionFromJSON:(NSString)jsonString];
 ```
 
 ## <a id="hyperbid"></a>HyperBid Impression Level Ad Revenue Integration
@@ -464,7 +462,6 @@ This feature allows you to receive events which correspond to your ad revenue th
 
 ```objectivec
 [TenjinSDK hyperBidImpressionFromDict:(NSDictionary)adImpression];
-[TenjinSDK hyperBidImpressionFromJSON:(NSString)jsonString];
 ```
 
 ## <a id="admob"></a>AdMob Impression Level Ad Revenue Integration
@@ -473,7 +470,6 @@ This feature allows you to receive events which correspond to your ad revenue th
 
 ```objectivec
 [TenjinSDK handleAdMobILRD:(GADBannerView)bannerView :(GADAdValue)value];
-[TenjinSDK adMobImpressionFromJSON:(NSString)jsonString];
 ```
 
 ## <a id="topon"></a>TopOn Impression Level Ad Revenue Integration
@@ -482,7 +478,6 @@ This feature allows you to receive events which correspond to your ad revenue th
 
 ```objectivec
 [TenjinSDK topOnImpressionFromDict:(NSDictionary)adImpression];
-[TenjinSDK topOnImpressionFromJSON:(NSString)jsonString];
 ```
 
 # <a id="attributionInfo"></a>Attribution Info
