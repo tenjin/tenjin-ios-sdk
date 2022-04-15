@@ -485,6 +485,13 @@ This feature allows you to receive events which correspond to your ad revenue th
 ```objectivec
 [[TenjinSDK sharedInstance] getAttributionInfo:^(NSMutableDictionary *attributionInfo) {
     NSLog(@"TenjinSDK getAttributionInfo result: %@", attributionInfo);
+    // LOG:
+    // { 
+    //		"advertising_id": "xxxxxxxxxxxxxxxxxxxxxxxx",
+    //		"ad_network": "organic",
+    //		"campaign_id": "6ebd3333-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    //		"campaign_name": "Organic" 
+    // }
 }];    
 ```
 
