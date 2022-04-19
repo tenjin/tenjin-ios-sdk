@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.12.12
+//  Version 1.12.13
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -169,6 +169,8 @@ andDeferredDeeplink:(NSURL *)url
 + (void)registerAppForAdNetworkAttribution;
 
 + (void)requestTrackingAuthorizationWithCompletionHandler:(void (^)(NSUInteger status))completion;
+
+- (void)getAttributionInfo:(void (^)(NSMutableDictionary* attributionInfo))completion;
 @end
 //
 // Created by Tenjin
@@ -181,18 +183,6 @@ andDeferredDeeplink:(NSURL *)url
 @interface TenjinSDK (TopOnILRD)
 + (void)topOnImpressionFromDict:(NSDictionary *)adImpression;
 + (void)topOnImpressionFromJSON:(NSString *)jsonString;
-@end
-//
-// Created by Tenjin on 2019-05-17.
-// Copyright (c) 2019 Tenjin. All rights reserved.
-//
-
-#import "TenjinSDK.h"
-#import <Foundation/Foundation.h>
-
-@interface TenjinSDK (MoPubILRD)
-+ (void)subscribeMoPubImpressions;
-+ (void)mopubImpressionFromJSON:(NSString *)jsonString;
 @end
 //
 // Created by Tenjin

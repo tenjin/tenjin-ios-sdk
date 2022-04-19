@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TenjinSDK"
-  s.version      = "1.12.12"
+  s.version      = "1.12.13"
   s.summary      = "TenjinSDK"
   s.description  = <<-DESC
                    Tenjin is a unique growth infrastructure platform that helps you streamline your mobile marketing.
