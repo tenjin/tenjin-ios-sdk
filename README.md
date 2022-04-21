@@ -482,15 +482,28 @@ This feature allows you to receive events which correspond to your ad revenue th
 
 # <a id="attributionInfo"></a>Attribution Info
 
+Tenjin supports retrieving of attributes, which are required for developers to get analytics installation id (previously known as tenjin reference id). This parameter can be used when there is no advertising id.
+
+Below are the attribution info parameters, that are returned when the attribution info callback is used:
+
+| Parameter               | Description                   | Example of returned value            |
+| ----------------------- | ----------------------------- | ------------------------------------ |
+| advertising\_id         | Advertising ID of the device  | 11de7924d076456d9a203c8dee56632a     |
+| ad\_network             | Ad network of the campaign    | organic                              |
+| campaign\_id            | Tenjin campaign ID            | 6ebd3332-68f8-4919-875c-73fe6780d4f7 |
+| campaign\_name          | Tenjin campaign name          | Organic                              |
+
+**NOTE:** Please note that those values are returned only if they are available.
+
 ```objectivec
 [[TenjinSDK sharedInstance] getAttributionInfo:^(NSMutableDictionary *attributionInfo) {
     NSLog(@"TenjinSDK getAttributionInfo result: %@", attributionInfo);
     // LOG:
-    // { 
-    //		"advertising_id": "xxxxxxxxxxxxxxxxxxxxxxxx",
+    // {
+    //		"advertising_id": "11de7924d076456d9a203c8dee56632a",
     //		"ad_network": "organic",
-    //		"campaign_id": "6ebd3333-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-    //		"campaign_name": "Organic" 
+    //		"campaign_id": "6ebd3332-68f8-4919-875c-73fe6780d4f7",
+    //		"campaign_name": "Organic"
     // }
 }];    
 ```
