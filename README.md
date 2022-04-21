@@ -29,11 +29,6 @@ The native iOS SDK for Tenjin. To learn more about Tenjin and our product offeri
 - [Server-to-server integration][13]
 - [App Subversion][14]
 - [Impression Level Ad Revenue Integration][15]
-  - [AppLovin Impression Level Ad Revenue Integration][16]
-  - [IronSource Impression Level Ad Revenue Integration][17]
-  - [HyperBid Impression Level Ad Revenue Integration][18]
-  - [AdMob Impression Level Ad Revenue Integration][19]
-  - [Topon Impression Level Ad Revenue Integration][20]
 - [Attribution Info][42]
 
 # <a id="sdk-integration"></a> SDK Integration
@@ -438,48 +433,6 @@ This feature allows you to receive events which correspond to your ad revenue th
 
 :warning: **NOTE: ILRD is a paid feature, so please contact your Tenjin account manager to discuss the price at first before sending ILRD events.**
 
-## <a id="applovin"></a>AppLovin Impression Level Ad Revenue Integration
-
-> *NOTE,* Please ensure you have the latest AppLovin iOS SDK installed (\> 11.0.0)
-
-```objectivec
-[TenjinSDK init:@"TENJIN_API_KEY"];
-[TenjinSDK subscribeAppLovinImpressions];
-```
-
-## <a id="ironsource"></a>IronSource Impression Level Ad Revenue Integration
-
-> *NOTE*, Please ensure you have the latest IronSource iOS SDK installed (\> 7.1.14)
-
-```objectivec
-[TenjinSDK init:@"TENJIN_API_KEY"];
-[TenjinSDK subscribeIronSourceImpressions];
-```
-
-## <a id="hyperbid"></a>HyperBid Impression Level Ad Revenue Integration
-
-> *NOTE,* Please ensure you have the latest HyperBid iOS SDK installed (\> 5.7.79)
-
-```objectivec
-[TenjinSDK hyperBidImpressionFromDict:(NSDictionary)adImpression];
-```
-
-## <a id="admob"></a>AdMob Impression Level Ad Revenue Integration
-
-> *NOTE*, Please ensure you have the latest Google-Mobile-Ads-SDK iOS SDK installed (\> 8.10.0)
-
-```objectivec
-[TenjinSDK handleAdMobILRD:(GADBannerView)bannerView :(GADAdValue)value];
-```
-
-## <a id="topon"></a>TopOn Impression Level Ad Revenue Integration
-
-> *NOTE*, Please ensure you have the latest AnyThinkiOS iOS SDK installed (\> 5.7.99)
-
-```objectivec
-[TenjinSDK topOnImpressionFromDict:(NSDictionary)adImpression];
-```
-
 # <a id="attributionInfo"></a>Attribution Info
 
 ```objectivec
@@ -503,11 +456,6 @@ This feature allows you to receive events which correspond to your ad revenue th
 [13]:	#server-to-server
 [14]:	#subversion
 [15]:	#ilrd
-[16]:	#applovin
-[17]:	#ironsource
-[18]:	#hyperbid
-[19]:	#admob
-[20]:	#topon
 [21]:	https://github.com/tenjin/tenjin-ios-sdk/releases
 [22]:	https://tenjin.io/dashboard/organizations
 [23]:	https://github.com/tenjin/tenjin-ios-sdk-swift
