@@ -342,68 +342,10 @@ Custom events can also pass an `NSString` `eventValue`. Tenjin will use this `ev
 
 # <a id="deferred-deeplink"></a>Deferred Deeplink
 
-Tenjin supports the ability to direct users to a specific part of your app after a new attributed installation via Tenjin's campaign tracking URLs. You can utilize the `registerDeepLinkHandler` handler to access the deferred deeplink through `params[@"deferred_deeplink_url"]` that is passed to the Tenjin campaign tracking URLs. To test, you can follow the instructions found <a href="http://help.tenjin.io/t/how-do-i-use-and-test-deferred-deeplinks-with-my-campaigns/547">here</a>.
+Tenjin supports the ability to direct users to a specific part of your app after a new attributed installation via Tenjin's campaign tracking URLs. 
 
-```objectivec
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    //initialize the Tenjin SDK like you normally would for attribution
-    [TenjinSDK init:@"<API_KEY>"];
-    [TenjinSDK connect]
+:warning: **NOTE: Deferred Deeplink is a paid feature, so please contact your Tenjin account manager if you are interested in.**
 
-    //If you want to utilize the deeplink capabilities in Tenjin, utilize the registerDeepLinkHandler to retrieve the deferred_deeplink_url from the params NSDictionary object
-    [[TenjinSDK sharedInstance] registerDeepLinkHandler:^(NSDictionary *params, NSError *error) {
-        if([params[@"clicked_tenjin_link"] boolValue]){
-            if([params[@"is_first_session"] boolValue]){
-
-                //use the params to retrieve deferred_deeplink_url through params[@"deferred_deeplink_url"]
-                //use the deferred_deeplink_url to direct the user to a specific part of your app
-
-            } else{
-
-            }
-        }
-    }];
-}
-```
-
-Below are the parameters, if available, that returned to the deferred deeplink callback:
-
-| Parameter             | Description                                                      |
-|-----------------------|------------------------------------------------------------------|
-| advertising\_id        | IDFA of the device                                               |
-| developer\_device\_id   | IDFV of the device                                               |
-| ad\_network            | Ad Network of the campaign                                       |
-| campaign\_id           | Tenjin campaign ID                                               |
-| campaign\_name         | Tenjin campaign name                                             |
-| site\_id               | Site ID of source app                                            |
-| deferred\_deeplink\_url | The deferred deep-link of the campaign                           |
-| clicked\_tenjin\_link   | Boolean representing if the device was tracked by Tenjin         |
-| is\_first\_session      | Boolean representing if this is the first session for the device |
-
-
-You can also use the v1.7.2+ SDK for handling post-install logic using the `params` provided in this `registerDeepLinkHandler`. For example, if you have a paid app, you can register your paid app install in the following way:
-
-```objectivec
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    //initialize the Tenjin SDK like you normally would for attribution
-    [TenjinSDK init:@"<API_KEY>"];
-    [TenjinSDK connect]
-
-    //If you want to utilize the deeplink capabilities in Tenjin, utilize the registerDeepLinkHandler to retrieve the deferred_deeplink_url from the params NSDictionary object
-    [[TenjinSDK sharedInstance] registerDeepLinkHandler:^(NSDictionary *params, NSError *error) {
-
-          if([params[@"is_first_session"] boolValue]){
-              //send paid app price and revenue to Tenjin
-
-          } else{
-
-          }
-
-    }];
-}
-```
 # <a id="server-to-server"></a>Server-to-server integration
 
 Tenjin offers server-to-server integration. If you want to access to the documentation, please send email to support@tenjin.com.
@@ -437,29 +379,7 @@ This feature allows you to receive events which correspond to your ad revenue th
 
 Tenjin supports retrieving of attributes, which are required for developers to get analytics installation id (previously known as tenjin reference id). This parameter can be used when there is no advertising id.
 
-Below are the attribution info parameters, that are returned when the attribution info callback is used:
-
-| Parameter               | Description                   | Example of returned value            |
-| ----------------------- | ----------------------------- | ------------------------------------ |
-| advertising\_id         | Advertising ID of the device  | 11de7924d076456d9a203c8dee56632a     |
-| ad\_network             | Ad network of the campaign    | organic                              |
-| campaign\_id            | Tenjin campaign ID            | 6ebd3332-68f8-4919-875c-73fe6780d4f7 |
-| campaign\_name          | Tenjin campaign name          | Organic                              |
-
-**NOTE:** Please note that those values are returned only if they are available.
-
-```objectivec
-[[TenjinSDK sharedInstance] getAttributionInfo:^(NSMutableDictionary *attributionInfo) {
-    NSLog(@"TenjinSDK getAttributionInfo result: %@", attributionInfo);
-    // LOG:
-    // {
-    //		"advertising_id": "11de7924d076456d9a203c8dee56632a",
-    //		"ad_network": "organic",
-    //		"campaign_id": "6ebd3332-68f8-4919-875c-73fe6780d4f7",
-    //		"campaign_name": "Organic"
-    // }
-}];    
-```
+:warning: **NOTE: Attribution Info is a paid feature, so please contact your Tenjin account manager if you are interested in.**
 
 [1]:	#sdk-integration
 [2]:	#attrackingmanager
