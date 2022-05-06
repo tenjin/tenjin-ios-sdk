@@ -252,3 +252,8 @@ v1.12.14
 ----
 - Bug fix for non-numeric values in publisher_revenue_decimal and publisher_revenue_micro ILRD parameters
 - Deprecate support for mopub ILRD
+
+v1.12.15
+----
+- Bug fix for safely accessing stringValue property in ILRD integrations
+    - Fix resolves issues in ILRD networks AppLovin, AdMob, IronSource
