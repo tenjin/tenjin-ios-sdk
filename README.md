@@ -398,7 +398,7 @@ Tenjin supports retrieving of attributes, which are required for developers to g
 [15]:	#ilrd
 [21]:	https://github.com/tenjin/tenjin-ios-sdk/releases
 [22]:	https://tenjin.io/dashboard/organizations
-[23]:	https://github.com/tenjin/tenjin-ios-sdk-swift
+[23]:	https://github.com/tenjin/tenjin-ios-sdk-swift-demo
 [24]:	https://developer.apple.com/app-store/user-privacy-and-data-use/
 [25]:	https://docs.tenjin.com/en/tracking/sk_adnetwork.html#cv
 [26]:	https://developer.apple.com/documentation/storekit/skadnetwork/receiving_ad_attributions_and_postbacks
