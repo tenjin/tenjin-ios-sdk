@@ -1,6 +1,6 @@
 # Summary
 
-The native iOS SDK for Tenjin. To learn more about Tenjin and our product offering, please visit https://www.tenjin.com.
+The Tenjin iOS SDK allows users to track events and installs in their iOS apps. To learn more about Tenjin and our product offering, please visit https://www.tenjin.com.
 
 - Please see our <a href="https://github.com/tenjin/tenjin-ios-sdk/blob/master/RELEASE_NOTES.md">Release Notes</a> to see detailed version history.
 - For Unity-specific instructions, please visit https://github.com/tenjin/tenjin-unity-sdk.
