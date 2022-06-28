@@ -61,6 +61,11 @@ If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` 
 [TenjinSDK connect];
 ```
 
+8. To enable Tenjin iOS SDK debug logs add:
+```objectivec
+  [TenjinSDK debugLogs];
+```
+
 Here's an example of what your integration should look like in your `AppDelegate.m` file:
 
 ```objectivec
