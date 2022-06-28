@@ -283,21 +283,21 @@ NSArray *optOutParams = @[@"country", @"timezone", @"language"];
 | Param  | Description | Reference |
 | ------------- | ------------- | ------------- |
 | ip\_address  | IP Address | |
-| advertising\_id  | Device Advertising ID | [iOS][28] |
-| developer\_device\_id | ID for Vendor | [iOS][29] |
-| limit\_ad\_tracking  | limit ad tracking enabled | [iOS][30] |
+| advertising\_id  | Device Advertising ID | [iOS][24] |
+| developer\_device\_id | ID for Vendor | [iOS][25] |
+| limit\_ad\_tracking  | limit ad tracking enabled | [iOS][26] |
 | platform | platform  | iOS |
-| iad | Apple Search Ad parameters | [iOS][31] |
-| os\_version | operating system version | [iOS][32] |
-| device | device name | [iOS (hw.machine)][33] |
-| device\_model | device model | [iOS (hw.model)][34] |
-| device\_model\_name | device machine  | [iOS (hw.model)][35] |
-| device\_cpu | device cpu name | [iOS (hw.cputype)][36] |
-| os\_version\_release | operating system version | [iOS][37] |
-| build\_id | build ID | [iOS (kern.osversion)][38] |
-| locale | device locale | [iOS][39] |
-| country | locale country | [iOS][40] |
-| timezone | timezone | [iOS][41] |
+| iad | Apple Search Ad parameters | [iOS][27] |
+| os\_version | operating system version | [iOS][28] |
+| device | device name | [iOS (hw.machine)][29] |
+| device\_model | device model | [iOS (hw.model)][30] |
+| device\_model\_name | device machine  | [iOS (hw.model)][31] |
+| device\_cpu | device cpu name | [iOS (hw.cputype)][32] |
+| os\_version\_release | operating system version | [iOS][33] |
+| build\_id | build ID | [iOS (kern.osversion)][34] |
+| locale | device locale | [iOS][35] |
+| country | locale country | [iOS][36] |
+| timezone | timezone | [iOS][37] |
 
 
 # <a id="purchase-events"></a>Purchase Events
