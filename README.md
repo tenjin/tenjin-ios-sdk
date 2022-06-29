@@ -345,6 +345,11 @@ You can use these to pass Tenjin custom interactions with your app to tie this t
 
 Custom events can also pass an `NSString` `eventValue`. Tenjin will use this `eventValue` as a count or sum for all custom events with the same `eventName`. The `eventValue` MUST BE AN INTEGER. If the `eventValue` is not an integer, we will not send the event.
 
+```objectivec
+//send a particular event for when someone swipes and an event value on a part of your app
+[TenjinSDK sendEventWithName:@"swipe_right" andEventValue:@"1"];
+```
+
 # <a id="deferred-deeplink"></a>Deferred Deeplink
 
 Tenjin supports the ability to direct users to a specific part of your app after a new attributed installation via Tenjin's campaign tracking URLs. 
