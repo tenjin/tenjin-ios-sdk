@@ -51,11 +51,41 @@ If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` 
 4. Include the linker flags `-ObjC` under your Build Settings
 ![Dashboard][image-2]
 
-Step 5 for Objective-C projects
+## Steps for Objective-C projects
 
 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
 
-Step 5 for Swift projects
+6. Get your `API_KEY` from your [Tenjin Organization tab][18].
+
+7. a. In your `didFinishLaunchingWithOptions` method add:
+```objectivec
+[TenjinSDK initialize:@"<API_KEY>"];
+[TenjinSDK connect];
+```
+
+8. To enable Tenjin iOS SDK debug logs add:
+```objectivec
+  [TenjinSDK debugLogs];
+```
+
+Here's an example of what your integration in Objective-C projects should look like in your `AppDelegate.m` file:
+
+```objectivec
+#import "TenjinSDK.h"
+
+@implementation TJNAppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [TenjinSDK initialize:@"<API_KEY>"];
+    [TenjinSDK connect];
+
+    //All your other stuff
+    ...
+}
+```
+
+## Steps for Swift projects
 
 5. Add Objective-C Bridging Header file for swift projects,
    a. Create a header file
@@ -74,16 +104,6 @@ Step 5 for Swift projects
 
 6. Get your `API_KEY` from your [Tenjin Organization tab][18].
 
-Step 7 for Objective-C projects
-
-7. a. In your `didFinishLaunchingWithOptions` method add:
-```objectivec
-[TenjinSDK initialize:@"<API_KEY>"];
-[TenjinSDK connect];
-```
-
-Step 7 for Swift projects
-
 7. a. In your `didFinishLaunchingWithOptions` method add:
 ```swift
 TenjinSDK.getInstance("<API_KEY>")
@@ -91,35 +111,9 @@ TenjinSDK.connect()
 ```
 If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app][19]
 
-Step 8 for Objective-C projects
-
-8. To enable Tenjin iOS SDK debug logs add:
-```objectivec
-  [TenjinSDK debugLogs];
-```
-
-Step 8 for Swift projects
-
 8. To enable Tenjin iOS SDK debug logs add:
 ```swift
   TenjinSDK.debugLogs();
-```
-
-Here's an example of what your integration in Objective-C projects should look like in your `AppDelegate.m` file:
-
-```objectivec
-#import "TenjinSDK.h"
-
-@implementation TJNAppDelegate
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [TenjinSDK initialize:@"<API_KEY>"];
-    [TenjinSDK connect];
-
-    //All your other stuff
-    ...
-}
 ```
 
 Here's an example of what your integration in Swift projects should look like in your `AppDelegate.swift` file:
