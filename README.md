@@ -95,7 +95,7 @@ Here's an example of what your integration in Objective-C projects should look l
            - Under “Targets” -> Select the app target -> Click Next
    b. In the header file - “YourProjectName-Bridging-Header.h”
      i. Add the following,
-        ```swift
+        ```objectivec
         #import "TenjinSDK.h"
         ```
    c. Go to the app target and under “Build Settings” 
@@ -118,7 +118,7 @@ If you are using Swift 5, use the `getInstance()` method instead of `init()`.  S
 
 Here's an example of what your integration in Swift projects should look like in your `AppDelegate.swift` file:
 
-```objectivec
+```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     TenjinSDK.getInstance("<API_KEY>")
