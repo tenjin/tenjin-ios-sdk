@@ -37,7 +37,7 @@ If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` 
 
 1. Download the latest SDK release [here][17].
 
-2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project. Note: If you are testing with 32-bit iOS Simulator devices (i386), you will need to use `libTenjinSDKUniversal.a` instead of `libTenjinSDK.a`.
+2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project under build phases -> "Link Binary With Libraries". Note: If you are testing with 32-bit iOS Simulator devices (i386), you will need to use `libTenjinSDKUniversal.a` instead of `libTenjinSDK.a`.
 
 3. Add the following Frameworks to your project:
 	  1. `AdServices.framework`
@@ -50,6 +50,8 @@ If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` 
 
 4. Include the linker flags `-ObjC` under your Build Settings
 ![Dashboard][image-2]
+
+## Steps for Objective-C projects
 
 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
 
@@ -66,7 +68,7 @@ If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` 
   [TenjinSDK debugLogs];
 ```
 
-Here's an example of what your integration should look like in your `AppDelegate.m` file:
+Here's an example of what your integration in Objective-C projects should look like in your `AppDelegate.m` file:
 
 ```objectivec
 #import "TenjinSDK.h"
@@ -83,7 +85,47 @@ Here's an example of what your integration should look like in your `AppDelegate
 }
 ```
 
+## Steps for Swift projects
+
+5. Add Objective-C Bridging Header file for swift projects,
+   a. Create a header file
+     i. File -> New -> File -> “Sources” 
+     ii. Choose “Header” File - > Click Next
+     iii. The header file name should “YourProjectName-Bridging-Header”
+           - Under “Targets” -> Select the app target -> Click Next
+   b. In the header file - “YourProjectName-Bridging-Header.h”
+     i. Add the following,
+        ```objectivec
+        #import "TenjinSDK.h"
+        ```
+   c. Go to the app target and under “Build Settings” 
+      i. Go to the section “Swift Compiler - General”
+      ii. Go to the sub-section “Objective-C Bridging Header” and drag the header file - “YourProjectName-Bridging-Header.h” to the field.
+
+6. Get your `API_KEY` from your [Tenjin Organization tab][18].
+
+7. a. In your `didFinishLaunchingWithOptions` method add:
+```swift
+TenjinSDK.getInstance("<API_KEY>")
+TenjinSDK.connect()
+```
 If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app][19]
+
+8. To enable Tenjin iOS SDK debug logs add:
+```swift
+  TenjinSDK.debugLogs();
+```
+
+Here's an example of what your integration in Swift projects should look like in your `AppDelegate.swift` file:
+
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    // Override point for customization after application launch.
+    TenjinSDK.getInstance("<API_KEY>")
+    TenjinSDK.connect() 
+    return true
+}
+```
 
 **NOTE:** Please ensure you implement this code on every `didFinishLaunchingWithOptions`, not only on the first app open of the app. If we notice that you don't follow our recommendation, we can't give you the proper support or your account might be under suspension.
 
