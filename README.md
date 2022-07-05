@@ -88,19 +88,27 @@ Here's an example of what your integration in Objective-C projects should look l
 ## Steps for Swift projects
 
 5. Add Objective-C Bridging Header file for swift projects,
-   a. Create a header file
-     i. File -> New -> File -> “Sources” 
-     ii. Choose “Header” File - > Click Next
-     iii. The header file name should “YourProjectName-Bridging-Header”
-           - Under “Targets” -> Select the app target -> Click Next
-   b. In the header file - “YourProjectName-Bridging-Header.h”
-     i. Add the following,
-        ```objectivec
-        #import "TenjinSDK.h"
-        ```
-   c. Go to the app target and under “Build Settings” 
-      i. Go to the section “Swift Compiler - General”
-      ii. Go to the sub-section “Objective-C Bridging Header” and drag the header file - “YourProjectName-Bridging-Header.h” to the field.
+    <ol type="a">
+      <li>Create a header file
+        <ol type="i">
+          <li>File -> New -> File -> “Sources”</li>
+          <li>Choose “Header” File - > Click Next</li>
+          <li>The header file name should “YourProjectName-Bridging-Header” -> Under “Targets” -> Select the app target -> Click "Next"</li>
+           </li>
+        </ol>
+      </li>
+      <li>In the header file - “YourProjectName-Bridging-Header.h”
+        <ol type="i">
+          <li>Add - `#import "TenjinSDK.h"`</li>
+        </ol>
+      </li>
+      <li>Go to the app target and under “Build Settings”
+        <ol type="i">
+          <li>Go to the section “Swift Compiler - General”</li>
+          <li>Go to the sub-section “Objective-C Bridging Header” and drag the header file - “YourProjectName-Bridging-Header.h” to the field.</li>
+        </ol>
+      </li>
+    </ol>
 
 6. Get your `API_KEY` from your [Tenjin Organization tab][18].
 
