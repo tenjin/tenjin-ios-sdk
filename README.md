@@ -57,7 +57,7 @@ If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` 
 
 6. Get your `API_KEY` from your [Tenjin Organization tab][18].
 
-7. a. In your `didFinishLaunchingWithOptions` method add:
+7. In your `didFinishLaunchingWithOptions` method add:
 ```objectivec
 [TenjinSDK initialize:@"<API_KEY>"];
 [TenjinSDK connect];
@@ -104,7 +104,7 @@ Here's an example of what your integration in Objective-C projects should look l
 
 6. Get your `API_KEY` from your [Tenjin Organization tab][18].
 
-7. a. In your `didFinishLaunchingWithOptions` method add:
+7. In your `didFinishLaunchingWithOptions` method add:
 ```swift
 TenjinSDK.getInstance("<API_KEY>")
 TenjinSDK.connect()
@@ -129,8 +129,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 **NOTE:** Please ensure you implement this code on every `didFinishLaunchingWithOptions`, not only on the first app open of the app. If we notice that you don't follow our recommendation, we can't give you the proper support or your account might be under suspension.
 
-7. b. Alternate initialization to handle deep links from other services. (DO NOT USE 7a and 7b. You need to use only one.)
-If you use other services to produce deferred deep links, you can pass Tenjin those deep links to handle the attribution logic with your Tenjin enabled deep links.
+In the step 7, you can also try alternate initialization to handle deep links from other services. If you use other services to produce deferred deep links, you can pass Tenjin those deep links to handle the attribution logic with your Tenjin enabled deep links.
 
 ```objectivec
 #import "TenjinSDK.h"
