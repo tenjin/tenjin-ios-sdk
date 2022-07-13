@@ -257,3 +257,8 @@ v1.12.15
 ----
 - Bug fix for safely accessing stringValue property in ILRD integrations
     - Fix resolves issues in ILRD networks AppLovin, AdMob, IronSource
+
+v1.12.16
+----
+- Enhanced error handling for `getAttributionInfo` method. Completion handler now returns dictionary together with error
+- Added retry counter for `getAttributionInfo` method

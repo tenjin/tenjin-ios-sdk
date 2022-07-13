@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.12.15
+//  Version 1.12.16
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -170,7 +170,8 @@ andDeferredDeeplink:(NSURL *)url
 
 + (void)requestTrackingAuthorizationWithCompletionHandler:(void (^)(NSUInteger status))completion;
 
-- (void)getAttributionInfo:(void (^)(NSMutableDictionary* attributionInfo))completion;
+- (void)getAttributionInfo:(void (^)(NSDictionary *attributionInfo, NSError *error))completionHandler;
+
 @end
 //
 // Created by Tenjin
