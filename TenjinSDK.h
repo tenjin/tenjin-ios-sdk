@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.12.16
+//  Version 1.12.17
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -146,10 +146,13 @@ andDeferredDeeplink:(NSURL *)url
 + (void)appendAppSubversion:(NSNumber *)subversion;
 
 // deprecated
-+ (void)updateSkAdNetworkConversionValue:(int)conversionValue __deprecated_msg("use `updateConversionValue:`");
++ (void)updateSkAdNetworkConversionValue:(int)conversionValue __deprecated_msg("use `updatePostbackConversionValue:`");
+
+//deprecated
++ (void)updateConversionValue:(int)conversionValue __deprecated_msg("use `updatePostbackConversionValue:`");
 
 // Update conversion value
-+ (void)updateConversionValue:(int)conversionValue;
++ (void)updatePostbackConversionValue:(int)conversionValue;
 
 #pragma mark Util
 
@@ -166,7 +169,8 @@ andDeferredDeeplink:(NSURL *)url
 + (void)setValue:(NSString *)value
           forKey:(NSString *)key;
 
-+ (void)registerAppForAdNetworkAttribution;
+//deprecated
++ (void)registerAppForAdNetworkAttribution __deprecated_msg("use `updatePostbackConversionValue:`");
 
 + (void)requestTrackingAuthorizationWithCompletionHandler:(void (^)(NSUInteger status))completion;
 

@@ -8,7 +8,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 
 ### Notes:
 
-  - Xcode 12 requirement, if you’re using iOS SDK v1.12.0 and higher.
+  - Xcode 13 requirement, if you’re using iOS SDK v1.12.17 and higher.
   - For AppTrackingTransparency, be sure to update your project `.plist` file and add `Privacy - Tracking Usage Description` <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/nsusertrackingusagedescription" target="_new">(NSUserTrackingUsageDescription)</a> along with the text message you want to display to users. This library is only available in iOS 14.0+.
   - For <a href="https://developer.apple.com/documentation/iad/setting_up_apple_search_ads_attribution" target="_new">Apple Search Ads Attribution</a> support, please be sure to upgrade to v1.12.6+ and add the `AdServices.framework` library. This library is only available in iOS 14.3+.
 

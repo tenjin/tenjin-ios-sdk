@@ -262,3 +262,7 @@ v1.12.16
 ----
 - Enhanced error handling for `getAttributionInfo` method. Completion handler now returns dictionary together with error
 - Added retry counter for `getAttributionInfo` method
+
+v1.12.17
+----
+- Deprecated `registerAppForAdNetworkAttribution` and `updateConversionValue` for iOS 15.4 and later. Added new `updatePostbackConversionValue` method
