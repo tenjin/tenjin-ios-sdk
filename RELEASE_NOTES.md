@@ -266,3 +266,8 @@ v1.12.16
 v1.12.17
 ----
 - Deprecated `registerAppForAdNetworkAttribution` and `updateConversionValue` for iOS 15.4 and later. Added new `updatePostbackConversionValue` method
+
+v1.12.18
+----
+- Set `AdServices` framework as optional to avoid crashes on iOS 14 and below
+- Improve `getAttributionInfo` retry logic
