@@ -55,11 +55,11 @@ If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` 
 
 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
 
-6. Get your `API_KEY` from your [Tenjin Organization tab][18].
+6. Get your `SDK_KEY` from your [Tenjin Organization tab][18].
 
 7. In your `didFinishLaunchingWithOptions` method add:
 ```objectivec
-[TenjinSDK initialize:@"<API_KEY>"];
+[TenjinSDK initialize:@"<SDK_KEY>"];
 [TenjinSDK connect];
 ```
 
@@ -77,7 +77,7 @@ Here's an example of what your integration in Objective-C projects should look l
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [TenjinSDK initialize:@"<API_KEY>"];
+    [TenjinSDK initialize:@"<SDK_KEY>"];
     [TenjinSDK connect];
 
     //All your other stuff
@@ -110,11 +110,11 @@ Here's an example of what your integration in Objective-C projects should look l
       </li>
     </ol>
 
-6. Get your `API_KEY` from your [Tenjin Organization tab][18].
+6. Get your `SDK_KEY` from your [Tenjin Organization tab][18].
 
 7. In your `didFinishLaunchingWithOptions` method add:
 ```swift
-TenjinSDK.getInstance("<API_KEY>")
+TenjinSDK.getInstance("<SDK_KEY>")
 TenjinSDK.connect()
 ```
 If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app][19]
@@ -129,7 +129,7 @@ Here's an example of what your integration in Swift projects should look like in
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    TenjinSDK.getInstance("<API_KEY>")
+    TenjinSDK.getInstance("<SDK_KEY>")
     TenjinSDK.connect() 
     return true
 }
@@ -147,7 +147,7 @@ In the step 7, you can also try alternate initialization to handle deep links fr
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-    [TenjinSDK initialize:@"<API_KEY>"];
+    [TenjinSDK initialize:@"<SDK_KEY>"];
 
     //get your deep link from your other 3rd party service
     NSURL *url = [NSURL withString: @"your_deep_link"];
@@ -183,7 +183,7 @@ You can also still call Tenjin `connect()`, without using ATTrackingManager, onl
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-    [TenjinSDK initialize:@"<API_KEY>"];
+    [TenjinSDK initialize:@"<SDK_KEY>"];
 
     if (@available(iOS 14, *)) {
         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
@@ -230,7 +230,7 @@ updateConversionValue(\_:) 6 bit value should correspond to the in-app event and
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-    [TenjinSDK initialize:@"<API_KEY>"];
+    [TenjinSDK initialize:@"<SDK_KEY>"];
 
     //
     // This will call [SKAdNetwork registerAppForAdNetworkAttribution]
@@ -275,7 +275,7 @@ To opt-in/opt-out:
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-  [TenjinSDK initialize:@"<API_KEY>"];
+  [TenjinSDK initialize:@"<SDK_KEY>"];
 
   if ([self checkOptInValue]) {
       [TenjinSDK optIn];
@@ -309,7 +309,7 @@ If you intend to use Google Ads, you will also need to add: `platform`, `os_vers
 If you want to only get specific device-related parameters, use `OptInParams()`. In example below, we will only these device-related parameters: `ip_address`, `advertising_id`, `developer_device_id`, `limit_ad_tracking`, and `iad`:
 
 ```objectivec
-[TenjinSDK initialize:@"<API_KEY>"];
+[TenjinSDK initialize:@"<SDK_KEY>"];
 
 NSArray *optInParams = @[@"ip_address", @"advertising_id", @"developer_device_id", @"limit_ad_tracking", @"iad"];
 [TenjinSDK optInParams:optInParams];
@@ -319,7 +319,7 @@ NSArray *optInParams = @[@"ip_address", @"advertising_id", @"developer_device_id
 
 If you want to send ALL parameters except specific device-related parameters, use `OptOutParams()`.  In the example below, we will send ALL device-related parameters except: `locale`, `timezone`, and `build_id` parameters.
 ```objectivec
-[TenjinSDK initialize:@"<API_KEY>"];
+[TenjinSDK initialize:@"<SDK_KEY>"];
 
 NSArray *optOutParams = @[@"country", @"timezone", @"language"];
 [TenjinSDK optOutParams:optOutParams];
@@ -416,7 +416,7 @@ If you are running A/B tests and want to report the differences, we can append a
 This data will appear within DataVault, where you will be able to run reports using the app subversion values.
 
 ```objectivec
-[TenjinSDK initialize:@"<API_KEY>"];
+[TenjinSDK initialize:@"<SDK_KEY>"];
 [TenjinSDK appendAppSubversion:@8888];
 [TenjinSDK connect];
 ```
