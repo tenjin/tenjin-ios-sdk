@@ -46,7 +46,7 @@ If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` 
 	  4. `iAd.framework`
 	  5. `StoreKit.framework`
 
-![Dashboard][image-1]
+    ![Dashboard][image-1]
 
 4. Include the linker flags `-ObjC` under your Build Settings
 ![Dashboard][image-2]
@@ -55,35 +55,36 @@ If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` 
 
 5. Go to your AppDelegate file, by default `AppDelegate.m`, and `#import "TenjinSDK.h"`.
 
-6. Get your `SDK_KEY` from your [Tenjin Organization tab][18].
+6. Get your `SDK_KEY` from your app page. Note: `SDK_KEY` is unique for each of your app. You can create up to 3 keys for the same app.
+   ![Dashboard][image-4]
 
 7. In your `didFinishLaunchingWithOptions` method add:
-```objectivec
-[TenjinSDK initialize:@"<SDK_KEY>"];
-[TenjinSDK connect];
-```
-
-8. To enable Tenjin iOS SDK debug logs add:
-```objectivec
-  [TenjinSDK debugLogs];
-```
-
-Here's an example of what your integration in Objective-C projects should look like in your `AppDelegate.m` file:
-
-```objectivec
-#import "TenjinSDK.h"
-
-@implementation TJNAppDelegate
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+    ```objectivec
     [TenjinSDK initialize:@"<SDK_KEY>"];
     [TenjinSDK connect];
+    ```
 
-    //All your other stuff
-    ...
-}
-```
+8. To enable Tenjin iOS SDK debug logs add:
+    ```objectivec
+      [TenjinSDK debugLogs];
+    ```
+
+    Here's an example of what your integration in Objective-C projects should look like in your `AppDelegate.m` file:
+
+    ```objectivec
+    #import "TenjinSDK.h"
+    
+    @implementation TJNAppDelegate
+    
+    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+    {
+        [TenjinSDK initialize:@"<SDK_KEY>"];
+        [TenjinSDK connect];
+    
+        //All your other stuff
+        ...
+    }
+    ```
 
 ## Steps for Swift projects
 
@@ -113,27 +114,28 @@ Here's an example of what your integration in Objective-C projects should look l
 6. Get your `SDK_KEY` from your [Tenjin Organization tab][18].
 
 7. In your `didFinishLaunchingWithOptions` method add:
-```swift
-TenjinSDK.getInstance("<SDK_KEY>")
-TenjinSDK.connect()
-```
-If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app][19]
-
-8. To enable Tenjin iOS SDK debug logs add:
-```swift
-  TenjinSDK.debugLogs();
-```
-
-Here's an example of what your integration in Swift projects should look like in your `AppDelegate.swift` file:
-
-```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    ```swift
     TenjinSDK.getInstance("<SDK_KEY>")
-    TenjinSDK.connect() 
-    return true
-}
-```
+    TenjinSDK.connect()
+    ```
+    If you are using Swift 5, use the `getInstance()` method instead of `init()`.  See our [sample Swift app][19].
+
+
+9. To enable Tenjin iOS SDK debug logs add:
+    ```swift
+      TenjinSDK.debugLogs();
+    ```
+
+    Here's an example of what your integration in Swift projects should look like in your `AppDelegate.swift` file:
+
+    ```swift
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        TenjinSDK.getInstance("<SDK_KEY>")
+        TenjinSDK.connect() 
+        return true
+    }
+    ```
 
 **NOTE:** Please ensure you implement this code on every `didFinishLaunchingWithOptions`, not only on the first app open of the app. If we notice that you don't follow our recommendation, we can't give you the proper support or your account might be under suspension.
 
@@ -481,3 +483,4 @@ Tenjin supports retrieving of attributes, which are required for developers to g
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
 [image-3]:	https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png
+[image-4]:	https://s3.amazonaws.com/tenjin-instructions/app_api_key.png
