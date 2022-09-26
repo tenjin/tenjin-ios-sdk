@@ -219,10 +219,10 @@ Apple requires a description for the ATT permission prompt. You need to set the 
 
 ## <a id="skadnetwork-and-conversion-value"></a> SKAdNetwork and Conversion value
 
-As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper methods for `registerAppForAdNetworkAttribution()` and <a href="https://developer.apple.com/documentation/storekit/skadnetwork/3566697-updateconversionvalue">`updateConversionValue(_:)`</a>.
-Our methods will register the equivalent SKAdNetwork methods and also send the conversion values to our servers.
+As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper method for <a href="https://developer.apple.com/documentation/storekit/skadnetwork/3919928-updatepostbackconversionvalue">`updatePostbackConversionValue(_:)`</a>.
+Our method will register the equivalent SKAdNetwork methods and also send the conversion values to our servers.
 
-updateConversionValue(\_:) 6 bit value should correspond to the in-app event and shouldn’t be entered as binary representation but 0-63 integer. Please refer to [this][21] page for how to implement conversion values.
+updatePostbackConversionValue(\_:) 6 bit value should correspond to the in-app event and shouldn’t be entered as binary representation but 0-63 integer. Please refer to [this][21] page for how to implement conversion values.
 
 ```objectivec
 #import "TenjinSDK.h"
@@ -231,23 +231,16 @@ updateConversionValue(\_:) 6 bit value should correspond to the in-app event and
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
     [TenjinSDK initialize:@"<SDK_KEY>"];
-
-    //
-    // This will call [SKAdNetwork registerAppForAdNetworkAttribution]
-    //
-    [TenjinSDK registerAppForAdNetworkAttribution];
-
     [TenjinSDK connect];
 
     //
-    // This will call [SKAdNetwork updateConversionValue: <YOUR 6 bit value>]
+    // This will call [SKAdNetwork updatePostbackConversionValue: <YOUR 6 bit value>]
     // and also send conversion value to our servers.
     //
     // You will need to use a value between 0-63 for <YOUR 6 bit value>.
     //
-    [TenjinSDK updateConversionValue: <YOUR 6 bit value>];
+    [TenjinSDK updatePostbackConversionValue: <YOUR 6 bit value>];
 }
 ```
 
