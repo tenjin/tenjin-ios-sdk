@@ -271,3 +271,7 @@ v1.12.18
 ----
 - Set `AdServices` framework as optional to avoid crashes on iOS 14 and below
 - Improve `getAttributionInfo` retry logic
+
+v1.12.19
+----
+- Added `creative_name` and `site_id` parameters to `getAttributionInfo()` response
