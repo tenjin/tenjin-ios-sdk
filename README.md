@@ -420,7 +420,7 @@ This data will appear within DataVault, where you will be able to run reports us
 
 Tenjin supports the ability to integrate with the Impression Level Ad Revenue (ILRD) feature from,
 - AppLovin
-- IronSource
+- Unity LevelPlay
 - HyperBid
 - AdMob
 - TopOn
