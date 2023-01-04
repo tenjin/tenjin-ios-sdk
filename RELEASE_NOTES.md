@@ -275,3 +275,7 @@ v1.12.18
 v1.12.19
 ----
 - Added `creative_name` and `site_id` parameters to `getAttributionInfo()` response
+
+v1.12.21
+----
+- Added support for `arm64-sim` architecture on `XCFramework`

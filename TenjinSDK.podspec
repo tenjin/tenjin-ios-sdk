@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TenjinSDK"
-  s.version      = "1.12.19"
+  s.version      = "1.12.21"
   s.summary      = "TenjinSDK"
   s.description  = <<-DESC
                    Tenjin is a unique growth infrastructure platform that helps you streamline your mobile marketing.
@@ -37,11 +37,12 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/tenjin/tenjin-ios-sdk.git", :tag => "#{s.version}" }
   s.source_files = "*.{h,m}"
-  s.ios.vendored_library = "libTenjinSDKUniversal.a"
+
+  s.ios.vendored_frameworks = 'TenjinSDK.xcframework'
+  s.preserve_paths = 'TenjinSDK.xcframework'
+  s.vendored_frameworks = "TenjinSDK.xcframework"
 
   s.frameworks = "AdSupport", "AppTrackingTransparency", "iAd", "StoreKit"
   s.weak_frameworks = "AdServices"
-  s.xcconfig = { "OTHER_LINKER_FLAGS" => "-ObjC -all_load" }
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.xcconfig = { "OTHER_LINKER_FLAGS" => "-ObjC -all_load", 'OTHER_LDFLAGS' => '-framework TenjinSDK' }
 end
