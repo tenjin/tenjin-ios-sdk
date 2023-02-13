@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.12.21
+//  Version 1.12.22
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -153,6 +153,21 @@ andDeferredDeeplink:(NSURL *)url
 
 // Update conversion value
 + (void)updatePostbackConversionValue:(int)conversionValue;
+
+// Update conversion value and coarse value (iOS 16.1+)
++ (void)updatePostbackConversionValue:(int)conversionValue
+                          coarseValue:(NSString*)coarseValue;
+
+// Update conversion value, coarse value and lock window (iOS 16.1+)
++ (void)updatePostbackConversionValue:(int)conversionValue
+                          coarseValue:(NSString*)coarseValue
+                           lockWindow:(BOOL)lockWindow;
+
+// Set customer user id to send as parameter on each event request
++ (void)setCustomerUserId:(NSString *)userId;
+
+// Get customer user id saved on the device
++ (NSString *)getCustomerUserId;
 
 #pragma mark Util
 

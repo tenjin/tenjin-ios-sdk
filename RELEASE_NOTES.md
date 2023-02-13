@@ -279,3 +279,8 @@ v1.12.19
 v1.12.21
 ----
 - Added support for `arm64-sim` architecture on `XCFramework`
+
+v1.12.22
+----
+- Added new methods `setCustomerUserId` and `getCustomerUserId`
+- Added new parameters `coarseValue` and `lockWindow` to send on SKAN 4.0 postbacks

@@ -30,6 +30,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 - [App Subversion][14]
 - [Impression Level Ad Revenue Integration][15]
 - [Attribution Info][16]
+- [Customer User ID][17]
 
 # <a id="sdk-integration"></a> SDK Integration
 
@@ -434,6 +435,20 @@ This feature allows you to receive events which correspond to your ad revenue th
 Tenjin supports retrieving of attributes, which are required for developers to get analytics installation id (previously known as tenjin reference id). This parameter can be used when there is no advertising id.
 
 :warning: **NOTE: Attribution Info is a paid feature, so please contact your Tenjin account manager if you are interested in.**
+
+# <a id="customer-user-id"></a>Customer User ID
+You can set and get customer user id to send as a parameter on events.
+
+`setCustomerUserId(userId: "user_id")`
+
+`getCustomerUserId()`
+
+```objectivec
+[TenjinSDK initialize:@"<SDK_KEY>"];
+[TenjinSDK setCustomerUserId:@"user_id"];
+userId = [TenjinSDK getCustomerUserId]; 
+```
+
 
 [1]:	#sdk-integration
 [2]:	#attrackingmanager

@@ -153,6 +153,21 @@ andDeferredDeeplink:(NSURL *)url
 // Update conversion value
 + (void)updatePostbackConversionValue:(int)conversionValue;
 
+// Update conversion value and coarse value (iOS 16.1+)
++ (void)updatePostbackConversionValue:(int)conversionValue
+                          coarseValue:(NSString*)coarseValue;
+
+// Update conversion value, coarse value and lock window (iOS 16.1+)
++ (void)updatePostbackConversionValue:(int)conversionValue
+                          coarseValue:(NSString*)coarseValue
+                           lockWindow:(BOOL)lockWindow;
+
+// Set customer user id to send as parameter on each event request
++ (void)setCustomerUserId:(NSString *)userId;
+
+// Get customer user id saved on the device
++ (NSString *)getCustomerUserId;
+
 #pragma mark Util
 
 + (void)verboseLogs;
