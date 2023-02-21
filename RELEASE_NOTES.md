@@ -284,3 +284,7 @@ v1.12.22
 ----
 - Added new methods `setCustomerUserId` and `getCustomerUserId`
 - Added new parameters `coarseValue` and `lockWindow` to send on SKAN 4.0 postbacks
+
+v1.12.23
+----
+- Fixed `updatePostbackConversionValue(conversionValue)` crash
