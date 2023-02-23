@@ -36,7 +36,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 
 If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 5.
 
-1. Download the latest SDK release [here][17].
+1. Download the latest SDK release [here][38].
 
 2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project under build phases -> "Link Binary With Libraries". Note: If you are testing with 32-bit iOS Simulator devices (i386), you will need to use `libTenjinSDKUniversal.a` instead of `libTenjinSDK.a`.
 
@@ -220,10 +220,20 @@ Apple requires a description for the ATT permission prompt. You need to set the 
 
 ## <a id="skadnetwork-and-conversion-value"></a> SKAdNetwork and Conversion value
 
-As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created wrapper method for <a href="https://developer.apple.com/documentation/storekit/skadnetwork/3919928-updatepostbackconversionvalue">`updatePostbackConversionValue(_:)`</a>.
+As part of <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>, we created a wrapper method for <a href="https://developer.apple.com/documentation/storekit/skadnetwork/3919928-updatepostbackconversionvalue">`updatePostbackConversionValue(_:)`</a>.
 Our method will register the equivalent SKAdNetwork methods and also send the conversion values to our servers.
 
-updatePostbackConversionValue(\_:) 6 bit value should correspond to the in-app event and shouldn’t be entered as binary representation but 0-63 integer. Please refer to [this][21] page for how to implement conversion values.
+`updatePostbackConversionValue(\_:)` 6 bit value should correspond to the in-app event and shouldn’t be entered as binary representation but 0-63 integer. Please refer to [this][21] page for how to implement conversion values.
+
+As of iOS 16.1, which supports SKAdNetwork 4.0, you can now send `coarseValue` (String, with possible variants being "low", "medium" or "high") and `lockWindow` (Boolean) as parameters on the update postback method:
+
+`updatePostbackConversionValue(_ conversionValue: Integer, coarseValue: String)`
+
+`updatePostbackConversionValue(_ conversionValue: Integer, coarseValue: String, lockWindow: Bool)`
+
+-   For iOS version 16.1+ which supports SKAdNetwork 4.0, you can call this method as many times as you want and can make the conversion value lower or higher than the previous value.
+    
+-   For iOS versions lower than 16.1 supporting SKAdnetWork versions lower than 4.0, you can call this method and our SDK will automatically detect the iOS version and update `conversionValue` only.
 
 ```objectivec
 #import "TenjinSDK.h"
@@ -242,6 +252,14 @@ updatePostbackConversionValue(\_:) 6 bit value should correspond to the in-app e
     // You will need to use a value between 0-63 for <YOUR 6 bit value>.
     //
     [TenjinSDK updatePostbackConversionValue: <YOUR 6 bit value>];
+    
+    // For iOS 16.1+ (SKAN 4.0)
+
+    [TenjinSDK updatePostbackConversionValue: <YOUR 6 bit value> coarseValue:@"medium"];
+
+    [TenjinSDK updatePostbackConversionValue: <YOUR 6 bit value> coarseValue:@"medium" lockWindow:true];
+
+}
 }
 ```
 
@@ -466,7 +484,7 @@ userId = [TenjinSDK getCustomerUserId];
 [14]:	#subversion
 [15]:	#ilrd
 [16]:	#attributionInfo
-[17]:	https://github.com/tenjin/tenjin-ios-sdk/releases
+[17]:   #customer-user-id
 [18]:	https://tenjin.io/dashboard/organizations
 [19]:	https://github.com/tenjin/tenjin-ios-sdk-swift-demo
 [20]:	https://developer.apple.com/app-store/user-privacy-and-data-use/
@@ -487,7 +505,7 @@ userId = [TenjinSDK getCustomerUserId];
 [35]:	https://developer.apple.com/documentation/foundation/nslocalekey
 [36]:	https://developer.apple.com/documentation/foundation/nslocalecountrycode
 [37]:	https://developer.apple.com/documentation/foundation/nstimezone/1387209-localtimezone
-
+[38]:    https://github.com/tenjin/tenjin-ios-sdk/releases
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
 [image-3]:	https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png
