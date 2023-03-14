@@ -1,6 +1,0 @@
-framework module TenjinSDK {
-  umbrella header "TenjinSDK.h"
-
-  export *
-  module * { export * }
-}
