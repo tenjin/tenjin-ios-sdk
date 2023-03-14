@@ -288,3 +288,7 @@ v1.12.22
 v1.12.23
 ----
 - Fixed `updatePostbackConversionValue(conversionValue)` crash
+
+v1.12.24
+----
+- Added `armv7` and `armv7s` to library to support iOS 10
