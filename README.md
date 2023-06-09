@@ -38,7 +38,7 @@ If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` 
 
 1. Download the latest SDK release [here][38].
 
-2. Drag `libTenjinSDK.a` and `TenjinSDK.h` to your project under build phases -> "Link Binary With Libraries". Note: If you are testing with 32-bit iOS Simulator devices (i386), you will need to use `libTenjinSDKUniversal.a` instead of `libTenjinSDK.a`.
+2. Drag `TenjinSDK.xcframework` and `TenjinSDK.h` to your project under build phases -> "Link Binary With Libraries".
 
 3. Add the following Frameworks to your project:
 	  1. `AdServices.framework`

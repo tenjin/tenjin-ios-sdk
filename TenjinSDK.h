@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.12.24
+//  Version 1.12.25
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -169,6 +169,9 @@ andDeferredDeeplink:(NSURL *)url
 // Get customer user id saved on the device
 + (NSString *)getCustomerUserId;
 
+// Set the setting to enable/disable cache events and retrying, it's false by default
++ (void)setCacheEventSetting:(BOOL)isCacheEventsEnabled;
+
 #pragma mark Util
 
 + (void)verboseLogs;
@@ -192,66 +195,3 @@ andDeferredDeeplink:(NSURL *)url
 - (void)getAttributionInfo:(void (^)(NSDictionary *attributionInfo, NSError *error))completionHandler;
 
 @end
-//
-// Created by Tenjin
-// Copyright (c) 2022 Tenjin. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
-#import "TenjinSDK.h"
-
-@interface TenjinSDK (TopOnILRD)
-+ (void)topOnImpressionFromDict:(NSDictionary *)adImpression;
-+ (void)topOnImpressionFromJSON:(NSString *)jsonString;
-@end
-//
-// Created by Tenjin
-// Copyright (c) 2022 Tenjin. All rights reserved.
-//
-
-#import "TenjinSDK.h"
-#import <Foundation/Foundation.h>
-
-@interface TenjinSDK (AppLovinILRD)
-+ (void)subscribeAppLovinImpressions;
-+ (void)appLovinImpressionFromJSON:(NSString *)jsonString;
-@end
-//
-// Created by Tenjin
-// Copyright (c) 2022 Tenjin. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
-#import "TenjinSDK.h"
-
-@interface TenjinSDK (HyperBidILRD)
-+ (void)hyperBidImpressionFromDict:(NSDictionary *)adImpression;
-+ (void)hyperBidImpressionFromJSON:(NSString *)jsonString;
-@end
-//
-// Created by Tenjin
-// Copyright (c) 2022 Tenjin. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
-#import "TenjinSDK.h"
-
-@class GADAdValue;
-
-@interface TenjinSDK (AdMobILRD)
-+ (void)handleAdMobILRD:(NSObject *)adView :(GADAdValue *)adValue;
-+ (void)adMobImpressionFromJSON:(NSString *)jsonString;
-@end
-//
-// Created by Tenjin
-// Copyright (c) 2022 Tenjin. All rights reserved.
-//
-
-#import "TenjinSDK.h"
-#import <Foundation/Foundation.h>
-
-@interface TenjinSDK (IronSourceILRD)
-+ (void)subscribeIronSourceImpressions;
-+ (void)ironSourceImpressionFromJSON:(NSString *)jsonString;
-@end
-

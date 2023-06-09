@@ -1,0 +1,54 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TenjinSDK
+import CoreData
+import Foundation
+import Network
+import Swift
+@_exported import TenjinSDK
+import _Concurrency
+@_hasMissingDesignatedInitializers @objc public class RequestHelper : ObjectiveC.NSObject {
+  @objc public init(apiKey: Swift.String)
+  @objc public func handlePostRequest(endpoint: Swift.String, params: [Swift.String : Any])
+  @objc deinit
+}
+extension CoreData.NSManagedObjectContext {
+  public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
+}
+@_hasMissingDesignatedInitializers @objc public class TenjinRepository : ObjectiveC.NSObject {
+  @objc public init(apiKey: Swift.String)
+  @objc public static func setCacheEventsSetting(_ isRetryEventsEnabled: Swift.Bool)
+  @objc public static func getCacheEventsSetting() -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(QueueEvent) public class QueueEvent : CoreData.NSManagedObject, Swift.Identifiable {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<TenjinSDK.QueueEvent>
+  @objc @NSManaged dynamic public var params: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var endpoint: Swift.String? {
+    @objc get
+    @objc set
+  }
+  public var paramsDict: [Swift.String : Any]? {
+    get
+  }
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  public typealias ID = Swift.ObjectIdentifier
+  @objc deinit
+}
+@objc public class TJNHTTPClient : ObjectiveC.NSObject, Foundation.URLSessionDelegate, TenjinSDK.TJNRequestSender {
+  @objc public var defaultPostCompletionBlock: TenjinSDK.HandlerBlock?
+  @objc public init(apiKey: Swift.String)
+  @objc public func post(_ url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?)
+  @objc public func method(_ method: Swift.String, url: Swift.String, body: Foundation.NSMutableString?)
+  @objc public func method(_ method: Swift.String, url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?)
+  @objc public func method(_ method: Swift.String, url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?, completionBlock block: ((Foundation.Data?, Foundation.URLResponse?, Swift.Error?, Swift.Bool) -> Swift.Void)? = nil)
+  @objc public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc deinit
+}

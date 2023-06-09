@@ -168,6 +168,9 @@ andDeferredDeeplink:(NSURL *)url
 // Get customer user id saved on the device
 + (NSString *)getCustomerUserId;
 
+// Set the setting to enable/disable cache events and retrying, it's false by default
++ (void)setCacheEventSetting:(BOOL)isCacheEventsEnabled;
+
 #pragma mark Util
 
 + (void)verboseLogs;

@@ -292,3 +292,8 @@ v1.12.23
 v1.12.24
 ----
 - Added `armv7` and `armv7s` to library to support iOS 10
+
+v1.12.25
+----
+- Added support for retry/cache of events and IAP
+- Added `remote_campaign_id` parameter to `getAttributionInfo()` response
