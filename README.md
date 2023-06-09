@@ -31,6 +31,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 - [Impression Level Ad Revenue Integration][15]
 - [Attribution Info][16]
 - [Customer User ID][17]
+- [Retry/cache events and IAP][39]
 
 # <a id="sdk-integration"></a> SDK Integration
 
@@ -467,6 +468,15 @@ You can set and get customer user id to send as a parameter on events.
 userId = [TenjinSDK getCustomerUserId]; 
 ```
 
+# <a id="retry-cache"></a>Retry/cache of events/IAP
+You can enable/disable retrying and caching events and IAP when requests fail or users don't have internet connection. These events will be sent after a new event has been added to the queue and user has recovered connection.
+
+`setCacheEventSetting(true)`
+
+```objectivec
+[TenjinSDK setCacheEventSetting:true];
+```
+
 
 [1]:	#sdk-integration
 [2]:	#attrackingmanager
@@ -506,6 +516,7 @@ userId = [TenjinSDK getCustomerUserId];
 [36]:	https://developer.apple.com/documentation/foundation/nslocalecountrycode
 [37]:	https://developer.apple.com/documentation/foundation/nstimezone/1387209-localtimezone
 [38]:    https://github.com/tenjin/tenjin-ios-sdk/releases
+[39]: #retry-cache
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
 [image-3]:	https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png
