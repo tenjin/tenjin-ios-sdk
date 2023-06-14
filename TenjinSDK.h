@@ -195,3 +195,66 @@ andDeferredDeeplink:(NSURL *)url
 - (void)getAttributionInfo:(void (^)(NSDictionary *attributionInfo, NSError *error))completionHandler;
 
 @end
+//
+// Created by Tenjin
+// Copyright (c) 2022 Tenjin. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "TenjinSDK.h"
+
+@interface TenjinSDK (TopOnILRD)
++ (void)topOnImpressionFromDict:(NSDictionary *)adImpression;
++ (void)topOnImpressionFromJSON:(NSString *)jsonString;
+@end
+//
+// Created by Tenjin
+// Copyright (c) 2022 Tenjin. All rights reserved.
+//
+
+#import "TenjinSDK.h"
+#import <Foundation/Foundation.h>
+
+@interface TenjinSDK (AppLovinILRD)
++ (void)subscribeAppLovinImpressions;
++ (void)appLovinImpressionFromJSON:(NSString *)jsonString;
+@end
+//
+// Created by Tenjin
+// Copyright (c) 2022 Tenjin. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "TenjinSDK.h"
+
+@interface TenjinSDK (HyperBidILRD)
++ (void)hyperBidImpressionFromDict:(NSDictionary *)adImpression;
++ (void)hyperBidImpressionFromJSON:(NSString *)jsonString;
+@end
+//
+// Created by Tenjin
+// Copyright (c) 2022 Tenjin. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "TenjinSDK.h"
+
+@class GADAdValue;
+
+@interface TenjinSDK (AdMobILRD)
++ (void)handleAdMobILRD:(NSObject *)adView :(GADAdValue *)adValue;
++ (void)adMobImpressionFromJSON:(NSString *)jsonString;
+@end
+//
+// Created by Tenjin
+// Copyright (c) 2022 Tenjin. All rights reserved.
+//
+
+#import "TenjinSDK.h"
+#import <Foundation/Foundation.h>
+
+@interface TenjinSDK (IronSourceILRD)
++ (void)subscribeIronSourceImpressions;
++ (void)ironSourceImpressionFromJSON:(NSString *)jsonString;
+@end
+
