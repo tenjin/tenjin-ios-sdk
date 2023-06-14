@@ -1,6 +1,19 @@
 framework module TenjinSDK {
-  umbrella header "TenjinSDK.h"
+    umbrella header "TenjinSDK.h"
+    export *
+    
+    module Private {
+        header "TJNLog.h"
+        header "TJNRequestSender.h"
+        header "TenjinConst.h"
+        header "TenjinUtil.h"
+        header "AsyncOperation.h"
+        header "TJNOperationQueue.h"
+        header "CreateRequestOperation.h"
+    }
+}
 
-  export *
-  module * { export * }
+module TenjinSDK.Swift {
+    header "TenjinSDK-Swift.h"
+    requires objc
 }
