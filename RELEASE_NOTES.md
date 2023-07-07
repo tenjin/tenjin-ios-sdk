@@ -297,3 +297,8 @@ v1.12.25
 ----
 - Added support for retry/cache of events and IAP
 - Added `remote_campaign_id` parameter to `getAttributionInfo()` response
+
+v1.12.26
+----
+- Added Clever Ads Solution Impression Level Ad Revenue
+- Fixed concurrency issue on `connect` method call

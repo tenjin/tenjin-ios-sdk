@@ -6,11 +6,15 @@
 #import <Foundation/Foundation.h>
 #import "AsyncOperation.h"
 #import "TJNOperationQueue.h"
+#import "TenjinImpl.h"
 
 @interface CreateRequestOperation : AsyncOperation
 
 @property(nonatomic, strong) NSString *eventName;
 @property(nonatomic, strong) NSMutableDictionary *params;
+@property(nonatomic, strong) TenjinImpl *client;
 
 + (CreateRequestOperation *)operationWithParams:(NSMutableDictionary *)deviceParams;
++ (CreateRequestOperation *)operationWithClient:(TenjinImpl *)client
+                                    andParams:(NSMutableDictionary *)deviceParams;
 @end

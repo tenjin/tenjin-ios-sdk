@@ -8,10 +8,11 @@
 #define kTenjinAdRevenueIronSourceEndpoint @"ad_impressions/ironsource"
 #define kTenjinHyperBidRevenueEndpoint @"ad_impressions/hyperbid"
 #define kTenjinTopOnRevenueEndpoint @"ad_impressions/topon"
+#define kTenjinCASRevenueEndpoint @"ad_impressions/cas"
 #define kTenjinConversionEndpoint @"conversion-values"
 
 //this line replaced by build script
-#define kTenjinTenjinSDKVersion @"1.12.25"
+#define kTenjinTenjinSDKVersion @"1.12.26"
 
 
 #define kTenjinPlatformIos @"ios"
@@ -39,6 +40,7 @@
 #define kTenjinDeviceModel @"device_model"
 #define kTenjinAAAttributionToken @"attribution_token"
 #define kTenjinCustomerUserId @"customer_user_id"
+#define kTenjinEvent @"event"
 
 #define kTenjinSessionId @"session_id"
 #define kTenjinSentAt @"sent_at"

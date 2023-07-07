@@ -233,10 +233,11 @@ SWIFT_CLASS_NAMED("QueueEvent")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TenjinImpl;
 
 SWIFT_CLASS("_TtC9TenjinSDK13RequestHelper")
 @interface RequestHelper : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey client:(TenjinImpl * _Nonnull)client OBJC_DESIGNATED_INITIALIZER;
 - (void)handlePostRequestWithEndpoint:(NSString * _Nonnull)endpoint params:(NSDictionary<NSString *, id> * _Nonnull)params;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -263,9 +264,18 @@ SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 @end
 
 
+SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
+@interface TenjinDatasource : NSObject
++ (void)setCacheEventsSetting:(BOOL)isCacheEventsEnabled;
++ (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinRepository")
 @interface TenjinRepository : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey client:(TenjinImpl * _Nonnull)client OBJC_DESIGNATED_INITIALIZER;
 + (void)setCacheEventsSetting:(BOOL)isRetryEventsEnabled;
 + (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -513,10 +523,11 @@ SWIFT_CLASS_NAMED("QueueEvent")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TenjinImpl;
 
 SWIFT_CLASS("_TtC9TenjinSDK13RequestHelper")
 @interface RequestHelper : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey client:(TenjinImpl * _Nonnull)client OBJC_DESIGNATED_INITIALIZER;
 - (void)handlePostRequestWithEndpoint:(NSString * _Nonnull)endpoint params:(NSDictionary<NSString *, id> * _Nonnull)params;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -543,9 +554,18 @@ SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 @end
 
 
+SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
+@interface TenjinDatasource : NSObject
++ (void)setCacheEventsSetting:(BOOL)isCacheEventsEnabled;
++ (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinRepository")
 @interface TenjinRepository : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey client:(TenjinImpl * _Nonnull)client OBJC_DESIGNATED_INITIALIZER;
 + (void)setCacheEventsSetting:(BOOL)isRetryEventsEnabled;
 + (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -793,10 +813,11 @@ SWIFT_CLASS_NAMED("QueueEvent")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class TenjinImpl;
 
 SWIFT_CLASS("_TtC9TenjinSDK13RequestHelper")
 @interface RequestHelper : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey client:(TenjinImpl * _Nonnull)client OBJC_DESIGNATED_INITIALIZER;
 - (void)handlePostRequestWithEndpoint:(NSString * _Nonnull)endpoint params:(NSDictionary<NSString *, id> * _Nonnull)params;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -823,9 +844,18 @@ SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 @end
 
 
+SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
+@interface TenjinDatasource : NSObject
++ (void)setCacheEventsSetting:(BOOL)isCacheEventsEnabled;
++ (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinRepository")
 @interface TenjinRepository : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey client:(TenjinImpl * _Nonnull)client OBJC_DESIGNATED_INITIALIZER;
 + (void)setCacheEventsSetting:(BOOL)isRetryEventsEnabled;
 + (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
