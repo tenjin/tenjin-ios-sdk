@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.12.25
+//  Version 1.12.26
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -195,6 +195,7 @@ andDeferredDeeplink:(NSURL *)url
 - (void)getAttributionInfo:(void (^)(NSDictionary *attributionInfo, NSError *error))completionHandler;
 
 @end
+
 //
 // Created by Tenjin
 // Copyright (c) 2022 Tenjin. All rights reserved.
@@ -258,3 +259,16 @@ andDeferredDeeplink:(NSURL *)url
 + (void)ironSourceImpressionFromJSON:(NSString *)jsonString;
 @end
 
+//
+// Created by Tenjin
+// Copyright (c) 2023 Tenjin. All rights reserved.
+//
+
+#import "TenjinSDK.h"
+#import <Foundation/Foundation.h>
+
+@interface TenjinSDK (CASILRD)
++ (void)subscribeCASBannerImpressions;
++ (void)casImpressionFromJSON:(NSString *)jsonString;
++ (void)handleCASILRD:(id)adImpression;
+@end

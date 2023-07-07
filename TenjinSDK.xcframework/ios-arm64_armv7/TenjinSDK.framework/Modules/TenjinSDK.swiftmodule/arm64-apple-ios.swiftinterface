@@ -8,15 +8,21 @@ import Swift
 @_exported import TenjinSDK
 import _Concurrency
 @_hasMissingDesignatedInitializers @objc public class RequestHelper : ObjectiveC.NSObject {
-  @objc public init(apiKey: Swift.String)
+  @objc public init(apiKey: Swift.String, client: TenjinSDK.TenjinImpl)
   @objc public func handlePostRequest(endpoint: Swift.String, params: [Swift.String : Any])
   @objc deinit
 }
 extension CoreData.NSManagedObjectContext {
   public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
 }
+@_inheritsConvenienceInitializers @objc public class TenjinDatasource : ObjectiveC.NSObject {
+  @objc public static func setCacheEventsSetting(_ isCacheEventsEnabled: Swift.Bool)
+  @objc public static func getCacheEventsSetting() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc public class TenjinRepository : ObjectiveC.NSObject {
-  @objc public init(apiKey: Swift.String)
+  @objc public init(apiKey: Swift.String, client: TenjinSDK.TenjinImpl)
   @objc public static func setCacheEventsSetting(_ isRetryEventsEnabled: Swift.Bool)
   @objc public static func getCacheEventsSetting() -> Swift.Bool
   @objc deinit
