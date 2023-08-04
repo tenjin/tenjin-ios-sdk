@@ -202,8 +202,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 #endif
 
-#import <TenjinSDK/TenjinSDK.h>
-
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 #if __has_warning("-Wpragma-clang-attribute")
@@ -225,7 +223,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
-SWIFT_CLASS_NAMED("QueueEvent")
+SWIFT_CLASS("_TtC9TenjinSDK10QueueEvent")
 @interface QueueEvent : NSManagedObject
 @property (nonatomic, copy) NSString * _Nullable params;
 @property (nonatomic, copy) NSDate * _Nullable date;
@@ -233,28 +231,37 @@ SWIFT_CLASS_NAMED("QueueEvent")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class TenjinImpl;
 
 SWIFT_CLASS("_TtC9TenjinSDK13RequestHelper")
 @interface RequestHelper : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey client:(TenjinImpl * _Nonnull)client OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
 - (void)handlePostRequestWithEndpoint:(NSString * _Nonnull)endpoint params:(NSDictionary<NSString *, id> * _Nonnull)params;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSMutableString;
 @class NSData;
 @class NSURLResponse;
+@class NSMutableString;
+
+SWIFT_PROTOCOL("_TtP9TenjinSDK16TJNRequestSender_")
+@protocol TJNRequestSender
+@property (nonatomic, copy) void (^ _Nullable defaultPostCompletionBlock)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable, BOOL);
+- (void)postWithUrl:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers;
+- (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSMutableString * _Nullable)body;
+- (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers;
+- (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers completionBlock:(void (^ _Nullable)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable, BOOL))block;
+@end
+
 @class NSURLSession;
 @class NSURLAuthenticationChallenge;
 @class NSURLCredential;
 
 SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 @interface TJNHTTPClient : NSObject <NSURLSessionDelegate, TJNRequestSender>
-@property (nonatomic, copy) HandlerBlock _Nullable defaultPostCompletionBlock;
+@property (nonatomic, copy) void (^ _Nullable defaultPostCompletionBlock)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable, BOOL);
 - (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
-- (void)post:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers;
+- (void)postWithUrl:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers;
 - (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSMutableString * _Nullable)body;
 - (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers;
 - (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers completionBlock:(void (^ _Nullable)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable, BOOL))block;
@@ -262,6 +269,7 @@ SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
@@ -275,7 +283,7 @@ SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
 
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinRepository")
 @interface TenjinRepository : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey client:(TenjinImpl * _Nonnull)client OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
 + (void)setCacheEventsSetting:(BOOL)isRetryEventsEnabled;
 + (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -492,8 +500,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 #endif
 
-#import <TenjinSDK/TenjinSDK.h>
-
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 #if __has_warning("-Wpragma-clang-attribute")
@@ -515,7 +521,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
-SWIFT_CLASS_NAMED("QueueEvent")
+SWIFT_CLASS("_TtC9TenjinSDK10QueueEvent")
 @interface QueueEvent : NSManagedObject
 @property (nonatomic, copy) NSString * _Nullable params;
 @property (nonatomic, copy) NSDate * _Nullable date;
@@ -523,28 +529,37 @@ SWIFT_CLASS_NAMED("QueueEvent")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class TenjinImpl;
 
 SWIFT_CLASS("_TtC9TenjinSDK13RequestHelper")
 @interface RequestHelper : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey client:(TenjinImpl * _Nonnull)client OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
 - (void)handlePostRequestWithEndpoint:(NSString * _Nonnull)endpoint params:(NSDictionary<NSString *, id> * _Nonnull)params;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSMutableString;
 @class NSData;
 @class NSURLResponse;
+@class NSMutableString;
+
+SWIFT_PROTOCOL("_TtP9TenjinSDK16TJNRequestSender_")
+@protocol TJNRequestSender
+@property (nonatomic, copy) void (^ _Nullable defaultPostCompletionBlock)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable, BOOL);
+- (void)postWithUrl:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers;
+- (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSMutableString * _Nullable)body;
+- (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers;
+- (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers completionBlock:(void (^ _Nullable)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable, BOOL))block;
+@end
+
 @class NSURLSession;
 @class NSURLAuthenticationChallenge;
 @class NSURLCredential;
 
 SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 @interface TJNHTTPClient : NSObject <NSURLSessionDelegate, TJNRequestSender>
-@property (nonatomic, copy) HandlerBlock _Nullable defaultPostCompletionBlock;
+@property (nonatomic, copy) void (^ _Nullable defaultPostCompletionBlock)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable, BOOL);
 - (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
-- (void)post:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers;
+- (void)postWithUrl:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers;
 - (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSMutableString * _Nullable)body;
 - (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers;
 - (void)method:(NSString * _Nonnull)method url:(NSString * _Nonnull)url body:(NSString * _Nullable)body headers:(NSDictionary * _Nullable)headers completionBlock:(void (^ _Nullable)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable, BOOL))block;
@@ -552,6 +567,7 @@ SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
@@ -565,7 +581,7 @@ SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
 
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinRepository")
 @interface TenjinRepository : NSObject
-- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey client:(TenjinImpl * _Nonnull)client OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithApiKey:(NSString * _Nonnull)apiKey OBJC_DESIGNATED_INITIALIZER;
 + (void)setCacheEventsSetting:(BOOL)isRetryEventsEnabled;
 + (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
