@@ -302,3 +302,7 @@ v1.12.26
 ----
 - Added Clever Ads Solution Impression Level Ad Revenue
 - Fixed concurrency issue on `connect` method call
+
+v1.12.27
+----
+- Added support for Swift 5.8.1 compiler

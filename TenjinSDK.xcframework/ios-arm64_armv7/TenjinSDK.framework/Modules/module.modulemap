@@ -4,17 +4,11 @@ framework module TenjinSDK {
     
     module Private {
         header "TJNLog.h"
-        header "TJNRequestSender.h"
         header "TenjinConst.h"
-        header "TenjinUtil.h"
         header "AsyncOperation.h"
         header "TJNOperationQueue.h"
         header "CreateRequestOperation.h"
-        header "TenjinImpl.h"
-        header "TenjinIAPHelper.h"
-        header "TenjinConfig.h"
-        header "PersistedFileStore.h"
-        header "DataStore.h"
+        header "TenjinUtil.h"
     }
 }
 

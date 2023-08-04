@@ -6,7 +6,8 @@
 #import <Foundation/Foundation.h>
 #import "AsyncOperation.h"
 #import "TJNOperationQueue.h"
-#import "TenjinImpl.h"
+
+@class TenjinImpl;
 
 @interface CreateRequestOperation : AsyncOperation
 

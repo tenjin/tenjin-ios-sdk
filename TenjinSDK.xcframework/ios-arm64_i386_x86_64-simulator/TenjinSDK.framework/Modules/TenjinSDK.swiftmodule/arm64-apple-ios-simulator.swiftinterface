@@ -7,28 +7,8 @@ import Network
 import Swift
 @_exported import TenjinSDK
 import _Concurrency
-@_hasMissingDesignatedInitializers @objc public class RequestHelper : ObjectiveC.NSObject {
-  @objc public init(apiKey: Swift.String, client: TenjinSDK.TenjinImpl)
-  @objc public func handlePostRequest(endpoint: Swift.String, params: [Swift.String : Any])
-  @objc deinit
-}
-extension CoreData.NSManagedObjectContext {
-  public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
-}
-@_inheritsConvenienceInitializers @objc public class TenjinDatasource : ObjectiveC.NSObject {
-  @objc public static func setCacheEventsSetting(_ isCacheEventsEnabled: Swift.Bool)
-  @objc public static func getCacheEventsSetting() -> Swift.Bool
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers @objc public class TenjinRepository : ObjectiveC.NSObject {
-  @objc public init(apiKey: Swift.String, client: TenjinSDK.TenjinImpl)
-  @objc public static func setCacheEventsSetting(_ isRetryEventsEnabled: Swift.Bool)
-  @objc public static func getCacheEventsSetting() -> Swift.Bool
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc(QueueEvent) public class QueueEvent : CoreData.NSManagedObject, Swift.Identifiable {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<TenjinSDK.QueueEvent>
+@objc @_inheritsConvenienceInitializers public class QueueEvent : CoreData.NSManagedObject, Swift.Identifiable {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<QueueEvent>
   @objc @NSManaged dynamic public var params: Swift.String? {
     @objc get
     @objc set
@@ -48,10 +28,37 @@ extension CoreData.NSManagedObjectContext {
   public typealias ID = Swift.ObjectIdentifier
   @objc deinit
 }
-@objc public class TJNHTTPClient : ObjectiveC.NSObject, Foundation.URLSessionDelegate, TenjinSDK.TJNRequestSender {
-  @objc public var defaultPostCompletionBlock: TenjinSDK.HandlerBlock?
+@_hasMissingDesignatedInitializers @objc public class RequestHelper : ObjectiveC.NSObject {
   @objc public init(apiKey: Swift.String)
-  @objc public func post(_ url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?)
+  @objc public func handlePostRequest(endpoint: Swift.String, params: [Swift.String : Any])
+  @objc deinit
+}
+@objc public protocol TJNRequestSender {
+  @objc var defaultPostCompletionBlock: ((Foundation.Data?, Foundation.URLResponse?, Swift.Error?, Swift.Bool) -> Swift.Void)? { get set }
+  @objc func post(url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?)
+  @objc func method(_ method: Swift.String, url: Swift.String, body: Foundation.NSMutableString?)
+  @objc func method(_ method: Swift.String, url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?)
+  @objc func method(_ method: Swift.String, url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?, completionBlock block: ((Foundation.Data?, Foundation.URLResponse?, Swift.Error?, Swift.Bool) -> Swift.Void)?)
+}
+extension CoreData.NSManagedObjectContext {
+  public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
+}
+@_inheritsConvenienceInitializers @objc public class TenjinDatasource : ObjectiveC.NSObject {
+  @objc public static func setCacheEventsSetting(_ isCacheEventsEnabled: Swift.Bool)
+  @objc public static func getCacheEventsSetting() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class TenjinRepository : ObjectiveC.NSObject {
+  @objc public init(apiKey: Swift.String)
+  @objc public static func setCacheEventsSetting(_ isRetryEventsEnabled: Swift.Bool)
+  @objc public static func getCacheEventsSetting() -> Swift.Bool
+  @objc deinit
+}
+@objc public class TJNHTTPClient : ObjectiveC.NSObject, Foundation.URLSessionDelegate, TJNRequestSender {
+  @objc public var defaultPostCompletionBlock: ((Foundation.Data?, Foundation.URLResponse?, Swift.Error?, Swift.Bool) -> Swift.Void)?
+  @objc public init(apiKey: Swift.String)
+  @objc public func post(url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?)
   @objc public func method(_ method: Swift.String, url: Swift.String, body: Foundation.NSMutableString?)
   @objc public func method(_ method: Swift.String, url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?)
   @objc public func method(_ method: Swift.String, url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?, completionBlock block: ((Foundation.Data?, Foundation.URLResponse?, Swift.Error?, Swift.Bool) -> Swift.Void)? = nil)
