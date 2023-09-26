@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.12.27
+//  Version 1.12.28
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -272,3 +272,18 @@ andDeferredDeeplink:(NSURL *)url
 + (void)casImpressionFromJSON:(NSString *)jsonString;
 + (void)handleCASILRD:(id)adImpression;
 @end
+
+//
+// Created by Tenjin
+// Copyright (c) 2023 Tenjin. All rights reserved.
+//
+
+#import "TenjinSDK.h"
+#import <Foundation/Foundation.h>
+
+@interface TenjinSDK (TradPlusILRD)
++ (void)subscribeTradPlusImpressions;
++ (void)tradPlusImpressionFromJSON:(NSString *)jsonString;
++ (void)handleTradPlusILRD:(NSDictionary *)adInfo;
+@end
+

@@ -306,3 +306,7 @@ v1.12.26
 v1.12.27
 ----
 - Added support for Swift 5.8.1 compiler
+
+v1.12.28
+----
+- Added TradPlus Impression Level Ad Revenue

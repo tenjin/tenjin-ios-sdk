@@ -9,10 +9,11 @@
 #define kTenjinHyperBidRevenueEndpoint @"ad_impressions/hyperbid"
 #define kTenjinTopOnRevenueEndpoint @"ad_impressions/topon"
 #define kTenjinCASRevenueEndpoint @"ad_impressions/cas"
+#define kTenjinTradPlusRevenueEndpoint @"ad_impressions/tradplus"
 #define kTenjinConversionEndpoint @"conversion-values"
 
 //this line replaced by build script
-#define kTenjinTenjinSDKVersion @"1.12.27"
+#define kTenjinTenjinSDKVersion @"1.12.28"
 
 
 #define kTenjinPlatformIos @"ios"
