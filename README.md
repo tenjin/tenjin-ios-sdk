@@ -37,10 +37,10 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 # <a id="sdk-integration"></a> SDK Integration
 
 ## CocoaPods
-If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 4.
+If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 4 under Steps for Objective-C projects.
 
 ## Swift Package Manager
-If you use SPM, add Tenjin’s SDK package through Xcode with this repository [here](https://github.com/tenjin/tenjin-ios-spm) and skip to step 4.
+If you use SPM, add Tenjin’s SDK package through Xcode with this repository [here](https://github.com/tenjin/tenjin-ios-spm) and skip to step 4 under Steps for Swift projects.
 
 1. Download the latest SDK release [here][38].
 
@@ -373,7 +373,7 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 
 **Disclaimer:** If you are implementing purchase events on Tenjin for the first time, make sure to verify the data with other tools you’re using before you start scaling up your user acquisition campaigns using purchase data.
 
-:warning **(Flexible App Store Commission setup)**
+:warning: **(Flexible App Store Commission setup)**
 
 Choose between 15% and 30% App Store’s revenue commission via our new setup. The steps are -
 * Go to CONFIGURE --> Apps
