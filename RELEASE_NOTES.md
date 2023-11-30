@@ -314,3 +314,7 @@ v1.12.28
 v1.12.29
 ----
 - Add retry for ASA attribution token
+
+v1.12.30
+----
+- SKAN - Enable multiple SKAN CV postbacks on a single session
