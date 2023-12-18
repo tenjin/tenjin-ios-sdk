@@ -6,7 +6,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 - For Unity-specific instructions, please visit https://github.com/tenjin/tenjin-unity-sdk.
 - For any issues or support, please contact: support@tenjin.com
 
-### Notes:
+### Notes
 
   - Xcode 13 requirement, if you’re using iOS SDK v1.12.17 and higher.
   - For AppTrackingTransparency, be sure to update your project `.plist` file and add `Privacy - Tracking Usage Description` <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/nsusertrackingusagedescription" target="_new">(NSUserTrackingUsageDescription)</a> along with the text message you want to display to users. This library is only available in iOS 14.0+.
@@ -135,7 +135,8 @@ If you use SPM, add Tenjin’s SDK package through Xcode with this repository [h
     }
     ```
 
-**NOTE:** Please ensure you implement this code on every `didFinishLaunchingWithOptions`, not only on the first app open of the app. If we notice that you don't follow our recommendation, we can't give you the proper support or your account might be under suspension.
+> [!NOTE]
+> Please ensure you implement this code on every `didFinishLaunchingWithOptions`, not only on the first app open of the app. If we notice that you don't follow our recommendation, we can't give you the proper support or your account might be under suspension.
 
 In the step 7, you can also try alternate initialization to handle deep links from other services. If you use other services to produce deferred deep links, you can pass Tenjin those deep links to handle the attribution logic with your Tenjin enabled deep links.
 
@@ -199,7 +200,8 @@ You can also still call Tenjin `connect()`, without using ATTrackingManager, onl
 
 To comply with Apple’s ATT guidelines, you must provide a description for the ATT permission prompt, then implement the permission request in your application.
 
-> Note: You must implement the permission request before serving ads in your game.
+> [!NOTE]
+> You must implement the permission request before serving ads in your game.
 
 #### <a id="configureusertrackdescription"></a> Configuring a user tracking description
 Apple requires a description for the ATT permission prompt. You need to set the description with the `NSUserTrackingUsageDescription` key in the `Info.plist` file of your Xcode project. You have to provide a message that informs the user why you are requesting permission to use device tracking data:
@@ -213,7 +215,8 @@ Apple requires a description for the ATT permission prompt. You need to set the 
 	- "We try to show ads for apps and products that will be most interesting to you based on the apps you use, the device you are on, and the country you are in."
 	- "We try to show ads for apps and products that will be most interesting to you based on the apps you use."
 
-> Note: Apple provides specific [app store guidelines][20] that define acceptable use and messaging for all end-user facing privacy-related features. Tenjin does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.
+> [!NOTE]
+> Apple provides specific [app store guidelines][20] that define acceptable use and messaging for all end-user facing privacy-related features. Tenjin does not provide legal advice. Therefore, the information on this page is not a substitute for seeking your own legal counsel to determine the legal requirements of your business and processes, and how to address them.
 
 ## <a id="skadnetwork-and-conversion-value"></a> SKAdNetwork and Conversion value
 
@@ -448,13 +451,15 @@ Tenjin supports the ability to integrate with the Impression Level Ad Revenue (I
 
 This feature allows you to receive events which correspond to your ad revenue that is affected by each advertisement show to a user. To enable this feature, follow the below instructions.
 
-:warning: **NOTE: ILRD is a paid feature, so please contact your Tenjin account manager to discuss the price at first before sending ILRD events.**
+> [!WARNING]
+> ILRD is a paid feature, so please contact your Tenjin account manager to discuss the price at first before sending ILRD events.
 
 # <a id="attributionInfo"></a>Live Ops Campaigns
 
 Tenjin supports retrieving of attributes, which are required for developers to get analytics installation id (previously known as tenjin reference id). This parameter can be used when there is no advertising id.
 
-:warning: **NOTE: LiveOps Campaigns is a paid feature, so please contact your Tenjin account manager if you are interested in.**
+> [!WARNING]
+> LiveOps Campaigns is a paid feature, so please contact your Tenjin account manager if you are interested in.
 
 # <a id="customer-user-id"></a>Customer User ID
 You can set and get customer user id to send as a parameter on events.
