@@ -28,6 +28,11 @@ import _Concurrency
   public typealias ID = Swift.ObjectIdentifier
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class GDPRHelper : ObjectiveC.NSObject {
+  @objc public func optIn() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc public class RequestHelper : ObjectiveC.NSObject {
   @objc public init(apiKey: Swift.String)
   @objc public func handlePostRequest(endpoint: Swift.String, params: [Swift.String : Any])
@@ -46,6 +51,7 @@ extension CoreData.NSManagedObjectContext {
 @_inheritsConvenienceInitializers @objc public class TenjinDatasource : ObjectiveC.NSObject {
   @objc public static func setCacheEventsSetting(_ isCacheEventsEnabled: Swift.Bool)
   @objc public static func getCacheEventsSetting() -> Swift.Bool
+  @objc public static func getAnalyticsInstallationId() -> Swift.String
   @objc override dynamic public init()
   @objc deinit
 }

@@ -13,7 +13,7 @@
 #define kTenjinConversionEndpoint @"conversion-values"
 
 //this line replaced by build script
-#define kTenjinTenjinSDKVersion @"1.12.30"
+#define kTenjinTenjinSDKVersion @"1.13.0"
 
 
 #define kTenjinPlatformIos @"ios"
@@ -42,6 +42,7 @@
 #define kTenjinAAAttributionToken @"attribution_token"
 #define kTenjinCustomerUserId @"customer_user_id"
 #define kTenjinEvent @"event"
+#define kTenjinAnalyticsId @"analytics_installation_id"
 
 #define kTenjinSessionId @"session_id"
 #define kTenjinSentAt @"sent_at"

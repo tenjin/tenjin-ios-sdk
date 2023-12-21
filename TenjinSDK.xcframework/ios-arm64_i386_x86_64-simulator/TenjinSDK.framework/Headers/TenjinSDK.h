@@ -141,6 +141,9 @@ andDeferredDeeplink:(NSURL *)url
 // GDPR opt-in with list of params
 + (void)optInParams:(NSArray *)params;
 
+// GDPR opt-in/opt-out through CMP consents
++ (bool)optInOutUsingCMP;
+
 // Appends app subversion to app version
 + (void)appendAppSubversion:(NSNumber *)subversion;
 
@@ -170,6 +173,9 @@ andDeferredDeeplink:(NSURL *)url
 
 // Set the setting to enable/disable cache events and retrying, it's false by default
 + (void)setCacheEventSetting:(BOOL)isCacheEventsEnabled;
+
+// Get cached analytics_installation_id
++ (NSString*)getAnalyticsInstallationId;
 
 #pragma mark Util
 

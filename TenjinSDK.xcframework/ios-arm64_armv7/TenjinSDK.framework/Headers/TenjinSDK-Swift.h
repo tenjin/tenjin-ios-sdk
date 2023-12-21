@@ -218,6 +218,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+SWIFT_CLASS("_TtC9TenjinSDK10GDPRHelper")
+@interface GDPRHelper : NSObject
+- (BOOL)optIn SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 @class NSString;
 @class NSDate;
 @class NSEntityDescription;
@@ -276,6 +283,7 @@ SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
 @interface TenjinDatasource : NSObject
 + (void)setCacheEventsSetting:(BOOL)isCacheEventsEnabled;
 + (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getAnalyticsInstallationId SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -516,6 +524,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+SWIFT_CLASS("_TtC9TenjinSDK10GDPRHelper")
+@interface GDPRHelper : NSObject
+- (BOOL)optIn SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 @class NSString;
 @class NSDate;
 @class NSEntityDescription;
@@ -574,6 +589,7 @@ SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
 @interface TenjinDatasource : NSObject
 + (void)setCacheEventsSetting:(BOOL)isCacheEventsEnabled;
 + (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getAnalyticsInstallationId SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
