@@ -318,3 +318,8 @@ v1.12.29
 v1.12.30
 ----
 - SKAN - Enable multiple SKAN CV postbacks on a single session
+
+v1.13.0
+----
+- Add `optInOutUsingCMP` method to manage GDPR opt-in/opt-out through CMP consents
+- Add `analytics_installation_id` parameter and getter method `getAnalyticsInstallationId`
