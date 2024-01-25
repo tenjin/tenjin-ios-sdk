@@ -31,6 +31,8 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 - [Impression Level Ad Revenue Integration][15]
 - [Attribution Info][16]
 - [Customer User ID][17]
+- [Analytics Installation ID][40]
+- [Opt in/Opt out using CMP consents][41]
 - [Retry/cache events and IAP][39]
 
 
@@ -474,6 +476,26 @@ You can set and get customer user id to send as a parameter on events.
 userId = [TenjinSDK getCustomerUserId]; 
 ```
 
+# <a id="analytics-id"></a>Analytics Installation ID
+You can get the analytics id which is generated randomly and saved in the local storage of the device.
+
+`getAnalyticsInstallationId()`
+
+```objectivec
+[TenjinSDK initialize:@"<SDK_KEY>"];
+analyticsId = [TenjinSDK getAnalyticsInstallationId]; 
+```
+
+# <a id="optin-cmp"></a>Opt in/out using CMP
+You can automatically opt in or opt out using your CMP consents (purpose 1) which are already saved in the user's device. The method returns a boolean to let you know if it's opted in or out.
+
+`optInOutUsingCMP()`
+
+```objectivec
+[TenjinSDK initialize:@"<SDK_KEY>"];
+optInOut = [TenjinSDK optInOutUsingCMP]; 
+```
+
 # <a id="retry-cache"></a>Retry/cache of events/IAP
 You can enable/disable retrying and caching events and IAP when requests fail or users don't have internet connection. These events will be sent after a new event has been added to the queue and user has recovered connection.
 
@@ -522,6 +544,8 @@ You can enable/disable retrying and caching events and IAP when requests fail or
 [37]:	https://developer.apple.com/documentation/foundation/nstimezone/1387209-localtimezone
 [38]:    https://github.com/tenjin/tenjin-ios-sdk/releases
 [39]: #retry-cache
+[40]: #analytics-id
+[41]: #optin-cmp
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
 [image-3]:	https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png
