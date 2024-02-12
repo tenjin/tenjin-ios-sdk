@@ -13,7 +13,7 @@
 #define kTenjinConversionEndpoint @"conversion-values"
 
 //this line replaced by build script
-#define kTenjinTenjinSDKVersion @"1.13.0"
+#define kTenjinTenjinSDKVersion @"1.14.0"
 
 
 #define kTenjinPlatformIos @"ios"
@@ -51,10 +51,15 @@
 #define kTenjinCoarseConversionValue @"coarse_conversion_value"
 #define kTenjinLockWindow @"lock_window"
 #define kTenjinRetryEnabled @"retry_enabled"
+#define kTenjinGoogleAdPersonalization @"ad_personalization"
+#define kTenjinGoogleAdUserData @"ad_user_data"
+#define kTenjinIABTCF @"iab_tcf"
+#define kTenjinGoogleAdPersonalizationKey @"TENJIN_GOOGLE_AD_PERSONALIZATION"
+#define kTenjinGoogleAdUserDataKey @"TENJIN_GOOGLE_AD_USER_DATA"
 
 //one hour in seconds
 #define kTenjinMaxWait 3600
 
 #define kTenjinStartupMaxRetries 5
 #define kTenjinRetrySleepBaseInSeconds 2.0
-#define kTenjinRetrySleepCapInSeconds 30.0
+#define kTenjinRetrySleepCapInSeconds 15.0

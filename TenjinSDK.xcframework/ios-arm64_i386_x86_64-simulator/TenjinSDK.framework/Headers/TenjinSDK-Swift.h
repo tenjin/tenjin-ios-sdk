@@ -217,15 +217,26 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSString;
+enum PurposeConsentStatus : NSInteger;
 
 SWIFT_CLASS("_TtC9TenjinSDK10GDPRHelper")
 @interface GDPRHelper : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (NSString * _Nullable)getPurposeConsentsTCF SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)optIn SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (enum PurposeConsentStatus)getGoogleAdPersonalization SWIFT_WARN_UNUSED_RESULT;
+- (enum PurposeConsentStatus)getGoogleAdUserData SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
-@class NSString;
+typedef SWIFT_ENUM(NSInteger, PurposeConsentStatus, open) {
+  PurposeConsentStatusConsentNull = 0,
+  PurposeConsentStatusConsentTrue = 1,
+  PurposeConsentStatusConsentFalse = 2,
+};
+
 @class NSDate;
 @class NSEntityDescription;
 @class NSManagedObjectContext;
@@ -281,6 +292,7 @@ SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
 @interface TenjinDatasource : NSObject
++ (void)setBooleanValue:(BOOL)value key:(NSString * _Nonnull)key;
 + (void)setCacheEventsSetting:(BOOL)isCacheEventsEnabled;
 + (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getAnalyticsInstallationId SWIFT_WARN_UNUSED_RESULT;
@@ -523,15 +535,26 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSString;
+enum PurposeConsentStatus : NSInteger;
 
 SWIFT_CLASS("_TtC9TenjinSDK10GDPRHelper")
 @interface GDPRHelper : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (NSString * _Nullable)getPurposeConsentsTCF SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)optIn SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (enum PurposeConsentStatus)getGoogleAdPersonalization SWIFT_WARN_UNUSED_RESULT;
+- (enum PurposeConsentStatus)getGoogleAdUserData SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
-@class NSString;
+typedef SWIFT_ENUM(NSInteger, PurposeConsentStatus, open) {
+  PurposeConsentStatusConsentNull = 0,
+  PurposeConsentStatusConsentTrue = 1,
+  PurposeConsentStatusConsentFalse = 2,
+};
+
 @class NSDate;
 @class NSEntityDescription;
 @class NSManagedObjectContext;
@@ -587,6 +610,7 @@ SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
 @interface TenjinDatasource : NSObject
++ (void)setBooleanValue:(BOOL)value key:(NSString * _Nonnull)key;
 + (void)setCacheEventsSetting:(BOOL)isCacheEventsEnabled;
 + (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getAnalyticsInstallationId SWIFT_WARN_UNUSED_RESULT;
@@ -829,15 +853,26 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class NSString;
+enum PurposeConsentStatus : NSInteger;
 
 SWIFT_CLASS("_TtC9TenjinSDK10GDPRHelper")
 @interface GDPRHelper : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (NSString * _Nullable)getPurposeConsentsTCF SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)optIn SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (enum PurposeConsentStatus)getGoogleAdPersonalization SWIFT_WARN_UNUSED_RESULT;
+- (enum PurposeConsentStatus)getGoogleAdUserData SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
-@class NSString;
+typedef SWIFT_ENUM(NSInteger, PurposeConsentStatus, open) {
+  PurposeConsentStatusConsentNull = 0,
+  PurposeConsentStatusConsentTrue = 1,
+  PurposeConsentStatusConsentFalse = 2,
+};
+
 @class NSDate;
 @class NSEntityDescription;
 @class NSManagedObjectContext;
@@ -893,6 +928,7 @@ SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
 @interface TenjinDatasource : NSObject
++ (void)setBooleanValue:(BOOL)value key:(NSString * _Nonnull)key;
 + (void)setCacheEventsSetting:(BOOL)isCacheEventsEnabled;
 + (BOOL)getCacheEventsSetting SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getAnalyticsInstallationId SWIFT_WARN_UNUSED_RESULT;
