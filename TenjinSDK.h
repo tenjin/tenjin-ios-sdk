@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.13.0
+//  Version 1.14.0
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -199,6 +199,8 @@ andDeferredDeeplink:(NSURL *)url
 + (void)requestTrackingAuthorizationWithCompletionHandler:(void (^)(NSUInteger status))completion;
 
 - (void)getAttributionInfo:(void (^)(NSDictionary *attributionInfo, NSError *error))completionHandler;
+
+- (void)setGoogleDMAParametersWithAdPersonalization:(BOOL)adPersonalization adUserData:(BOOL)adUserData;
 
 @end
 

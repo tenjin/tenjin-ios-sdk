@@ -199,4 +199,6 @@ andDeferredDeeplink:(NSURL *)url
 
 - (void)getAttributionInfo:(void (^)(NSDictionary *attributionInfo, NSError *error))completionHandler;
 
+- (void)setGoogleDMAParametersWithAdPersonalization:(BOOL)adPersonalization adUserData:(BOOL)adUserData;
+
 @end

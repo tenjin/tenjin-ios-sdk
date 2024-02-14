@@ -28,9 +28,21 @@ import _Concurrency
   public typealias ID = Swift.ObjectIdentifier
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class GDPRHelper : ObjectiveC.NSObject {
+@objc public enum PurposeConsentStatus : Swift.Int {
+  case ConsentNull
+  case ConsentTrue
+  case ConsentFalse
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GDPRHelper : ObjectiveC.NSObject {
+  @objc public func getPurposeConsentsTCF() -> Swift.String?
   @objc public func optIn() -> Swift.Bool
-  @objc override dynamic public init()
+  @objc public func getGoogleAdPersonalization() -> PurposeConsentStatus
+  @objc public func getGoogleAdUserData() -> PurposeConsentStatus
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RequestHelper : ObjectiveC.NSObject {
@@ -49,6 +61,8 @@ extension CoreData.NSManagedObjectContext {
   public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
 }
 @_inheritsConvenienceInitializers @objc public class TenjinDatasource : ObjectiveC.NSObject {
+  @objc public static func setBooleanValue(_ value: Swift.Bool, key: Swift.String)
+  public static func getOptionalBoolean(_ key: Swift.String) -> Swift.Bool?
   @objc public static func setCacheEventsSetting(_ isCacheEventsEnabled: Swift.Bool)
   @objc public static func getCacheEventsSetting() -> Swift.Bool
   @objc public static func getAnalyticsInstallationId() -> Swift.String
@@ -71,3 +85,6 @@ extension CoreData.NSManagedObjectContext {
   @objc public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @objc deinit
 }
+extension PurposeConsentStatus : Swift.Equatable {}
+extension PurposeConsentStatus : Swift.Hashable {}
+extension PurposeConsentStatus : Swift.RawRepresentable {}
