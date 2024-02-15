@@ -33,6 +33,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 - [Customer User ID][17]
 - [Analytics Installation ID][40]
 - [Opt in/Opt out using CMP consents][41]
+- [Google DMA parameters][42]
 - [Retry/cache events and IAP][39]
 
 
@@ -496,6 +497,15 @@ You can automatically opt in or opt out using your CMP consents (purpose 1) whic
 optInOut = [TenjinSDK optInOutUsingCMP]; 
 ```
 
+# <a id="google-dma"></a>Google DMA parameters
+Tenjin automatically sends Google DMA parameters (`ad_personalization` and `ad_user_data`) if you use a CMP in your app based in user's consents. If you'd like to override those parameters or you don't use a CMP 'you can use the following method:
+
+`setGoogleDMAParametersWithAdPersonalization(bool, bool)`
+
+```objectivec
+[[TeninSDK sharedInstance] setGoogleDMAParametersWithAdPersonalization:adPersonalization adUserData:adUserData]; 
+```
+
 # <a id="retry-cache"></a>Retry/cache of events/IAP
 You can enable/disable retrying and caching events and IAP when requests fail or users don't have internet connection. These events will be sent after a new event has been added to the queue and user has recovered connection.
 
@@ -546,6 +556,7 @@ You can enable/disable retrying and caching events and IAP when requests fail or
 [39]: #retry-cache
 [40]: #analytics-id
 [41]: #optin-cmp
+[42]: #google-dma
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
 [image-3]:	https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png
