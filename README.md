@@ -21,6 +21,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 	- [SKAdNetwork and Conversion value][5]
 		- [SKAdNetwork and iOS 15+ Advertiser Postbacks][6]
 	- [Tenjin and GDPR][7]
+        - [Opt in/Opt out using CMP consents][41]
 	- [Device-Related Parameters][8]
 - [Purchase Events][9]
 	- [Subscription IAP][10]
@@ -32,7 +33,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 - [Attribution Info][16]
 - [Customer User ID][17]
 - [Analytics Installation ID][40]
-- [Opt in/Opt out using CMP consents][41]
+- [Google DMA parameters][42]
 - [Retry/cache events and IAP][39]
 
 
@@ -343,6 +344,16 @@ NSArray *optOutParams = @[@"country", @"timezone", @"language"];
 [TenjinSDK connect];
 ```
 
+### <a id="optin-cmp"></a>Opt in/out using CMP
+You can automatically opt in or opt out using your CMP consents (purpose 1) which are already saved in the user's device. The method returns a boolean to let you know if it's opted in or out.
+
+`optInOutUsingCMP()`
+
+```objectivec
+[TenjinSDK initialize:@"<SDK_KEY>"];
+optInOut = [TenjinSDK optInOutUsingCMP]; 
+```
+
 ### <a id="device-related-parameters"></a> Device-Related Parameters
 
 | Param  | Description | Reference |
@@ -486,14 +497,14 @@ You can get the analytics id which is generated randomly and saved in the local 
 analyticsId = [TenjinSDK getAnalyticsInstallationId]; 
 ```
 
-# <a id="optin-cmp"></a>Opt in/out using CMP
-You can automatically opt in or opt out using your CMP consents (purpose 1) which are already saved in the user's device. The method returns a boolean to let you know if it's opted in or out.
+# <a id="google-dma"></a>Google DMA parameters
+If you already have a CMP integrated, Google DMA parameters will be automatically collected by the Tenjin SDK. There’s nothing to implement in the Tenjin SDK if you have a CMP integrated.
+If you want to override your CMP, or simply want to build your own consent mechanisms, you can use the following:
 
-`optInOutUsingCMP()`
+`setGoogleDMAParametersWithAdPersonalization(bool, bool)`
 
 ```objectivec
-[TenjinSDK initialize:@"<SDK_KEY>"];
-optInOut = [TenjinSDK optInOutUsingCMP]; 
+[[TeninSDK sharedInstance] setGoogleDMAParametersWithAdPersonalization:adPersonalization adUserData:adUserData]; 
 ```
 
 # <a id="retry-cache"></a>Retry/cache of events/IAP
@@ -546,6 +557,7 @@ You can enable/disable retrying and caching events and IAP when requests fail or
 [39]: #retry-cache
 [40]: #analytics-id
 [41]: #optin-cmp
+[42]: #google-dma
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
 [image-3]:	https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png
