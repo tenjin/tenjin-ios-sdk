@@ -21,6 +21,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 	- [SKAdNetwork and Conversion value][5]
 		- [SKAdNetwork and iOS 15+ Advertiser Postbacks][6]
 	- [Tenjin and GDPR][7]
+        - [Opt in/Opt out using CMP consents][41]
 	- [Device-Related Parameters][8]
 - [Purchase Events][9]
 	- [Subscription IAP][10]
@@ -32,7 +33,6 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 - [Attribution Info][16]
 - [Customer User ID][17]
 - [Analytics Installation ID][40]
-- [Opt in/Opt out using CMP consents][41]
 - [Google DMA parameters][42]
 - [Retry/cache events and IAP][39]
 
@@ -344,6 +344,16 @@ NSArray *optOutParams = @[@"country", @"timezone", @"language"];
 [TenjinSDK connect];
 ```
 
+### <a id="optin-cmp"></a>Opt in/out using CMP
+You can automatically opt in or opt out using your CMP consents (purpose 1) which are already saved in the user's device. The method returns a boolean to let you know if it's opted in or out.
+
+`optInOutUsingCMP()`
+
+```objectivec
+[TenjinSDK initialize:@"<SDK_KEY>"];
+optInOut = [TenjinSDK optInOutUsingCMP]; 
+```
+
 ### <a id="device-related-parameters"></a> Device-Related Parameters
 
 | Param  | Description | Reference |
@@ -487,18 +497,9 @@ You can get the analytics id which is generated randomly and saved in the local 
 analyticsId = [TenjinSDK getAnalyticsInstallationId]; 
 ```
 
-# <a id="optin-cmp"></a>Opt in/out using CMP
-You can automatically opt in or opt out using your CMP consents (purpose 1) which are already saved in the user's device. The method returns a boolean to let you know if it's opted in or out.
-
-`optInOutUsingCMP()`
-
-```objectivec
-[TenjinSDK initialize:@"<SDK_KEY>"];
-optInOut = [TenjinSDK optInOutUsingCMP]; 
-```
-
 # <a id="google-dma"></a>Google DMA parameters
-Tenjin automatically sends Google DMA parameters (`ad_personalization` and `ad_user_data`) if you use a CMP in your app based in user's consents. If you'd like to override those parameters or you don't use a CMP 'you can use the following method:
+If you already have a CMP integrated, Google DMA parameters will be automatically collected by the Tenjin SDK. There’s nothing to implement in the Tenjin SDK if you have a CMP integrated.
+If you want to override your CMP, or simply want to build your own consent mechanisms, you can use the following:
 
 `setGoogleDMAParametersWithAdPersonalization(bool, bool)`
 
