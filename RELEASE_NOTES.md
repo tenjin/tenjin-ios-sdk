@@ -328,3 +328,7 @@ v1.14.0
 ----
 - Capture and send Google DMA parameters `ad_personalization` and `ad_user_data`
 - Add `deferred_deeplink_url` and `click_id` to `getAttributionInfo` method
+
+v1.14.1
+----
+- Add opt out (`optOutGoogleDMA`) and opt in (`optInGoogleDMA`) methods for Google DMA

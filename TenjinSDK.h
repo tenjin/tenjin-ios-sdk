@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.14.0
+//  Version 1.14.1
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -145,6 +145,12 @@ andDeferredDeeplink:(NSURL *)url
 // GDPR opt-in/opt-out through CMP consents
 + (bool)optInOutUsingCMP;
 
+// Opt out from Google DMA parameters (opted in by default)
++ (void)optOutGoogleDMA;
+
+// Opt out from Google DMA parameters
++ (void)optInGoogleDMA;
+
 // Appends app subversion to app version
 + (void)appendAppSubversion:(NSNumber *)subversion;
 
@@ -202,95 +208,4 @@ andDeferredDeeplink:(NSURL *)url
 
 - (void)setGoogleDMAParametersWithAdPersonalization:(BOOL)adPersonalization adUserData:(BOOL)adUserData;
 
-@end
-
-//
-// Created by Tenjin
-// Copyright (c) 2022 Tenjin. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
-#import "TenjinSDK.h"
-
-@interface TenjinSDK (TopOnILRD)
-+ (void)topOnImpressionFromDict:(NSDictionary *)adImpression;
-+ (void)topOnImpressionFromJSON:(NSString *)jsonString;
-@end
-//
-// Created by Tenjin
-// Copyright (c) 2022 Tenjin. All rights reserved.
-//
-
-#import "TenjinSDK.h"
-#import <Foundation/Foundation.h>
-
-@interface TenjinSDK (AppLovinILRD)
-+ (void)subscribeAppLovinImpressions;
-+ (void)appLovinImpressionFromJSON:(NSString *)jsonString;
-@end
-//
-// Created by Tenjin
-// Copyright (c) 2022 Tenjin. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
-#import "TenjinSDK.h"
-
-@interface TenjinSDK (HyperBidILRD)
-+ (void)hyperBidImpressionFromDict:(NSDictionary *)adImpression;
-+ (void)hyperBidImpressionFromJSON:(NSString *)jsonString;
-@end
-//
-// Created by Tenjin
-// Copyright (c) 2022 Tenjin. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
-#import "TenjinSDK.h"
-
-@class GADAdValue;
-
-@interface TenjinSDK (AdMobILRD)
-+ (void)handleAdMobILRD:(NSObject *)adView :(GADAdValue *)adValue;
-+ (void)adMobImpressionFromJSON:(NSString *)jsonString;
-@end
-//
-// Created by Tenjin
-// Copyright (c) 2022 Tenjin. All rights reserved.
-//
-
-#import "TenjinSDK.h"
-#import <Foundation/Foundation.h>
-
-@interface TenjinSDK (IronSourceILRD)
-+ (void)subscribeIronSourceImpressions;
-+ (void)ironSourceImpressionFromJSON:(NSString *)jsonString;
-@end
-
-//
-// Created by Tenjin
-// Copyright (c) 2023 Tenjin. All rights reserved.
-//
-
-#import "TenjinSDK.h"
-#import <Foundation/Foundation.h>
-
-@interface TenjinSDK (CASILRD)
-+ (void)subscribeCASBannerImpressions;
-+ (void)casImpressionFromJSON:(NSString *)jsonString;
-+ (void)handleCASILRD:(id)adImpression;
-@end
-
-//
-// Created by Tenjin
-// Copyright (c) 2023 Tenjin. All rights reserved.
-//
-
-#import "TenjinSDK.h"
-#import <Foundation/Foundation.h>
-
-@interface TenjinSDK (TradPlusILRD)
-+ (void)subscribeTradPlusImpressions;
-+ (void)tradPlusImpressionFromJSON:(NSString *)jsonString;
-+ (void)handleTradPlusILRD:(NSDictionary *)adInfo;
 @end
