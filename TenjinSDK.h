@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.14.0
+//  Version 1.14.1
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -144,6 +144,12 @@ andDeferredDeeplink:(NSURL *)url
 
 // GDPR opt-in/opt-out through CMP consents
 + (bool)optInOutUsingCMP;
+
+// Opt out from Google DMA parameters (opted in by default)
++ (void)optOutGoogleDMA;
+
+// Opt out from Google DMA parameters
++ (void)optInGoogleDMA;
 
 // Appends app subversion to app version
 + (void)appendAppSubversion:(NSNumber *)subversion;

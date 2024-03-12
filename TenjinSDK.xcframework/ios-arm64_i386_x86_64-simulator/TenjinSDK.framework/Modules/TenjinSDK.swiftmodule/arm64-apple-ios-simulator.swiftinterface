@@ -43,6 +43,7 @@ import _Concurrency
   @objc public func optIn() -> Swift.Bool
   @objc public func getGoogleAdPersonalization() -> PurposeConsentStatus
   @objc public func getGoogleAdUserData() -> PurposeConsentStatus
+  @objc public func isGoogleDMADisabled() -> Swift.Bool
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RequestHelper : ObjectiveC.NSObject {

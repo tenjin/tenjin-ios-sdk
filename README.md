@@ -506,6 +506,12 @@ If you want to override your CMP, or simply want to build your own consent mecha
 ```objectivec
 [[TeninSDK sharedInstance] setGoogleDMAParametersWithAdPersonalization:adPersonalization adUserData:adUserData]; 
 ```
+To explicitly manage the collection of Google DMA parameters, you have the flexibility to opt in or opt out at any time. While the default setting is to opt in, you can easily adjust your preferences using the optInGoogleDMA or optOutGoogleDMA methods, ensuring full control over your data privacy settings:
+
+```objectivec
+[TeninSDK optInGoogleDMA]; 
+[TeninSDK optOutGoogleDMA]; 
+```
 
 # <a id="retry-cache"></a>Retry/cache of events/IAP
 You can enable/disable retrying and caching events and IAP when requests fail or users don't have internet connection. These events will be sent after a new event has been added to the queue and user has recovered connection.

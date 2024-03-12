@@ -228,6 +228,7 @@ SWIFT_CLASS("_TtC9TenjinSDK10GDPRHelper")
 - (BOOL)optIn SWIFT_WARN_UNUSED_RESULT;
 - (enum PurposeConsentStatus)getGoogleAdPersonalization SWIFT_WARN_UNUSED_RESULT;
 - (enum PurposeConsentStatus)getGoogleAdUserData SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isGoogleDMADisabled SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -546,6 +547,7 @@ SWIFT_CLASS("_TtC9TenjinSDK10GDPRHelper")
 - (BOOL)optIn SWIFT_WARN_UNUSED_RESULT;
 - (enum PurposeConsentStatus)getGoogleAdPersonalization SWIFT_WARN_UNUSED_RESULT;
 - (enum PurposeConsentStatus)getGoogleAdUserData SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isGoogleDMADisabled SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -864,6 +866,7 @@ SWIFT_CLASS("_TtC9TenjinSDK10GDPRHelper")
 - (BOOL)optIn SWIFT_WARN_UNUSED_RESULT;
 - (enum PurposeConsentStatus)getGoogleAdPersonalization SWIFT_WARN_UNUSED_RESULT;
 - (enum PurposeConsentStatus)getGoogleAdUserData SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isGoogleDMADisabled SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

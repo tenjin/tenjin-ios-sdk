@@ -144,6 +144,12 @@ andDeferredDeeplink:(NSURL *)url
 // GDPR opt-in/opt-out through CMP consents
 + (bool)optInOutUsingCMP;
 
+// Opt out from Google DMA parameters (opted in by default)
++ (void)optOutGoogleDMA;
+
+// Opt out from Google DMA parameters
++ (void)optInGoogleDMA;
+
 // Appends app subversion to app version
 + (void)appendAppSubversion:(NSNumber *)subversion;
 
