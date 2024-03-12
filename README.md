@@ -509,8 +509,8 @@ If you want to override your CMP, or simply want to build your own consent mecha
 To explicitly manage the collection of Google DMA parameters, you have the flexibility to opt in or opt out at any time. While the default setting is to opt in, you can easily adjust your preferences using the optInGoogleDMA or optOutGoogleDMA methods, ensuring full control over your data privacy settings:
 
 ```objectivec
-[[TeninSDK sharedInstance] optInGoogleDMA]; 
-[[TeninSDK sharedInstance] optOutGoogleDMA]; 
+[TeninSDK optInGoogleDMA]; 
+[TeninSDK optOutGoogleDMA]; 
 ```
 
 # <a id="retry-cache"></a>Retry/cache of events/IAP
