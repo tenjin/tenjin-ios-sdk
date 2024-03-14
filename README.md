@@ -249,18 +249,18 @@ As of iOS 16.1, which supports SKAdNetwork 4.0, you can now send `coarseValue` (
     [TenjinSDK connect];
 
     //
-    // This will call [SKAdNetwork updatePostbackConversionValue: 3]
+    // This will call [SKAdNetwork updatePostbackConversionValue: <Integer between 0 and 63>]
     // and also send conversion value to our servers.
     //
     // You will need to use a value between 0-63.
     //
-    [TenjinSDK updatePostbackConversionValue: 3];
+    [TenjinSDK updatePostbackConversionValue: <Integer between 0 and 63>];
     
     // For iOS 16.1+ (SKAN 4.0)
 
-    [TenjinSDK updatePostbackConversionValue: 3 coarseValue:@"medium"];
+    [TenjinSDK updatePostbackConversionValue: <Integer between 0 and 63> coarseValue:@"medium"];
 
-    [TenjinSDK updatePostbackConversionValue: 3 coarseValue:@"medium" lockWindow:true];
+    [TenjinSDK updatePostbackConversionValue: <Integer between 0 and 63> coarseValue:@"medium" lockWindow:true];
 
 }
 }
