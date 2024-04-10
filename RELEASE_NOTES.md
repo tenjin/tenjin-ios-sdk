@@ -332,3 +332,7 @@ v1.14.0
 v1.14.1
 ----
 - Add opt out (`optOutGoogleDMA`) and opt in (`optInGoogleDMA`) methods for Google DMA
+
+v1.14.2
+----
+- Add Privacy manifest (`PrivacyInfo.xcprivacy`) to the SDK
