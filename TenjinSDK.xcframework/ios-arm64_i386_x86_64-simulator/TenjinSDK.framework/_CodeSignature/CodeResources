@@ -84,6 +84,10 @@
 		<data>
 		zJjkkkrtIkSMVLcgJOHBjVCyNGY=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		ZgZkUSvBfEzKqWNcw+WRrHWAHzk=
+		</data>
 		<key>PrivateHeaders/AsyncOperation.h</key>
 		<data>
 		ED1GXKimECuv7STFczEyYEfmCnI=
@@ -106,7 +110,7 @@
 		</data>
 		<key>PrivateHeaders/TenjinConst.h</key>
 		<data>
-		ofeRucjrU6kWCz+CiR4P9O91r9o=
+		t8zNLq9u7b77HbZ23WvQ5NUtSsc=
 		</data>
 		<key>PrivateHeaders/TenjinUtil.h</key>
 		<data>
@@ -332,6 +336,17 @@
 			+6VF6T3zybby0RiGlE+yBYzWCzBZvE9XIIeVVt2DkaA=
 			</data>
 		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZgZkUSvBfEzKqWNcw+WRrHWAHzk=
+			</data>
+			<key>hash2</key>
+			<data>
+			k44L0hH+byKJ/QemLFr2FCQAQtocXOp2THl0wPl8c+c=
+			</data>
+		</dict>
 		<key>PrivateHeaders/AsyncOperation.h</key>
 		<dict>
 			<key>hash</key>
@@ -391,11 +406,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ofeRucjrU6kWCz+CiR4P9O91r9o=
+			t8zNLq9u7b77HbZ23WvQ5NUtSsc=
 			</data>
 			<key>hash2</key>
 			<data>
-			zZyyBXf+sbu3j2hBuOqXuPh41WH+KiI3N1rXny8+xnY=
+			DCxk7weFT5VcSPbvKJXpWlW1cdYRbn24ljU4Nf3vKK0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/TenjinUtil.h</key>
