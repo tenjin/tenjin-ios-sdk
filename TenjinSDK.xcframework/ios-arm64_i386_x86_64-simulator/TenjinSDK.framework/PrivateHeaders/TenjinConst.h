@@ -13,7 +13,7 @@
 #define kTenjinConversionEndpoint @"conversion-values"
 
 //this line replaced by build script
-#define kTenjinTenjinSDKVersion @"1.14.2"
+#define kTenjinTenjinSDKVersion @"1.14.3"
 
 
 #define kTenjinPlatformIos @"ios"
@@ -58,8 +58,7 @@
 #define kTenjinGoogleAdUserDataKey @"TENJIN_GOOGLE_AD_USER_DATA"
 #define kTenjinGoogleDMADisabled @"TENJIN_GOOGLE_DMA_DISABLED"
 
-//one hour in seconds
-#define kTenjinMaxWait 3600
+#define kTenjinAttributionMaxBackoff 15
 
 #define kTenjinStartupMaxRetries 5
 #define kTenjinRetrySleepBaseInSeconds 2.0

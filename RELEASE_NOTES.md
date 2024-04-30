@@ -336,3 +336,8 @@ v1.14.1
 v1.14.2
 ----
 - Add Privacy manifest (`PrivacyInfo.xcprivacy`) to the SDK
+
+v1.14.3
+----
+- Adjust attribution retry times
+- Deprecate `eventWithNameAndValue` receiving string value
