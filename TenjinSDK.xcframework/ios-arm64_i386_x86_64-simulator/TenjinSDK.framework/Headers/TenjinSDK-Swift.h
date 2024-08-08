@@ -219,6 +219,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSString;
 
+SWIFT_CLASS("_TtC9TenjinSDK26AttributionOperationHelper")
+@interface AttributionOperationHelper : NSObject
+- (void)getAttributionTokenWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
+- (void)requestAttributionDetailsWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9TenjinSDK11ErrorLogger")
 @interface ErrorLogger : NSObject
 + (void)addLogWithLog:(NSString * _Nonnull)log;
@@ -546,6 +554,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSString;
 
+SWIFT_CLASS("_TtC9TenjinSDK26AttributionOperationHelper")
+@interface AttributionOperationHelper : NSObject
+- (void)getAttributionTokenWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
+- (void)requestAttributionDetailsWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9TenjinSDK11ErrorLogger")
 @interface ErrorLogger : NSObject
 + (void)addLogWithLog:(NSString * _Nonnull)log;
@@ -872,6 +888,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 @class NSString;
+
+SWIFT_CLASS("_TtC9TenjinSDK26AttributionOperationHelper")
+@interface AttributionOperationHelper : NSObject
+- (void)getAttributionTokenWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion;
+- (void)requestAttributionDetailsWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nullable, NSError * _Nullable))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC9TenjinSDK11ErrorLogger")
 @interface ErrorLogger : NSObject

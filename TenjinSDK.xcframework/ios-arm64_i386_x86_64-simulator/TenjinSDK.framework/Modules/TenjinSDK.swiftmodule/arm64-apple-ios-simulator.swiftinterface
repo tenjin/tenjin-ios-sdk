@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TenjinSDK
+import AdServices
 import CoreData
 import Foundation
 import Network
@@ -61,6 +62,12 @@ import _Concurrency
 @_inheritsConvenienceInitializers @objc public class ErrorLogger : ObjectiveC.NSObject {
   @objc public static func addLog(log: Swift.String)
   @objc public static func compileLogsToURLParam() -> Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class AttributionOperationHelper : ObjectiveC.NSObject {
+  @objc public func getAttributionToken(completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
+  @objc public func requestAttributionDetails(completion: @escaping ([Swift.String : Any]?, Swift.Error?) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
