@@ -341,3 +341,7 @@ v1.14.3
 ----
 - Adjust attribution retry times
 - Deprecate `eventWithNameAndValue` receiving string value
+
+v1.14.4
+----
+- Remove deprecated Apple `iAd` framework from the SDK
