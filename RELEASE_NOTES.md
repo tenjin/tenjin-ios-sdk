@@ -345,3 +345,7 @@ v1.14.3
 v1.14.4
 ----
 - Remove deprecated Apple `iAd` framework from the SDK
+
+v1.14.5
+----
+- Improve SKAN postbacks implementation for older SKAN methods
