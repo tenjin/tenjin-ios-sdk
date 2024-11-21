@@ -59,9 +59,8 @@ import _Concurrency
   @objc func method(_ method: Swift.String, url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?)
   @objc func method(_ method: Swift.String, url: Swift.String, body: Swift.String?, headers: [Swift.AnyHashable : Any]?, completionBlock block: ((Foundation.Data?, Foundation.URLResponse?, Swift.Error?, Swift.Bool) -> Swift.Void)?)
 }
-@_inheritsConvenienceInitializers @objc public class AttributionOperationHelper : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class AttributionOperationHelperMigration : ObjectiveC.NSObject {
   @objc public func getAttributionToken(completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
-  @objc public func requestAttributionDetails(completion: @escaping ([Swift.String : Any]?, Swift.Error?) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }

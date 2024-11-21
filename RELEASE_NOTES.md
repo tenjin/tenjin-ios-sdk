@@ -349,3 +349,7 @@ v1.14.4
 v1.14.5
 ----
 - Improve SKAN postbacks implementation for older SKAN methods
+
+v1.14.6
+----
+- Improve ASA token retrieval
