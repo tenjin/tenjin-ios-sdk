@@ -353,3 +353,8 @@ v1.14.5
 v1.14.6
 ----
 - Improve ASA token retrieval
+
+v1.14.7
+----
+- Remove Bitcode from the SDK
+- Add debug symbols (dSYM)
