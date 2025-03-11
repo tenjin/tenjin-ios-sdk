@@ -64,6 +64,11 @@ import _Concurrency
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GoogleOnDeviceConversionManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func fetchAggregateConversionInfo()
+  @objc deinit
+}
 extension CoreData.NSManagedObjectContext {
   public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
 }
@@ -72,6 +77,8 @@ extension CoreData.NSManagedObjectContext {
   public static func getOptionalBoolean(_ key: Swift.String) -> Swift.Bool?
   @objc public static func setCacheEventsSetting(_ isCacheEventsEnabled: Swift.Bool)
   @objc public static func getCacheEventsSetting() -> Swift.Bool
+  @objc public static func setODMInfo(_ odmInfo: Swift.String)
+  @objc public static func getODMInfo() -> Swift.String?
   @objc public static func getAnalyticsInstallationId() -> Swift.String
   @objc override dynamic public init()
   @objc deinit
