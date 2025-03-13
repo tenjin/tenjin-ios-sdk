@@ -358,3 +358,7 @@ v1.14.7
 ----
 - Remove Bitcode from the SDK
 - Add debug symbols (dSYM)
+
+v1.14.8
+----
+- Support for Google Ads On Device Conversion Measurement using Event Data
