@@ -362,3 +362,7 @@ v1.14.7
 v1.14.8
 ----
 - Support for Google Ads On Device Conversion Measurement using Event Data
+
+v1.14.9
+----
+- Add extra layer of security to HTTP requests

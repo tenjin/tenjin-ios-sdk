@@ -77,6 +77,8 @@ extension CoreData.NSManagedObjectContext {
   public static func getOptionalBoolean(_ key: Swift.String) -> Swift.Bool?
   @objc public static func setCacheEventsSetting(_ isCacheEventsEnabled: Swift.Bool)
   @objc public static func getCacheEventsSetting() -> Swift.Bool
+  @objc public static func setEncryptRequestsSetting(_ isEncryptRequestsEnabled: Swift.Bool)
+  @objc public static func getEncryptRequestsSetting() -> Swift.Bool
   @objc public static func setODMInfo(_ odmInfo: Swift.String)
   @objc public static func getODMInfo() -> Swift.String?
   @objc public static func getAnalyticsInstallationId() -> Swift.String
