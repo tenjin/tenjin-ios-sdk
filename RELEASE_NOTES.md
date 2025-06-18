@@ -366,3 +366,7 @@ v1.14.8
 v1.14.9
 ----
 - Add extra layer of security to HTTP requests
+
+v1.14.10
+----
+- Improve device parameters management
