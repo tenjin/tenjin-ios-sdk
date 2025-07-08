@@ -370,3 +370,7 @@ v1.14.9
 v1.14.10
 ----
 - Improve device parameters management
+
+v1.14.11
+----
+- Improve ILRD parameters management
