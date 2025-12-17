@@ -33,6 +33,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 - [Attribution Info][16]
 - [Customer User ID][17]
 - [Analytics Installation ID][40]
+- [User Profile - LiveOps Metrics][43]
 - [Google DMA parameters][42]
 - [Retry/cache events and IAP][39]
 
@@ -497,6 +498,129 @@ You can get the analytics id which is generated randomly and saved in the local 
 analyticsId = [TenjinSDK getAnalyticsInstallationId]; 
 ```
 
+# <a id="user-profile"></a>User Profile - LiveOps Metrics
+
+The Tenjin SDK automatically tracks user engagement metrics to help you understand player behavior and lifetime value. These metrics are collected automatically and can be accessed programmatically.
+
+> [!WARNING]
+> User Profile is a paid feature. Please contact your Tenjin account manager if you are interested.
+
+## Automatic Tracking
+
+The SDK automatically tracks:
+- **Session metrics**: Session count, duration, first/last session dates
+- **In-App Purchases (IAP)**: Transaction count, revenue by currency, purchased product IDs
+- **Ad Revenue (ILRD)**: Impression-level revenue from supported ad networks
+
+## Retrieving User Profile Data
+
+### Get Full Profile Object
+
+Returns a `TJNUserProfileData` object with all metrics:
+
+```objectivec
+TJNUserProfileData *profile = [TenjinSDK getUserProfile];
+
+// Session metrics
+NSInteger sessionCount = profile.sessionCount;
+NSTimeInterval totalTime = profile.totalSessionTime;
+NSTimeInterval avgLength = profile.averageSessionLength;
+NSTimeInterval lastSession = profile.lastSessionLength;
+NSTimeInterval currentSession = profile.currentSessionDuration;
+NSDate *firstSession = profile.firstSessionDate;
+NSDate *lastSession = profile.lastSessionDate;
+
+// IAP metrics
+NSInteger iapCount = profile.iapTransactionCount;
+NSDictionary *revenueByCurrency = profile.iapRevenueByCurrency;
+NSArray *productIDs = profile.purchasedProductIDsArray;
+
+// ILRD metrics
+double totalAdRevenue = profile.totalILRDRevenueUSD;
+NSDictionary *revenueByNetwork = profile.ilrdRevenueByNetwork;
+```
+
+**Available Properties:**
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `sessionCount` | `NSInteger` | Total number of sessions |
+| `totalSessionTime` | `NSTimeInterval` | Total time in seconds |
+| `averageSessionLength` | `NSTimeInterval` | Average session in seconds |
+| `lastSessionLength` | `NSTimeInterval` | Last completed session in seconds |
+| `currentSessionDuration` | `NSTimeInterval` | Current active session in seconds |
+| `firstSessionDate` | `NSDate?` | First session date |
+| `lastSessionDate` | `NSDate?` | Last completed session date |
+| `iapTransactionCount` | `NSInteger` | Total IAP count |
+| `iapRevenueByCurrency` | `NSDictionary<NSString*, NSNumber*>` | Revenue by currency code |
+| `purchasedProductIDsArray` | `NSArray<NSString*>` | Sorted product IDs |
+| `totalILRDRevenueUSD` | `double` | Total ad revenue USD |
+| `ilrdRevenueByNetwork` | `NSDictionary<NSString*, NSNumber*>` | Ad revenue by network |
+
+### Get Profile as Dictionary
+
+Returns a dictionary with all metrics for easy serialization or display:
+
+```objectivec
+NSDictionary *profileDict = [TenjinSDK getUserProfileAsDictionary];
+
+// Example usage
+NSNumber *sessionCount = profileDict[@"session_count"];
+NSString *firstSession = profileDict[@"first_session_date"];
+NSDictionary *iapRevenue = profileDict[@"iap_revenue_by_currency"];
+NSArray *productIds = profileDict[@"purchased_product_ids"];
+```
+
+**Dictionary Keys (Always Present):**
+
+| Key | Type | Description |
+|-----|------|-------------|
+| `session_count` | `NSNumber` | Total sessions |
+| `total_session_time` | `NSNumber` | Total time (seconds) |
+| `average_session_length` | `NSNumber` | Average session (seconds) |
+| `last_session_length` | `NSNumber` | Last session (seconds) |
+| `iap_transaction_count` | `NSNumber` | Total IAP count |
+| `total_ilrd_revenue_usd` | `NSNumber` | Total ad revenue USD |
+
+**Dictionary Keys (Conditional - only if available):**
+
+| Key | Type | Description |
+|-----|------|-------------|
+| `first_session_date` | `NSString` | ISO8601 formatted date |
+| `last_session_date` | `NSString` | ISO8601 formatted date |
+| `current_session_length` | `NSNumber` | Active session duration (seconds) |
+| `iap_revenue_by_currency` | `NSDictionary` | Map of currency → revenue |
+| `purchased_product_ids` | `NSArray` | Sorted array of product IDs |
+| `ilrd_revenue_by_network` | `NSDictionary` | Map of network → revenue |
+
+### Reset Profile
+
+Clears all user profile data (useful for testing or user logout):
+
+```objectivec
+[TenjinSDK resetUserProfile];
+```
+
+## Session Configuration
+
+Customize session timeout (default 30 minutes):
+
+```objectivec
+TJNUserProfileManager.sessionTimeoutInterval = 600; // 10 minutes
+```
+
+## Helper Methods
+
+Get revenue for specific currency:
+```objectivec
+double usdRevenue = [profile getIAPRevenueForCurrency:@"USD"];
+```
+
+Get ILRD revenue for specific network:
+```objectivec
+double appLovinRevenue = [profile getILRDRevenueForNetwork:TJNAdNetworkAppLovin];
+```
+
 # <a id="google-dma"></a>Google DMA parameters
 If you already have a CMP integrated, Google DMA parameters will be automatically collected by the Tenjin SDK. There’s nothing to implement in the Tenjin SDK if you have a CMP integrated.
 If you want to override your CMP, or simply want to build your own consent mechanisms, you can use the following:
@@ -564,6 +688,7 @@ You can enable/disable retrying and caching events and IAP when requests fail or
 [40]: #analytics-id
 [41]: #optin-cmp
 [42]: #google-dma
+[43]: #user-profile
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
 [image-3]:	https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png
