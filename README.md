@@ -502,9 +502,6 @@ analyticsId = [TenjinSDK getAnalyticsInstallationId];
 
 The Tenjin SDK automatically tracks user engagement metrics to help you understand player behavior and lifetime value. These metrics are collected automatically and can be accessed programmatically.
 
-> [!WARNING]
-> User Profile is a paid feature. Please contact your Tenjin account manager if you are interested.
-
 ## Automatic Tracking
 
 The SDK automatically tracks:
