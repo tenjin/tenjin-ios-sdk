@@ -7,6 +7,7 @@ import Foundation
 import Network
 import Swift
 @_exported import TenjinSDK
+import UIKit
 import _Concurrency
 @objc @_inheritsConvenienceInitializers public class QueueEvent : CoreData.NSManagedObject, Swift.Identifiable {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<QueueEvent>
@@ -64,6 +65,97 @@ import _Concurrency
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TJNUserProfileManager : ObjectiveC.NSObject {
+  @objc public static let shared: TJNUserProfileManager
+  @objc public static var sessionTimeoutInterval: Swift.Double
+  @objc public func recordIAPTransaction(revenue: Swift.Double, currencyCode: Swift.String)
+  @objc public func recordIAPTransaction(revenue: Swift.Double, currencyCode: Swift.String, productID: Swift.String?)
+  @objc public func recordILRDRevenue(revenueUSD: Swift.Double, network: TJNAdNetwork)
+  @objc public func getProfileData() -> TJNUserProfileData
+  @objc public func getProfileDictionary() -> [Swift.String : Any]
+  @objc public func getScalarProfileDictionary() -> [Swift.String : Any]
+  @objc public func resetProfile()
+  @objc deinit
+}
+@objc public enum TJNAdNetwork : Swift.Int {
+  case ironSource
+  case appLovin
+  case adMob
+  case hyperBid
+  case topOn
+  case cas
+  case tradPlus
+  public var identifier: Swift.String {
+    get
+  }
+  public var displayName: Swift.String {
+    get
+  }
+  public static func from(identifier: Swift.String) -> TJNAdNetwork?
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class TJNUserProfileData : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var sessionCount: Swift.Int {
+    get
+  }
+  @objc public var totalSessionTime: Swift.Int64 {
+    get
+  }
+  @objc public var lastSessionLength: Swift.Int64 {
+    get
+  }
+  @objc public var currentSessionStartTime: Foundation.Date? {
+    get
+  }
+  @objc public var lastBackgroundTime: Foundation.Date? {
+    get
+  }
+  @objc public var currentSessionPausedTime: Swift.Int64 {
+    get
+  }
+  @objc public var firstSessionDate: Foundation.Date? {
+    get
+  }
+  @objc public var lastSessionDate: Foundation.Date? {
+    get
+  }
+  @objc public var iapTransactionCount: Swift.Int {
+    get
+  }
+  @objc public var iapRevenueByCurrency: [Swift.String : Swift.Double] {
+    get
+  }
+  @objc public var totalILRDRevenueUSD: Swift.Double {
+    get
+  }
+  @objc public var ilrdRevenueByNetwork: [Swift.String : Swift.Double] {
+    get
+  }
+  required public init(from decoder: Swift.Decoder) throws
+  @objc public var currentSessionDuration: Swift.Int64 {
+    @objc get
+  }
+  @objc public var totalSessionTimeIncludingCurrent: Swift.Int64 {
+    @objc get
+  }
+  @objc public var averageSessionLength: Swift.Int64 {
+    @objc get
+  }
+  @objc public var purchasedProductIDsArray: [Swift.String] {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc public func getILRDRevenue(forNetwork network: TJNAdNetwork) -> Swift.Double
+  @objc public func getIAPRevenue(forCurrency currencyCode: Swift.String) -> Swift.Double
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc public func toScalarDictionary() -> [Swift.String : Any]
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class GoogleOnDeviceConversionManager : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc public func fetchAggregateConversionInfo()
@@ -82,6 +174,8 @@ extension CoreData.NSManagedObjectContext {
   @objc public static func setODMInfo(_ odmInfo: Swift.String)
   @objc public static func getODMInfo() -> Swift.String?
   @objc public static func getAnalyticsInstallationId() -> Swift.String
+  @objc public static func setInitializedAt(_ timestamp: Swift.String)
+  @objc public static func getInitializedAt() -> Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -104,3 +198,6 @@ extension CoreData.NSManagedObjectContext {
 extension PurposeConsentStatus : Swift.Equatable {}
 extension PurposeConsentStatus : Swift.Hashable {}
 extension PurposeConsentStatus : Swift.RawRepresentable {}
+extension TJNAdNetwork : Swift.Equatable {}
+extension TJNAdNetwork : Swift.Hashable {}
+extension TJNAdNetwork : Swift.RawRepresentable {}

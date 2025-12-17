@@ -1,12 +1,14 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.14.11
+//  Version 1.15.0
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <StoreKit/StoreKit.h>
+
+@class TJNUserProfileData;
 
 @interface TenjinSDK : NSObject
 
@@ -190,6 +192,14 @@ andDeferredDeeplink:(NSURL *)url
 
 // Get cached analytics_installation_id
 + (NSString*)getAnalyticsInstallationId;
+
+#pragma mark User Profile
+
++ (TJNUserProfileData *)getUserProfile;
+
++ (NSDictionary *)getUserProfileAsDictionary;
+
++ (void)resetUserProfile;
 
 #pragma mark Util
 
