@@ -375,6 +375,6 @@ v1.14.11
 ----
 - Improve ILRD parameters management
 
-v1.14.12
+v1.15.0
 ----
 - Add User Profile - LiveOps Analytics metrics

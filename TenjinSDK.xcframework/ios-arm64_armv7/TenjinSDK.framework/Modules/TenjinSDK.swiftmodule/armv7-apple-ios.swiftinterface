@@ -102,10 +102,10 @@ import _Concurrency
   @objc public var sessionCount: Swift.Int {
     get
   }
-  @objc public var totalSessionTime: Swift.Double {
+  @objc public var totalSessionTime: Swift.Int64 {
     get
   }
-  @objc public var lastSessionLength: Swift.Double {
+  @objc public var lastSessionLength: Swift.Int64 {
     get
   }
   @objc public var currentSessionStartTime: Foundation.Date? {
@@ -114,7 +114,7 @@ import _Concurrency
   @objc public var lastBackgroundTime: Foundation.Date? {
     get
   }
-  @objc public var currentSessionPausedTime: Swift.Double {
+  @objc public var currentSessionPausedTime: Swift.Int64 {
     get
   }
   @objc public var firstSessionDate: Foundation.Date? {
@@ -136,13 +136,13 @@ import _Concurrency
     get
   }
   required public init(from decoder: Swift.Decoder) throws
-  @objc public var currentSessionDuration: Foundation.TimeInterval {
+  @objc public var currentSessionDuration: Swift.Int64 {
     @objc get
   }
-  @objc public var totalSessionTimeIncludingCurrent: Foundation.TimeInterval {
+  @objc public var totalSessionTimeIncludingCurrent: Swift.Int64 {
     @objc get
   }
-  @objc public var averageSessionLength: Foundation.TimeInterval {
+  @objc public var averageSessionLength: Swift.Int64 {
     @objc get
   }
   @objc public var purchasedProductIDsArray: [Swift.String] {

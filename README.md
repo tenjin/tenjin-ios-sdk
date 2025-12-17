@@ -520,10 +520,10 @@ TJNUserProfileData *profile = [TenjinSDK getUserProfile];
 
 // Session metrics
 NSInteger sessionCount = profile.sessionCount;
-NSTimeInterval totalTime = profile.totalSessionTime;
-NSTimeInterval avgLength = profile.averageSessionLength;
-NSTimeInterval lastSession = profile.lastSessionLength;
-NSTimeInterval currentSession = profile.currentSessionDuration;
+long long totalTime = profile.totalSessionTime;
+long long avgLength = profile.averageSessionLength;
+long long lastSession = profile.lastSessionLength;
+long long currentSession = profile.currentSessionDuration;
 NSDate *firstSession = profile.firstSessionDate;
 NSDate *lastSession = profile.lastSessionDate;
 
@@ -542,10 +542,10 @@ NSDictionary *revenueByNetwork = profile.ilrdRevenueByNetwork;
 | Property | Type | Description |
 |----------|------|-------------|
 | `sessionCount` | `NSInteger` | Total number of sessions |
-| `totalSessionTime` | `NSTimeInterval` | Total time in seconds |
-| `averageSessionLength` | `NSTimeInterval` | Average session in seconds |
-| `lastSessionLength` | `NSTimeInterval` | Last completed session in seconds |
-| `currentSessionDuration` | `NSTimeInterval` | Current active session in seconds |
+| `totalSessionTime` | `long long` | Total time in milliseconds |
+| `averageSessionLength` | `long long` | Average session in milliseconds |
+| `lastSessionLength` | `long long` | Last completed session in milliseconds |
+| `currentSessionDuration` | `long long` | Current active session in milliseconds |
 | `firstSessionDate` | `NSDate?` | First session date |
 | `lastSessionDate` | `NSDate?` | Last completed session date |
 | `iapTransactionCount` | `NSInteger` | Total IAP count |
@@ -573,9 +573,9 @@ NSArray *productIds = profileDict[@"purchased_product_ids"];
 | Key | Type | Description |
 |-----|------|-------------|
 | `session_count` | `NSNumber` | Total sessions |
-| `total_session_time` | `NSNumber` | Total time (seconds) |
-| `average_session_length` | `NSNumber` | Average session (seconds) |
-| `last_session_length` | `NSNumber` | Last session (seconds) |
+| `total_session_time` | `NSNumber` | Total time (milliseconds) |
+| `average_session_length` | `NSNumber` | Average session (milliseconds) |
+| `last_session_length` | `NSNumber` | Last session (milliseconds) |
 | `iap_transaction_count` | `NSNumber` | Total IAP count |
 | `total_ilrd_revenue_usd` | `NSNumber` | Total ad revenue USD |
 
@@ -585,7 +585,7 @@ NSArray *productIds = profileDict[@"purchased_product_ids"];
 |-----|------|-------------|
 | `first_session_date` | `NSString` | ISO8601 formatted date |
 | `last_session_date` | `NSString` | ISO8601 formatted date |
-| `current_session_length` | `NSNumber` | Active session duration (seconds) |
+| `current_session_length` | `NSNumber` | Active session duration (milliseconds) |
 | `iap_revenue_by_currency` | `NSDictionary` | Map of currency → revenue |
 | `purchased_product_ids` | `NSArray` | Sorted array of product IDs |
 | `ilrd_revenue_by_network` | `NSDictionary` | Map of network → revenue |

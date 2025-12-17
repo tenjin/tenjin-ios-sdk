@@ -318,20 +318,20 @@ SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 SWIFT_CLASS("_TtC9TenjinSDK18TJNUserProfileData")
 @interface TJNUserProfileData : NSObject
 @property (nonatomic, readonly) NSInteger sessionCount;
-@property (nonatomic, readonly) NSTimeInterval totalSessionTime;
-@property (nonatomic, readonly) NSTimeInterval lastSessionLength;
+@property (nonatomic, readonly) int64_t totalSessionTime;
+@property (nonatomic, readonly) int64_t lastSessionLength;
 @property (nonatomic, readonly, copy) NSDate * _Nullable currentSessionStartTime;
 @property (nonatomic, readonly, copy) NSDate * _Nullable lastBackgroundTime;
-@property (nonatomic, readonly) NSTimeInterval currentSessionPausedTime;
+@property (nonatomic, readonly) int64_t currentSessionPausedTime;
 @property (nonatomic, readonly, copy) NSDate * _Nullable firstSessionDate;
 @property (nonatomic, readonly, copy) NSDate * _Nullable lastSessionDate;
 @property (nonatomic, readonly) NSInteger iapTransactionCount;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSNumber *> * _Nonnull iapRevenueByCurrency;
 @property (nonatomic, readonly) double totalILRDRevenueUSD;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSNumber *> * _Nonnull ilrdRevenueByNetwork;
-@property (nonatomic, readonly) NSTimeInterval currentSessionDuration;
-@property (nonatomic, readonly) NSTimeInterval totalSessionTimeIncludingCurrent;
-@property (nonatomic, readonly) NSTimeInterval averageSessionLength;
+@property (nonatomic, readonly) int64_t currentSessionDuration;
+@property (nonatomic, readonly) int64_t totalSessionTimeIncludingCurrent;
+@property (nonatomic, readonly) int64_t averageSessionLength;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull purchasedProductIDsArray;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (double)getILRDRevenueForNetwork:(enum TJNAdNetwork)network SWIFT_WARN_UNUSED_RESULT;
@@ -714,20 +714,20 @@ SWIFT_CLASS("_TtC9TenjinSDK13TJNHTTPClient")
 SWIFT_CLASS("_TtC9TenjinSDK18TJNUserProfileData")
 @interface TJNUserProfileData : NSObject
 @property (nonatomic, readonly) NSInteger sessionCount;
-@property (nonatomic, readonly) NSTimeInterval totalSessionTime;
-@property (nonatomic, readonly) NSTimeInterval lastSessionLength;
+@property (nonatomic, readonly) int64_t totalSessionTime;
+@property (nonatomic, readonly) int64_t lastSessionLength;
 @property (nonatomic, readonly, copy) NSDate * _Nullable currentSessionStartTime;
 @property (nonatomic, readonly, copy) NSDate * _Nullable lastBackgroundTime;
-@property (nonatomic, readonly) NSTimeInterval currentSessionPausedTime;
+@property (nonatomic, readonly) int64_t currentSessionPausedTime;
 @property (nonatomic, readonly, copy) NSDate * _Nullable firstSessionDate;
 @property (nonatomic, readonly, copy) NSDate * _Nullable lastSessionDate;
 @property (nonatomic, readonly) NSInteger iapTransactionCount;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSNumber *> * _Nonnull iapRevenueByCurrency;
 @property (nonatomic, readonly) double totalILRDRevenueUSD;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSNumber *> * _Nonnull ilrdRevenueByNetwork;
-@property (nonatomic, readonly) NSTimeInterval currentSessionDuration;
-@property (nonatomic, readonly) NSTimeInterval totalSessionTimeIncludingCurrent;
-@property (nonatomic, readonly) NSTimeInterval averageSessionLength;
+@property (nonatomic, readonly) int64_t currentSessionDuration;
+@property (nonatomic, readonly) int64_t totalSessionTimeIncludingCurrent;
+@property (nonatomic, readonly) int64_t averageSessionLength;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull purchasedProductIDsArray;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (double)getILRDRevenueForNetwork:(enum TJNAdNetwork)network SWIFT_WARN_UNUSED_RESULT;
