@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GMTQqOWqZiH9lH2d2QfW5k7lFEg=
+		r6sSsJgGeHw3hLPpwiF5ZxdX8W0=
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		R55awPTqqY9T/+rRAQD7UCFozDw=
+		v8n7hbToK6YfWBI66dgjMUqpXOE=
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cuQAmYax5uwN9nuOOeYWRhK7Yl4=
+		kaVzsSE2yvJJ0QHf+J99I57/zKI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>PrivateHeaders/TenjinConst.h</key>
 		<data>
-		A2BT0IXHdyJJoacZwzIuRZNvA+U=
+		cOb+cG0FH4aqPHmYtxk3uXbPg7c=
 		</data>
 		<key>PrivateHeaders/TenjinUtil.h</key>
 		<data>
@@ -316,11 +316,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GMTQqOWqZiH9lH2d2QfW5k7lFEg=
+			r6sSsJgGeHw3hLPpwiF5ZxdX8W0=
 			</data>
 			<key>hash2</key>
 			<data>
-			5HBdIDSP8rmUjLo0fSVebpvDxEA0MpFKFazUfbfKGcQ=
+			pZFoJmX2mQJRmv3t5OpxJkR/hxPPB2DQI9SgCsTJy7M=
 			</data>
 		</dict>
 		<key>Modules/TenjinSDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -349,11 +349,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R55awPTqqY9T/+rRAQD7UCFozDw=
+			v8n7hbToK6YfWBI66dgjMUqpXOE=
 			</data>
 			<key>hash2</key>
 			<data>
-			uArcgGAWeFZex+c/GJdWEDTVu0lTPg+MD0zcyfNfJ58=
+			sBw41bTcooD+yoB42YTSwhoO4l0zk5b7I6oHr2lzY14=
 			</data>
 		</dict>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -382,11 +382,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cuQAmYax5uwN9nuOOeYWRhK7Yl4=
+			kaVzsSE2yvJJ0QHf+J99I57/zKI=
 			</data>
 			<key>hash2</key>
 			<data>
-			KR0Is9ApPFYPxhG8GZmkcHySwChiHzK5ihqHBPgy1L8=
+			z8TOESMRcsIjwKunMNiGFAxGCJtYqqVWTcWRIjk6ghU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -470,11 +470,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A2BT0IXHdyJJoacZwzIuRZNvA+U=
+			cOb+cG0FH4aqPHmYtxk3uXbPg7c=
 			</data>
 			<key>hash2</key>
 			<data>
-			zGoXwF1C8qW54R19XZRAhXSfwt1gG8xGeF7lcmTrjAk=
+			46Pm2jpt0oDptzeW/Yg70QfKGPpSY2ijUKnMUmYRRoA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/TenjinUtil.h</key>

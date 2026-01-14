@@ -378,3 +378,7 @@ v1.14.11
 v1.15.0
 ----
 - Add User Profile - LiveOps Analytics metrics
+
+v1.15.1
+----
+- Improve LiveOps feature for plugins
