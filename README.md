@@ -388,6 +388,44 @@ NSData *receiptData = [NSData dataWithContentsOfURL:receiptURL];
 [TenjinSDK transaction: transaction andReceipt: receiptData];
 ```
 
+## <a id="storekit2-iap"></a> StoreKit 2 IAP
+
+StoreKit 2 is a Swift-only API. For apps using StoreKit 2, you can extract the JWS representation and transaction details:
+
+```swift
+import StoreKit
+
+func handlePurchase(_ result: VerificationResult<Transaction>) async {
+    switch result {
+    case .verified(let transaction):
+        // Get the JWS representation (SK2 receipt)
+        let jwsRepresentation = transaction.jwsRepresentation
+
+        // Extract transaction details
+        let productId = transaction.productID
+        let transactionId = String(transaction.id)
+        let price = transaction.price ?? Decimal(0)
+        let currencyCode = transaction.currency?.identifier ?? "USD"
+
+        // Send to Tenjin
+        TenjinSDK.transaction(
+            withProductName: productId,
+            andCurrencyCode: currencyCode,
+            andQuantity: transaction.purchasedQuantity,
+            andUnitPrice: NSDecimalNumber(decimal: price),
+            andTransactionId: transactionId,
+            andBase64Receipt: jwsRepresentation
+        )
+
+        await transaction.finish()
+
+    case .unverified(_, _):
+        // Handle unverified transaction
+        break
+    }
+}
+```
+
 **Disclaimer:** If you are implementing purchase events on Tenjin for the first time, make sure to verify the data with other tools you’re using before you start scaling up your user acquisition campaigns using purchase data.
 
 :warning: **(Flexible App Store Commission setup)**
