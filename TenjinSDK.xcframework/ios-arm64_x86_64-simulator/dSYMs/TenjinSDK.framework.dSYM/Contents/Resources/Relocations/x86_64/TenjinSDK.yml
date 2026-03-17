@@ -1,0 +1,1142 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/runner/Library/Developer/Xcode/DerivedData/TenjinSDK-cxlxnczgzdznozdbmilfnlayzkli/Build/Intermediates.noindex/ArchiveIntermediates/TenjinSDK-Framework/InstallationBuildProductsLocation/Library/Frameworks/TenjinSDK.framework/TenjinSDK'
+relocations:
+  - { offset: 0xC48AC, size: 0x8, addend: 0x0, symName: '-[TenjinConfig(Features) enableSubscriptions]', symObjAddr: 0x0, symBinAddr: 0x12578, symSize: 0x7B }
+  - { offset: 0xC48BA, size: 0x8, addend: 0x0, symName: '-[TenjinConfig(Features) enableSubscriptions]', symObjAddr: 0x0, symBinAddr: 0x12578, symSize: 0x7B }
+  - { offset: 0xC4933, size: 0x8, addend: 0x0, symName: '-[TenjinConfig(Features) subscriptionsEnabled]', symObjAddr: 0x7B, symBinAddr: 0x125F3, symSize: 0x1C }
+  - { offset: 0xC4974, size: 0x8, addend: 0x0, symName: '-[TenjinConfig(Features) enableILRD]', symObjAddr: 0x97, symBinAddr: 0x1260F, symSize: 0x7B }
+  - { offset: 0xC49D9, size: 0x8, addend: 0x0, symName: '-[TenjinConfig(Features) ILRDEnabled]', symObjAddr: 0x112, symBinAddr: 0x1268A, symSize: 0x1C }
+  - { offset: 0xC4AA3, size: 0x8, addend: 0x0, symName: _TenjinConfigKeySubscriptionEnabled, symObjAddr: 0x128, symBinAddr: 0x46420, symSize: 0x0 }
+  - { offset: 0xC4AC3, size: 0x8, addend: 0x0, symName: _TenjinConfigKeySubscriptionHost, symObjAddr: 0x130, symBinAddr: 0x46428, symSize: 0x0 }
+  - { offset: 0xC4AD9, size: 0x8, addend: 0x0, symName: _TenjinConfigKeySubscriptionEndpoint, symObjAddr: 0x138, symBinAddr: 0x46430, symSize: 0x0 }
+  - { offset: 0xC4AEF, size: 0x8, addend: 0x0, symName: _TenjinConfigKeyILRDEnabled, symObjAddr: 0x140, symBinAddr: 0x46438, symSize: 0x0 }
+  - { offset: 0xC4B05, size: 0x8, addend: 0x0, symName: _TenjinConfigKeyBaseHost, symObjAddr: 0x148, symBinAddr: 0x46440, symSize: 0x0 }
+  - { offset: 0xC4B3D, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) hookAppLovinClasses]', symObjAddr: 0x0, symBinAddr: 0x9500, symSize: 0x24 }
+  - { offset: 0xC4B4B, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) hookAppLovinClasses]', symObjAddr: 0x0, symBinAddr: 0x9500, symSize: 0x24 }
+  - { offset: 0xC4B71, size: 0x8, addend: 0x0, symName: _hookAppLovinClasses.onceToken, symObjAddr: 0x18E50, symBinAddr: 0x54198, symSize: 0x0 }
+  - { offset: 0xC4BC0, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) hookIronSourceClasses]', symObjAddr: 0xCF, symBinAddr: 0x95CF, symSize: 0x24 }
+  - { offset: 0xC4BE6, size: 0x8, addend: 0x0, symName: _hookIronSourceClasses.onceToken, symObjAddr: 0x18E68, symBinAddr: 0x541B0, symSize: 0x0 }
+  - { offset: 0xC4C20, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) hookCASClasses]', symObjAddr: 0x19E, symBinAddr: 0x969E, symSize: 0x24 }
+  - { offset: 0xC4C46, size: 0x8, addend: 0x0, symName: _hookCASClasses.onceToken, symObjAddr: 0x18E70, symBinAddr: 0x541B8, symSize: 0x0 }
+  - { offset: 0xC4C80, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) hookTradPlusClasses]', symObjAddr: 0x26D, symBinAddr: 0x976D, symSize: 0x24 }
+  - { offset: 0xC4CA6, size: 0x8, addend: 0x0, symName: _hookTradPlusClasses.onceToken, symObjAddr: 0x18E78, symBinAddr: 0x541C0, symSize: 0x0 }
+  - { offset: 0xC4CEC, size: 0x8, addend: 0x0, symName: ___processedClasses, symObjAddr: 0x18E58, symBinAddr: 0x541A0, symSize: 0x0 }
+  - { offset: 0xC4D07, size: 0x8, addend: 0x0, symName: ___swizzleQueue, symObjAddr: 0x18E60, symBinAddr: 0x541A8, symSize: 0x0 }
+  - { offset: 0xC4D60, size: 0x8, addend: 0x0, symName: '___41+[TenjinSDK(Swizzle) hookAppLovinClasses]_block_invoke', symObjAddr: 0x24, symBinAddr: 0x9524, symSize: 0xAB }
+  - { offset: 0xC4E6A, size: 0x8, addend: 0x0, symName: '___43+[TenjinSDK(Swizzle) hookIronSourceClasses]_block_invoke', symObjAddr: 0xF3, symBinAddr: 0x95F3, symSize: 0xAB }
+  - { offset: 0xC4F18, size: 0x8, addend: 0x0, symName: '___36+[TenjinSDK(Swizzle) hookCASClasses]_block_invoke', symObjAddr: 0x1C2, symBinAddr: 0x96C2, symSize: 0xAB }
+  - { offset: 0xC4FC6, size: 0x8, addend: 0x0, symName: '___41+[TenjinSDK(Swizzle) hookTradPlusClasses]_block_invoke', symObjAddr: 0x291, symBinAddr: 0x9791, symSize: 0xAB }
+  - { offset: 0xC5074, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) swizzleAppLovinRevenueDelegateSetter:]', symObjAddr: 0x33C, symBinAddr: 0x983C, symSize: 0x128 }
+  - { offset: 0xC528F, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) swizzleIronSourceDelegateSetter:]', symObjAddr: 0x464, symBinAddr: 0x9964, symSize: 0x179 }
+  - { offset: 0xC549A, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) swizzleCleverAdsSolutionDelegateSetter:]', symObjAddr: 0x5DD, symBinAddr: 0x9ADD, symSize: 0x128 }
+  - { offset: 0xC5627, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) swizzleTradPlusDelegateSetter:]', symObjAddr: 0x705, symBinAddr: 0x9C05, symSize: 0x128 }
+  - { offset: 0xC57B5, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) hookAppLovinRevenueImpression:]', symObjAddr: 0x82D, symBinAddr: 0x9D2D, symSize: 0x2E }
+  - { offset: 0xC5800, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) hookIronSourceImpression:]', symObjAddr: 0x85B, symBinAddr: 0x9D5B, symSize: 0x2E }
+  - { offset: 0xC584B, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) hookCASImpression:]', symObjAddr: 0x889, symBinAddr: 0x9D89, symSize: 0x2E }
+  - { offset: 0xC5896, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) hookTradPlusImpression:]', symObjAddr: 0x8B7, symBinAddr: 0x9DB7, symSize: 0x2E }
+  - { offset: 0xC58E1, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) swizzleKeyFor:andSelector:]', symObjAddr: 0x8E5, symBinAddr: 0x9DE5, symSize: 0x99 }
+  - { offset: 0xC59A9, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) addOrHookInstance:hookSelector:withTenjinSelector:orAddSel:]', symObjAddr: 0x97E, symBinAddr: 0x9E7E, symSize: 0xAF }
+  - { offset: 0xC5A73, size: 0x8, addend: 0x0, symName: '___81+[TenjinSDK(Swizzle) addOrHookInstance:hookSelector:withTenjinSelector:orAddSel:]_block_invoke', symObjAddr: 0xA2D, symBinAddr: 0x9F2D, symSize: 0x177 }
+  - { offset: 0xC5C13, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) addOrHookInstance:hookSelector:withTenjinSelector:]', symObjAddr: 0xBC2, symBinAddr: 0xA0A4, symSize: 0xA4 }
+  - { offset: 0xC5CB4, size: 0x8, addend: 0x0, symName: '___72+[TenjinSDK(Swizzle) addOrHookInstance:hookSelector:withTenjinSelector:]_block_invoke', symObjAddr: 0xC66, symBinAddr: 0xA148, symSize: 0xDB }
+  - { offset: 0xC5D96, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(Swizzle) hookInstance:hookSelector:withTenjinSelector:]', symObjAddr: 0xD41, symBinAddr: 0xA223, symSize: 0x12F }
+  - { offset: 0xC5F25, size: 0x8, addend: 0x0, symName: '-[TenjinSDK(Swizzle) tjn_setAppLovinRevenueDelegate:]', symObjAddr: 0xE70, symBinAddr: 0xA352, symSize: 0x19 }
+  - { offset: 0xC5F70, size: 0x8, addend: 0x0, symName: '-[TenjinSDK(Swizzle) tjn_appLovinDidPayRevenueForAd:]', symObjAddr: 0xE89, symBinAddr: 0xA36B, symSize: 0x92 }
+  - { offset: 0xC5FED, size: 0x8, addend: 0x0, symName: '___53-[TenjinSDK(Swizzle) tjn_appLovinDidPayRevenueForAd:]_block_invoke', symObjAddr: 0xF1B, symBinAddr: 0xA3FD, symSize: 0x20 }
+  - { offset: 0xC6037, size: 0x8, addend: 0x0, symName: '-[TenjinSDK(Swizzle) tjn_setIronSourceAdViewDelegate:]', symObjAddr: 0xF3B, symBinAddr: 0xA41D, symSize: 0x19 }
+  - { offset: 0xC6082, size: 0x8, addend: 0x0, symName: '-[TenjinSDK(Swizzle) tjn_ironSourceImpressionDataDidSucceed:]', symObjAddr: 0xF54, symBinAddr: 0xA436, symSize: 0x92 }
+  - { offset: 0xC60FF, size: 0x8, addend: 0x0, symName: '___61-[TenjinSDK(Swizzle) tjn_ironSourceImpressionDataDidSucceed:]_block_invoke', symObjAddr: 0xFE6, symBinAddr: 0xA4C8, symSize: 0x20 }
+  - { offset: 0xC6149, size: 0x8, addend: 0x0, symName: '-[TenjinSDK(Swizzle) tjn_setCleverAdsSolutionDelegate:]', symObjAddr: 0x1006, symBinAddr: 0xA4E8, symSize: 0x19 }
+  - { offset: 0xC6194, size: 0x8, addend: 0x0, symName: '-[TenjinSDK(Swizzle) tjn_bannerAdView:willPresent:]', symObjAddr: 0x101F, symBinAddr: 0xA501, symSize: 0x92 }
+  - { offset: 0xC621E, size: 0x8, addend: 0x0, symName: '___51-[TenjinSDK(Swizzle) tjn_bannerAdView:willPresent:]_block_invoke', symObjAddr: 0x10B1, symBinAddr: 0xA593, symSize: 0x20 }
+  - { offset: 0xC6268, size: 0x8, addend: 0x0, symName: '-[TenjinSDK(Swizzle) tjn_setTradPlusAdViewDelegate:]', symObjAddr: 0x10D1, symBinAddr: 0xA5B3, symSize: 0x19 }
+  - { offset: 0xC62B3, size: 0x8, addend: 0x0, symName: '-[TenjinSDK(Swizzle) tjn_tradPlusImpression:]', symObjAddr: 0x10EA, symBinAddr: 0xA5CC, symSize: 0x92 }
+  - { offset: 0xC6330, size: 0x8, addend: 0x0, symName: '___45-[TenjinSDK(Swizzle) tjn_tradPlusImpression:]_block_invoke', symObjAddr: 0x117C, symBinAddr: 0xA65E, symSize: 0x20 }
+  - { offset: 0xC6864, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(TopOnILRD) topOnImpressionFromDict:]', symObjAddr: 0x0, symBinAddr: 0xA67E, symSize: 0x97 }
+  - { offset: 0xC6879, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(TopOnILRD) topOnImpressionFromDict:]', symObjAddr: 0x0, symBinAddr: 0xA67E, symSize: 0x97 }
+  - { offset: 0xC6930, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(TopOnILRD) topOnImpressionFromJSON:]', symObjAddr: 0x97, symBinAddr: 0xA715, symSize: 0x115 }
+  - { offset: 0xC6A69, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(TopOnILRD) processRequestFromTopOnData:]', symObjAddr: 0x1AC, symBinAddr: 0xA82A, symSize: 0x12F }
+  - { offset: 0xC6B83, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(TopOnILRD) transformAndProcessTopOnData:]', symObjAddr: 0x2DB, symBinAddr: 0xA959, symSize: 0x11F }
+  - { offset: 0xC6F07, size: 0x8, addend: 0x0, symName: '-[TopOnHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xAA78, symSize: 0x6F2 }
+  - { offset: 0xC6F26, size: 0x8, addend: 0x0, symName: '-[TopOnHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xAA78, symSize: 0x6F2 }
+  - { offset: 0xC739D, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(HyperBidILRD) hyperBidImpressionFromDict:]', symObjAddr: 0x0, symBinAddr: 0xB16A, symSize: 0x97 }
+  - { offset: 0xC73B2, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(HyperBidILRD) hyperBidImpressionFromDict:]', symObjAddr: 0x0, symBinAddr: 0xB16A, symSize: 0x97 }
+  - { offset: 0xC7469, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(HyperBidILRD) hyperBidImpressionFromJSON:]', symObjAddr: 0x97, symBinAddr: 0xB201, symSize: 0x115 }
+  - { offset: 0xC75A2, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(HyperBidILRD) processRequestFromHyperBidData:]', symObjAddr: 0x1AC, symBinAddr: 0xB316, symSize: 0x12F }
+  - { offset: 0xC76BC, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(HyperBidILRD) transformAndProcessHyperBidData:]', symObjAddr: 0x2DB, symBinAddr: 0xB445, symSize: 0x11F }
+  - { offset: 0xC7A24, size: 0x8, addend: 0x0, symName: '-[HyperBidHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xB564, symSize: 0x6F2 }
+  - { offset: 0xC7A43, size: 0x8, addend: 0x0, symName: '-[HyperBidHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xB564, symSize: 0x6F2 }
+  - { offset: 0xC7EBA, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(AdMobILRD) handleAdMobILRD::]', symObjAddr: 0x0, symBinAddr: 0xBC56, symSize: 0xAE }
+  - { offset: 0xC7ECF, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(AdMobILRD) handleAdMobILRD::]', symObjAddr: 0x0, symBinAddr: 0xBC56, symSize: 0xAE }
+  - { offset: 0xC7FAE, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(AdMobILRD) processRequestFromAdMobData:]', symObjAddr: 0xAE, symBinAddr: 0xBD04, symSize: 0x12F }
+  - { offset: 0xC80DC, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(AdMobILRD) adMobImpressionFromJSON:]', symObjAddr: 0x1DD, symBinAddr: 0xBE33, symSize: 0xC7 }
+  - { offset: 0xC81B1, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(AdMobILRD) transformAndProcessAdMobData:]', symObjAddr: 0x2A4, symBinAddr: 0xBEFA, symSize: 0x127 }
+  - { offset: 0xC8519, size: 0x8, addend: 0x0, symName: '-[AdMobHelper convertToDict:andAdValue:]', symObjAddr: 0x0, symBinAddr: 0xC021, symSize: 0x2B0 }
+  - { offset: 0xC8538, size: 0x8, addend: 0x0, symName: '-[AdMobHelper convertToDict:andAdValue:]', symObjAddr: 0x0, symBinAddr: 0xC021, symSize: 0x2B0 }
+  - { offset: 0xC8859, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(IronSourceILRD) subscribeIronSourceImpressions]', symObjAddr: 0x0, symBinAddr: 0xC2D1, symSize: 0x20 }
+  - { offset: 0xC8873, size: 0x8, addend: 0x0, symName: __handleIronSource, symObjAddr: 0xA8ED, symBinAddr: 0x541C8, symSize: 0x0 }
+  - { offset: 0xC8892, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(IronSourceILRD) subscribeIronSourceImpressions]', symObjAddr: 0x0, symBinAddr: 0xC2D1, symSize: 0x20 }
+  - { offset: 0xC88CD, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(IronSourceILRD) handleIronSourceILRD:]', symObjAddr: 0x20, symBinAddr: 0xC2F1, symSize: 0xB6 }
+  - { offset: 0xC8984, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(IronSourceILRD) processRequestFromIronSourceData:]', symObjAddr: 0xD6, symBinAddr: 0xC3A7, symSize: 0x12F }
+  - { offset: 0xC8AB2, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(IronSourceILRD) ironSourceImpressionFromJSON:]', symObjAddr: 0x205, symBinAddr: 0xC4D6, symSize: 0xC7 }
+  - { offset: 0xC8B87, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(IronSourceILRD) transformAndProcessIronSourceData:]', symObjAddr: 0x2CC, symBinAddr: 0xC59D, symSize: 0x123 }
+  - { offset: 0xC8EE8, size: 0x8, addend: 0x0, symName: '-[AdServicesHelper getAttributionTokenWithCompletion:]', symObjAddr: 0x0, symBinAddr: 0xC6C0, symSize: 0x1C0 }
+  - { offset: 0xC8F07, size: 0x8, addend: 0x0, symName: '-[AdServicesHelper getAttributionTokenWithCompletion:]', symObjAddr: 0x0, symBinAddr: 0xC6C0, symSize: 0x1C0 }
+  - { offset: 0xC912B, size: 0x8, addend: 0x0, symName: '-[IronSourceHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xC880, symSize: 0x50E }
+  - { offset: 0xC914A, size: 0x8, addend: 0x0, symName: '-[IronSourceHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xC880, symSize: 0x50E }
+  - { offset: 0xC9659, size: 0x8, addend: 0x0, symName: '-[CASHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xCD8E, symSize: 0x2B3 }
+  - { offset: 0xC9678, size: 0x8, addend: 0x0, symName: '-[CASHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xCD8E, symSize: 0x2B3 }
+  - { offset: 0xC998D, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(AppLovinILRD) subscribeAppLovinImpressions]', symObjAddr: 0x0, symBinAddr: 0xD041, symSize: 0x20 }
+  - { offset: 0xC99A7, size: 0x8, addend: 0x0, symName: __handleAppLovin, symObjAddr: 0xA83F, symBinAddr: 0x541C9, symSize: 0x0 }
+  - { offset: 0xC99C6, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(AppLovinILRD) subscribeAppLovinImpressions]', symObjAddr: 0x0, symBinAddr: 0xD041, symSize: 0x20 }
+  - { offset: 0xC9A01, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(AppLovinILRD) handleAppLovinILRD:]', symObjAddr: 0x20, symBinAddr: 0xD061, symSize: 0xB6 }
+  - { offset: 0xC9AB8, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(AppLovinILRD) processRequestFromAppLovinData:]', symObjAddr: 0xD6, symBinAddr: 0xD117, symSize: 0x12F }
+  - { offset: 0xC9BE6, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(AppLovinILRD) appLovinImpressionFromJSON:]', symObjAddr: 0x205, symBinAddr: 0xD246, symSize: 0xC7 }
+  - { offset: 0xC9CBB, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(AppLovinILRD) transformAndProcessAppLovinData:]', symObjAddr: 0x2CC, symBinAddr: 0xD30D, symSize: 0x11F }
+  - { offset: 0xCA01C, size: 0x8, addend: 0x0, symName: '-[AppLovinHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xD42C, symSize: 0x33B }
+  - { offset: 0xCA03B, size: 0x8, addend: 0x0, symName: '-[AppLovinHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xD42C, symSize: 0x33B }
+  - { offset: 0xCA3C0, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper getStringFromObject:forSelector:]', symObjAddr: 0x0, symBinAddr: 0xD767, symSize: 0x95 }
+  - { offset: 0xCA4C8, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper getStringFromObject:forSelector:]', symObjAddr: 0x0, symBinAddr: 0xD767, symSize: 0x95 }
+  - { offset: 0xCA592, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper getStringFromAnyPrimitiveValue:forSelector:]', symObjAddr: 0x95, symBinAddr: 0xD7FC, symSize: 0x250 }
+  - { offset: 0xCA7F4, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper getNumberFromObject:forSelector:]', symObjAddr: 0x2E5, symBinAddr: 0xDA4C, symSize: 0xB0 }
+  - { offset: 0xCA8D6, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper getNumberFromDoubleWithList:forSelector:]', symObjAddr: 0x395, symBinAddr: 0xDAFC, symSize: 0x23B }
+  - { offset: 0xCABD3, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper getNumberFromIntegerWithList:forSelector:]', symObjAddr: 0x5D0, symBinAddr: 0xDD37, symSize: 0x1C9 }
+  - { offset: 0xCAE11, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper getDecimalNumberFromObject:forSelector:]', symObjAddr: 0x799, symBinAddr: 0xDF00, symSize: 0x11E }
+  - { offset: 0xCAF0B, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper getAdRevenueMediation:]', symObjAddr: 0x8B7, symBinAddr: 0xE01E, symSize: 0x24 }
+  - { offset: 0xCAF4C, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper getStringFromDict:forkey:]', symObjAddr: 0x8DB, symBinAddr: 0xE042, symSize: 0x54 }
+  - { offset: 0xCAFE3, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper getAdRevenueKey:]', symObjAddr: 0x92F, symBinAddr: 0xE096, symSize: 0x24 }
+  - { offset: 0xCB024, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper processImpressionData:dictionaryKey:provider:]', symObjAddr: 0x953, symBinAddr: 0xE0BA, symSize: 0x212 }
+  - { offset: 0xCB1A4, size: 0x8, addend: 0x0, symName: ___Block_byref_object_copy_, symObjAddr: 0xB65, symBinAddr: 0xE2CC, symSize: 0x16 }
+  - { offset: 0xCB1C9, size: 0x8, addend: 0x0, symName: ___Block_byref_object_dispose_, symObjAddr: 0xB7B, symBinAddr: 0xE2E2, symSize: 0xF }
+  - { offset: 0xCB1F4, size: 0x8, addend: 0x0, symName: '___68-[BaseAdNetworkHelper processImpressionData:dictionaryKey:provider:]_block_invoke', symObjAddr: 0xB8A, symBinAddr: 0xE2F1, symSize: 0x102 }
+  - { offset: 0xCB31E, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40r, symObjAddr: 0xC8C, symBinAddr: 0xE3F3, symSize: 0x30 }
+  - { offset: 0xCB353, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40r, symObjAddr: 0xCBC, symBinAddr: 0xE423, symSize: 0x27 }
+  - { offset: 0xCB37E, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper processRevenueData:provider:]', symObjAddr: 0xCE3, symBinAddr: 0xE44A, symSize: 0x260 }
+  - { offset: 0xCB5CD, size: 0x8, addend: 0x0, symName: '-[BaseAdNetworkHelper processAttributionInfoData:]', symObjAddr: 0xF43, symBinAddr: 0xE6AA, symSize: 0x49D }
+  - { offset: 0xCBA5F, size: 0x8, addend: 0x0, symName: '+[TJNLogger setHandler:]', symObjAddr: 0x0, symBinAddr: 0xEB47, symSize: 0x21 }
+  - { offset: 0xCBAFF, size: 0x8, addend: 0x0, symName: _logHandler, symObjAddr: 0x90D8, symBinAddr: 0x541D0, symSize: 0x0 }
+  - { offset: 0xCBB15, size: 0x8, addend: 0x0, symName: _logLevel, symObjAddr: 0x6E8, symBinAddr: 0x53120, symSize: 0x0 }
+  - { offset: 0xCBB50, size: 0x8, addend: 0x0, symName: '+[TJNLogger setHandler:]', symObjAddr: 0x0, symBinAddr: 0xEB47, symSize: 0x21 }
+  - { offset: 0xCBB9B, size: 0x8, addend: 0x0, symName: '+[TJNLogger setLogLevel:]', symObjAddr: 0x21, symBinAddr: 0xEB68, symSize: 0xD }
+  - { offset: 0xCBC71, size: 0x8, addend: 0x0, symName: '+[TJNLogger log:level:args:]', symObjAddr: 0x2E, symBinAddr: 0xEB75, symSize: 0xD7 }
+  - { offset: 0xCBD78, size: 0x8, addend: 0x0, symName: '+[TJNLogger logRequest:]', symObjAddr: 0x105, symBinAddr: 0xEC4C, symSize: 0x10A }
+  - { offset: 0xCBE76, size: 0x8, addend: 0x0, symName: _TJNLog, symObjAddr: 0x20F, symBinAddr: 0xED56, symSize: 0xB8 }
+  - { offset: 0xCBEB9, size: 0x8, addend: 0x0, symName: _TJNDebug, symObjAddr: 0x2C7, symBinAddr: 0xEE0E, symSize: 0xB5 }
+  - { offset: 0xCBEFC, size: 0x8, addend: 0x0, symName: '+[TJNLogger logResponse:withData:]', symObjAddr: 0x37C, symBinAddr: 0xEEC3, symSize: 0xAE }
+  - { offset: 0xCBFCE, size: 0x8, addend: 0x0, symName: '+[TJNLogger logTJNError:]', symObjAddr: 0x42A, symBinAddr: 0xEF71, symSize: 0xF }
+  - { offset: 0xCC01B, size: 0x8, addend: 0x0, symName: _TJNError, symObjAddr: 0x439, symBinAddr: 0xEF80, symSize: 0xB8 }
+  - { offset: 0xCC05E, size: 0x8, addend: 0x0, symName: '+[TJNLogger logTJNDebug:]', symObjAddr: 0x4F1, symBinAddr: 0xF038, symSize: 0xF }
+  - { offset: 0xCC0AB, size: 0x8, addend: 0x0, symName: '+[TJNLogger logTJNLog:]', symObjAddr: 0x500, symBinAddr: 0xF047, symSize: 0xF }
+  - { offset: 0xCC1B1, size: 0x8, addend: 0x0, symName: '-[NSString(Tenjin) base64]', symObjAddr: 0x0, symBinAddr: 0xF056, symSize: 0x57 }
+  - { offset: 0xCC1FA, size: 0x8, addend: 0x0, symName: '-[NSString(Tenjin) base64]', symObjAddr: 0x0, symBinAddr: 0xF056, symSize: 0x57 }
+  - { offset: 0xCC255, size: 0x8, addend: 0x0, symName: '-[NSString(Tenjin) hmacSHA256withKey:]', symObjAddr: 0x57, symBinAddr: 0xF0AD, symSize: 0x104 }
+  - { offset: 0xCC3A0, size: 0x8, addend: 0x0, symName: '-[NSString(Tenjin) urlEncoded]', symObjAddr: 0x15B, symBinAddr: 0xF1B1, symSize: 0x8E }
+  - { offset: 0xCC413, size: 0x8, addend: 0x0, symName: '-[NSString(Tenjin) matchesRegex:]', symObjAddr: 0x1E9, symBinAddr: 0xF23F, symSize: 0x28 }
+  - { offset: 0xCC466, size: 0x8, addend: 0x0, symName: '-[NSString(Tenjin) stringIsEmpty]', symObjAddr: 0x211, symBinAddr: 0xF267, symSize: 0xD1 }
+  - { offset: 0xCC59B, size: 0x8, addend: 0x0, symName: '+[TenjinUtil setSecret:]', symObjAddr: 0x0, symBinAddr: 0xF338, symSize: 0x14 }
+  - { offset: 0xCC5B5, size: 0x8, addend: 0x0, symName: ___sharedSecret, symObjAddr: 0x9040, symBinAddr: 0x541D8, symSize: 0x0 }
+  - { offset: 0xCC5D0, size: 0x8, addend: 0x0, symName: ___queue, symObjAddr: 0x9048, symBinAddr: 0x541E0, symSize: 0x0 }
+  - { offset: 0xCC5F0, size: 0x8, addend: 0x0, symName: '+[TenjinUtil setSecret:]', symObjAddr: 0x0, symBinAddr: 0xF338, symSize: 0x14 }
+  - { offset: 0xCC62F, size: 0x8, addend: 0x0, symName: '+[TenjinUtil hasSecret]', symObjAddr: 0x14, symBinAddr: 0xF34C, symSize: 0x11 }
+  - { offset: 0xCC662, size: 0x8, addend: 0x0, symName: '+[TenjinUtil getSignature:]', symObjAddr: 0x25, symBinAddr: 0xF35D, symSize: 0x19 }
+  - { offset: 0xCC6B1, size: 0x8, addend: 0x0, symName: '+[TenjinUtil signDictionary:withSecret:]', symObjAddr: 0x3E, symBinAddr: 0xF376, symSize: 0x17C }
+  - { offset: 0xCC830, size: 0x8, addend: 0x0, symName: '+[TenjinUtil timestampString]', symObjAddr: 0x1BA, symBinAddr: 0xF4F2, symSize: 0x85 }
+  - { offset: 0xCC893, size: 0x8, addend: 0x0, symName: '+[TenjinUtil addOperation:withCompletionBlock:]', symObjAddr: 0x23F, symBinAddr: 0xF577, symSize: 0x7D }
+  - { offset: 0xCC92E, size: 0x8, addend: 0x0, symName: '+[TenjinUtil addBlock:]', symObjAddr: 0x2BC, symBinAddr: 0xF5F4, symSize: 0x56 }
+  - { offset: 0xCC9A1, size: 0x8, addend: 0x0, symName: '+[TenjinUtil initQueue]', symObjAddr: 0x312, symBinAddr: 0xF64A, symSize: 0x35 }
+  - { offset: 0xCC9E8, size: 0x8, addend: 0x0, symName: '+[TenjinUtil backoffTimeForRetry:]', symObjAddr: 0x347, symBinAddr: 0xF67F, symSize: 0x49 }
+  - { offset: 0xCCC81, size: 0x8, addend: 0x0, symName: '-[TradPlusHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xF6C8, symSize: 0x49F }
+  - { offset: 0xCCCA0, size: 0x8, addend: 0x0, symName: '-[TradPlusHelper convertToDict:]', symObjAddr: 0x0, symBinAddr: 0xF6C8, symSize: 0x49F }
+  - { offset: 0xCCE89, size: 0x8, addend: 0x0, symName: '-[TradPlusHelper formatFromNumber:]', symObjAddr: 0x49F, symBinAddr: 0xFB67, symSize: 0x128 }
+  - { offset: 0xCCFDC, size: 0x8, addend: 0x0, symName: '-[NSArray(Util) each:ofType:]', symObjAddr: 0x0, symBinAddr: 0xFC8F, symSize: 0x97 }
+  - { offset: 0xCCFEA, size: 0x8, addend: 0x0, symName: '-[NSArray(Util) each:ofType:]', symObjAddr: 0x0, symBinAddr: 0xFC8F, symSize: 0x97 }
+  - { offset: 0xCD079, size: 0x8, addend: 0x0, symName: '___29-[NSArray(Util) each:ofType:]_block_invoke', symObjAddr: 0x97, symBinAddr: 0xFD26, symSize: 0x45 }
+  - { offset: 0xCD11C, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b, symObjAddr: 0xDC, symBinAddr: 0xFD6B, symSize: 0x17 }
+  - { offset: 0xCD145, size: 0x8, addend: 0x0, symName: '-[NSArray(Util) each:]', symObjAddr: 0x102, symBinAddr: 0xFD82, symSize: 0x90 }
+  - { offset: 0xCD1C4, size: 0x8, addend: 0x0, symName: '___22-[NSArray(Util) each:]_block_invoke', symObjAddr: 0x192, symBinAddr: 0xFE12, symSize: 0xF }
+  - { offset: 0xCD231, size: 0x8, addend: 0x0, symName: '-[NSArray(Util) filter:]', symObjAddr: 0x1A1, symBinAddr: 0xFE21, symSize: 0xDC }
+  - { offset: 0xCD300, size: 0x8, addend: 0x0, symName: '___24-[NSArray(Util) filter:]_block_invoke', symObjAddr: 0x27D, symBinAddr: 0xFEFD, symSize: 0x45 }
+  - { offset: 0xCD3A3, size: 0x8, addend: 0x0, symName: '-[NSDictionary(Util) filter:]', symObjAddr: 0x317, symBinAddr: 0xFF42, symSize: 0xDE }
+  - { offset: 0xCD466, size: 0x8, addend: 0x0, symName: '___29-[NSDictionary(Util) filter:]_block_invoke', symObjAddr: 0x3F5, symBinAddr: 0x10020, symSize: 0x6F }
+  - { offset: 0xCD8D7, size: 0x8, addend: 0x0, symName: '-[AsyncOperation start]', symObjAddr: 0x0, symBinAddr: 0x1008F, symSize: 0x5C }
+  - { offset: 0xCD97F, size: 0x8, addend: 0x0, symName: '-[AsyncOperation start]', symObjAddr: 0x0, symBinAddr: 0x1008F, symSize: 0x5C }
+  - { offset: 0xCD9E2, size: 0x8, addend: 0x0, symName: '-[AsyncOperation _setFinished:]', symObjAddr: 0x5C, symBinAddr: 0x100EB, symSize: 0x7C }
+  - { offset: 0xCDA55, size: 0x8, addend: 0x0, symName: '-[AsyncOperation _setExecuting:]', symObjAddr: 0xD8, symBinAddr: 0x10167, symSize: 0x7C }
+  - { offset: 0xCDAC8, size: 0x8, addend: 0x0, symName: '-[AsyncOperation isAsynchronous]', symObjAddr: 0x154, symBinAddr: 0x101E3, symSize: 0x8 }
+  - { offset: 0xCDAFB, size: 0x8, addend: 0x0, symName: '-[AsyncOperation isExecuting]', symObjAddr: 0x15C, symBinAddr: 0x101EB, symSize: 0x10 }
+  - { offset: 0xCDB30, size: 0x8, addend: 0x0, symName: '-[AsyncOperation isFinished]', symObjAddr: 0x16C, symBinAddr: 0x101FB, symSize: 0x10 }
+  - { offset: 0xCDB65, size: 0x8, addend: 0x0, symName: '-[AsyncOperation main]', symObjAddr: 0x17C, symBinAddr: 0x1020B, symSize: 0x6 }
+  - { offset: 0xCDB94, size: 0x8, addend: 0x0, symName: '-[AsyncOperation complete]', symObjAddr: 0x182, symBinAddr: 0x10211, symSize: 0x35 }
+  - { offset: 0xCDBDF, size: 0x8, addend: 0x0, symName: '-[AsyncOperation executing]', symObjAddr: 0x1B7, symBinAddr: 0x10246, symSize: 0x12 }
+  - { offset: 0xCDC14, size: 0x8, addend: 0x0, symName: '-[AsyncOperation setExecuting:]', symObjAddr: 0x1C9, symBinAddr: 0x10258, symSize: 0x10 }
+  - { offset: 0xCDC51, size: 0x8, addend: 0x0, symName: '-[AsyncOperation finished]', symObjAddr: 0x1D9, symBinAddr: 0x10268, symSize: 0x12 }
+  - { offset: 0xCDC86, size: 0x8, addend: 0x0, symName: '-[AsyncOperation setFinished:]', symObjAddr: 0x1EB, symBinAddr: 0x1027A, symSize: 0x10 }
+  - { offset: 0xCDCC3, size: 0x8, addend: 0x0, symName: '-[AsyncOperation blocker]', symObjAddr: 0x1FB, symBinAddr: 0x1028A, symSize: 0x12 }
+  - { offset: 0xCDCF8, size: 0x8, addend: 0x0, symName: '-[AsyncOperation setBlocker:]', symObjAddr: 0x20D, symBinAddr: 0x1029C, symSize: 0x10 }
+  - { offset: 0xCDD35, size: 0x8, addend: 0x0, symName: '-[AsyncOperation retryable]', symObjAddr: 0x21D, symBinAddr: 0x102AC, symSize: 0x12 }
+  - { offset: 0xCDD6A, size: 0x8, addend: 0x0, symName: '-[AsyncOperation setRetryable:]', symObjAddr: 0x22F, symBinAddr: 0x102BE, symSize: 0x10 }
+  - { offset: 0xCDDA7, size: 0x8, addend: 0x0, symName: '-[AsyncOperation success]', symObjAddr: 0x23F, symBinAddr: 0x102CE, symSize: 0x12 }
+  - { offset: 0xCDDDC, size: 0x8, addend: 0x0, symName: '-[AsyncOperation setSuccess:]', symObjAddr: 0x251, symBinAddr: 0x102E0, symSize: 0x10 }
+  - { offset: 0xCDE6B, size: 0x8, addend: 0x0, symName: '-[StartupOperation init]', symObjAddr: 0x0, symBinAddr: 0x102F0, symSize: 0xBA }
+  - { offset: 0xCDF9D, size: 0x8, addend: 0x0, symName: '-[StartupOperation init]', symObjAddr: 0x0, symBinAddr: 0x102F0, symSize: 0xBA }
+  - { offset: 0xCE01C, size: 0x8, addend: 0x0, symName: '-[StartupOperation main]', symObjAddr: 0xBA, symBinAddr: 0x103AA, symSize: 0x11F }
+  - { offset: 0xCE0B3, size: 0x8, addend: 0x0, symName: '___24-[StartupOperation main]_block_invoke', symObjAddr: 0x1D9, symBinAddr: 0x104C9, symSize: 0x115 }
+  - { offset: 0xCE1D2, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32w, symObjAddr: 0x2EE, symBinAddr: 0x105DE, symSize: 0x12 }
+  - { offset: 0xCE1FB, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32w, symObjAddr: 0x300, symBinAddr: 0x105F0, symSize: 0xE }
+  - { offset: 0xCE21A, size: 0x8, addend: 0x0, symName: '-[StartupOperation complete]', symObjAddr: 0x30E, symBinAddr: 0x105FE, symSize: 0x88 }
+  - { offset: 0xCE289, size: 0x8, addend: 0x0, symName: '-[StartupOperation aaAttributionToken]', symObjAddr: 0x396, symBinAddr: 0x10686, symSize: 0x11 }
+  - { offset: 0xCE2BE, size: 0x8, addend: 0x0, symName: '-[StartupOperation setAaAttributionToken:]', symObjAddr: 0x3A7, symBinAddr: 0x10697, symSize: 0x14 }
+  - { offset: 0xCE2FF, size: 0x8, addend: 0x0, symName: '-[StartupOperation preCompletion]', symObjAddr: 0x3BB, symBinAddr: 0x106AB, symSize: 0x11 }
+  - { offset: 0xCE334, size: 0x8, addend: 0x0, symName: '-[StartupOperation setPreCompletion:]', symObjAddr: 0x3CC, symBinAddr: 0x106BC, symSize: 0x11 }
+  - { offset: 0xCE373, size: 0x8, addend: 0x0, symName: '-[StartupOperation .cxx_destruct]', symObjAddr: 0x3DD, symBinAddr: 0x106CD, symSize: 0x43 }
+  - { offset: 0xCE4AB, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue init]', symObjAddr: 0x0, symBinAddr: 0x10710, symSize: 0xAB }
+  - { offset: 0xCE547, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue init]', symObjAddr: 0x0, symBinAddr: 0x10710, symSize: 0xAB }
+  - { offset: 0xCE5AE, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue addBlock:withCompletion:]', symObjAddr: 0xAB, symBinAddr: 0x107BB, symSize: 0x7F }
+  - { offset: 0xCE64D, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue addBlock:]', symObjAddr: 0x12A, symBinAddr: 0x1083A, symSize: 0x14 }
+  - { offset: 0xCE698, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue addOperation:withCompletion:]', symObjAddr: 0x13E, symBinAddr: 0x1084E, symSize: 0x158 }
+  - { offset: 0xCE773, size: 0x8, addend: 0x0, symName: '___49-[TJNOperationQueue addOperation:withCompletion:]_block_invoke', symObjAddr: 0x296, symBinAddr: 0x109A6, symSize: 0x5B }
+  - { offset: 0xCE837, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b48w, symObjAddr: 0x2F1, symBinAddr: 0x10A01, symSize: 0x40 }
+  - { offset: 0xCE86C, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48w, symObjAddr: 0x331, symBinAddr: 0x10A41, symSize: 0x2E }
+  - { offset: 0xCE8A3, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue updateQueueWithCompletedOperation:]', symObjAddr: 0x35F, symBinAddr: 0x10A6F, symSize: 0x2B9 }
+  - { offset: 0xCEA0A, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue handleAsyncOperation:]', symObjAddr: 0x618, symBinAddr: 0x10D28, symSize: 0x3A0 }
+  - { offset: 0xCEB9D, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue blockers]', symObjAddr: 0x9B8, symBinAddr: 0x110C8, symSize: 0x11 }
+  - { offset: 0xCEBD2, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue setBlockers:]', symObjAddr: 0x9C9, symBinAddr: 0x110D9, symSize: 0x14 }
+  - { offset: 0xCEC13, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue lowPriority]', symObjAddr: 0x9DD, symBinAddr: 0x110ED, symSize: 0x11 }
+  - { offset: 0xCEC48, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue setLowPriority:]', symObjAddr: 0x9EE, symBinAddr: 0x110FE, symSize: 0x14 }
+  - { offset: 0xCEC89, size: 0x8, addend: 0x0, symName: '-[TJNOperationQueue .cxx_destruct]', symObjAddr: 0xA02, symBinAddr: 0x11112, symSize: 0x31 }
+  - { offset: 0xCEEC9, size: 0x8, addend: 0x0, symName: '+[CreateRequestOperation operationWithParams:]', symObjAddr: 0x0, symBinAddr: 0x11143, symSize: 0xA5 }
+  - { offset: 0xCF08A, size: 0x8, addend: 0x0, symName: '+[CreateRequestOperation operationWithParams:]', symObjAddr: 0x0, symBinAddr: 0x11143, symSize: 0xA5 }
+  - { offset: 0xCF131, size: 0x8, addend: 0x0, symName: '+[CreateRequestOperation operationWithClient:andParams:]', symObjAddr: 0xA5, symBinAddr: 0x111E8, symSize: 0x99 }
+  - { offset: 0xCF1E8, size: 0x8, addend: 0x0, symName: '-[CreateRequestOperation main]', symObjAddr: 0x13E, symBinAddr: 0x11281, symSize: 0x128 }
+  - { offset: 0xCF29F, size: 0x8, addend: 0x0, symName: '-[CreateRequestOperation eventName]', symObjAddr: 0x266, symBinAddr: 0x113A9, symSize: 0x11 }
+  - { offset: 0xCF2D4, size: 0x8, addend: 0x0, symName: '-[CreateRequestOperation setEventName:]', symObjAddr: 0x277, symBinAddr: 0x113BA, symSize: 0x14 }
+  - { offset: 0xCF315, size: 0x8, addend: 0x0, symName: '-[CreateRequestOperation params]', symObjAddr: 0x28B, symBinAddr: 0x113CE, symSize: 0x11 }
+  - { offset: 0xCF34A, size: 0x8, addend: 0x0, symName: '-[CreateRequestOperation setParams:]', symObjAddr: 0x29C, symBinAddr: 0x113DF, symSize: 0x14 }
+  - { offset: 0xCF38B, size: 0x8, addend: 0x0, symName: '-[CreateRequestOperation client]', symObjAddr: 0x2B0, symBinAddr: 0x113F3, symSize: 0x11 }
+  - { offset: 0xCF3C0, size: 0x8, addend: 0x0, symName: '-[CreateRequestOperation setClient:]', symObjAddr: 0x2C1, symBinAddr: 0x11404, symSize: 0x14 }
+  - { offset: 0xCF401, size: 0x8, addend: 0x0, symName: '-[CreateRequestOperation .cxx_destruct]', symObjAddr: 0x2D5, symBinAddr: 0x11418, symSize: 0x42 }
+  - { offset: 0xCF4A2, size: 0x8, addend: 0x0, symName: '+[AsyncBlockOperation operationWithBlock:]', symObjAddr: 0x0, symBinAddr: 0x1145A, symSize: 0x67 }
+  - { offset: 0xCF593, size: 0x8, addend: 0x0, symName: '+[AsyncBlockOperation operationWithBlock:]', symObjAddr: 0x0, symBinAddr: 0x1145A, symSize: 0x67 }
+  - { offset: 0xCF616, size: 0x8, addend: 0x0, symName: '-[AsyncBlockOperation main]', symObjAddr: 0x67, symBinAddr: 0x114C1, symSize: 0x1A }
+  - { offset: 0xCF655, size: 0x8, addend: 0x0, symName: '-[AsyncBlockOperation block]', symObjAddr: 0x81, symBinAddr: 0x114DB, symSize: 0x11 }
+  - { offset: 0xCF68A, size: 0x8, addend: 0x0, symName: '-[AsyncBlockOperation setBlock:]', symObjAddr: 0x92, symBinAddr: 0x114EC, symSize: 0x11 }
+  - { offset: 0xCF6C9, size: 0x8, addend: 0x0, symName: '-[AsyncBlockOperation .cxx_destruct]', symObjAddr: 0xA3, symBinAddr: 0x114FD, symSize: 0x13 }
+  - { offset: 0xCF766, size: 0x8, addend: 0x0, symName: '-[TenjinIAPHelper init]', symObjAddr: 0x0, symBinAddr: 0x11510, symSize: 0x66 }
+  - { offset: 0xCF7A4, size: 0x8, addend: 0x0, symName: '-[TenjinIAPHelper init]', symObjAddr: 0x0, symBinAddr: 0x11510, symSize: 0x66 }
+  - { offset: 0xCF7F3, size: 0x8, addend: 0x0, symName: '-[TenjinIAPHelper getProductFor:withCompletion:]', symObjAddr: 0x66, symBinAddr: 0x11576, symSize: 0x12F }
+  - { offset: 0xCF91E, size: 0x8, addend: 0x0, symName: '-[TenjinIAPHelper blockForRequest:]', symObjAddr: 0x195, symBinAddr: 0x116A5, symSize: 0x1AB }
+  - { offset: 0xCF9EF, size: 0x8, addend: 0x0, symName: ___Block_byref_object_copy_, symObjAddr: 0x340, symBinAddr: 0x11850, symSize: 0x1D }
+  - { offset: 0xCFA18, size: 0x8, addend: 0x0, symName: ___Block_byref_object_dispose_, symObjAddr: 0x35D, symBinAddr: 0x1186D, symSize: 0xF }
+  - { offset: 0xCFA43, size: 0x8, addend: 0x0, symName: ___Block_byref_object_copy_.18, symObjAddr: 0x36C, symBinAddr: 0x1187C, symSize: 0x16 }
+  - { offset: 0xCFA68, size: 0x8, addend: 0x0, symName: ___Block_byref_object_dispose_.19, symObjAddr: 0x382, symBinAddr: 0x11892, symSize: 0xF }
+  - { offset: 0xCFA93, size: 0x8, addend: 0x0, symName: '___35-[TenjinIAPHelper blockForRequest:]_block_invoke', symObjAddr: 0x391, symBinAddr: 0x118A1, symSize: 0xB7 }
+  - { offset: 0xCFB6E, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40r48r, symObjAddr: 0x448, symBinAddr: 0x11958, symSize: 0x42 }
+  - { offset: 0xCFBA3, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40r48r, symObjAddr: 0x48A, symBinAddr: 0x1199A, symSize: 0x35 }
+  - { offset: 0xCFBCE, size: 0x8, addend: 0x0, symName: '-[TenjinIAPHelper productsRequest:didReceiveResponse:]', symObjAddr: 0x4BF, symBinAddr: 0x119CF, symSize: 0xF5 }
+  - { offset: 0xCFCF6, size: 0x8, addend: 0x0, symName: '+[TenjinIAPHelper extractPropertiesFromProduct:to:]', symObjAddr: 0x5B4, symBinAddr: 0x11AC4, symSize: 0x18B }
+  - { offset: 0xCFE41, size: 0x8, addend: 0x0, symName: '-[TenjinIAPHelper .cxx_destruct]', symObjAddr: 0x73F, symBinAddr: 0x11C4F, symSize: 0x10 }
+  - { offset: 0xD013C, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(CASILRD) subscribeCASBannerImpressions]', symObjAddr: 0x0, symBinAddr: 0x11C5F, symSize: 0x19 }
+  - { offset: 0xD0151, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(CASILRD) subscribeCASBannerImpressions]', symObjAddr: 0x0, symBinAddr: 0x11C5F, symSize: 0x19 }
+  - { offset: 0xD018C, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(CASILRD) handleCASILRD:]', symObjAddr: 0x19, symBinAddr: 0x11C78, symSize: 0x97 }
+  - { offset: 0xD0243, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(CASILRD) processRequestFromCASData:]', symObjAddr: 0xB0, symBinAddr: 0x11D0F, symSize: 0x12F }
+  - { offset: 0xD0371, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(CASILRD) casImpressionFromJSON:]', symObjAddr: 0x1DF, symBinAddr: 0x11E3E, symSize: 0xC7 }
+  - { offset: 0xD0446, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(CASILRD) transformAndProcessCASData:]', symObjAddr: 0x2A6, symBinAddr: 0x11F05, symSize: 0x11F }
+  - { offset: 0xD07AE, size: 0x8, addend: 0x0, symName: '+[TenjinSKRequestWrapper wrapped:]', symObjAddr: 0x0, symBinAddr: 0x12024, symSize: 0x49 }
+  - { offset: 0xD07EC, size: 0x8, addend: 0x0, symName: '+[TenjinSKRequestWrapper wrapped:]', symObjAddr: 0x0, symBinAddr: 0x12024, symSize: 0x49 }
+  - { offset: 0xD0857, size: 0x8, addend: 0x0, symName: '-[TenjinSKRequestWrapper initWithRequest:]', symObjAddr: 0x49, symBinAddr: 0x1206D, symSize: 0x6B }
+  - { offset: 0xD08B6, size: 0x8, addend: 0x0, symName: '-[TenjinSKRequestWrapper copyWithZone:]', symObjAddr: 0xB4, symBinAddr: 0x120D8, symSize: 0x76 }
+  - { offset: 0xD0939, size: 0x8, addend: 0x0, symName: '-[TenjinSKRequestWrapper request]', symObjAddr: 0x12A, symBinAddr: 0x1214E, symSize: 0xA }
+  - { offset: 0xD096E, size: 0x8, addend: 0x0, symName: '-[TenjinSKRequestWrapper setRequest:]', symObjAddr: 0x134, symBinAddr: 0x12158, symSize: 0x11 }
+  - { offset: 0xD09AF, size: 0x8, addend: 0x0, symName: '-[TenjinSKRequestWrapper .cxx_destruct]', symObjAddr: 0x145, symBinAddr: 0x12169, symSize: 0x10 }
+  - { offset: 0xD0A70, size: 0x8, addend: 0x0, symName: '-[TenjinConfig init]', symObjAddr: 0x0, symBinAddr: 0x12179, symSize: 0x88 }
+  - { offset: 0xD0AA1, size: 0x8, addend: 0x0, symName: '-[TenjinConfig init]', symObjAddr: 0x0, symBinAddr: 0x12179, symSize: 0x88 }
+  - { offset: 0xD0B08, size: 0x8, addend: 0x0, symName: '-[TenjinConfig loadDefaults]', symObjAddr: 0x88, symBinAddr: 0x12201, symSize: 0x103 }
+  - { offset: 0xD0BA7, size: 0x8, addend: 0x0, symName: '-[TenjinConfig loadOverrides]', symObjAddr: 0x18B, symBinAddr: 0x12304, symSize: 0xEF }
+  - { offset: 0xD0C62, size: 0x8, addend: 0x0, symName: '-[TenjinConfig boolForKey:]', symObjAddr: 0x27A, symBinAddr: 0x123F3, symSize: 0x7D }
+  - { offset: 0xD0CF5, size: 0x8, addend: 0x0, symName: '-[TenjinConfig setValue:forKey:]', symObjAddr: 0x2F7, symBinAddr: 0x12470, symSize: 0x7E }
+  - { offset: 0xD0DA6, size: 0x8, addend: 0x0, symName: '-[TenjinConfig stringForKey:]', symObjAddr: 0x375, symBinAddr: 0x124EE, symSize: 0x7A }
+  - { offset: 0xD0E39, size: 0x8, addend: 0x0, symName: '-[TenjinConfig .cxx_destruct]', symObjAddr: 0x3EF, symBinAddr: 0x12568, symSize: 0x10 }
+  - { offset: 0xD0EF3, size: 0x8, addend: 0x0, symName: '+[TenjinImpl setWrappedVersion:]', symObjAddr: 0x0, symBinAddr: 0x1FC0, symSize: 0x14 }
+  - { offset: 0xD0F0D, size: 0x8, addend: 0x0, symName: ___wrappedVersion, symObjAddr: 0x61D0, symBinAddr: 0x52F38, symSize: 0x0 }
+  - { offset: 0xD0F28, size: 0x8, addend: 0x0, symName: _sharedInstance, symObjAddr: 0x54708, symBinAddr: 0x54140, symSize: 0x0 }
+  - { offset: 0xD1222, size: 0x8, addend: 0x0, symName: '+[TenjinImpl setWrappedVersion:]', symObjAddr: 0x0, symBinAddr: 0x1FC0, symSize: 0x14 }
+  - { offset: 0xD1261, size: 0x8, addend: 0x0, symName: '+[TenjinImpl getWrappedVersion]', symObjAddr: 0x14, symBinAddr: 0x1FD4, symSize: 0x11 }
+  - { offset: 0xD1294, size: 0x8, addend: 0x0, symName: '+[TenjinImpl sharedInstance]', symObjAddr: 0x25, symBinAddr: 0x1FE5, symSize: 0x11 }
+  - { offset: 0xD12C7, size: 0x8, addend: 0x0, symName: '-[TenjinImpl initWithToken:andSharedSecret:andAppSubversion:ping:requestSender:]', symObjAddr: 0x36, symBinAddr: 0x1FF6, symSize: 0x376 }
+  - { offset: 0xD15A6, size: 0x8, addend: 0x0, symName: '___80-[TenjinImpl initWithToken:andSharedSecret:andAppSubversion:ping:requestSender:]_block_invoke', symObjAddr: 0x3AC, symBinAddr: 0x236C, symSize: 0x1BD }
+  - { offset: 0xD173A, size: 0x8, addend: 0x0, symName: '-[TenjinImpl initWithToken:andSharedSecret:andAppSubversion:ping:]', symObjAddr: 0x589, symBinAddr: 0x2529, symSize: 0xBF }
+  - { offset: 0xD181D, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setup]', symObjAddr: 0x648, symBinAddr: 0x25E8, symSize: 0x5B }
+  - { offset: 0xD1882, size: 0x8, addend: 0x0, symName: '-[TenjinImpl run]', symObjAddr: 0x6A3, symBinAddr: 0x2643, symSize: 0xD9 }
+  - { offset: 0xD1937, size: 0x8, addend: 0x0, symName: '___17-[TenjinImpl run]_block_invoke', symObjAddr: 0x77C, symBinAddr: 0x271C, symSize: 0x248 }
+  - { offset: 0xD1B39, size: 0x8, addend: 0x0, symName: '___17-[TenjinImpl run]_block_invoke_2', symObjAddr: 0x9C4, symBinAddr: 0x2964, symSize: 0x16 }
+  - { offset: 0xD1B84, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s, symObjAddr: 0x9E9, symBinAddr: 0x297A, symSize: 0xF }
+  - { offset: 0xD1BAF, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s, symObjAddr: 0xA1D, symBinAddr: 0x2989, symSize: 0x25 }
+  - { offset: 0xD1BE6, size: 0x8, addend: 0x0, symName: '-[TenjinImpl dispatchDelay]', symObjAddr: 0xA42, symBinAddr: 0x29AE, symSize: 0xAB }
+  - { offset: 0xD1D43, size: 0x8, addend: 0x0, symName: '-[TenjinImpl sendQueuedEvent:]', symObjAddr: 0xAED, symBinAddr: 0x2A59, symSize: 0xC2 }
+  - { offset: 0xD1E12, size: 0x8, addend: 0x0, symName: '-[TenjinImpl handleGatedRequestWithEndpoint:params:]', symObjAddr: 0xBAF, symBinAddr: 0x2B1B, symSize: 0x2AD }
+  - { offset: 0xD1F5D, size: 0x8, addend: 0x0, symName: '___52-[TenjinImpl handleGatedRequestWithEndpoint:params:]_block_invoke', symObjAddr: 0xE5C, symBinAddr: 0x2DC8, symSize: 0x5A }
+  - { offset: 0xD1FD8, size: 0x8, addend: 0x0, symName: '___52-[TenjinImpl handleGatedRequestWithEndpoint:params:]_block_invoke.140', symObjAddr: 0xEB6, symBinAddr: 0x2E22, symSize: 0x31 }
+  - { offset: 0xD202B, size: 0x8, addend: 0x0, symName: '-[TenjinImpl ping]', symObjAddr: 0xEE7, symBinAddr: 0x2E53, symSize: 0x13F }
+  - { offset: 0xD20DE, size: 0x8, addend: 0x0, symName: '___18-[TenjinImpl ping]_block_invoke', symObjAddr: 0x1026, symBinAddr: 0x2F92, symSize: 0xBE }
+  - { offset: 0xD214D, size: 0x8, addend: 0x0, symName: '___18-[TenjinImpl ping]_block_invoke_2', symObjAddr: 0x10E4, symBinAddr: 0x3050, symSize: 0x5A }
+  - { offset: 0xD21C8, size: 0x8, addend: 0x0, symName: '-[TenjinImpl pingWithDeferredDeeplink:]', symObjAddr: 0x113E, symBinAddr: 0x30AA, symSize: 0x64 }
+  - { offset: 0xD223D, size: 0x8, addend: 0x0, symName: '-[TenjinImpl pingEventWithName:]', symObjAddr: 0x11A2, symBinAddr: 0x310E, symSize: 0x75 }
+  - { offset: 0xD22B2, size: 0x8, addend: 0x0, symName: '-[TenjinImpl sendRequestToEndpoint:andCustomParams:withMethod:]', symObjAddr: 0x1217, symBinAddr: 0x3183, symSize: 0x3E3 }
+  - { offset: 0xD24FF, size: 0x8, addend: 0x0, symName: '___63-[TenjinImpl sendRequestToEndpoint:andCustomParams:withMethod:]_block_invoke', symObjAddr: 0x15FA, symBinAddr: 0x3566, symSize: 0x8E }
+  - { offset: 0xD25FA, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s64s, symObjAddr: 0x1688, symBinAddr: 0x35F4, symSize: 0x3A }
+  - { offset: 0xD265F, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s64s, symObjAddr: 0x16C2, symBinAddr: 0x362E, symSize: 0x3A }
+  - { offset: 0xD26BA, size: 0x8, addend: 0x0, symName: '___63-[TenjinImpl sendRequestToEndpoint:andCustomParams:withMethod:]_block_invoke.174', symObjAddr: 0x16FC, symBinAddr: 0x3668, symSize: 0x5A }
+  - { offset: 0xD2739, size: 0x8, addend: 0x0, symName: '___63-[TenjinImpl sendRequestToEndpoint:andCustomParams:withMethod:]_block_invoke_2', symObjAddr: 0x1756, symBinAddr: 0x36C2, symSize: 0x31 }
+  - { offset: 0xD278F, size: 0x8, addend: 0x0, symName: '-[TenjinImpl pingEventWithName:andIntegerValue:]', symObjAddr: 0x1787, symBinAddr: 0x36F3, symSize: 0xA9 }
+  - { offset: 0xD283E, size: 0x8, addend: 0x0, symName: '-[TenjinImpl checkForAttribution]', symObjAddr: 0x1830, symBinAddr: 0x379C, symSize: 0x19 }
+  - { offset: 0xD287C, size: 0x8, addend: 0x0, symName: '-[TenjinImpl checkForAttributionRetry:retryLimit:]', symObjAddr: 0x1849, symBinAddr: 0x37B5, symSize: 0x85 }
+  - { offset: 0xD290B, size: 0x8, addend: 0x0, symName: '___50-[TenjinImpl checkForAttributionRetry:retryLimit:]_block_invoke', symObjAddr: 0x18CE, symBinAddr: 0x383A, symSize: 0x19C }
+  - { offset: 0xD2A5E, size: 0x8, addend: 0x0, symName: '___50-[TenjinImpl checkForAttributionRetry:retryLimit:]_block_invoke_2', symObjAddr: 0x1A6A, symBinAddr: 0x39D6, symSize: 0x4CF }
+  - { offset: 0xD2E39, size: 0x8, addend: 0x0, symName: '___50-[TenjinImpl checkForAttributionRetry:retryLimit:]_block_invoke.245', symObjAddr: 0x1F39, symBinAddr: 0x3EA5, symSize: 0x65 }
+  - { offset: 0xD2ECE, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48b, symObjAddr: 0x1F9E, symBinAddr: 0x3F0A, symSize: 0x44 }
+  - { offset: 0xD2F0F, size: 0x8, addend: 0x0, symName: '-[TenjinImpl getAttributionInfo:]', symObjAddr: 0x200E, symBinAddr: 0x3F4E, symSize: 0x1A }
+  - { offset: 0xD2F5C, size: 0x8, addend: 0x0, symName: '-[TenjinImpl getAttributionInfo:retryCounter:retryLimit:]', symObjAddr: 0x2028, symBinAddr: 0x3F68, symSize: 0xC1 }
+  - { offset: 0xD3019, size: 0x8, addend: 0x0, symName: '___57-[TenjinImpl getAttributionInfo:retryCounter:retryLimit:]_block_invoke', symObjAddr: 0x20E9, symBinAddr: 0x4029, symSize: 0x1C2 }
+  - { offset: 0xD3195, size: 0x8, addend: 0x0, symName: '___57-[TenjinImpl getAttributionInfo:retryCounter:retryLimit:]_block_invoke_2', symObjAddr: 0x22AB, symBinAddr: 0x41EB, symSize: 0x223 }
+  - { offset: 0xD33FF, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b, symObjAddr: 0x24CE, symBinAddr: 0x440E, symSize: 0x30 }
+  - { offset: 0xD3434, size: 0x8, addend: 0x0, symName: '___57-[TenjinImpl getAttributionInfo:retryCounter:retryLimit:]_block_invoke.267', symObjAddr: 0x24FE, symBinAddr: 0x443E, symSize: 0x65 }
+  - { offset: 0xD34C9, size: 0x8, addend: 0x0, symName: '-[TenjinImpl transaction:]', symObjAddr: 0x2563, symBinAddr: 0x44A3, symSize: 0x163 }
+  - { offset: 0xD3628, size: 0x8, addend: 0x0, symName: '-[TenjinImpl transaction:andReceipt:]', symObjAddr: 0x26C6, symBinAddr: 0x4606, symSize: 0x1CF }
+  - { offset: 0xD37E0, size: 0x8, addend: 0x0, symName: '-[TenjinImpl transactionWithProductName:andCurrencyCode:andQuantity:andUnitPrice:]', symObjAddr: 0x2895, symBinAddr: 0x47D5, symSize: 0x22 }
+  - { offset: 0xD3864, size: 0x8, addend: 0x0, symName: '-[TenjinImpl transactionWithProductName:andCurrencyCode:andQuantity:andUnitPrice:andTransactionId:andReceipt:]', symObjAddr: 0x28B7, symBinAddr: 0x47F7, symSize: 0xDF }
+  - { offset: 0xD3980, size: 0x8, addend: 0x0, symName: '-[TenjinImpl transactionWithProductName:andCurrencyCode:andQuantity:andUnitPrice:andTransactionId:andBase64Receipt:]', symObjAddr: 0x2996, symBinAddr: 0x48D6, symSize: 0x333 }
+  - { offset: 0xD3C10, size: 0x8, addend: 0x0, symName: '-[TenjinImpl handleSubscriptionPurchase:]', symObjAddr: 0x2CC9, symBinAddr: 0x4C09, symSize: 0x1E8 }
+  - { offset: 0xD3D8A, size: 0x8, addend: 0x0, symName: '___41-[TenjinImpl handleSubscriptionPurchase:]_block_invoke', symObjAddr: 0x2EB1, symBinAddr: 0x4DF1, symSize: 0x20 }
+  - { offset: 0xD3DFA, size: 0x8, addend: 0x0, symName: '-[TenjinImpl trackSubscriptionReceipt:forProduct:]', symObjAddr: 0x2ED1, symBinAddr: 0x4E11, symSize: 0x14A }
+  - { offset: 0xD3F15, size: 0x8, addend: 0x0, symName: '___50-[TenjinImpl trackSubscriptionReceipt:forProduct:]_block_invoke', symObjAddr: 0x301B, symBinAddr: 0x4F5B, symSize: 0x13D }
+  - { offset: 0xD4053, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s, symObjAddr: 0x3158, symBinAddr: 0x5098, symSize: 0x33 }
+  - { offset: 0xD40AC, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s, symObjAddr: 0x318B, symBinAddr: 0x50CB, symSize: 0x33 }
+  - { offset: 0xD40FB, size: 0x8, addend: 0x0, symName: '-[TenjinImpl trackConversionValue:coarseValue:lockWindow:hasLockWindow:]', symObjAddr: 0x31BE, symBinAddr: 0x50FE, symSize: 0x129 }
+  - { offset: 0xD4208, size: 0x8, addend: 0x0, symName: '___72-[TenjinImpl trackConversionValue:coarseValue:lockWindow:hasLockWindow:]_block_invoke', symObjAddr: 0x32E7, symBinAddr: 0x5227, symSize: 0x119 }
+  - { offset: 0xD4344, size: 0x8, addend: 0x0, symName: '-[TenjinImpl apiRequestWithParameters:endpoint:HTTPMethod:]', symObjAddr: 0x342C, symBinAddr: 0x5340, symSize: 0xC6 }
+  - { offset: 0xD4417, size: 0x8, addend: 0x0, symName: '-[TenjinImpl apiRequestWithParameters:endpoint:HTTPMethod:withHandler:]', symObjAddr: 0x34F2, symBinAddr: 0x5406, symSize: 0xE7 }
+  - { offset: 0xD4513, size: 0x8, addend: 0x0, symName: '-[TenjinImpl apiRequestWithParameters:endpoint:HTTPMethod:hostname:withHandler:]', symObjAddr: 0x35D9, symBinAddr: 0x54ED, symSize: 0x6E0 }
+  - { offset: 0xD48DB, size: 0x8, addend: 0x0, symName: '-[TenjinImpl productsRequest:didReceiveResponse:]', symObjAddr: 0x3CB9, symBinAddr: 0x5BCD, symSize: 0x138 }
+  - { offset: 0xD49EB, size: 0x8, addend: 0x0, symName: '___49-[TenjinImpl productsRequest:didReceiveResponse:]_block_invoke', symObjAddr: 0x3DF1, symBinAddr: 0x5D05, symSize: 0x4CC }
+  - { offset: 0xD4D71, size: 0x8, addend: 0x0, symName: '___49-[TenjinImpl productsRequest:didReceiveResponse:]_block_invoke_2', symObjAddr: 0x42BD, symBinAddr: 0x61D1, symSize: 0x47 }
+  - { offset: 0xD4E0B, size: 0x8, addend: 0x0, symName: '-[TenjinImpl deviceParams]', symObjAddr: 0x4304, symBinAddr: 0x6218, symSize: 0x6A3 }
+  - { offset: 0xD5147, size: 0x8, addend: 0x0, symName: '___26-[TenjinImpl deviceParams]_block_invoke', symObjAddr: 0x49A7, symBinAddr: 0x68BB, symSize: 0x1C }
+  - { offset: 0xD51A2, size: 0x8, addend: 0x0, symName: '-[TenjinImpl deviceDataWithEvent:]', symObjAddr: 0x49C3, symBinAddr: 0x68D7, symSize: 0x65 }
+  - { offset: 0xD522C, size: 0x8, addend: 0x0, symName: '-[TenjinImpl optOut]', symObjAddr: 0x4A28, symBinAddr: 0x693C, symSize: 0x16 }
+  - { offset: 0xD526C, size: 0x8, addend: 0x0, symName: '-[TenjinImpl optIn]', symObjAddr: 0x4A3E, symBinAddr: 0x6952, symSize: 0x16 }
+  - { offset: 0xD52AC, size: 0x8, addend: 0x0, symName: '-[TenjinImpl optOutOfParams:]', symObjAddr: 0x4A54, symBinAddr: 0x6968, symSize: 0x16 }
+  - { offset: 0xD52FB, size: 0x8, addend: 0x0, symName: '-[TenjinImpl optInToParams:]', symObjAddr: 0x4A6A, symBinAddr: 0x697E, symSize: 0x16 }
+  - { offset: 0xD534A, size: 0x8, addend: 0x0, symName: '-[TenjinImpl optInOutUsingCMP]', symObjAddr: 0x4A80, symBinAddr: 0x6994, symSize: 0x69 }
+  - { offset: 0xD53C8, size: 0x8, addend: 0x0, symName: '-[TenjinImpl optOutGoogleDMA]', symObjAddr: 0x4AE9, symBinAddr: 0x69FD, symSize: 0x8C }
+  - { offset: 0xD5440, size: 0x8, addend: 0x0, symName: '-[TenjinImpl optInGoogleDMA]', symObjAddr: 0x4B75, symBinAddr: 0x6A89, symSize: 0x89 }
+  - { offset: 0xD54B8, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setCustomerUserId:]', symObjAddr: 0x4BFE, symBinAddr: 0x6B12, symSize: 0x74 }
+  - { offset: 0xD5535, size: 0x8, addend: 0x0, symName: '-[TenjinImpl getCustomerUserId]', symObjAddr: 0x4C72, symBinAddr: 0x6B86, symSize: 0x5E }
+  - { offset: 0xD559E, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setValue:forKey:]', symObjAddr: 0x4CD0, symBinAddr: 0x6BE4, symSize: 0x16 }
+  - { offset: 0xD55FC, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setCacheEventSetting:]', symObjAddr: 0x4CE6, symBinAddr: 0x6BFA, symSize: 0x19 }
+  - { offset: 0xD5653, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setEncryptRequestsSetting:]', symObjAddr: 0x4CFF, symBinAddr: 0x6C13, symSize: 0x19 }
+  - { offset: 0xD56AA, size: 0x8, addend: 0x0, symName: '-[TenjinImpl getAnalyticsInstallationId]', symObjAddr: 0x4D18, symBinAddr: 0x6C2C, symSize: 0x19 }
+  - { offset: 0xD56EA, size: 0x8, addend: 0x0, symName: '+[TenjinImpl setGoogleDMAParametersWithAdPersonalization:adUserData:]', symObjAddr: 0x4D31, symBinAddr: 0x6C45, symSize: 0x50 }
+  - { offset: 0xD5754, size: 0x8, addend: 0x0, symName: '-[TenjinImpl serialQueue]', symObjAddr: 0x4D81, symBinAddr: 0x6C95, symSize: 0xA }
+  - { offset: 0xD5789, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setSerialQueue:]', symObjAddr: 0x4D8B, symBinAddr: 0x6C9F, symSize: 0x11 }
+  - { offset: 0xD57CA, size: 0x8, addend: 0x0, symName: '-[TenjinImpl hasCheckedAttribution]', symObjAddr: 0x4D9C, symBinAddr: 0x6CB0, symSize: 0xB }
+  - { offset: 0xD57FF, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setHasCheckedAttribution:]', symObjAddr: 0x4DA7, symBinAddr: 0x6CBB, symSize: 0x9 }
+  - { offset: 0xD583C, size: 0x8, addend: 0x0, symName: '-[TenjinImpl deferredDeeplink]', symObjAddr: 0x4DB0, symBinAddr: 0x6CC4, symSize: 0xA }
+  - { offset: 0xD5871, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setDeferredDeeplink:]', symObjAddr: 0x4DBA, symBinAddr: 0x6CCE, symSize: 0x11 }
+  - { offset: 0xD58B2, size: 0x8, addend: 0x0, symName: '-[TenjinImpl productQuantity]', symObjAddr: 0x4DCB, symBinAddr: 0x6CDF, symSize: 0x9 }
+  - { offset: 0xD58E7, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setProductQuantity:]', symObjAddr: 0x4DD4, symBinAddr: 0x6CE8, symSize: 0x9 }
+  - { offset: 0xD5924, size: 0x8, addend: 0x0, symName: '-[TenjinImpl receipt]', symObjAddr: 0x4DDD, symBinAddr: 0x6CF1, symSize: 0x14 }
+  - { offset: 0xD595B, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setReceipt:]', symObjAddr: 0x4DF1, symBinAddr: 0x6D05, symSize: 0xF }
+  - { offset: 0xD599A, size: 0x8, addend: 0x0, symName: '-[TenjinImpl transactionIdentifier]', symObjAddr: 0x4E00, symBinAddr: 0x6D14, symSize: 0x14 }
+  - { offset: 0xD59D1, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setTransactionIdentifier:]', symObjAddr: 0x4E14, symBinAddr: 0x6D28, symSize: 0xF }
+  - { offset: 0xD5A10, size: 0x8, addend: 0x0, symName: '-[TenjinImpl config]', symObjAddr: 0x4E23, symBinAddr: 0x6D37, symSize: 0xA }
+  - { offset: 0xD5A45, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setConfig:]', symObjAddr: 0x4E2D, symBinAddr: 0x6D41, symSize: 0x11 }
+  - { offset: 0xD5A86, size: 0x8, addend: 0x0, symName: '-[TenjinImpl dataStore]', symObjAddr: 0x4E3E, symBinAddr: 0x6D52, symSize: 0xA }
+  - { offset: 0xD5ABB, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setDataStore:]', symObjAddr: 0x4E48, symBinAddr: 0x6D5C, symSize: 0x11 }
+  - { offset: 0xD5AFC, size: 0x8, addend: 0x0, symName: '-[TenjinImpl httpClient]', symObjAddr: 0x4E59, symBinAddr: 0x6D6D, symSize: 0xA }
+  - { offset: 0xD5B31, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setHttpClient:]', symObjAddr: 0x4E63, symBinAddr: 0x6D77, symSize: 0x11 }
+  - { offset: 0xD5B72, size: 0x8, addend: 0x0, symName: '-[TenjinImpl apiToken]', symObjAddr: 0x4E74, symBinAddr: 0x6D88, symSize: 0x14 }
+  - { offset: 0xD5BA9, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setApiToken:]', symObjAddr: 0x4E88, symBinAddr: 0x6D9C, symSize: 0xF }
+  - { offset: 0xD5BE8, size: 0x8, addend: 0x0, symName: '-[TenjinImpl appSubversion]', symObjAddr: 0x4E97, symBinAddr: 0x6DAB, symSize: 0xA }
+  - { offset: 0xD5C1D, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setAppSubversion:]', symObjAddr: 0x4EA1, symBinAddr: 0x6DB5, symSize: 0x11 }
+  - { offset: 0xD5C5E, size: 0x8, addend: 0x0, symName: '-[TenjinImpl iapHelper]', symObjAddr: 0x4EB2, symBinAddr: 0x6DC6, symSize: 0xA }
+  - { offset: 0xD5C93, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setIapHelper:]', symObjAddr: 0x4EBC, symBinAddr: 0x6DD0, symSize: 0x11 }
+  - { offset: 0xD5CD4, size: 0x8, addend: 0x0, symName: '-[TenjinImpl parameterProviders]', symObjAddr: 0x4ECD, symBinAddr: 0x6DE1, symSize: 0x14 }
+  - { offset: 0xD5D0B, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setParameterProviders:]', symObjAddr: 0x4EE1, symBinAddr: 0x6DF5, symSize: 0xF }
+  - { offset: 0xD5D4A, size: 0x8, addend: 0x0, symName: '-[TenjinImpl filter]', symObjAddr: 0x4EF0, symBinAddr: 0x6E04, symSize: 0xA }
+  - { offset: 0xD5D7F, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setFilter:]', symObjAddr: 0x4EFA, symBinAddr: 0x6E0E, symSize: 0x11 }
+  - { offset: 0xD5DC0, size: 0x8, addend: 0x0, symName: '-[TenjinImpl startupOperationRetriesCount]', symObjAddr: 0x4F0B, symBinAddr: 0x6E1F, symSize: 0xA }
+  - { offset: 0xD5DF5, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setStartupOperationRetriesCount:]', symObjAddr: 0x4F15, symBinAddr: 0x6E29, symSize: 0xA }
+  - { offset: 0xD5E32, size: 0x8, addend: 0x0, symName: '-[TenjinImpl requestHelper]', symObjAddr: 0x4F1F, symBinAddr: 0x6E33, symSize: 0x14 }
+  - { offset: 0xD5E69, size: 0x8, addend: 0x0, symName: '-[TenjinImpl setRequestHelper:]', symObjAddr: 0x4F33, symBinAddr: 0x6E47, symSize: 0xF }
+  - { offset: 0xD5EA8, size: 0x8, addend: 0x0, symName: '-[TenjinImpl .cxx_destruct]', symObjAddr: 0x4F42, symBinAddr: 0x6E56, symSize: 0xAA }
+  - { offset: 0xD6BFE, size: 0x8, addend: 0x0, symName: '+[PersistedFileStore store]', symObjAddr: 0x0, symBinAddr: 0x126A6, symSize: 0x43 }
+  - { offset: 0xD6C0C, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore persistPrefsQueue]', symObjAddr: 0x1017, symBinAddr: 0x13673, symSize: 0x30 }
+  - { offset: 0xD6C36, size: 0x8, addend: 0x0, symName: _persistPrefsQueue.persistPrefsQueue, symObjAddr: 0x18348, symBinAddr: 0x541E8, symSize: 0x0 }
+  - { offset: 0xD6C4D, size: 0x8, addend: 0x0, symName: _persistPrefsQueue.persistOnceToken, symObjAddr: 0x18350, symBinAddr: 0x541F0, symSize: 0x0 }
+  - { offset: 0xD6CD2, size: 0x8, addend: 0x0, symName: '+[PersistedFileStore store]', symObjAddr: 0x0, symBinAddr: 0x126A6, symSize: 0x43 }
+  - { offset: 0xD6D2D, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore setup]', symObjAddr: 0x43, symBinAddr: 0x126E9, symSize: 0x12 }
+  - { offset: 0xD6D6A, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore loadFile]', symObjAddr: 0x55, symBinAddr: 0x126FB, symSize: 0x1BC }
+  - { offset: 0xD6EDD, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore getAll]', symObjAddr: 0x211, symBinAddr: 0x128B7, symSize: 0x1E }
+  - { offset: 0xD6F20, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore getString:withDefault:]', symObjAddr: 0x22F, symBinAddr: 0x128D5, symSize: 0xA1 }
+  - { offset: 0xD6FDB, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore getInteger:withDefault:]', symObjAddr: 0x2D0, symBinAddr: 0x12976, symSize: 0x84 }
+  - { offset: 0xD707E, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore getLong:withDefault:]', symObjAddr: 0x354, symBinAddr: 0x129FA, symSize: 0x84 }
+  - { offset: 0xD7121, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore getFloat:withDefault:]', symObjAddr: 0x3D8, symBinAddr: 0x12A7E, symSize: 0x89 }
+  - { offset: 0xD71C4, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore getBool:withDefault:]', symObjAddr: 0x461, symBinAddr: 0x12B07, symSize: 0x81 }
+  - { offset: 0xD7267, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore contains:]', symObjAddr: 0x4E2, symBinAddr: 0x12B88, symSize: 0x37 }
+  - { offset: 0xD72C6, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore putString:value:]', symObjAddr: 0x519, symBinAddr: 0x12BBF, symSize: 0x9E }
+  - { offset: 0xD7379, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore putInteger:value:]', symObjAddr: 0x5B7, symBinAddr: 0x12C5D, symSize: 0xB9 }
+  - { offset: 0xD742C, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore putLong:value:]', symObjAddr: 0x670, symBinAddr: 0x12D16, symSize: 0xB9 }
+  - { offset: 0xD74DF, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore putFloat:value:]', symObjAddr: 0x729, symBinAddr: 0x12DCF, symSize: 0xBD }
+  - { offset: 0xD7592, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore putBool:value:]', symObjAddr: 0x7E6, symBinAddr: 0x12E8C, symSize: 0xB9 }
+  - { offset: 0xD7645, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore remove:]', symObjAddr: 0x89F, symBinAddr: 0x12F45, symSize: 0x7F }
+  - { offset: 0xD76D0, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore clear]', symObjAddr: 0x91E, symBinAddr: 0x12FC4, symSize: 0x58 }
+  - { offset: 0xD7733, size: 0x8, addend: 0x0, symName: '+[PersistedFileStore URLForPrefsFile]', symObjAddr: 0x976, symBinAddr: 0x1301C, symSize: 0x59 }
+  - { offset: 0xD779E, size: 0x8, addend: 0x0, symName: '+[PersistedFileStore URLForTenjinDirectory]', symObjAddr: 0x9CF, symBinAddr: 0x13075, symSize: 0x134 }
+  - { offset: 0xD78F8, size: 0x8, addend: 0x0, symName: '+[PersistedFileStore createDirectoryForTenjinURLWithPath:]', symObjAddr: 0xB03, symBinAddr: 0x131A9, symSize: 0x24A }
+  - { offset: 0xD7A67, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore persistenceDict]', symObjAddr: 0xD4D, symBinAddr: 0x133F3, symSize: 0x31 }
+  - { offset: 0xD7AAA, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore persistPrefsToDisk]', symObjAddr: 0xD7E, symBinAddr: 0x13424, symSize: 0x145 }
+  - { offset: 0xD7BA0, size: 0x8, addend: 0x0, symName: '___40-[PersistedFileStore persistPrefsToDisk]_block_invoke', symObjAddr: 0xEC3, symBinAddr: 0x13569, symSize: 0x10A }
+  - { offset: 0xD7CFB, size: 0x8, addend: 0x0, symName: '___39-[PersistedFileStore persistPrefsQueue]_block_invoke', symObjAddr: 0x1047, symBinAddr: 0x136A3, symSize: 0x57 }
+  - { offset: 0xD7D48, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore setPersistenceDict:]', symObjAddr: 0x109E, symBinAddr: 0x136FA, symSize: 0x11 }
+  - { offset: 0xD7D89, size: 0x8, addend: 0x0, symName: '-[PersistedFileStore .cxx_destruct]', symObjAddr: 0x10AF, symBinAddr: 0x1370B, symSize: 0x28 }
+  - { offset: 0xD7FBD, size: 0x8, addend: 0x0, symName: '-[BaseParamProvider getParams]', symObjAddr: 0x0, symBinAddr: 0x13733, symSize: 0x52 }
+  - { offset: 0xD7FDC, size: 0x8, addend: 0x0, symName: '-[BaseParamProvider getParams]', symObjAddr: 0x0, symBinAddr: 0x13733, symSize: 0x52 }
+  - { offset: 0xD803B, size: 0x8, addend: 0x0, symName: '-[BaseParamProvider applyParams:]', symObjAddr: 0x52, symBinAddr: 0x13785, symSize: 0x6 }
+  - { offset: 0xD80CB, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(TradPlusILRD) subscribeTradPlusImpressions]', symObjAddr: 0x0, symBinAddr: 0x1378B, symSize: 0x19 }
+  - { offset: 0xD80E0, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(TradPlusILRD) subscribeTradPlusImpressions]', symObjAddr: 0x0, symBinAddr: 0x1378B, symSize: 0x19 }
+  - { offset: 0xD811B, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(TradPlusILRD) handleTradPlusILRD:]', symObjAddr: 0x19, symBinAddr: 0x137A4, symSize: 0x97 }
+  - { offset: 0xD81D2, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(TradPlusILRD) processRequestFromTradPlusData:]', symObjAddr: 0xB0, symBinAddr: 0x1383B, symSize: 0x12F }
+  - { offset: 0xD8300, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(TradPlusILRD) tradPlusImpressionFromJSON:]', symObjAddr: 0x1DF, symBinAddr: 0x1396A, symSize: 0xC7 }
+  - { offset: 0xD83D5, size: 0x8, addend: 0x0, symName: '+[TenjinSDK(TradPlusILRD) transformAndProcessTradPlusData:]', symObjAddr: 0x2A6, symBinAddr: 0x13A31, symSize: 0x11F }
+  - { offset: 0xD873D, size: 0x8, addend: 0x0, symName: '-[AttributionParams initWithAttributionToken:]', symObjAddr: 0x0, symBinAddr: 0x13B50, symSize: 0x73 }
+  - { offset: 0xD877E, size: 0x8, addend: 0x0, symName: '-[AttributionParams initWithAttributionToken:]', symObjAddr: 0x0, symBinAddr: 0x13B50, symSize: 0x73 }
+  - { offset: 0xD87DD, size: 0x8, addend: 0x0, symName: '-[AttributionParams applyParams:]', symObjAddr: 0x73, symBinAddr: 0x13BC3, symSize: 0x139 }
+  - { offset: 0xD88C8, size: 0x8, addend: 0x0, symName: '-[AttributionParams idfa]', symObjAddr: 0x1AC, symBinAddr: 0x13CFC, symSize: 0x8F }
+  - { offset: 0xD89AA, size: 0x8, addend: 0x0, symName: '-[AttributionParams idfv]', symObjAddr: 0x23B, symBinAddr: 0x13D8B, symSize: 0xCD }
+  - { offset: 0xD8A4D, size: 0x8, addend: 0x0, symName: '-[AttributionParams odmInfo]', symObjAddr: 0x308, symBinAddr: 0x13E58, symSize: 0x19 }
+  - { offset: 0xD8A8C, size: 0x8, addend: 0x0, symName: '-[AttributionParams .cxx_destruct]', symObjAddr: 0x321, symBinAddr: 0x13E71, symSize: 0x1F }
+  - { offset: 0xD8BAF, size: 0x8, addend: 0x0, symName: '-[DeviceParams applyParams:]', symObjAddr: 0x0, symBinAddr: 0x13E90, symSize: 0x309 }
+  - { offset: 0xD8BF4, size: 0x8, addend: 0x0, symName: '-[DeviceParams applyParams:]', symObjAddr: 0x0, symBinAddr: 0x13E90, symSize: 0x309 }
+  - { offset: 0xD8E27, size: 0x8, addend: 0x0, symName: '-[DeviceParams appVersion]', symObjAddr: 0x309, symBinAddr: 0x14199, symSize: 0xBF }
+  - { offset: 0xD8EBE, size: 0x8, addend: 0x0, symName: '-[DeviceParams bundleId]', symObjAddr: 0x3C8, symBinAddr: 0x14258, symSize: 0x57 }
+  - { offset: 0xD8F15, size: 0x8, addend: 0x0, symName: '-[DeviceParams limitAdTracking]', symObjAddr: 0x41F, symBinAddr: 0x142AF, symSize: 0x13F }
+  - { offset: 0xD9077, size: 0x8, addend: 0x0, symName: '-[DeviceParams osVersion]', symObjAddr: 0x55E, symBinAddr: 0x143EE, symSize: 0x57 }
+  - { offset: 0xD90CE, size: 0x8, addend: 0x0, symName: '-[DeviceParams device]', symObjAddr: 0x5B5, symBinAddr: 0x14445, symSize: 0x72 }
+  - { offset: 0xD9142, size: 0x8, addend: 0x0, symName: '-[DeviceParams userCountry]', symObjAddr: 0x627, symBinAddr: 0x144B7, symSize: 0x61 }
+  - { offset: 0xD91A9, size: 0x8, addend: 0x0, symName: '-[DeviceParams deviceBuildId]', symObjAddr: 0x688, symBinAddr: 0x14518, symSize: 0xCE }
+  - { offset: 0xD9293, size: 0x8, addend: 0x0, symName: '-[DeviceParams deviceModel]', symObjAddr: 0x756, symBinAddr: 0x145E6, symSize: 0xCE }
+  - { offset: 0xD9340, size: 0x8, addend: 0x0, symName: '-[DeviceParams deviceLocale]', symObjAddr: 0x824, symBinAddr: 0x146B4, symSize: 0x57 }
+  - { offset: 0xD9397, size: 0x8, addend: 0x0, symName: '-[DeviceParams deviceTimezone]', symObjAddr: 0x87B, symBinAddr: 0x1470B, symSize: 0x57 }
+  - { offset: 0xD93EE, size: 0x8, addend: 0x0, symName: '-[DeviceParams trackingAuthorizationStatus]', symObjAddr: 0x8D2, symBinAddr: 0x14762, symSize: 0xBE }
+  - { offset: 0xD9544, size: 0x8, addend: 0x0, symName: '-[TenjinParams initWithStore:]', symObjAddr: 0x0, symBinAddr: 0x14820, symSize: 0x6E }
+  - { offset: 0xD95EF, size: 0x8, addend: 0x0, symName: '-[TenjinParams initWithStore:]', symObjAddr: 0x0, symBinAddr: 0x14820, symSize: 0x6E }
+  - { offset: 0xD964E, size: 0x8, addend: 0x0, symName: '-[TenjinParams applyParams:]', symObjAddr: 0x6E, symBinAddr: 0x1488E, symSize: 0x1D8 }
+  - { offset: 0xD97D0, size: 0x8, addend: 0x0, symName: '-[TenjinParams sessionId]', symObjAddr: 0x246, symBinAddr: 0x14A66, symSize: 0x88 }
+  - { offset: 0xD9843, size: 0x8, addend: 0x0, symName: '-[TenjinParams sdkVersion]', symObjAddr: 0x2CE, symBinAddr: 0x14AEE, symSize: 0x8E }
+  - { offset: 0xD98B6, size: 0x8, addend: 0x0, symName: '-[TenjinParams analyticsInstallationId]', symObjAddr: 0x35C, symBinAddr: 0x14B7C, symSize: 0x19 }
+  - { offset: 0xD98F5, size: 0x8, addend: 0x0, symName: '-[TenjinParams store]', symObjAddr: 0x375, symBinAddr: 0x14B95, symSize: 0x11 }
+  - { offset: 0xD992A, size: 0x8, addend: 0x0, symName: '-[TenjinParams setStore:]', symObjAddr: 0x386, symBinAddr: 0x14BA6, symSize: 0x14 }
+  - { offset: 0xD996B, size: 0x8, addend: 0x0, symName: '-[TenjinParams .cxx_destruct]', symObjAddr: 0x39A, symBinAddr: 0x14BBA, symSize: 0x32 }
+  - { offset: 0xD9A8C, size: 0x8, addend: 0x0, symName: '+[GDPRFilter tenjinParams]', symObjAddr: 0x0, symBinAddr: 0x14BEC, symSize: 0x255 }
+  - { offset: 0xD9AE0, size: 0x8, addend: 0x0, symName: ___tenjinParams, symObjAddr: 0xF7D0, symBinAddr: 0x541F8, symSize: 0x0 }
+  - { offset: 0xD9AFB, size: 0x8, addend: 0x0, symName: ___deviceParams, symObjAddr: 0xF7D8, symBinAddr: 0x54200, symSize: 0x0 }
+  - { offset: 0xD9BB0, size: 0x8, addend: 0x0, symName: '+[GDPRFilter tenjinParams]', symObjAddr: 0x0, symBinAddr: 0x14BEC, symSize: 0x255 }
+  - { offset: 0xD9C3B, size: 0x8, addend: 0x0, symName: '+[GDPRFilter deviceParams]', symObjAddr: 0x255, symBinAddr: 0x14E41, symSize: 0xFD }
+  - { offset: 0xD9CC6, size: 0x8, addend: 0x0, symName: '-[GDPRFilter init]', symObjAddr: 0x352, symBinAddr: 0x14F3E, symSize: 0x43 }
+  - { offset: 0xD9CFD, size: 0x8, addend: 0x0, symName: '-[GDPRFilter optIn]', symObjAddr: 0x395, symBinAddr: 0x14F81, symSize: 0x15 }
+  - { offset: 0xD9D2E, size: 0x8, addend: 0x0, symName: '-[GDPRFilter optOut]', symObjAddr: 0x3AA, symBinAddr: 0x14F96, symSize: 0x15 }
+  - { offset: 0xD9D5F, size: 0x8, addend: 0x0, symName: '-[GDPRFilter optInToParameters:]', symObjAddr: 0x3BF, symBinAddr: 0x14FAB, symSize: 0x23 }
+  - { offset: 0xD9DA2, size: 0x8, addend: 0x0, symName: '-[GDPRFilter optOutOfParameters:]', symObjAddr: 0x3E2, symBinAddr: 0x14FCE, symSize: 0x23 }
+  - { offset: 0xD9DE5, size: 0x8, addend: 0x0, symName: '-[GDPRFilter applyParams:]', symObjAddr: 0x405, symBinAddr: 0x14FF1, symSize: 0x29B }
+  - { offset: 0xD9F0B, size: 0x8, addend: 0x0, symName: '-[GDPRFilter whitelistOptInParameters:]', symObjAddr: 0x6A0, symBinAddr: 0x1528C, symSize: 0x23A }
+  - { offset: 0xDA041, size: 0x8, addend: 0x0, symName: '-[GDPRFilter filterNonCriticalParams:]', symObjAddr: 0x8DA, symBinAddr: 0x154C6, symSize: 0x184 }
+  - { offset: 0xDA107, size: 0x8, addend: 0x0, symName: '___38-[GDPRFilter filterNonCriticalParams:]_block_invoke', symObjAddr: 0xA5E, symBinAddr: 0x1564A, symSize: 0x9A }
+  - { offset: 0xDA1C6, size: 0x8, addend: 0x0, symName: '-[GDPRFilter isAppleSearchAdParam:]', symObjAddr: 0xB14, symBinAddr: 0x156E4, symSize: 0x82 }
+  - { offset: 0xDA251, size: 0x8, addend: 0x0, symName: '-[GDPRFilter consentState]', symObjAddr: 0xB96, symBinAddr: 0x15766, symSize: 0x11 }
+  - { offset: 0xDA286, size: 0x8, addend: 0x0, symName: '-[GDPRFilter setConsentState:]', symObjAddr: 0xBA7, symBinAddr: 0x15777, symSize: 0x11 }
+  - { offset: 0xDA2C3, size: 0x8, addend: 0x0, symName: '-[GDPRFilter customOptOutParameters]', symObjAddr: 0xBB8, symBinAddr: 0x15788, symSize: 0x11 }
+  - { offset: 0xDA2F8, size: 0x8, addend: 0x0, symName: '-[GDPRFilter customOptInParameters]', symObjAddr: 0xBC9, symBinAddr: 0x15799, symSize: 0x11 }
+  - { offset: 0xDA32D, size: 0x8, addend: 0x0, symName: '-[GDPRFilter .cxx_destruct]', symObjAddr: 0xBDA, symBinAddr: 0x157AA, symSize: 0x36 }
+  - { offset: 0xDA584, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10QueueEventCs12IdentifiableAAsADP2id2IDQzvgTW', symObjAddr: 0x490, symBinAddr: 0x15C70, symSize: 0x40 }
+  - { offset: 0xDA674, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10QueueEventC4date10Foundation4DateVSgvpACTK', symObjAddr: 0xA0, symBinAddr: 0x15880, symSize: 0x80 }
+  - { offset: 0xDA68C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10QueueEventC4date10Foundation4DateVSgvpACTk', symObjAddr: 0x120, symBinAddr: 0x15900, symSize: 0xB0 }
+  - { offset: 0xDA6A4, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10QueueEventCMa', symObjAddr: 0x3E0, symBinAddr: 0x15BC0, symSize: 0x20 }
+  - { offset: 0xDA6B8, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10QueueEventCs12IdentifiableAA2IDsADP_SHWT', symObjAddr: 0x480, symBinAddr: 0x15C60, symSize: 0x10 }
+  - { offset: 0xDA6CC, size: 0x8, addend: 0x0, symName: _keypath_get_selector_params, symObjAddr: 0x4D0, symBinAddr: 0x15CB0, symSize: 0x10 }
+  - { offset: 0xDA6E0, size: 0x8, addend: 0x0, symName: _keypath_get_selector_date, symObjAddr: 0x4E0, symBinAddr: 0x15CC0, symSize: 0x10 }
+  - { offset: 0xDA6F4, size: 0x8, addend: 0x0, symName: _keypath_get_selector_endpoint, symObjAddr: 0x4F0, symBinAddr: 0x15CD0, symSize: 0x10 }
+  - { offset: 0xDA708, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x550, symBinAddr: 0x15D30, symSize: 0x40 }
+  - { offset: 0xDA71C, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DateVSgWOc', symObjAddr: 0x590, symBinAddr: 0x15D70, symSize: 0x40 }
+  - { offset: 0xDA73D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10QueueEventC12fetchRequestSo07NSFetchF0CyACGyFZ', symObjAddr: 0x0, symBinAddr: 0x157E0, symSize: 0x60 }
+  - { offset: 0xDA788, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10QueueEventC10paramsDictSDySSypGSgvg', symObjAddr: 0x2C0, symBinAddr: 0x15AA0, symSize: 0x70 }
+  - { offset: 0xDA7AD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10QueueEventC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfC', symObjAddr: 0x330, symBinAddr: 0x15B10, symSize: 0x50 }
+  - { offset: 0xDA7C1, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10QueueEventC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfc', symObjAddr: 0x380, symBinAddr: 0x15B60, symSize: 0x60 }
+  - { offset: 0xDA82B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10QueueEventC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfcTo', symObjAddr: 0x400, symBinAddr: 0x15BE0, symSize: 0x50 }
+  - { offset: 0xDA876, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10QueueEventCfD', symObjAddr: 0x450, symBinAddr: 0x15C30, symSize: 0x30 }
+  - { offset: 0xDABD5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperCMa', symObjAddr: 0x160, symBinAddr: 0x15EC0, symSize: 0x20 }
+  - { offset: 0xDACCF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK20PurposeConsentStatusOSHAASQWb', symObjAddr: 0xD30, symBinAddr: 0x16A50, symSize: 0x10 }
+  - { offset: 0xDACE3, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK20PurposeConsentStatusOACSQAAWl', symObjAddr: 0xD40, symBinAddr: 0x16A60, symSize: 0x30 }
+  - { offset: 0xDACF7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK20PurposeConsentStatusOMa', symObjAddr: 0xD70, symBinAddr: 0x16A90, symSize: 0x10 }
+  - { offset: 0xDAD43, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK20PurposeConsentStatusOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x30, symBinAddr: 0x15DE0, symSize: 0x10 }
+  - { offset: 0xDADD4, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK20PurposeConsentStatusOSHAASH9hashValueSivgTW', symObjAddr: 0x40, symBinAddr: 0x15DF0, symSize: 0x40 }
+  - { offset: 0xDAE6E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK20PurposeConsentStatusOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x80, symBinAddr: 0x15E30, symSize: 0x20 }
+  - { offset: 0xDAEAC, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK20PurposeConsentStatusOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0xA0, symBinAddr: 0x15E50, symSize: 0x40 }
+  - { offset: 0xDB00D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK20PurposeConsentStatusO8rawValueACSgSi_tcfC', symObjAddr: 0x0, symBinAddr: 0x15DB0, symSize: 0x20 }
+  - { offset: 0xDB02A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK20PurposeConsentStatusO8rawValueSivg', symObjAddr: 0x20, symBinAddr: 0x15DD0, symSize: 0x10 }
+  - { offset: 0xDB070, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK20PurposeConsentStatusOSYAASY8rawValuexSg03RawG0Qz_tcfCTW', symObjAddr: 0xE0, symBinAddr: 0x15E90, symSize: 0x20 }
+  - { offset: 0xDB099, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK20PurposeConsentStatusOSYAASY8rawValue03RawG0QzvgTW', symObjAddr: 0x100, symBinAddr: 0x15EB0, symSize: 0x10 }
+  - { offset: 0xDB0CC, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperCACycfcTo', symObjAddr: 0x180, symBinAddr: 0x15EE0, symSize: 0x30 }
+  - { offset: 0xDB115, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperC21getPurposeConsentsTCFSSSgyF', symObjAddr: 0x1B0, symBinAddr: 0x15F10, symSize: 0x110 }
+  - { offset: 0xDB17A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperC21getPurposeConsentsTCFSSSgyFTo', symObjAddr: 0x2C0, symBinAddr: 0x16020, symSize: 0x60 }
+  - { offset: 0xDB19B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperC5optInSbyF', symObjAddr: 0x320, symBinAddr: 0x16080, symSize: 0x150 }
+  - { offset: 0xDB23B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperC5optInSbyFTo', symObjAddr: 0x4B0, symBinAddr: 0x161D0, symSize: 0x30 }
+  - { offset: 0xDB24F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperC26getGoogleAdPersonalizationAA20PurposeConsentStatusOyFTo', symObjAddr: 0x500, symBinAddr: 0x16220, symSize: 0x30 }
+  - { offset: 0xDB263, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperC19getGoogleAdUserDataAA20PurposeConsentStatusOyFTo', symObjAddr: 0x700, symBinAddr: 0x16420, symSize: 0x30 }
+  - { offset: 0xDB31A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperC16isValidTCFStringySbSSF', symObjAddr: 0x730, symBinAddr: 0x16450, symSize: 0x100 }
+  - { offset: 0xDB3BC, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperC19isGoogleDMADisabledSbyF', symObjAddr: 0x830, symBinAddr: 0x16550, symSize: 0x90 }
+  - { offset: 0xDB3EB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperC19isGoogleDMADisabledSbyFTo', symObjAddr: 0x8C0, symBinAddr: 0x165E0, symSize: 0xB0 }
+  - { offset: 0xDB418, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperCfD', symObjAddr: 0x970, symBinAddr: 0x16690, symSize: 0x30 }
+  - { offset: 0xDB43B, size: 0x8, addend: 0x0, symName: '_$sSo19NSRegularExpressionC7pattern7optionsABSS_So0aB7OptionsVtKcfcTO', symObjAddr: 0x9A0, symBinAddr: 0x166C0, symSize: 0xD0 }
+  - { offset: 0xDB49E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK10GDPRHelperC10hasConsent33_F7257D936423124FAD82C4EF86145603LL8purposes15purposeConsentsSbSaySiG_SStFTf4nnd_n', symObjAddr: 0xA70, symBinAddr: 0x16790, symSize: 0x2C0 }
+  - { offset: 0xDBA2E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperCMa', symObjAddr: 0x1F0, symBinAddr: 0x16D30, symSize: 0x20 }
+  - { offset: 0xDBA58, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperCfETo', symObjAddr: 0x660, symBinAddr: 0x17160, symSize: 0x20 }
+  - { offset: 0xDBA92, size: 0x8, addend: 0x0, symName: '_$s10ObjectiveC8ObjCBoolVIeyBy_SbIegy_TRTA', symObjAddr: 0x710, symBinAddr: 0x17210, symSize: 0x20 }
+  - { offset: 0xDBABC, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC10repositoryAA0A10RepositoryCvg', symObjAddr: 0x0, symBinAddr: 0x16B40, symSize: 0x40 }
+  - { offset: 0xDBAE5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC10repositoryAA0A10RepositoryCvs', symObjAddr: 0x40, symBinAddr: 0x16B80, symSize: 0x50 }
+  - { offset: 0xDBB18, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC10repositoryAA0A10RepositoryCvM', symObjAddr: 0x90, symBinAddr: 0x16BD0, symSize: 0x40 }
+  - { offset: 0xDBB3D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC10repositoryAA0A10RepositoryCvM.resume.0', symObjAddr: 0xD0, symBinAddr: 0x16C10, symSize: 0x10 }
+  - { offset: 0xDBBBF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC6apiKeyACSS_tcfC', symObjAddr: 0xE0, symBinAddr: 0x16C20, symSize: 0x90 }
+  - { offset: 0xDBBF6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC6apiKeyACSS_tcfc', symObjAddr: 0x170, symBinAddr: 0x16CB0, symSize: 0x80 }
+  - { offset: 0xDBC44, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC6apiKeyACSS_tcfcTo', symObjAddr: 0x210, symBinAddr: 0x16D50, symSize: 0x80 }
+  - { offset: 0xDBCA0, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC10repositoryAcA0A10RepositoryC_tcfC', symObjAddr: 0x290, symBinAddr: 0x16DD0, symSize: 0x40 }
+  - { offset: 0xDBCDB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC010handlePostC08endpoint6paramsySS_SDySSypGtF', symObjAddr: 0x310, symBinAddr: 0x16E10, symSize: 0x60 }
+  - { offset: 0xDBD45, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC010handlePostC08endpoint6paramsySS_SDySSypGtFTo', symObjAddr: 0x370, symBinAddr: 0x16E70, symSize: 0xC0 }
+  - { offset: 0xDBD90, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC013handleConnectC08endpoint6params10completionySS_SDySSypGySbctF', symObjAddr: 0x430, symBinAddr: 0x16F30, symSize: 0x70 }
+  - { offset: 0xDBE10, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperC013handleConnectC08endpoint6params10completionySS_SDySSypGySbctFTo', symObjAddr: 0x4A0, symBinAddr: 0x16FA0, symSize: 0x110 }
+  - { offset: 0xDBE59, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperCACycfC', symObjAddr: 0x5B0, symBinAddr: 0x170B0, symSize: 0x20 }
+  - { offset: 0xDBE6D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperCACycfc', symObjAddr: 0x5D0, symBinAddr: 0x170D0, symSize: 0x30 }
+  - { offset: 0xDBEC6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperCACycfcTo', symObjAddr: 0x600, symBinAddr: 0x17100, symSize: 0x30 }
+  - { offset: 0xDBF1B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13RequestHelperCfD', symObjAddr: 0x630, symBinAddr: 0x17130, symSize: 0x30 }
+  - { offset: 0xDC17E, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tg5', symObjAddr: 0x5D0, symBinAddr: 0x177C0, symSize: 0x60 }
+  - { offset: 0xDC1CC, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSS_Tg5', symObjAddr: 0x630, symBinAddr: 0x17820, symSize: 0xE0 }
+  - { offset: 0xDC2A2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK35AttributionOperationHelperMigrationCMa', symObjAddr: 0x7F0, symBinAddr: 0x179E0, symSize: 0x20 }
+  - { offset: 0xDC2C1, size: 0x8, addend: 0x0, symName: '_$sSS_yptWOc', symObjAddr: 0xCF0, symBinAddr: 0x17EE0, symSize: 0x40 }
+  - { offset: 0xDC2D5, size: 0x8, addend: 0x0, symName: '_$sypWOb', symObjAddr: 0xD30, symBinAddr: 0x17F20, symSize: 0x20 }
+  - { offset: 0xDC3C0, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSS_ypTgm5Tf4g_n', symObjAddr: 0x710, symBinAddr: 0x17900, symSize: 0xE0 }
+  - { offset: 0xDC57B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK35AttributionOperationHelperMigrationC03getC5Token10completionyySSSg_s5Error_pSgtc_tF', symObjAddr: 0x0, symBinAddr: 0x17230, symSize: 0x490 }
+  - { offset: 0xDC7D6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK35AttributionOperationHelperMigrationC03getC5Token10completionyySSSg_s5Error_pSgtc_tFTo', symObjAddr: 0x4D0, symBinAddr: 0x176C0, symSize: 0x50 }
+  - { offset: 0xDC806, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK35AttributionOperationHelperMigrationCACycfC', symObjAddr: 0x520, symBinAddr: 0x17710, symSize: 0x20 }
+  - { offset: 0xDC81A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK35AttributionOperationHelperMigrationCACycfc', symObjAddr: 0x540, symBinAddr: 0x17730, symSize: 0x30 }
+  - { offset: 0xDC852, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK35AttributionOperationHelperMigrationCACycfcTo', symObjAddr: 0x570, symBinAddr: 0x17760, symSize: 0x30 }
+  - { offset: 0xDC887, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK35AttributionOperationHelperMigrationCfD', symObjAddr: 0x5A0, symBinAddr: 0x17790, symSize: 0x30 }
+  - { offset: 0xDC8BE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK35AttributionOperationHelperMigrationC03getC5Token10completionyySSSg_s5Error_pSgtc_tF026$sSo8NSStringCSgSo7NSErrorn13IeyByy_SSSgs5J12_pSgIeggg_TRSo0M0CSgSo0P0CSgIeyByy_Tf1cn_nTf4dg_n', symObjAddr: 0x850, symBinAddr: 0x17A40, symSize: 0x4A0 }
+  - { offset: 0xDCC4C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC6sharedACvpZ', symObjAddr: 0xB4B0, symBinAddr: 0x54418, symSize: 0x0 }
+  - { offset: 0xDCFAA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC22sessionTimeoutIntervalSdvpZ', symObjAddr: 0x2940, symBinAddr: 0x533D0, symSize: 0x0 }
+  - { offset: 0xDCFB8, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x17F40, symSize: 0x30 }
+  - { offset: 0xDCFF9, size: 0x8, addend: 0x0, symName: '_$sSo17OS_dispatch_queueCMa', symObjAddr: 0x360, symBinAddr: 0x180F0, symSize: 0x30 }
+  - { offset: 0xDD024, size: 0x8, addend: 0x0, symName: '_$sIeg_IyB_TR', symObjAddr: 0x11B0, symBinAddr: 0x18EF0, symSize: 0x20 }
+  - { offset: 0xDD03C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC20recordIAPTransaction7revenue12currencyCode9productIDySd_S2SSgtFyyYbcfU_TA', symObjAddr: 0x1550, symBinAddr: 0x19290, symSize: 0xF0 }
+  - { offset: 0xDD0AC, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x1640, symBinAddr: 0x19380, symSize: 0x20 }
+  - { offset: 0xDD0C0, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x1660, symBinAddr: 0x193A0, symSize: 0x10 }
+  - { offset: 0xDD0E0, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC17recordILRDRevenue10revenueUSD7networkySd_AA12TJNAdNetworkOtFyyYbcfU_TA', symObjAddr: 0x19A0, symBinAddr: 0x196E0, symSize: 0xD0 }
+  - { offset: 0xDD146, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC05resetD0yyFyyYbcfU_TA', symObjAddr: 0x1F10, symBinAddr: 0x19C50, symSize: 0xB0 }
+  - { offset: 0xDD198, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerCMa', symObjAddr: 0x21E0, symBinAddr: 0x19F20, symSize: 0x20 }
+  - { offset: 0xDD1AC, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerCfETo', symObjAddr: 0x2290, symBinAddr: 0x19FD0, symSize: 0x40 }
+  - { offset: 0xDD1DB, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV15_RepresentationOWOe', symObjAddr: 0x23D0, symBinAddr: 0x1A110, symSize: 0x50 }
+  - { offset: 0xDD1EF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC24applicationWillTerminate33_75923B77ED8C0A4DD036C266A95BC3C3LLyyFyyXEfU_TA', symObjAddr: 0x2420, symBinAddr: 0x1A160, symSize: 0x90 }
+  - { offset: 0xDD25B, size: 0x8, addend: 0x0, symName: '_$sIg_Ieg_TRTA', symObjAddr: 0x24D0, symBinAddr: 0x1A210, symSize: 0x20 }
+  - { offset: 0xDD284, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC29applicationDidEnterBackground33_75923B77ED8C0A4DD036C266A95BC3C3LLyyFyyYbcfU_TA', symObjAddr: 0x24F0, symBinAddr: 0x1A230, symSize: 0x90 }
+  - { offset: 0xDD2E5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC26applicationDidBecomeActive33_75923B77ED8C0A4DD036C266A95BC3C3LLyyFyyYbcfU_TA', symObjAddr: 0x25A0, symBinAddr: 0x1A2E0, symSize: 0xC0 }
+  - { offset: 0xDD346, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC23startSessionIfAppActive33_75923B77ED8C0A4DD036C266A95BC3C3LLyyFyyScMYccfU_TA', symObjAddr: 0x2660, symBinAddr: 0x1A3A0, symSize: 0x20 }
+  - { offset: 0xDD35A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC23startSessionIfAppActive33_75923B77ED8C0A4DD036C266A95BC3C3LLyyFyyScMYccfU_yyYbcfU_TA', symObjAddr: 0x26B0, symBinAddr: 0x1A3F0, symSize: 0x10 }
+  - { offset: 0xDD36E, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DateVSgWOh', symObjAddr: 0x26C0, symBinAddr: 0x1A400, symSize: 0x30 }
+  - { offset: 0xDD43C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC6sharedACvgZ', symObjAddr: 0x60, symBinAddr: 0x17F70, symSize: 0x40 }
+  - { offset: 0xDD482, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC6sharedACvgZTo', symObjAddr: 0xA0, symBinAddr: 0x17FB0, symSize: 0x30 }
+  - { offset: 0xDD4B9, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC22sessionTimeoutIntervalSdvgZ', symObjAddr: 0xE0, symBinAddr: 0x17FE0, symSize: 0x30 }
+  - { offset: 0xDD4E8, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC22sessionTimeoutIntervalSdvgZTo', symObjAddr: 0x110, symBinAddr: 0x18010, symSize: 0x30 }
+  - { offset: 0xDD518, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC22sessionTimeoutIntervalSdvsZ', symObjAddr: 0x140, symBinAddr: 0x18040, symSize: 0x40 }
+  - { offset: 0xDD562, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC22sessionTimeoutIntervalSdvsZTo', symObjAddr: 0x180, symBinAddr: 0x18080, symSize: 0x40 }
+  - { offset: 0xDD597, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC22sessionTimeoutIntervalSdvMZ', symObjAddr: 0x1C0, symBinAddr: 0x180C0, symSize: 0x30 }
+  - { offset: 0xDD6C8, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerCACyc33_75923B77ED8C0A4DD036C266A95BC3C3Llfc', symObjAddr: 0x410, symBinAddr: 0x18160, symSize: 0x320 }
+  - { offset: 0xDD771, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerCACyc33_75923B77ED8C0A4DD036C266A95BC3C3LlfcTo', symObjAddr: 0x730, symBinAddr: 0x18480, symSize: 0x20 }
+  - { offset: 0xDD785, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC23startSessionIfAppActive33_75923B77ED8C0A4DD036C266A95BC3C3LLyyF', symObjAddr: 0x750, symBinAddr: 0x184A0, symSize: 0x1F0 }
+  - { offset: 0xDD7CB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC23startSessionIfAppActive33_75923B77ED8C0A4DD036C266A95BC3C3LLyyFyyScMYccfU_', symObjAddr: 0x940, symBinAddr: 0x18690, symSize: 0x260 }
+  - { offset: 0xDD859, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC23startSessionIfAppActive33_75923B77ED8C0A4DD036C266A95BC3C3LLyyFyyScMYccfU_yyYbcfU_', symObjAddr: 0xBA0, symBinAddr: 0x188F0, symSize: 0x110 }
+  - { offset: 0xDD8D6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC20setupSessionTracking33_75923B77ED8C0A4DD036C266A95BC3C3LLyyF', symObjAddr: 0xD00, symBinAddr: 0x18A40, symSize: 0x100 }
+  - { offset: 0xDD8F9, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC26applicationDidBecomeActive33_75923B77ED8C0A4DD036C266A95BC3C3LLyyF', symObjAddr: 0xE00, symBinAddr: 0x18B40, symSize: 0x200 }
+  - { offset: 0xDD969, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC26applicationDidBecomeActive33_75923B77ED8C0A4DD036C266A95BC3C3LLyyFTo', symObjAddr: 0x1000, symBinAddr: 0x18D40, symSize: 0x30 }
+  - { offset: 0xDD97D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC29applicationDidEnterBackground33_75923B77ED8C0A4DD036C266A95BC3C3LLyyFTo', symObjAddr: 0x1050, symBinAddr: 0x18D90, symSize: 0x30 }
+  - { offset: 0xDD998, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC24applicationWillTerminate33_75923B77ED8C0A4DD036C266A95BC3C3LLyyF', symObjAddr: 0x1080, symBinAddr: 0x18DC0, symSize: 0x130 }
+  - { offset: 0xDD9FB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC24applicationWillTerminate33_75923B77ED8C0A4DD036C266A95BC3C3LLyyFTo', symObjAddr: 0x11D0, symBinAddr: 0x18F10, symSize: 0x30 }
+  - { offset: 0xDDA0F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC20recordIAPTransaction7revenue12currencyCodeySd_SStF', symObjAddr: 0x1200, symBinAddr: 0x18F40, symSize: 0x20 }
+  - { offset: 0xDDA74, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC20recordIAPTransaction7revenue12currencyCodeySd_SStFTo', symObjAddr: 0x1220, symBinAddr: 0x18F60, symSize: 0x80 }
+  - { offset: 0xDDAB2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC20recordIAPTransaction7revenue12currencyCode9productIDySd_S2SSgtF', symObjAddr: 0x12A0, symBinAddr: 0x18FE0, symSize: 0x250 }
+  - { offset: 0xDDB75, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC20recordIAPTransaction7revenue12currencyCode9productIDySd_S2SSgtFTo', symObjAddr: 0x16E0, symBinAddr: 0x19420, symSize: 0x90 }
+  - { offset: 0xDDB89, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC17recordILRDRevenue10revenueUSD7networkySd_AA12TJNAdNetworkOtF', symObjAddr: 0x1770, symBinAddr: 0x194B0, symSize: 0x210 }
+  - { offset: 0xDDC27, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC17recordILRDRevenue10revenueUSD7networkySd_AA12TJNAdNetworkOtFTo', symObjAddr: 0x1A70, symBinAddr: 0x197B0, symSize: 0x40 }
+  - { offset: 0xDDC3B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC03getD4DataAA0cdG0CyF', symObjAddr: 0x1AB0, symBinAddr: 0x197F0, symSize: 0x50 }
+  - { offset: 0xDDC6E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC03getD4DataAA0cdG0CyFTo', symObjAddr: 0x1B10, symBinAddr: 0x19850, symSize: 0x70 }
+  - { offset: 0xDDCB8, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC05resetD0yyFTo', symObjAddr: 0x1FC0, symBinAddr: 0x19D00, symSize: 0x30 }
+  - { offset: 0xDDCD9, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerC18saveToUserDefaults33_75923B77ED8C0A4DD036C266A95BC3C3LLyyF', symObjAddr: 0x1FF0, symBinAddr: 0x19D30, symSize: 0x180 }
+  - { offset: 0xDDD7A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerCfD', symObjAddr: 0x2170, symBinAddr: 0x19EB0, symSize: 0x70 }
+  - { offset: 0xDDDAB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK21TJNUserProfileManagerCfDTo', symObjAddr: 0x2200, symBinAddr: 0x19F40, symSize: 0x90 }
+  - { offset: 0xDDED4, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNAdNetworkO10identifierSSvg', symObjAddr: 0x0, symBinAddr: 0x1A640, symSize: 0xF0 }
+  - { offset: 0xDDFC6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNAdNetworkOSHAASQWb', symObjAddr: 0x5A0, symBinAddr: 0x1AB10, symSize: 0x10 }
+  - { offset: 0xDDFDA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNAdNetworkOACSQAAWl', symObjAddr: 0x5B0, symBinAddr: 0x1AB20, symSize: 0x30 }
+  - { offset: 0xDDFEE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNAdNetworkOMa', symObjAddr: 0x5E0, symBinAddr: 0x1AB50, symSize: 0x10 }
+  - { offset: 0xDE014, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNAdNetworkO10identifierSSvg', symObjAddr: 0x0, symBinAddr: 0x1A640, symSize: 0xF0 }
+  - { offset: 0xDE039, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNAdNetworkO11displayNameSSvg', symObjAddr: 0xF0, symBinAddr: 0x1A730, symSize: 0xF0 }
+  - { offset: 0xDE06A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNAdNetworkO4from10identifierACSgSS_tFZ', symObjAddr: 0x1E0, symBinAddr: 0x1A820, symSize: 0x290 }
+  - { offset: 0xDE19D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNAdNetworkO8rawValueACSgSi_tcfC', symObjAddr: 0x470, symBinAddr: 0x1AAB0, symSize: 0x10 }
+  - { offset: 0xDE1BE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNAdNetworkOSYAASY8rawValuexSg03RawF0Qz_tcfCTW', symObjAddr: 0x540, symBinAddr: 0x1AAC0, symSize: 0x30 }
+  - { offset: 0xDE1E7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNAdNetworkO8rawValueACSgSi_tcfCTf4nd_n', symObjAddr: 0x580, symBinAddr: 0x1AAF0, symSize: 0x20 }
+  - { offset: 0xDEAE2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC12sessionCountSivpACTK', symObjAddr: 0x100, symBinAddr: 0x1AC50, symSize: 0x30 }
+  - { offset: 0xDEAFA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC16totalSessionTimes5Int64VvpACTK', symObjAddr: 0x250, symBinAddr: 0x1AD90, symSize: 0x30 }
+  - { offset: 0xDEB12, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC17lastSessionLengths5Int64VvpACTK', symObjAddr: 0x3A0, symBinAddr: 0x1AED0, symSize: 0x30 }
+  - { offset: 0xDEB2A, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DateVSgWOd', symObjAddr: 0x4C0, symBinAddr: 0x1AFA0, symSize: 0x40 }
+  - { offset: 0xDEB3E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC23currentSessionStartTime10Foundation4DateVSgvpACTK', symObjAddr: 0x500, symBinAddr: 0x1AFE0, symSize: 0x30 }
+  - { offset: 0xDEB56, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC18lastBackgroundTime10Foundation4DateVSgvpACTK', symObjAddr: 0x6D0, symBinAddr: 0x1B1A0, symSize: 0x30 }
+  - { offset: 0xDEB6E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC24currentSessionPausedTimes5Int64VvpACTK', symObjAddr: 0x8B0, symBinAddr: 0x1B370, symSize: 0x30 }
+  - { offset: 0xDEB86, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC16firstSessionDate10Foundation0H0VSgvpACTK', symObjAddr: 0x990, symBinAddr: 0x1B440, symSize: 0x30 }
+  - { offset: 0xDEB9E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC15lastSessionDate10Foundation0H0VSgvpACTK', symObjAddr: 0xBD0, symBinAddr: 0x1B630, symSize: 0x30 }
+  - { offset: 0xDEBB6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC19iapTransactionCountSivpACTK', symObjAddr: 0xD20, symBinAddr: 0x1B770, symSize: 0x30 }
+  - { offset: 0xDEBCE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC20iapRevenueByCurrencySDySSSdGvpACTK', symObjAddr: 0xE40, symBinAddr: 0x1B880, symSize: 0x30 }
+  - { offset: 0xDEBE6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC19totalILRDRevenueUSDSdvpACTK', symObjAddr: 0xFC0, symBinAddr: 0x1B9D0, symSize: 0x30 }
+  - { offset: 0xDEBFE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC19totalILRDRevenueUSDSdvpACTk', symObjAddr: 0xFF0, symBinAddr: 0x1BA00, symSize: 0x50 }
+  - { offset: 0xDEC3E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC20ilrdRevenueByNetworkSDySSSdGvpACTK', symObjAddr: 0x15B0, symBinAddr: 0x1BDD0, symSize: 0x30 }
+  - { offset: 0xDED23, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataCfETo', symObjAddr: 0x5370, symBinAddr: 0x1FB90, symSize: 0x80 }
+  - { offset: 0xDED7E, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV7_insert2at3key5valueys10_HashTableV6BucketV_xnq_ntFSS_ypTg5', symObjAddr: 0x5A50, symBinAddr: 0x20210, symSize: 0x60 }
+  - { offset: 0xDEE45, size: 0x8, addend: 0x0, symName: '_$sSMsSkRzrlE4sort2byySb7ElementSTQz_ADtKXE_tKFs15ContiguousArrayVySSG_Tg508$sSTsSL7c33RpzrlE6sortedSayABGyFSbAB_ABtcfu_K8SSG_TGm5Tf1cn_n', symObjAddr: 0x5B90, symBinAddr: 0x20270, symSize: 0x60 }
+  - { offset: 0xDEF4C, size: 0x8, addend: 0x0, symName: '_$sSr15_stableSortImpl2byySbx_xtKXE_tKFSS_Tg5048$sSTsSL7ElementRpzrlE6sortedSayABGyFSbAB_ABtcfu_K8SSG_TGm5Tf1cn_n', symObjAddr: 0x5BF0, symBinAddr: 0x202D0, symSize: 0xF0 }
+  - { offset: 0xDF192, size: 0x8, addend: 0x0, symName: '_$sSr15_stableSortImpl2byySbx_xtKXE_tKFySryxGz_SiztKXEfU_SS_Tg5048$sSTsSL7ElementRpzrlE6sortedSayABGyFSbAB_ABtcfu_K8SSG_TGm5Tf1nnncn_n', symObjAddr: 0x5CE0, symBinAddr: 0x203C0, symSize: 0x410 }
+  - { offset: 0xDF6D5, size: 0x8, addend: 0x0, symName: '_$sSMsSKRzrlE14_insertionSort6within9sortedEnd2byySny5IndexSlQzG_AFSb7ElementSTQz_AItKXEtKFSrySSG_Tg508$sSTsSL7h33RpzrlE6sortedSayABGyFSbAB_ABtcfu_N8SSG_TGm5Tf1nncn_n', symObjAddr: 0x60F0, symBinAddr: 0x207D0, symSize: 0xE0 }
+  - { offset: 0xDF91E, size: 0x8, addend: 0x0, symName: '_$sSr13_mergeTopRuns_6buffer2bySbSaySnySiGGz_SpyxGSbx_xtKXEtKFSS_Tg5048$sSTsSL7ElementRpzrlE6sortedSayABGyFSbAB_ABtcfu_L8SSG_TGm5Tf1nncn_n', symObjAddr: 0x61D0, symBinAddr: 0x208B0, symSize: 0x2F0 }
+  - { offset: 0xDFC6D, size: 0x8, addend: 0x0, symName: '_$sSr13_finalizeRuns_6buffer2bySbSaySnySiGGz_SpyxGSbx_xtKXEtKFSS_Tg5048$sSTsSL7ElementRpzrlE6sortedSayABGyFSbAB_ABtcfu_K8SSG_TGm5Tf1nncn_n', symObjAddr: 0x64C0, symBinAddr: 0x20BA0, symSize: 0x180 }
+  - { offset: 0xDFDC3, size: 0x8, addend: 0x0, symName: '_$ss6_merge3low3mid4high6buffer2bySbSpyxG_A3GSbx_xtKXEtKlFSS_Tg5048$sSTsSL7ElementRpzrlE6sortedSayABGyFSbAB_ABtcfu_M8SSG_TGm5Tf1nnnnc_n', symObjAddr: 0x6640, symBinAddr: 0x20D20, symSize: 0x270 }
+  - { offset: 0xDFF2F, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNewAByxGyFSnySiG_Tgq5', symObjAddr: 0x68B0, symBinAddr: 0x20F90, symSize: 0x20 }
+  - { offset: 0xDFFAA, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSnySiG_Tg5', symObjAddr: 0x68D0, symBinAddr: 0x20FB0, symSize: 0x110 }
+  - { offset: 0xE00BE, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV19_uninitializedCount15minimumCapacityAByxGSi_SitcfCSS_Tgm5', symObjAddr: 0x69E0, symBinAddr: 0x210C0, symSize: 0x80 }
+  - { offset: 0xE015A, size: 0x8, addend: 0x0, symName: '_$sSD8_VariantV8setValue_6forKeyyq_n_xtFSS_SdTg5', symObjAddr: 0x6B70, symBinAddr: 0x21140, symSize: 0xF0 }
+  - { offset: 0xE024E, size: 0x8, addend: 0x0, symName: '_$sSh8_VariantV6insertySb8inserted_x17memberAfterInserttxnFSS_Tg5', symObjAddr: 0x6C60, symBinAddr: 0x21230, symSize: 0x210 }
+  - { offset: 0xE031D, size: 0x8, addend: 0x0, symName: '_$ss10_NativeSetV9insertNew_2at8isUniqueyxn_s10_HashTableV6BucketVSbtFSS_Tg5', symObjAddr: 0x6E70, symBinAddr: 0x21440, symSize: 0x170 }
+  - { offset: 0xE03E8, size: 0x8, addend: 0x0, symName: '_$ss10_NativeSetV4copyyyFSS_Tg5', symObjAddr: 0x6FE0, symBinAddr: 0x215B0, symSize: 0x200 }
+  - { offset: 0xE0473, size: 0x8, addend: 0x0, symName: '_$ss10_NativeSetV13copyAndResize8capacityySi_tFSS_Tg5', symObjAddr: 0x71E0, symBinAddr: 0x217B0, symSize: 0x300 }
+  - { offset: 0xE0519, size: 0x8, addend: 0x0, symName: '_$ss10_NativeSetV6resize8capacityySi_tFSS_Tg5', symObjAddr: 0x74E0, symBinAddr: 0x21AB0, symSize: 0x350 }
+  - { offset: 0xE05E4, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV4copyyyFSS_SdTg5', symObjAddr: 0x78E0, symBinAddr: 0x21EB0, symSize: 0x210 }
+  - { offset: 0xE0695, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV4copyyyFSS_ypTg5', symObjAddr: 0x7AF0, symBinAddr: 0x220C0, symSize: 0x260 }
+  - { offset: 0xE0729, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtFSS_SdTg5', symObjAddr: 0x7D50, symBinAddr: 0x22320, symSize: 0x3A0 }
+  - { offset: 0xE0832, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtFSS_ypTg5', symObjAddr: 0x80F0, symBinAddr: 0x226C0, symSize: 0x3C0 }
+  - { offset: 0xE0948, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV20_consumeAndCreateNewAByxGyFSS_Tg5', symObjAddr: 0x85D0, symBinAddr: 0x22BA0, symSize: 0x20 }
+  - { offset: 0xE098B, size: 0x8, addend: 0x0, symName: '_$sSTsE21_copySequenceContents12initializing8IteratorQz_SitSry7ElementQzG_tFShySSG_Tg5', symObjAddr: 0x85F0, symBinAddr: 0x22BC0, symSize: 0x2C0 }
+  - { offset: 0xE0A47, size: 0x8, addend: 0x0, symName: ___swift_project_boxed_opaque_existential_1, symObjAddr: 0x8990, symBinAddr: 0x22F60, symSize: 0x30 }
+  - { offset: 0xE0A5B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOAFs0F3KeyAAWl', symObjAddr: 0x89C0, symBinAddr: 0x22F90, symSize: 0x30 }
+  - { offset: 0xE0A6F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataCMa', symObjAddr: 0x8A20, symBinAddr: 0x22FC0, symSize: 0x30 }
+  - { offset: 0xE0A83, size: 0x8, addend: 0x0, symName: '_$sSDySSSdGMa', symObjAddr: 0x8A50, symBinAddr: 0x22FF0, symSize: 0x40 }
+  - { offset: 0xE0A97, size: 0x8, addend: 0x0, symName: '_$sShySSGMa', symObjAddr: 0x8A90, symBinAddr: 0x23030, symSize: 0x40 }
+  - { offset: 0xE0B0E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataCMU', symObjAddr: 0x8E20, symBinAddr: 0x232B0, symSize: 0x10 }
+  - { offset: 0xE0B22, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataCMr', symObjAddr: 0x8E30, symBinAddr: 0x232C0, symSize: 0xB0 }
+  - { offset: 0xE0B36, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DateVSgMa', symObjAddr: 0x91B0, symBinAddr: 0x23600, symSize: 0x50 }
+  - { offset: 0xE0B4A, size: 0x8, addend: 0x0, symName: ___swift_memcpy1_1, symObjAddr: 0x9200, symBinAddr: 0x23650, symSize: 0x10 }
+  - { offset: 0xE0B5E, size: 0x8, addend: 0x0, symName: ___swift_noop_void_return, symObjAddr: 0x9210, symBinAddr: 0x23660, symSize: 0x10 }
+  - { offset: 0xE0B72, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOwet', symObjAddr: 0x9220, symBinAddr: 0x23670, symSize: 0x80 }
+  - { offset: 0xE0B86, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOwst', symObjAddr: 0x92A0, symBinAddr: 0x236F0, symSize: 0xD0 }
+  - { offset: 0xE0B9A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOwug', symObjAddr: 0x9370, symBinAddr: 0x237C0, symSize: 0x10 }
+  - { offset: 0xE0BAE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOwup', symObjAddr: 0x9380, symBinAddr: 0x237D0, symSize: 0x10 }
+  - { offset: 0xE0BC2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOwui', symObjAddr: 0x9390, symBinAddr: 0x237E0, symSize: 0x10 }
+  - { offset: 0xE0BD6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOMa', symObjAddr: 0x93A0, symBinAddr: 0x237F0, symSize: 0x10 }
+  - { offset: 0xE0BEA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOSHAASQWb', symObjAddr: 0x93B0, symBinAddr: 0x23800, symSize: 0x10 }
+  - { offset: 0xE0BFE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOAFSQAAWl', symObjAddr: 0x93C0, symBinAddr: 0x23810, symSize: 0x30 }
+  - { offset: 0xE0C12, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOs0F3KeyAAs28CustomDebugStringConvertiblePWb', symObjAddr: 0x93F0, symBinAddr: 0x23840, symSize: 0x10 }
+  - { offset: 0xE0C26, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOAFs28CustomDebugStringConvertibleAAWl', symObjAddr: 0x9400, symBinAddr: 0x23850, symSize: 0x30 }
+  - { offset: 0xE0C3A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOs0F3KeyAAs23CustomStringConvertiblePWb', symObjAddr: 0x9430, symBinAddr: 0x23880, symSize: 0x10 }
+  - { offset: 0xE0C4E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOAFs23CustomStringConvertibleAAWl', symObjAddr: 0x9440, symBinAddr: 0x23890, symSize: 0x30 }
+  - { offset: 0xE0C62, size: 0x8, addend: 0x0, symName: '_$sypWOc', symObjAddr: 0x9470, symBinAddr: 0x238C0, symSize: 0x30 }
+  - { offset: 0xE0C76, size: 0x8, addend: 0x0, symName: '_$sSh8IteratorV8_VariantOySS__GWOe', symObjAddr: 0x94D0, symBinAddr: 0x23920, symSize: 0x20 }
+  - { offset: 0xE0CB0, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x1660, symBinAddr: 0x1BE80, symSize: 0x80 }
+  - { offset: 0xE0D83, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOSHAASH9hashValueSivgTW', symObjAddr: 0x16E0, symBinAddr: 0x1BF00, symSize: 0x50 }
+  - { offset: 0xE0E01, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x1730, symBinAddr: 0x1BF50, symSize: 0x30 }
+  - { offset: 0xE0E53, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x1760, symBinAddr: 0x1BF80, symSize: 0x50 }
+  - { offset: 0xE0EBB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOs28CustomDebugStringConvertibleAAsAGP16debugDescriptionSSvgTW', symObjAddr: 0x1860, symBinAddr: 0x1C080, symSize: 0x20 }
+  - { offset: 0xE0ED7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOs23CustomStringConvertibleAAsAGP11descriptionSSvgTW', symObjAddr: 0x1880, symBinAddr: 0x1C0A0, symSize: 0x20 }
+  - { offset: 0xE0FF5, size: 0x8, addend: 0x0, symName: '_$sSDyq_SgxcigSS_SdTg5', symObjAddr: 0x3A30, symBinAddr: 0x1E250, symSize: 0x70 }
+  - { offset: 0xE110A, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSS_Tg5', symObjAddr: 0x84B0, symBinAddr: 0x22A80, symSize: 0x120 }
+  - { offset: 0xE1234, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSS_SdTgm5Tf4g_n', symObjAddr: 0x88B0, symBinAddr: 0x22E80, symSize: 0xE0 }
+  - { offset: 0xE135E, size: 0x8, addend: 0x0, symName: '_$sSaySayxGqd__c7ElementQyd__RszSTRd__lufCSS_ShySSGTgm5Tf4g_n', symObjAddr: 0x8C30, symBinAddr: 0x230E0, symSize: 0xB0 }
+  - { offset: 0xE146A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC12sessionCountSivgTo', symObjAddr: 0x10, symBinAddr: 0x1AB60, symSize: 0x40 }
+  - { offset: 0xE149D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC12sessionCountSivg', symObjAddr: 0x50, symBinAddr: 0x1ABA0, symSize: 0x30 }
+  - { offset: 0xE14E5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC12sessionCountSivsTo', symObjAddr: 0x80, symBinAddr: 0x1ABD0, symSize: 0x40 }
+  - { offset: 0xE1520, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC12sessionCountSivs', symObjAddr: 0xC0, symBinAddr: 0x1AC10, symSize: 0x40 }
+  - { offset: 0xE155B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC16totalSessionTimes5Int64VvgTo', symObjAddr: 0x160, symBinAddr: 0x1ACA0, symSize: 0x40 }
+  - { offset: 0xE158E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC16totalSessionTimes5Int64Vvg', symObjAddr: 0x1A0, symBinAddr: 0x1ACE0, symSize: 0x30 }
+  - { offset: 0xE15D0, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC16totalSessionTimes5Int64VvsTo', symObjAddr: 0x1D0, symBinAddr: 0x1AD10, symSize: 0x40 }
+  - { offset: 0xE160B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC16totalSessionTimes5Int64Vvs', symObjAddr: 0x210, symBinAddr: 0x1AD50, symSize: 0x40 }
+  - { offset: 0xE1646, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC17lastSessionLengths5Int64VvgTo', symObjAddr: 0x2B0, symBinAddr: 0x1ADE0, symSize: 0x40 }
+  - { offset: 0xE1679, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC17lastSessionLengths5Int64Vvg', symObjAddr: 0x2F0, symBinAddr: 0x1AE20, symSize: 0x30 }
+  - { offset: 0xE16B6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC17lastSessionLengths5Int64VvsTo', symObjAddr: 0x320, symBinAddr: 0x1AE50, symSize: 0x40 }
+  - { offset: 0xE16F1, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC17lastSessionLengths5Int64Vvs', symObjAddr: 0x360, symBinAddr: 0x1AE90, symSize: 0x40 }
+  - { offset: 0xE172C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC24currentSessionPausedTimes5Int64VvgTo', symObjAddr: 0x7C0, symBinAddr: 0x1B280, symSize: 0x40 }
+  - { offset: 0xE175F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC24currentSessionPausedTimes5Int64Vvg', symObjAddr: 0x800, symBinAddr: 0x1B2C0, symSize: 0x30 }
+  - { offset: 0xE179C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC24currentSessionPausedTimes5Int64VvsTo', symObjAddr: 0x830, symBinAddr: 0x1B2F0, symSize: 0x40 }
+  - { offset: 0xE17D7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC24currentSessionPausedTimes5Int64Vvs', symObjAddr: 0x870, symBinAddr: 0x1B330, symSize: 0x40 }
+  - { offset: 0xE1812, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC19iapTransactionCountSivgTo', symObjAddr: 0xC30, symBinAddr: 0x1B680, symSize: 0x40 }
+  - { offset: 0xE1845, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC19iapTransactionCountSivg', symObjAddr: 0xC70, symBinAddr: 0x1B6C0, symSize: 0x30 }
+  - { offset: 0xE1882, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC19iapTransactionCountSivsTo', symObjAddr: 0xCA0, symBinAddr: 0x1B6F0, symSize: 0x40 }
+  - { offset: 0xE18BD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC19iapTransactionCountSivs', symObjAddr: 0xCE0, symBinAddr: 0x1B730, symSize: 0x40 }
+  - { offset: 0xE18F8, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC19totalILRDRevenueUSDSdvgTo', symObjAddr: 0xEC0, symBinAddr: 0x1B8D0, symSize: 0x40 }
+  - { offset: 0xE192B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC19totalILRDRevenueUSDSdvg', symObjAddr: 0xF00, symBinAddr: 0x1B910, symSize: 0x30 }
+  - { offset: 0xE196D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC19totalILRDRevenueUSDSdvsTo', symObjAddr: 0xF30, symBinAddr: 0x1B940, symSize: 0x50 }
+  - { offset: 0xE19AA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC19totalILRDRevenueUSDSdvs', symObjAddr: 0xF80, symBinAddr: 0x1B990, symSize: 0x40 }
+  - { offset: 0xE19D1, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLO8rawValueSSvg', symObjAddr: 0x1270, symBinAddr: 0x1BC30, symSize: 0x1A0 }
+  - { offset: 0xE1A1F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOSYAASY8rawValuexSg03RawQ0Qz_tcfCTW', symObjAddr: 0x17B0, symBinAddr: 0x1BFD0, symSize: 0x30 }
+  - { offset: 0xE1A48, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOSYAASY8rawValue03RawQ0QzvgTW', symObjAddr: 0x17E0, symBinAddr: 0x1C000, symSize: 0x30 }
+  - { offset: 0xE1A5C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOs0F3KeyAAsAGP11stringValueSSvgTW', symObjAddr: 0x1810, symBinAddr: 0x1C030, symSize: 0x10 }
+  - { offset: 0xE1A87, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOs0F3KeyAAsAGP11stringValuexSgSS_tcfCTW', symObjAddr: 0x1820, symBinAddr: 0x1C040, symSize: 0x20 }
+  - { offset: 0xE1ACF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOs0F3KeyAAsAGP8intValueSiSgvgTW', symObjAddr: 0x1840, symBinAddr: 0x1C060, symSize: 0x10 }
+  - { offset: 0xE1AE3, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLOs0F3KeyAAsAGP8intValuexSgSi_tcfCTW', symObjAddr: 0x1850, symBinAddr: 0x1C070, symSize: 0x10 }
+  - { offset: 0xE1AFD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC4fromACs7Decoder_p_tKcfC', symObjAddr: 0x18A0, symBinAddr: 0x1C0C0, symSize: 0x40 }
+  - { offset: 0xE1B11, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC4fromACs7Decoder_p_tKcfc', symObjAddr: 0x18E0, symBinAddr: 0x1C100, symSize: 0xA20 }
+  - { offset: 0xE1B87, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC22currentSessionDurations5Int64VvgTo', symObjAddr: 0x2300, symBinAddr: 0x1CB20, symSize: 0x30 }
+  - { offset: 0xE1BB7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC22currentSessionDurations5Int64Vvg', symObjAddr: 0x2330, symBinAddr: 0x1CB50, symSize: 0x210 }
+  - { offset: 0xE1CB5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC32totalSessionTimeIncludingCurrents5Int64VvgTo', symObjAddr: 0x2540, symBinAddr: 0x1CD60, symSize: 0x60 }
+  - { offset: 0xE1CF7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC32totalSessionTimeIncludingCurrents5Int64Vvg', symObjAddr: 0x25A0, symBinAddr: 0x1CDC0, symSize: 0x40 }
+  - { offset: 0xE1D4B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC20averageSessionLengths5Int64VvgTo', symObjAddr: 0x25E0, symBinAddr: 0x1CE00, symSize: 0xB0 }
+  - { offset: 0xE1DA2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC20averageSessionLengths5Int64Vvg', symObjAddr: 0x2690, symBinAddr: 0x1CEB0, symSize: 0x80 }
+  - { offset: 0xE1E6D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC24purchasedProductIDsArraySaySSGvgTo', symObjAddr: 0x2710, symBinAddr: 0x1CF30, symSize: 0xC0 }
+  - { offset: 0xE1EE7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC24purchasedProductIDsArraySaySSGvg', symObjAddr: 0x27D0, symBinAddr: 0x1CFF0, symSize: 0x90 }
+  - { offset: 0xE1F51, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataCACycfC', symObjAddr: 0x2860, symBinAddr: 0x1D080, symSize: 0x20 }
+  - { offset: 0xE1F65, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataCACycfc', symObjAddr: 0x2880, symBinAddr: 0x1D0A0, symSize: 0x1A0 }
+  - { offset: 0xE1FB4, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataCACycfcTo', symObjAddr: 0x2A20, symBinAddr: 0x1D240, symSize: 0x20 }
+  - { offset: 0xE20D5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC4copyACyF', symObjAddr: 0x2A40, symBinAddr: 0x1D260, symSize: 0x3B0 }
+  - { offset: 0xE2362, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC20resumeOrStartSession7timeoutySd_tF', symObjAddr: 0x2DF0, symBinAddr: 0x1D610, symSize: 0x3E0 }
+  - { offset: 0xE254A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC12pauseSessionyyF', symObjAddr: 0x31D0, symBinAddr: 0x1D9F0, symSize: 0xA0 }
+  - { offset: 0xE25AD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10endSessionyyF', symObjAddr: 0x3270, symBinAddr: 0x1DA90, symSize: 0x2F0 }
+  - { offset: 0xE27A4, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC22endBackgroundedSession33_5D69746EEA2EB102CB30C4C28F6BC60CLLyyF', symObjAddr: 0x3560, symBinAddr: 0x1DD80, symSize: 0x340 }
+  - { offset: 0xE29DF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC20recordIAPTransaction7revenue12currencyCode9productIDySd_S2SSgtF', symObjAddr: 0x38A0, symBinAddr: 0x1E0C0, symSize: 0x190 }
+  - { offset: 0xE2B49, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC17recordILRDRevenue10revenueUSD7networkySd_AA12TJNAdNetworkOtF', symObjAddr: 0x3AA0, symBinAddr: 0x1E2C0, symSize: 0x110 }
+  - { offset: 0xE2C0D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC14getILRDRevenue10forNetworkSdAA05TJNAdI0O_tF', symObjAddr: 0x3BB0, symBinAddr: 0x1E3D0, symSize: 0x80 }
+  - { offset: 0xE2C85, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC14getILRDRevenue10forNetworkSdAA05TJNAdI0O_tFTo', symObjAddr: 0x3C30, symBinAddr: 0x1E450, symSize: 0x90 }
+  - { offset: 0xE2CB2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC13getIAPRevenue11forCurrencySdSS_tF', symObjAddr: 0x3CC0, symBinAddr: 0x1E4E0, symSize: 0x80 }
+  - { offset: 0xE2D25, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC13getIAPRevenue11forCurrencySdSS_tFTo', symObjAddr: 0x3D40, symBinAddr: 0x1E560, symSize: 0xB0 }
+  - { offset: 0xE2D5C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC5resetyyF', symObjAddr: 0x3DF0, symBinAddr: 0x1E610, symSize: 0x300 }
+  - { offset: 0xE3008, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC12toDictionarySDySSypGyF', symObjAddr: 0x40F0, symBinAddr: 0x1E910, symSize: 0xA50 }
+  - { offset: 0xE33BD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC18toScalarDictionarySDySSypGyF', symObjAddr: 0x4B60, symBinAddr: 0x1F380, symSize: 0x750 }
+  - { offset: 0xE3637, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataCfD', symObjAddr: 0x5340, symBinAddr: 0x1FB60, symSize: 0x30 }
+  - { offset: 0xE365A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC6encode2toys7Encoder_p_tKF', symObjAddr: 0x53F0, symBinAddr: 0x1FC10, symSize: 0x5B0 }
+  - { offset: 0xE36AA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataCSeAASe4fromxs7Decoder_p_tKcfCTW', symObjAddr: 0x59A0, symBinAddr: 0x201C0, symSize: 0x20 }
+  - { offset: 0xE36BE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataCSEAASE6encode2toys7Encoder_p_tKFTW', symObjAddr: 0x59C0, symBinAddr: 0x201E0, symSize: 0x30 }
+  - { offset: 0xE3714, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18TJNUserProfileDataC10CodingKeys33_5D69746EEA2EB102CB30C4C28F6BC60CLLO8rawValueAFSgSS_tcfCTf4nd_n', symObjAddr: 0x8BC0, symBinAddr: 0x23070, symSize: 0x70 }
+  - { offset: 0xE3A15, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorCACycfcy7Network6NWPathVcfU_TA', symObjAddr: 0x440, symBinAddr: 0x23D30, symSize: 0x10 }
+  - { offset: 0xE3A29, size: 0x8, addend: 0x0, symName: '_$s7Network6NWPathVIeghn_SgWOy', symObjAddr: 0x450, symBinAddr: 0x23D40, symSize: 0x20 }
+  - { offset: 0xE3A3D, size: 0x8, addend: 0x0, symName: '_$sSaySo17OS_dispatch_queueC8DispatchE10AttributesVGMa', symObjAddr: 0x510, symBinAddr: 0x23D60, symSize: 0x50 }
+  - { offset: 0xE3A51, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorCMa', symObjAddr: 0x680, symBinAddr: 0x23E80, symSize: 0x20 }
+  - { offset: 0xE3A8B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorC8isOnlineSbvg', symObjAddr: 0x40, symBinAddr: 0x23940, symSize: 0x30 }
+  - { offset: 0xE3AA5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorC8isOnlineSbvs', symObjAddr: 0x70, symBinAddr: 0x23970, symSize: 0x30 }
+  - { offset: 0xE3AB9, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorC8isOnlineSbvM', symObjAddr: 0xA0, symBinAddr: 0x239A0, symSize: 0x30 }
+  - { offset: 0xE3AD3, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorCACycfC', symObjAddr: 0xE0, symBinAddr: 0x239D0, symSize: 0x30 }
+  - { offset: 0xE3B31, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorCACycfc', symObjAddr: 0x110, symBinAddr: 0x23A00, symSize: 0x230 }
+  - { offset: 0xE3BBF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorCACycfcy7Network6NWPathVcfU_', symObjAddr: 0x360, symBinAddr: 0x23C50, symSize: 0xE0 }
+  - { offset: 0xE3C1A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorCfD', symObjAddr: 0x580, symBinAddr: 0x23DB0, symSize: 0x20 }
+  - { offset: 0xE3C5B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorCAA07NetworkD0A2aDP8isOnlineSbvgTW', symObjAddr: 0x5A0, symBinAddr: 0x23DD0, symSize: 0x20 }
+  - { offset: 0xE3C6F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorCAA07NetworkD0A2aDP8isOnlineSbvsTW', symObjAddr: 0x5C0, symBinAddr: 0x23DF0, symSize: 0x20 }
+  - { offset: 0xE3C83, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorCAA07NetworkD0A2aDP8isOnlineSbvMTW', symObjAddr: 0x5E0, symBinAddr: 0x23E10, symSize: 0x50 }
+  - { offset: 0xE3C97, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK17TJNNetworkMonitorCAA07NetworkD0A2aDP8isOnlineSbvMTW.resume.0', symObjAddr: 0x630, symBinAddr: 0x23E60, symSize: 0x20 }
+  - { offset: 0xE3ED1, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK24GoogleOnDeviceConversionCMa', symObjAddr: 0x120, symBinAddr: 0x23F20, symSize: 0x20 }
+  - { offset: 0xE4011, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerCfETo', symObjAddr: 0x8B0, symBinAddr: 0x24570, symSize: 0x20 }
+  - { offset: 0xE4040, size: 0x8, addend: 0x0, symName: '_$sSSSgSo7NSErrorCSgIeggg_So8NSStringCSgADIeyByy_TR', symObjAddr: 0xE30, symBinAddr: 0x24A80, symSize: 0x80 }
+  - { offset: 0xE40BB, size: 0x8, addend: 0x0, symName: '_$sSD11removeValue6forKeyq_Sgx_tFSS_ypTg5', symObjAddr: 0x1280, symBinAddr: 0x24CB0, symSize: 0xE0 }
+  - { offset: 0xE4169, size: 0x8, addend: 0x0, symName: '_$sSD8_VariantV8setValue_6forKeyyq_n_xtFSS_ypTg5', symObjAddr: 0x1360, symBinAddr: 0x24D90, symSize: 0xB0 }
+  - { offset: 0xE41BE, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV12mutatingFind_8isUniques10_HashTableV6BucketV6bucket_Sb5foundtx_SbtFSS_ypTg5', symObjAddr: 0x1410, symBinAddr: 0x24E40, symSize: 0xB0 }
+  - { offset: 0xE4220, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV7_delete2atys10_HashTableV6BucketV_tFSS_ypTg5', symObjAddr: 0x1AE0, symBinAddr: 0x24EF0, symSize: 0x220 }
+  - { offset: 0xE42AD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK32GoogleOnDeviceConversionProtocol_pWOc', symObjAddr: 0x1DE0, symBinAddr: 0x25110, symSize: 0x30 }
+  - { offset: 0xE42C1, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK32GoogleOnDeviceConversionProtocol_pWOb', symObjAddr: 0x1E10, symBinAddr: 0x25140, symSize: 0x20 }
+  - { offset: 0xE42D5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerCMa', symObjAddr: 0x1E30, symBinAddr: 0x25160, symSize: 0x20 }
+  - { offset: 0xE42E9, size: 0x8, addend: 0x0, symName: ___swift_assign_boxed_opaque_existential_1, symObjAddr: 0x1E50, symBinAddr: 0x25180, symSize: 0x130 }
+  - { offset: 0xE42FD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK24GoogleOnDeviceConversionC014fetchAggregateF4Info10completionyySSSg_s5Error_pSgtc_tFyAF_So7NSErrorCSgtcfU_TA', symObjAddr: 0x1FE0, symBinAddr: 0x25310, symSize: 0xD0 }
+  - { offset: 0xE4366, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x20B0, symBinAddr: 0x253E0, symSize: 0x20 }
+  - { offset: 0xE437A, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x20D0, symBinAddr: 0x25400, symSize: 0x10 }
+  - { offset: 0xE438E, size: 0x8, addend: 0x0, symName: '_$sypSgWOh', symObjAddr: 0x2140, symBinAddr: 0x25410, symSize: 0x30 }
+  - { offset: 0xE43A2, size: 0x8, addend: 0x0, symName: '_$sSo8NSObjectCMa', symObjAddr: 0x2270, symBinAddr: 0x25480, symSize: 0x30 }
+  - { offset: 0xE44D0, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK24GoogleOnDeviceConversionCACycfC', symObjAddr: 0xA0, symBinAddr: 0x23EA0, symSize: 0x80 }
+  - { offset: 0xE4510, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerC06googledeF0AA0cdeF8Protocol_pvg', symObjAddr: 0x140, symBinAddr: 0x23F40, symSize: 0x40 }
+  - { offset: 0xE453B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerC06googledeF0AA0cdeF8Protocol_pvs', symObjAddr: 0x180, symBinAddr: 0x23F80, symSize: 0x60 }
+  - { offset: 0xE4570, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerC06googledeF0AA0cdeF8Protocol_pvM', symObjAddr: 0x1E0, symBinAddr: 0x23FE0, symSize: 0x40 }
+  - { offset: 0xE459B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerCACycfC', symObjAddr: 0x230, symBinAddr: 0x24020, symSize: 0x20 }
+  - { offset: 0xE45AF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerCACycfc', symObjAddr: 0x250, symBinAddr: 0x24040, symSize: 0xE0 }
+  - { offset: 0xE4620, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerCACycfcTo', symObjAddr: 0x330, symBinAddr: 0x24120, symSize: 0xF0 }
+  - { offset: 0xE46AB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerC02oneF8ProtocolAcA0cdefI0_p_tcfC', symObjAddr: 0x420, symBinAddr: 0x24210, symSize: 0x140 }
+  - { offset: 0xE471B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerC014fetchAggregateF4InfoyyF', symObjAddr: 0x690, symBinAddr: 0x24350, symSize: 0x180 }
+  - { offset: 0xE476F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerC014fetchAggregateF4InfoyyFySSSg_s5Error_pSgtcfU_', symObjAddr: 0x810, symBinAddr: 0x244D0, symSize: 0x40 }
+  - { offset: 0xE47CA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerC014fetchAggregateF4InfoyyFTo', symObjAddr: 0x850, symBinAddr: 0x24510, symSize: 0x30 }
+  - { offset: 0xE47DE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK31GoogleOnDeviceConversionManagerCfD', symObjAddr: 0x880, symBinAddr: 0x24540, symSize: 0x30 }
+  - { offset: 0xE4801, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK24GoogleOnDeviceConversionC11isAvailableSbvg', symObjAddr: 0x940, symBinAddr: 0x24590, symSize: 0x40 }
+  - { offset: 0xE483B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK24GoogleOnDeviceConversionC18setFirstLaunchTimeyy10Foundation4DateVF', symObjAddr: 0x980, symBinAddr: 0x245D0, symSize: 0xD0 }
+  - { offset: 0xE48AA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK24GoogleOnDeviceConversionC014fetchAggregateF4Info10completionyySSSg_s5Error_pSgtc_tF', symObjAddr: 0xA50, symBinAddr: 0x246A0, symSize: 0x3E0 }
+  - { offset: 0xE49DC, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK24GoogleOnDeviceConversionC18getManagerInstance33_DA6F7CDFC8E5E39063A1F23BBEF27A68LLSo8NSObjectCSgyF', symObjAddr: 0xEB0, symBinAddr: 0x24B00, symSize: 0x120 }
+  - { offset: 0xE4A65, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK24GoogleOnDeviceConversionCfD', symObjAddr: 0xFF0, symBinAddr: 0x24C20, symSize: 0x30 }
+  - { offset: 0xE4A9E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK24GoogleOnDeviceConversionCAA0cdeF8ProtocolA2aDP11isAvailableSbvgTW', symObjAddr: 0x1080, symBinAddr: 0x24C50, symSize: 0x20 }
+  - { offset: 0xE4AB2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK24GoogleOnDeviceConversionCAA0cdeF8ProtocolA2aDP18setFirstLaunchTimeyy10Foundation4DateVFTW', symObjAddr: 0x10A0, symBinAddr: 0x24C70, symSize: 0x20 }
+  - { offset: 0xE4AC6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK24GoogleOnDeviceConversionCAA0cdeF8ProtocolA2aDP014fetchAggregateF4Info10completionyySSSg_s5Error_pSgtc_tFTW', symObjAddr: 0x10C0, symBinAddr: 0x24C90, symSize: 0x20 }
+  - { offset: 0xE4C9D, size: 0x8, addend: 0x0, symName: '_$sSo22NSManagedObjectContextC9TenjinSDKE22executeAndMergeChanges5usingySo20NSBatchDeleteRequestC_tKF', symObjAddr: 0x0, symBinAddr: 0x254B0, symSize: 0x3C0 }
+  - { offset: 0xE4D21, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCs11AnyHashableV_ypTgm5Tf4g_n', symObjAddr: 0x570, symBinAddr: 0x259B0, symSize: 0x100 }
+  - { offset: 0xE4EDB, size: 0x8, addend: 0x0, symName: '_$sSo22NSManagedObjectContextC9TenjinSDKE22executeAndMergeChanges5usingySo20NSBatchDeleteRequestC_tKF', symObjAddr: 0x0, symBinAddr: 0x254B0, symSize: 0x3C0 }
+  - { offset: 0xE507E, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlFSo22NSManagedObjectContextC_Tgm5', symObjAddr: 0x430, symBinAddr: 0x25870, symSize: 0x50 }
+  - { offset: 0xE50B6, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFs11AnyHashableV_Tg5', symObjAddr: 0x480, symBinAddr: 0x258C0, symSize: 0x30 }
+  - { offset: 0xE50EE, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFs11AnyHashableV_Tg5', symObjAddr: 0x4B0, symBinAddr: 0x258F0, symSize: 0xC0 }
+  - { offset: 0xE5189, size: 0x8, addend: 0x0, symName: '_$sSo22NSManagedObjectContextCMa', symObjAddr: 0x670, symBinAddr: 0x25AB0, symSize: 0x30 }
+  - { offset: 0xE519D, size: 0x8, addend: 0x0, symName: '_$sypSgWOb', symObjAddr: 0x6A0, symBinAddr: 0x25AE0, symSize: 0x40 }
+  - { offset: 0xE51B1, size: 0x8, addend: 0x0, symName: '_$ss11AnyHashableV_yptWOc', symObjAddr: 0x6E0, symBinAddr: 0x25B20, symSize: 0x40 }
+  - { offset: 0xE51C5, size: 0x8, addend: 0x0, symName: '_$ss11AnyHashableVWOc', symObjAddr: 0x740, symBinAddr: 0x25B60, symSize: 0x30 }
+  - { offset: 0xE51D9, size: 0x8, addend: 0x0, symName: '_$ss11AnyHashableVWOh', symObjAddr: 0x770, symBinAddr: 0x25B90, symSize: 0x30 }
+  - { offset: 0xE54D2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC12persistEvent6params8endpoint4date10completionySS_SS10Foundation4DateVSgyAA05QueueE0CSgcSgtF', symObjAddr: 0x930, symBinAddr: 0x264B0, symSize: 0x1C0 }
+  - { offset: 0xE5557, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC12persistEvent6params8endpoint4date10completionySS_SS10Foundation4DateVSgyAA05QueueE0CSgcSgtFyycfU_', symObjAddr: 0xAF0, symBinAddr: 0x26670, symSize: 0x2F0 }
+  - { offset: 0xE5721, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC18getPersistedEvents10completionyySayAA10QueueEventCGSgc_tF', symObjAddr: 0xE10, symBinAddr: 0x26960, symSize: 0x4F0 }
+  - { offset: 0xE591C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC20deletePersistedEventyyAA05QueueF0CF', symObjAddr: 0x1310, symBinAddr: 0x26E50, symSize: 0xF0 }
+  - { offset: 0xE59B2, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlFSo16NSSortDescriptorC_Tgm5', symObjAddr: 0x1570, symBinAddr: 0x26F40, symSize: 0x60 }
+  - { offset: 0xE59DF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceCMa', symObjAddr: 0x1940, symBinAddr: 0x27310, symSize: 0x20 }
+  - { offset: 0xE59F3, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DateVSgWOb', symObjAddr: 0x1A70, symBinAddr: 0x27400, symSize: 0x40 }
+  - { offset: 0xE5A07, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC12persistEvent6params8endpoint4date10completionySS_SS10Foundation4DateVSgyAA05QueueE0CSgcSgtFyycfU_TA', symObjAddr: 0x1AB0, symBinAddr: 0x27440, symSize: 0x70 }
+  - { offset: 0xE5A1B, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x1B20, symBinAddr: 0x274B0, symSize: 0x20 }
+  - { offset: 0xE5A2F, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x1B40, symBinAddr: 0x274D0, symSize: 0x10 }
+  - { offset: 0xE5A43, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC15deleteOldEvents10completionyyycSg_tFTf4nd_n', symObjAddr: 0x1B70, symBinAddr: 0x274E0, symSize: 0x430 }
+  - { offset: 0xE5B8D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC18getPersistedEvents10completionyySayAA10QueueEventCGSgc_tFyycfU_TA', symObjAddr: 0x2040, symBinAddr: 0x279B0, symSize: 0x1A0 }
+  - { offset: 0xE5C42, size: 0x8, addend: 0x0, symName: '_$sS2Ss7CVarArg10FoundationWl', symObjAddr: 0x21E0, symBinAddr: 0x27B50, symSize: 0x30 }
+  - { offset: 0xE5C56, size: 0x8, addend: 0x0, symName: '_$sSo6NSDateCSo8NSObjectCs7CVarArg10ObjectiveCWl', symObjAddr: 0x2240, symBinAddr: 0x27BB0, symSize: 0x50 }
+  - { offset: 0xE5C6A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC20deletePersistedEventyyAA05QueueF0CFyycfU_TA', symObjAddr: 0x22D0, symBinAddr: 0x27C40, symSize: 0x130 }
+  - { offset: 0xE5D0B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC15deleteOldEvents10completionyyycSg_tFyycfU_TA', symObjAddr: 0x2520, symBinAddr: 0x27DC0, symSize: 0x140 }
+  - { offset: 0xE5E9C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC15setBooleanValue_3keyySb_SStFZ', symObjAddr: 0x0, symBinAddr: 0x25BC0, symSize: 0xC0 }
+  - { offset: 0xE5FAB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC15setBooleanValue_3keyySb_SStFZTo', symObjAddr: 0xC0, symBinAddr: 0x25C80, symSize: 0xD0 }
+  - { offset: 0xE5FD8, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC18getOptionalBooleanySbSgSSFZ', symObjAddr: 0x190, symBinAddr: 0x25D50, symSize: 0x130 }
+  - { offset: 0xE6009, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC10setODMInfoyySSFZ', symObjAddr: 0x6C0, symBinAddr: 0x26240, symSize: 0x20 }
+  - { offset: 0xE601D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC10getODMInfoSSSgyFZ', symObjAddr: 0x700, symBinAddr: 0x26280, symSize: 0x20 }
+  - { offset: 0xE6031, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC26getAnalyticsInstallationIdSSyFZ', symObjAddr: 0x740, symBinAddr: 0x262C0, symSize: 0x10 }
+  - { offset: 0xE604C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC26getAnalyticsInstallationIdSSyFZTo', symObjAddr: 0x750, symBinAddr: 0x262D0, symSize: 0x40 }
+  - { offset: 0xE6076, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC16setInitializedAtyySSFZ', symObjAddr: 0x790, symBinAddr: 0x26310, symSize: 0x20 }
+  - { offset: 0xE608A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC16getInitializedAtSSSgyFZ', symObjAddr: 0x800, symBinAddr: 0x26380, symSize: 0x20 }
+  - { offset: 0xE609E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceCACycfC', symObjAddr: 0x880, symBinAddr: 0x26400, symSize: 0x20 }
+  - { offset: 0xE60B2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceCACycfc', symObjAddr: 0x8A0, symBinAddr: 0x26420, symSize: 0x30 }
+  - { offset: 0xE60EA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceCACycfcTo', symObjAddr: 0x8D0, symBinAddr: 0x26450, symSize: 0x30 }
+  - { offset: 0xE611F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceCfD', symObjAddr: 0x900, symBinAddr: 0x26480, symSize: 0x30 }
+  - { offset: 0xE62A3, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10DatasourceC26getAnalyticsInstallationIdSSyFZTf4d_n', symObjAddr: 0x15D0, symBinAddr: 0x26FA0, symSize: 0x1C0 }
+  - { offset: 0xE6745, size: 0x8, addend: 0x0, symName: '_$sSbIegy_SgWOe', symObjAddr: 0x100, symBinAddr: 0x28010, symSize: 0x20 }
+  - { offset: 0xE6765, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK14NetworkMonitor_pSgWOc', symObjAddr: 0x340, symBinAddr: 0x28190, symSize: 0x40 }
+  - { offset: 0xE6779, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK14NetworkMonitor_pSgWOd', symObjAddr: 0x410, symBinAddr: 0x28220, symSize: 0x40 }
+  - { offset: 0xE68AB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC22processPersistedEvents33_6C56303F329E96F43E905225A64295AALL09persistedF0ySayAA10QueueEventCG_tF', symObjAddr: 0xA40, symBinAddr: 0x28780, symSize: 0x4B0 }
+  - { offset: 0xE6D01, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC19handleInternetRetry33_6C56303F329E96F43E905225A64295AALL8endpoint6paramsySS_SDySSypGtF', symObjAddr: 0x12B0, symBinAddr: 0x28FF0, symSize: 0x330 }
+  - { offset: 0xE6D71, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC19handleInternetRetry33_6C56303F329E96F43E905225A64295AALL8endpoint6paramsySS_SDySSypGtFyyYbcfU_', symObjAddr: 0x2BC0, symBinAddr: 0x2A8D0, symSize: 0x280 }
+  - { offset: 0xE6E4D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC15createOperation33_6C56303F329E96F43E905225A64295AALL8endpoint6params7handlerySS_SDySSypGySb_s5Error_pSgtcSgtF', symObjAddr: 0x15E0, symBinAddr: 0x29320, symSize: 0x360 }
+  - { offset: 0xE704D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC22createConnectOperation33_6C56303F329E96F43E905225A64295AALL8endpoint6params10completionySS_SDySSypGySbctF', symObjAddr: 0x1A70, symBinAddr: 0x297B0, symSize: 0x260 }
+  - { offset: 0xE7224, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryCfETo', symObjAddr: 0x1D80, symBinAddr: 0x29AC0, symSize: 0x60 }
+  - { offset: 0xE72CC, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC18retryFailedRequest8endpoint6params10completionySS_SDySSypGySbcSgtF', symObjAddr: 0x2330, symBinAddr: 0x2A070, symSize: 0x130 }
+  - { offset: 0xE737C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC18retryFailedRequest8endpoint6params10completionySS_SDySSypGySbcSgtF0D0L_yyF', symObjAddr: 0x24E0, symBinAddr: 0x2A220, symSize: 0x5D0 }
+  - { offset: 0xE754E, size: 0x8, addend: 0x0, symName: '_$sypSgIegn_yXlSgIeyBy_TR', symObjAddr: 0x2460, symBinAddr: 0x2A1A0, symSize: 0x80 }
+  - { offset: 0xE761E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryCMa', symObjAddr: 0x2EA0, symBinAddr: 0x2AB50, symSize: 0x20 }
+  - { offset: 0xE7632, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC17handlePostRequest8endpoint6paramsySS_SDySSypGtFySayAA10QueueEventCGSgcfU_TA', symObjAddr: 0x2EF0, symBinAddr: 0x2ABA0, symSize: 0x1C0 }
+  - { offset: 0xE76D5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC20handleConnectRequest8endpoint6params10completionySS_SDySSypGySbctFySayAA10QueueEventCGSgcfU_TA', symObjAddr: 0x30F0, symBinAddr: 0x2ADA0, symSize: 0x120 }
+  - { offset: 0xE78A3, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC18retryFailedRequest8endpoint6params10completionySS_SDySSypGySbcSgtF0D0L_yyFyyYbcfU_TA', symObjAddr: 0x34C0, symBinAddr: 0x2AF90, symSize: 0x490 }
+  - { offset: 0xE79C6, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x3950, symBinAddr: 0x2B420, symSize: 0x20 }
+  - { offset: 0xE79DA, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x3970, symBinAddr: 0x2B440, symSize: 0x10 }
+  - { offset: 0xE79EE, size: 0x8, addend: 0x0, symName: '_$sSay8Dispatch0A13WorkItemFlagsVGMa', symObjAddr: 0x3980, symBinAddr: 0x2B450, symSize: 0x50 }
+  - { offset: 0xE7A02, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC18retryFailedRequest8endpoint6params10completionySS_SDySSypGySbcSgtF0D0L_yyFyyYbcfU_ySb_s5Error_pSgtcfU_TA', symObjAddr: 0x3A50, symBinAddr: 0x2B520, symSize: 0x1D0 }
+  - { offset: 0xE7ACA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC20createOperationRetry33_6C56303F329E96F43E905225A64295AALL8endpoint6params7handlerySS_SDySSypGySb_s5Error_pSgtcSgtFyypSgcfU_TA', symObjAddr: 0x3CA0, symBinAddr: 0x2B740, symSize: 0x270 }
+  - { offset: 0xE7B6F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC20createOperationRetry33_6C56303F329E96F43E905225A64295AALL8endpoint6params7handlerySS_SDySSypGySb_s5Error_pSgtcSgtFyypSgcfU_y10Foundation4DataVSg_So13NSURLResponseCSgAKSbtcfU_TA', symObjAddr: 0x3F80, symBinAddr: 0x2B9C0, symSize: 0x40 }
+  - { offset: 0xE7BA6, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV19_getElementSlowPathyyXlSiF9TenjinSDK10QueueEventC_Tg5', symObjAddr: 0x4710, symBinAddr: 0x2BA00, symSize: 0x1F0 }
+  - { offset: 0xE7C1B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC22processPersistedEvents33_6C56303F329E96F43E905225A64295AALL09persistedF0ySayAA10QueueEventCG_tFySb_s5Error_pSgtcfU_TA', symObjAddr: 0x4940, symBinAddr: 0x2BC30, symSize: 0x260 }
+  - { offset: 0xE7F04, size: 0x8, addend: 0x0, symName: '_$ss32_copyCollectionToContiguousArrayys0dE0Vy7ElementQzGxSlRzlFs0E5SliceVy9TenjinSDK10QueueEventCG_Tg5', symObjAddr: 0x4BA0, symBinAddr: 0x2BE90, symSize: 0xF0 }
+  - { offset: 0xE8082, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlF9TenjinSDK10QueueEventC_Tgm5', symObjAddr: 0x4C90, symBinAddr: 0x2BF80, symSize: 0x50 }
+  - { offset: 0xE80AF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC22createConnectOperation33_6C56303F329E96F43E905225A64295AALL8endpoint6params10completionySS_SDySSypGySbctFyypSgcfU_TA', symObjAddr: 0x4D30, symBinAddr: 0x2C020, symSize: 0x2A0 }
+  - { offset: 0xE8160, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC22createConnectOperation33_6C56303F329E96F43E905225A64295AALL8endpoint6params10completionySS_SDySSypGySbctFyypSgcfU_y10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcfU_TA', symObjAddr: 0x5010, symBinAddr: 0x2C300, symSize: 0x90 }
+  - { offset: 0xE81BC, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC17handlePostRequest8endpoint6paramsySS_SDySSypGtFySayAA10QueueEventCGSgcfU_ySb_s5Error_pSgtcfU_TA', symObjAddr: 0x50B0, symBinAddr: 0x2C3A0, symSize: 0x20 }
+  - { offset: 0xE81D0, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC19handleInternetRetry33_6C56303F329E96F43E905225A64295AALL8endpoint6paramsySS_SDySSypGtFyyYbcfU_TA', symObjAddr: 0x5180, symBinAddr: 0x2C410, symSize: 0x20 }
+  - { offset: 0xE81E4, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC15createOperation33_6C56303F329E96F43E905225A64295AALL8endpoint6params7handlerySS_SDySSypGySb_s5Error_pSgtcSgtFyypSgcfU_TA', symObjAddr: 0x5260, symBinAddr: 0x2C4E0, symSize: 0x2B0 }
+  - { offset: 0xE8295, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC15createOperation33_6C56303F329E96F43E905225A64295AALL8endpoint6params7handlerySS_SDySSypGySb_s5Error_pSgtcSgtFyypSgcfU_y10Foundation4DataVSg_So13NSURLResponseCSgAKSbtcfU_TA', symObjAddr: 0x5560, symBinAddr: 0x2C7E0, symSize: 0x160 }
+  - { offset: 0xE8458, size: 0x8, addend: 0x0, symName: '_$ss17_dictionaryUpCastySDyq0_q1_GSDyxq_GSHRzSHR0_r2_lFSS_yps11AnyHashableVypTg5', symObjAddr: 0x1DE0, symBinAddr: 0x29B20, symSize: 0x550 }
+  - { offset: 0xE8595, size: 0x8, addend: 0x0, symName: '_$sSaySayxGqd__c7ElementQyd__RszSTRd__lufC9TenjinSDK10QueueEventC_s10ArraySliceVyAFGTgm5', symObjAddr: 0x2AE0, symBinAddr: 0x2A7F0, symSize: 0xE0 }
+  - { offset: 0xE877C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC12retryHandlerySbcSgvg', symObjAddr: 0x30, symBinAddr: 0x27F60, symSize: 0x50 }
+  - { offset: 0xE87A5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC12retryHandlerySbcSgvs', symObjAddr: 0xA0, symBinAddr: 0x27FB0, symSize: 0x60 }
+  - { offset: 0xE87D8, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC12retryHandlerySbcSgvM', symObjAddr: 0x120, symBinAddr: 0x28030, symSize: 0x40 }
+  - { offset: 0xE87FD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC13networkHelperAA07NetworkE0_pvg', symObjAddr: 0x170, symBinAddr: 0x28070, symSize: 0x40 }
+  - { offset: 0xE8822, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC13networkHelperAA07NetworkE0_pvs', symObjAddr: 0x1E0, symBinAddr: 0x280B0, symSize: 0x60 }
+  - { offset: 0xE8857, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC13networkHelperAA07NetworkE0_pvM', symObjAddr: 0x260, symBinAddr: 0x28110, symSize: 0x40 }
+  - { offset: 0xE887C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC14networkMonitorAA07NetworkE0_pSgvg', symObjAddr: 0x300, symBinAddr: 0x28150, symSize: 0x40 }
+  - { offset: 0xE88A1, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC14networkMonitorAA07NetworkE0_pSgvs', symObjAddr: 0x3C0, symBinAddr: 0x281D0, symSize: 0x50 }
+  - { offset: 0xE88D6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC14networkMonitorAA07NetworkE0_pSgvM', symObjAddr: 0x450, symBinAddr: 0x28260, symSize: 0x40 }
+  - { offset: 0xE8920, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC12retryEnabledSbvg', symObjAddr: 0x490, symBinAddr: 0x282A0, symSize: 0x20 }
+  - { offset: 0xE8956, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC10isUnitTestSbvg', symObjAddr: 0x4B0, symBinAddr: 0x282C0, symSize: 0xD0 }
+  - { offset: 0xE898C, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC6apiKeyACSS_tcfC', symObjAddr: 0x580, symBinAddr: 0x28390, symSize: 0x40 }
+  - { offset: 0xE89A0, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC6apiKeyACSS_tcfc', symObjAddr: 0x5C0, symBinAddr: 0x283D0, symSize: 0x140 }
+  - { offset: 0xE8A40, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC6apiKeyACSS_tcfcTo', symObjAddr: 0x700, symBinAddr: 0x28510, symSize: 0x30 }
+  - { offset: 0xE8A7E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC13networkHelperAcA07NetworkE0_p_tcfC', symObjAddr: 0x730, symBinAddr: 0x28540, symSize: 0xE0 }
+  - { offset: 0xE8AB5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC21setCacheEventsSettingyySbFZ', symObjAddr: 0x8E0, symBinAddr: 0x28620, symSize: 0x20 }
+  - { offset: 0xE8B16, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC21setCacheEventsSettingyySbFZTo', symObjAddr: 0x900, symBinAddr: 0x28640, symSize: 0x20 }
+  - { offset: 0xE8B4B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC21getCacheEventsSettingSbyFZTo', symObjAddr: 0x920, symBinAddr: 0x28660, symSize: 0x20 }
+  - { offset: 0xE8B75, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC17handlePostRequest8endpoint6paramsySS_SDySSypGtF', symObjAddr: 0x940, symBinAddr: 0x28680, symSize: 0x100 }
+  - { offset: 0xE8BB9, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC17handlePostRequest8endpoint6paramsySS_SDySSypGtFySayAA10QueueEventCGSgcfU_ySb_s5Error_pSgtcfU_', symObjAddr: 0xEF0, symBinAddr: 0x28C30, symSize: 0x3C0 }
+  - { offset: 0xE8DB5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryC20handleConnectRequest8endpoint6params10completionySS_SDySSypGySbctF', symObjAddr: 0x1940, symBinAddr: 0x29680, symSize: 0x130 }
+  - { offset: 0xE8E63, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryCACycfC', symObjAddr: 0x1CD0, symBinAddr: 0x29A10, symSize: 0x20 }
+  - { offset: 0xE8E77, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryCACycfc', symObjAddr: 0x1CF0, symBinAddr: 0x29A30, symSize: 0x30 }
+  - { offset: 0xE8ED0, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryCACycfcTo', symObjAddr: 0x1D20, symBinAddr: 0x29A60, symSize: 0x30 }
+  - { offset: 0xE8F25, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK0A10RepositoryCfD', symObjAddr: 0x1D50, symBinAddr: 0x29A90, symSize: 0x30 }
+  - { offset: 0xE94D5, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlFSo17SecCertificateRefa_Tgm5', symObjAddr: 0x1A00, symBinAddr: 0x2E340, symSize: 0x50 }
+  - { offset: 0xE9502, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlFSo9SecKeyRefa_Tgm5', symObjAddr: 0x1A50, symBinAddr: 0x2E390, symSize: 0x50 }
+  - { offset: 0xE953A, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV15_RepresentationOWOy', symObjAddr: 0x1C90, symBinAddr: 0x2E5D0, symSize: 0x50 }
+  - { offset: 0xE954E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK16TJNPinningHelperCMa', symObjAddr: 0x1CE0, symBinAddr: 0x2E620, symSize: 0x20 }
+  - { offset: 0xE9608, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV19_getElementSlowPathyyXlSiFSo9SecKeyRefa_Tg5', symObjAddr: 0x1AA0, symBinAddr: 0x2E3E0, symSize: 0x1F0 }
+  - { offset: 0xE9778, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK16TJNPinningHelperC22loadPinnedCertificatesSaySo17SecCertificateRefaGSgyFZ', symObjAddr: 0x0, symBinAddr: 0x2C9F0, symSize: 0x4A0 }
+  - { offset: 0xE9A8D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK16TJNPinningHelperC16extractPublicKey4fromSo03SecG3RefaSgSo0i11CertificateJ0a_tFZ', symObjAddr: 0x530, symBinAddr: 0x2CE90, symSize: 0x10 }
+  - { offset: 0xE9AE3, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK16TJNPinningHelperC17extractPublicKeys4fromSaySo9SecKeyRefaGSo0i5TrustK0a_tFZ', symObjAddr: 0x540, symBinAddr: 0x2CEA0, symSize: 0x200 }
+  - { offset: 0xE9D46, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK16TJNPinningHelperC17comparePublicKeys06serverG006pinnedG0SbSaySo9SecKeyRefaG_AItFZ', symObjAddr: 0x740, symBinAddr: 0x2D0A0, symSize: 0xEF0 }
+  - { offset: 0xEA482, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK16TJNPinningHelperC13evaluateTrustySbSo03SecF3RefaFZ', symObjAddr: 0x1630, symBinAddr: 0x2DF90, symSize: 0x60 }
+  - { offset: 0xEA4E6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK16TJNPinningHelperCfD', symObjAddr: 0x16A0, symBinAddr: 0x2DFF0, symSize: 0x20 }
+  - { offset: 0xEA50B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK16TJNPinningHelperCACycfC', symObjAddr: 0x16C0, symBinAddr: 0x2E010, symSize: 0x20 }
+  - { offset: 0xEA64E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperC6apiKeySSvg', symObjAddr: 0x0, symBinAddr: 0x2E6B0, symSize: 0x40 }
+  - { offset: 0xEA8D6, size: 0x8, addend: 0x0, symName: '_$sSS3key_yp5valuetSgWOb', symObjAddr: 0x10E0, symBinAddr: 0x2F4E0, symSize: 0x40 }
+  - { offset: 0xEA8EA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperCMa', symObjAddr: 0x1190, symBinAddr: 0x2F520, symSize: 0x20 }
+  - { offset: 0xEA9B9, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperC6apiKeySSvg', symObjAddr: 0x0, symBinAddr: 0x2E6B0, symSize: 0x40 }
+  - { offset: 0xEA9D3, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperC6apiKeySSvs', symObjAddr: 0x40, symBinAddr: 0x2E6F0, symSize: 0x40 }
+  - { offset: 0xEA9E7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperC6apiKeySSvM', symObjAddr: 0x80, symBinAddr: 0x2E730, symSize: 0x30 }
+  - { offset: 0xEA9FB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperC6clientAA13TJNHTTPClientCvg', symObjAddr: 0xC0, symBinAddr: 0x2E760, symSize: 0x30 }
+  - { offset: 0xEAA0F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperC6clientAA13TJNHTTPClientCvs', symObjAddr: 0xF0, symBinAddr: 0x2E790, symSize: 0x40 }
+  - { offset: 0xEAA23, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperC6clientAA13TJNHTTPClientCvM', symObjAddr: 0x130, symBinAddr: 0x2E7D0, symSize: 0x30 }
+  - { offset: 0xEAA78, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperC6apiKey6clientACSS_AA13TJNHTTPClientCtcfC', symObjAddr: 0x160, symBinAddr: 0x2E800, symSize: 0x40 }
+  - { offset: 0xEAADD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperC6apiKeyACSS_tcfC', symObjAddr: 0x1C0, symBinAddr: 0x2E840, symSize: 0x60 }
+  - { offset: 0xEAB42, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperC10apiRequest14withParameters8endpoint10httpMethod8hostname7handlerySDySSypG_S2SSgSSy10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtctF', symObjAddr: 0x270, symBinAddr: 0x2E8A0, symSize: 0xBD0 }
+  - { offset: 0xEB138, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperCfD', symObjAddr: 0xE80, symBinAddr: 0x2F470, symSize: 0x30 }
+  - { offset: 0xEB17D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPHelperCAA13NetworkHelperA2aDP10apiRequest14withParameters8endpoint10httpMethod8hostname7handlerySDySSypG_S2SSgSSy10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtctFTW', symObjAddr: 0xF60, symBinAddr: 0x2F4A0, symSize: 0x40 }
+  - { offset: 0xEB282, size: 0x8, addend: 0x0, symName: '_$sSS9TenjinSDKE10urlEncodedSSSgyF', symObjAddr: 0x0, symBinAddr: 0x2F540, symSize: 0xD0 }
+  - { offset: 0xEB29A, size: 0x8, addend: 0x0, symName: '_$sSS9TenjinSDKE10urlEncodedSSSgyF', symObjAddr: 0x0, symBinAddr: 0x2F540, symSize: 0xD0 }
+  - { offset: 0xEB2C9, size: 0x8, addend: 0x0, symName: '_$sS2SSysWl', symObjAddr: 0xD0, symBinAddr: 0x2F610, symSize: 0x30 }
+  - { offset: 0xEB2FE, size: 0x8, addend: 0x0, symName: '_$sSS9TenjinSDKE19convertToDictionarySDySSypGSgyF', symObjAddr: 0x100, symBinAddr: 0x2F640, symSize: 0x260 }
+  - { offset: 0xEB3AD, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVSgWOe', symObjAddr: 0x3A0, symBinAddr: 0x2F8A0, symSize: 0x20 }
+  - { offset: 0xEB521, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC6sharedACvpZ', symObjAddr: 0x52F8, symBinAddr: 0x54B98, symSize: 0x0 }
+  - { offset: 0xEB6F1, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK19PersistentContainerCMa', symObjAddr: 0xE0, symBinAddr: 0x2F8C0, symSize: 0x20 }
+  - { offset: 0xEB705, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC6shared_WZ', symObjAddr: 0x1C0, symBinAddr: 0x2F9A0, symSize: 0x30 }
+  - { offset: 0xEB72D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC6sharedACvau', symObjAddr: 0x1F0, symBinAddr: 0x2F9D0, symSize: 0x30 }
+  - { offset: 0xEB77E, size: 0x8, addend: 0x0, symName: '_$sSo28NSPersistentStoreDescriptionCs5Error_pSgIeggg_ABSo7NSErrorCSgIeyByy_TR', symObjAddr: 0x490, symBinAddr: 0x2FC20, symSize: 0x70 }
+  - { offset: 0xEB796, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x500, symBinAddr: 0x2FC90, symSize: 0x20 }
+  - { offset: 0xEB7AA, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x520, symBinAddr: 0x2FCB0, symSize: 0x10 }
+  - { offset: 0xEB7BE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerCMa', symObjAddr: 0x7C0, symBinAddr: 0x2FF20, symSize: 0x20 }
+  - { offset: 0xEB94D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK19PersistentContainerC4name18managedObjectModelACSS_So09NSManagedgH0CtcfcTo', symObjAddr: 0x100, symBinAddr: 0x2F8E0, symSize: 0x90 }
+  - { offset: 0xEB988, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK19PersistentContainerCfD', symObjAddr: 0x190, symBinAddr: 0x2F970, symSize: 0x30 }
+  - { offset: 0xEB9CB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC19persistentContainerAA010PersistentG0Cvg', symObjAddr: 0x270, symBinAddr: 0x2FA00, symSize: 0x110 }
+  - { offset: 0xEBA79, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC19persistentContainerAA010PersistentG0CvgAFyXEfU_ySo28NSPersistentStoreDescriptionC_s5Error_pSgtcfU_', symObjAddr: 0x380, symBinAddr: 0x2FB10, symSize: 0x110 }
+  - { offset: 0xEBAB3, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC19persistentContainerAA010PersistentG0CvgAFyXEfU_ySo28NSPersistentStoreDescriptionC_s5Error_pSgtcfU_', symObjAddr: 0x380, symBinAddr: 0x2FB10, symSize: 0x110 }
+  - { offset: 0xEBBC8, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC19persistentContainerAA010PersistentG0Cvs', symObjAddr: 0x530, symBinAddr: 0x2FCC0, symSize: 0x20 }
+  - { offset: 0xEBBEF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC19persistentContainerAA010PersistentG0CvM', symObjAddr: 0x550, symBinAddr: 0x2FCE0, symSize: 0x30 }
+  - { offset: 0xEBC23, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC19persistentContainerAA010PersistentG0CvM.resume.0', symObjAddr: 0x580, symBinAddr: 0x2FD10, symSize: 0x20 }
+  - { offset: 0xEBC59, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC20managedObjectContextSo09NSManagedgH0Cvg', symObjAddr: 0x5A0, symBinAddr: 0x2FD30, symSize: 0xC0 }
+  - { offset: 0xEBD00, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC20managedObjectContextSo09NSManagedgH0Cvs', symObjAddr: 0x660, symBinAddr: 0x2FDF0, symSize: 0x20 }
+  - { offset: 0xEBD27, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC20managedObjectContextSo09NSManagedgH0CvM', symObjAddr: 0x680, symBinAddr: 0x2FE10, symSize: 0x30 }
+  - { offset: 0xEBD5B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC20managedObjectContextSo09NSManagedgH0CvM.resume.0', symObjAddr: 0x6B0, symBinAddr: 0x2FE40, symSize: 0x20 }
+  - { offset: 0xEBD84, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC11mainContextSo015NSManagedObjectG0Cvg', symObjAddr: 0x6D0, symBinAddr: 0x2FE60, symSize: 0x40 }
+  - { offset: 0xEBDA7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerC17backgroundContextSo015NSManagedObjectG0CyF', symObjAddr: 0x710, symBinAddr: 0x2FEA0, symSize: 0x40 }
+  - { offset: 0xEBDDE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK15CoreDataManagerCfD', symObjAddr: 0x780, symBinAddr: 0x2FEE0, symSize: 0x40 }
+  - { offset: 0xEC292, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVSgSo13NSURLResponseCSgs5Error_pSgSbIeggggy_So6NSDataCSgAGSo7NSErrorCSg10ObjectiveC8ObjCBoolVIeyByyyy_TR', symObjAddr: 0x130, symBinAddr: 0x30040, symSize: 0x100 }
+  - { offset: 0xEC2AA, size: 0x8, addend: 0x0, symName: '_$sSo6NSDataCSgSo13NSURLResponseCSgSo7NSErrorCSg10ObjectiveC8ObjCBoolVIeyByyyy_10Foundation4DataVSgAFs5Error_pSgSbIeggggy_TR', symObjAddr: 0x2C0, symBinAddr: 0x301D0, symSize: 0x90 }
+  - { offset: 0xEC2C2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC26defaultPostCompletionBlocky10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcSgvpACTK', symObjAddr: 0x3D0, symBinAddr: 0x302C0, symSize: 0x70 }
+  - { offset: 0xEC2DA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC26defaultPostCompletionBlocky10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcSgvpACTk', symObjAddr: 0x440, symBinAddr: 0x30330, symSize: 0x90 }
+  - { offset: 0xEC360, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientCMa', symObjAddr: 0x9F0, symBinAddr: 0x308A0, symSize: 0x20 }
+  - { offset: 0xEC374, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVSgSo13NSURLResponseCSgs5Error_pSgIeghggg_So6NSDataCSgAGSo7NSErrorCSgIeyBhyyy_TR', symObjAddr: 0x1130, symBinAddr: 0x30F00, symSize: 0xF0 }
+  - { offset: 0xEC52E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientCfETo', symObjAddr: 0x2AC0, symBinAddr: 0x32860, symSize: 0x60 }
+  - { offset: 0xEC55D, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV19_getElementSlowPathyyXlSiFSo17SecCertificateRefa_Tg5', symObjAddr: 0x2C60, symBinAddr: 0x328C0, symSize: 0x1E0 }
+  - { offset: 0xEC61F, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSo9SecKeyRefa_Tg5', symObjAddr: 0x2E40, symBinAddr: 0x32AA0, symSize: 0x160 }
+  - { offset: 0xEC764, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV19_uninitializedCount15minimumCapacityAByxGSi_SitcfCSo9SecKeyRefa_Tgm5', symObjAddr: 0x2FA0, symBinAddr: 0x32C00, symSize: 0x90 }
+  - { offset: 0xEC7F9, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV13_copyContents8subRange12initializingSpyxGSnySiG_AFtFSo9SecKeyRefa_Tg5', symObjAddr: 0x3030, symBinAddr: 0x32C90, symSize: 0x100 }
+  - { offset: 0xEC8E1, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC6method_3url4body7headers15completionBlockySS_S2SSgSDys11AnyHashableVypGSgy10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcSgtFyycfU_TA', symObjAddr: 0x32B0, symBinAddr: 0x32E10, symSize: 0x210 }
+  - { offset: 0xEC932, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x34C0, symBinAddr: 0x33020, symSize: 0x20 }
+  - { offset: 0xEC946, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x34E0, symBinAddr: 0x33040, symSize: 0x10 }
+  - { offset: 0xEC95A, size: 0x8, addend: 0x0, symName: '_$ss11AnyHashableV3key_yp5valuetSgWOb', symObjAddr: 0x3550, symBinAddr: 0x33050, symSize: 0x40 }
+  - { offset: 0xEC979, size: 0x8, addend: 0x0, symName: '_$sSo6NSDataCSgSo13NSURLResponseCSgSo7NSErrorCSg10ObjectiveC8ObjCBoolVIeyByyyy_10Foundation4DataVSgAFs5Error_pSgSbIeggggy_TRTA', symObjAddr: 0x46C0, symBinAddr: 0x34120, symSize: 0x10 }
+  - { offset: 0xEC998, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVSgSo13NSURLResponseCSgs5Error_pSgSbytIegnnnnr_AdgISbIeggggy_TRTA', symObjAddr: 0x46F0, symBinAddr: 0x34150, symSize: 0x50 }
+  - { offset: 0xEC9CC, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVSgSo13NSURLResponseCSgs5Error_pSgSbIeggggy_AdgISbytIegnnnnr_TRTA', symObjAddr: 0x4740, symBinAddr: 0x341A0, symSize: 0x40 }
+  - { offset: 0xEC9F5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC6method_3url4body7headers15completionBlockySS_S2SSgSDys11AnyHashableVypGSgy10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcSgtFyycfU_yAQ_AtVtYbcfU_TA', symObjAddr: 0x4850, symBinAddr: 0x34240, symSize: 0x400 }
+  - { offset: 0xECDEF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC26defaultPostCompletionBlocky10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcSgvgTo', symObjAddr: 0x10, symBinAddr: 0x2FF40, symSize: 0xB0 }
+  - { offset: 0xECE1A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC26defaultPostCompletionBlocky10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcSgvg', symObjAddr: 0xC0, symBinAddr: 0x2FFF0, symSize: 0x50 }
+  - { offset: 0xECE6E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC26defaultPostCompletionBlocky10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcSgvsTo', symObjAddr: 0x230, symBinAddr: 0x30140, symSize: 0x90 }
+  - { offset: 0xECEAB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC26defaultPostCompletionBlocky10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcSgvs', symObjAddr: 0x350, symBinAddr: 0x30260, symSize: 0x60 }
+  - { offset: 0xECED2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC26defaultPostCompletionBlocky10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcSgvM', symObjAddr: 0x4D0, symBinAddr: 0x303C0, symSize: 0x40 }
+  - { offset: 0xECEF7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC13tenjinSessionSo12NSURLSessionCSgvg', symObjAddr: 0x520, symBinAddr: 0x30400, symSize: 0x40 }
+  - { offset: 0xECF1A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC13tenjinSessionSo12NSURLSessionCSgvs', symObjAddr: 0x560, symBinAddr: 0x30440, symSize: 0x50 }
+  - { offset: 0xECF4D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC13tenjinSessionSo12NSURLSessionCSgvM', symObjAddr: 0x5B0, symBinAddr: 0x30490, symSize: 0x40 }
+  - { offset: 0xECF78, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC6apiKeyACSS_tcfC', symObjAddr: 0x620, symBinAddr: 0x304D0, symSize: 0x40 }
+  - { offset: 0xED0B0, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC6apiKeyACSS_tcfc', symObjAddr: 0x660, symBinAddr: 0x30510, symSize: 0x390 }
+  - { offset: 0xED273, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC6apiKeyACSS_tcfcTo', symObjAddr: 0xAF0, symBinAddr: 0x308C0, symSize: 0x30 }
+  - { offset: 0xED287, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC4post3url4body7headersySS_SSSgSDys11AnyHashableVypGSgtF', symObjAddr: 0xB20, symBinAddr: 0x308F0, symSize: 0x50 }
+  - { offset: 0xED309, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC4post3url4body7headersySS_SSSgSDys11AnyHashableVypGSgtFTo', symObjAddr: 0xB70, symBinAddr: 0x30940, symSize: 0x100 }
+  - { offset: 0xED352, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC6method_3url4bodyySS_SSSo15NSMutableStringCSgtF', symObjAddr: 0xC70, symBinAddr: 0x30A40, symSize: 0x80 }
+  - { offset: 0xED3CA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC6method_3url4bodyySS_SSSo15NSMutableStringCSgtFTo', symObjAddr: 0xCF0, symBinAddr: 0x30AC0, symSize: 0x100 }
+  - { offset: 0xED409, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC6method_3url4body7headersySS_S2SSgSDys11AnyHashableVypGSgtF', symObjAddr: 0xDF0, symBinAddr: 0x30BC0, symSize: 0x40 }
+  - { offset: 0xED491, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC6method_3url4body7headersySS_S2SSgSDys11AnyHashableVypGSgtFTo', symObjAddr: 0xE30, symBinAddr: 0x30C00, symSize: 0x120 }
+  - { offset: 0xED4E4, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC6method_3url4body7headers15completionBlockySS_S2SSgSDys11AnyHashableVypGSgy10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcSgtF', symObjAddr: 0xF50, symBinAddr: 0x30D20, symSize: 0x1E0 }
+  - { offset: 0xED64A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC6method_3url4body7headers15completionBlockySS_S2SSgSDys11AnyHashableVypGSgy10Foundation4DataVSg_So13NSURLResponseCSgs5Error_pSgSbtcSgtFTo', symObjAddr: 0x1250, symBinAddr: 0x30FF0, symSize: 0x160 }
+  - { offset: 0xED68F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC16constructRequest6method9urlString4body7headers10Foundation10URLRequestVSS_S2SSDys11AnyHashableVypGSgtF', symObjAddr: 0x13B0, symBinAddr: 0x31150, symSize: 0x610 }
+  - { offset: 0xED853, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC10urlSession_10didReceive17completionHandlerySo12NSURLSessionC_So28NSURLAuthenticationChallengeCySo0j4AuthL11DispositionV_So15NSURLCredentialCSgtctF', symObjAddr: 0x19C0, symBinAddr: 0x31760, symSize: 0xFB0 }
+  - { offset: 0xEE207, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC10urlSession_10didReceive17completionHandlerySo12NSURLSessionC_So28NSURLAuthenticationChallengeCySo0j4AuthL11DispositionV_So15NSURLCredentialCSgtctFTo', symObjAddr: 0x2970, symBinAddr: 0x32710, symSize: 0xA0 }
+  - { offset: 0xEE231, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientCACycfC', symObjAddr: 0x2A10, symBinAddr: 0x327B0, symSize: 0x20 }
+  - { offset: 0xEE245, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientCACycfc', symObjAddr: 0x2A30, symBinAddr: 0x327D0, symSize: 0x30 }
+  - { offset: 0xEE29E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientCACycfcTo', symObjAddr: 0x2A60, symBinAddr: 0x32800, symSize: 0x30 }
+  - { offset: 0xEE2F3, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientCfD', symObjAddr: 0x2A90, symBinAddr: 0x32830, symSize: 0x30 }
+  - { offset: 0xEE329, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK13TJNHTTPClientC10urlSession_10didReceive17completionHandlerySo12NSURLSessionC_So28NSURLAuthenticationChallengeCySo0j4AuthL11DispositionV_So15NSURLCredentialCSgtctF06$sSo36jmln5VSo15O21CSgIeyByy_AbEIegyg_TRAlOIeyByy_Tf1nncn_nTf4dnng_n', symObjAddr: 0x3710, symBinAddr: 0x33170, symSize: 0xF90 }
+  - { offset: 0xEEEC9, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV22isEventCacheEnabledKeySSvau', symObjAddr: 0x0, symBinAddr: 0x346B0, symSize: 0x10 }
+  - { offset: 0xEEEED, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV22isEventCacheEnabledKeySSvpZ', symObjAddr: 0x3E8, symBinAddr: 0x471E0, symSize: 0x0 }
+  - { offset: 0xEEF07, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV20isEncryptRequestsKeySSvpZ', symObjAddr: 0x3F8, symBinAddr: 0x471F0, symSize: 0x0 }
+  - { offset: 0xEEF21, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV22isGoogleDMADisabledKeySSvpZ', symObjAddr: 0x408, symBinAddr: 0x47200, symSize: 0x0 }
+  - { offset: 0xEEF3B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV16googleODMInfoKeySSvpZ', symObjAddr: 0x418, symBinAddr: 0x47210, symSize: 0x0 }
+  - { offset: 0xEEF55, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV23analyticsInstallationIdSSvpZ', symObjAddr: 0x428, symBinAddr: 0x47220, symSize: 0x0 }
+  - { offset: 0xEEF6F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV23googleAdPersonalizationSSvpZ', symObjAddr: 0x438, symBinAddr: 0x47230, symSize: 0x0 }
+  - { offset: 0xEEF89, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV16googleAdUserDataSSvpZ', symObjAddr: 0x448, symBinAddr: 0x47240, symSize: 0x0 }
+  - { offset: 0xEEFA3, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV16initializedAtKeySSvpZ', symObjAddr: 0x458, symBinAddr: 0x47250, symSize: 0x0 }
+  - { offset: 0xEEFBD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV14tenjinHostNameSSvpZ', symObjAddr: 0x468, symBinAddr: 0x47260, symSize: 0x0 }
+  - { offset: 0xEEFD7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV14userProfileKeySSvpZ', symObjAddr: 0x478, symBinAddr: 0x47270, symSize: 0x0 }
+  - { offset: 0xEEFE5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV22isEventCacheEnabledKeySSvau', symObjAddr: 0x0, symBinAddr: 0x346B0, symSize: 0x10 }
+  - { offset: 0xEF003, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV20isEncryptRequestsKeySSvau', symObjAddr: 0x40, symBinAddr: 0x346C0, symSize: 0x10 }
+  - { offset: 0xEF021, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV22isGoogleDMADisabledKeySSvau', symObjAddr: 0x80, symBinAddr: 0x346D0, symSize: 0x10 }
+  - { offset: 0xEF03F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV16googleODMInfoKeySSvau', symObjAddr: 0xC0, symBinAddr: 0x346E0, symSize: 0x10 }
+  - { offset: 0xEF05D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV23analyticsInstallationIdSSvau', symObjAddr: 0x100, symBinAddr: 0x346F0, symSize: 0x10 }
+  - { offset: 0xEF07B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV23googleAdPersonalizationSSvau', symObjAddr: 0x140, symBinAddr: 0x34700, symSize: 0x10 }
+  - { offset: 0xEF099, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV16googleAdUserDataSSvau', symObjAddr: 0x180, symBinAddr: 0x34710, symSize: 0x10 }
+  - { offset: 0xEF0B7, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV16initializedAtKeySSvau', symObjAddr: 0x1C0, symBinAddr: 0x34720, symSize: 0x10 }
+  - { offset: 0xEF0D5, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV14tenjinHostNameSSvau', symObjAddr: 0x200, symBinAddr: 0x34730, symSize: 0x10 }
+  - { offset: 0xEF0F3, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsV14userProfileKeySSvau', symObjAddr: 0x240, symBinAddr: 0x34740, symSize: 0x10 }
+  - { offset: 0xEF111, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK12TJNConstantsVMa', symObjAddr: 0x290, symBinAddr: 0x34750, symSize: 0x10 }
+  - { offset: 0xEF215, size: 0x8, addend: 0x0, symName: '_$sSD9TenjinSDKE8jsonData10Foundation0D0VSgvg', symObjAddr: 0x0, symBinAddr: 0x34760, symSize: 0x110 }
+  - { offset: 0xEF22D, size: 0x8, addend: 0x0, symName: '_$sSD9TenjinSDKE8jsonData10Foundation0D0VSgvg', symObjAddr: 0x0, symBinAddr: 0x34760, symSize: 0x110 }
+  - { offset: 0xEF278, size: 0x8, addend: 0x0, symName: '_$sSD9TenjinSDKE19convertToJSONStringSSSgyF', symObjAddr: 0x110, symBinAddr: 0x34870, symSize: 0xB0 }
+  - { offset: 0xEF459, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC6sharedACvpZ', symObjAddr: 0xAAA8, symBinAddr: 0x54A18, symSize: 0x0 }
+  - { offset: 0xEF6AA, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC6shared_WZ', symObjAddr: 0x0, symBinAddr: 0x34920, symSize: 0x30 }
+  - { offset: 0xEF6EB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC11connectSentSbvgSbyXEfU_TA', symObjAddr: 0x610, symBinAddr: 0x34C50, symSize: 0x20 }
+  - { offset: 0xEF71F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC17connectInProgressSbvgSbyXEfU_TA', symObjAddr: 0x670, symBinAddr: 0x34CB0, symSize: 0x20 }
+  - { offset: 0xEF769, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC06queuedC5CountSivgSiyXEfU_TA', symObjAddr: 0x740, symBinAddr: 0x34D80, symSize: 0x20 }
+  - { offset: 0xEF7DC, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC15tryBeginConnectSbyFSbyXEfU_TA', symObjAddr: 0x8A0, symBinAddr: 0x34EE0, symSize: 0x20 }
+  - { offset: 0xEF85E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC23handleConnectCompletion7success14processHandlerySb_ySDySSypGctFSayAGGyXEfU_TA', symObjAddr: 0xBA0, symBinAddr: 0x351E0, symSize: 0x20 }
+  - { offset: 0xEF8E0, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC05queueC0_11sendHandlerySDySSypG_yAFctFSbyXEfU_TA', symObjAddr: 0x10B0, symBinAddr: 0x356F0, symSize: 0x20 }
+  - { offset: 0xEF8FF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC5resetyyFyyXEfU_TA', symObjAddr: 0x1450, symBinAddr: 0x35A90, symSize: 0x50 }
+  - { offset: 0xEF948, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x1500, symBinAddr: 0x35B00, symSize: 0x20 }
+  - { offset: 0xEF95C, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x1520, symBinAddr: 0x35B20, symSize: 0x10 }
+  - { offset: 0xEF970, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerCfETo', symObjAddr: 0x1590, symBinAddr: 0x35B90, symSize: 0x30 }
+  - { offset: 0xEF99F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerCMa', symObjAddr: 0x15C0, symBinAddr: 0x35BC0, symSize: 0x20 }
+  - { offset: 0xEFA21, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSDySSypG_Tg5', symObjAddr: 0x15E0, symBinAddr: 0x35BE0, symSize: 0x140 }
+  - { offset: 0xEFB68, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC6sharedACvgZ', symObjAddr: 0x80, symBinAddr: 0x34950, symSize: 0x40 }
+  - { offset: 0xEFBAE, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC6sharedACvgZTo', symObjAddr: 0xC0, symBinAddr: 0x34990, symSize: 0x30 }
+  - { offset: 0xEFC2F, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerCACycfc', symObjAddr: 0x380, symBinAddr: 0x349C0, symSize: 0x1F0 }
+  - { offset: 0xEFC8B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerCACycfcTo', symObjAddr: 0x570, symBinAddr: 0x34BB0, symSize: 0x20 }
+  - { offset: 0xEFE7E, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC06queuedC5CountSivgTo', symObjAddr: 0x690, symBinAddr: 0x34CD0, symSize: 0x60 }
+  - { offset: 0xEFEAB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC06queuedC5CountSivg', symObjAddr: 0x6F0, symBinAddr: 0x34D30, symSize: 0x50 }
+  - { offset: 0xEFEFF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC23handleConnectCompletion7success14processHandlerySb_ySDySSypGctF', symObjAddr: 0x940, symBinAddr: 0x34F80, symSize: 0xB0 }
+  - { offset: 0xF0064, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC23handleConnectCompletion7success14processHandlerySb_ySDySSypGctFSayAGGyXEfU_', symObjAddr: 0x9F0, symBinAddr: 0x35030, symSize: 0x1B0 }
+  - { offset: 0xF019D, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC23handleConnectCompletion7success14processHandlerySb_ySDySSypGctFTo', symObjAddr: 0xBC0, symBinAddr: 0x35200, symSize: 0x60 }
+  - { offset: 0xF01CD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC05queueC0_11sendHandlerySDySSypG_yAFctF', symObjAddr: 0xC20, symBinAddr: 0x35260, symSize: 0x70 }
+  - { offset: 0xF01FF, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC05queueC0_11sendHandlerySDySSypG_yAFctFSbyXEfU_', symObjAddr: 0xC90, symBinAddr: 0x352D0, symSize: 0x420 }
+  - { offset: 0xF04E2, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC05queueC0_11sendHandlerySDySSypG_yAFctFTo', symObjAddr: 0x10D0, symBinAddr: 0x35710, symSize: 0xF0 }
+  - { offset: 0xF0538, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC15ensureConnected14connectHandleryyyc_tF', symObjAddr: 0x11C0, symBinAddr: 0x35800, symSize: 0xC0 }
+  - { offset: 0xF057A, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC15ensureConnected14connectHandleryyyc_tFTo', symObjAddr: 0x1290, symBinAddr: 0x358D0, symSize: 0x60 }
+  - { offset: 0xF05AB, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC5resetyyF', symObjAddr: 0x12F0, symBinAddr: 0x35930, symSize: 0x130 }
+  - { offset: 0xF05FD, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC5resetyyFTo', symObjAddr: 0x1530, symBinAddr: 0x35B30, symSize: 0x30 }
+  - { offset: 0xF0611, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerCfD', symObjAddr: 0x1560, symBinAddr: 0x35B60, symSize: 0x30 }
+  - { offset: 0xF063B, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC23handleConnectCompletion7success14processHandlerySb_ySDySSypGctF40$sSo12NSDictionaryCIeyBy_SDySSypGIegg_TRSo0N0CIeyBy_Tf1ncn_nTf4nng_n', symObjAddr: 0x1860, symBinAddr: 0x35D20, symSize: 0xF0 }
+  - { offset: 0xF07A6, size: 0x8, addend: 0x0, symName: '_$s9TenjinSDK18EventGatingManagerC15ensureConnected14connectHandleryyyc_tF13$sIeyB_Ieg_TRIeyB_Tf1cn_nTf4ng_n', symObjAddr: 0x1950, symBinAddr: 0x35E10, symSize: 0xB0 }
+  - { offset: 0xF092D, size: 0x8, addend: 0x0, symName: _TenjinSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x39620, symSize: 0x0 }
+  - { offset: 0xF0962, size: 0x8, addend: 0x0, symName: _TenjinSDKVersionNumber, symObjAddr: 0x30, symBinAddr: 0x39650, symSize: 0x0 }
+  - { offset: 0xF099F, size: 0x8, addend: 0x0, symName: '+[TenjinSDK initialize:]', symObjAddr: 0x0, symBinAddr: 0x6F00, symSize: 0xA8 }
+  - { offset: 0xF09B9, size: 0x8, addend: 0x0, symName: _sharedInstance, symObjAddr: 0x33ED0, symBinAddr: 0x54148, symSize: 0x0 }
+  - { offset: 0xF0BD4, size: 0x8, addend: 0x0, symName: '+[TenjinSDK initialize:]', symObjAddr: 0x0, symBinAddr: 0x6F00, symSize: 0xA8 }
+  - { offset: 0xF0BFE, size: 0x8, addend: 0x0, symName: '_initialize:.onceToken', symObjAddr: 0x33ED8, symBinAddr: 0x54150, symSize: 0x0 }
+  - { offset: 0xF0C8E, size: 0x8, addend: 0x0, symName: '+[TenjinSDK initialize:andSharedSecret:]', symObjAddr: 0x10E, symBinAddr: 0x700E, symSize: 0xD6 }
+  - { offset: 0xF0CB8, size: 0x8, addend: 0x0, symName: '_initialize:andSharedSecret:.onceToken', symObjAddr: 0x33EE0, symBinAddr: 0x54158, symSize: 0x0 }
+  - { offset: 0xF0D81, size: 0x8, addend: 0x0, symName: '+[TenjinSDK initialize:andAppSubversion:]', symObjAddr: 0x278, symBinAddr: 0x7158, symSize: 0xD6 }
+  - { offset: 0xF0DAB, size: 0x8, addend: 0x0, symName: '_initialize:andAppSubversion:.onceToken', symObjAddr: 0x33EE8, symBinAddr: 0x54160, symSize: 0x0 }
+  - { offset: 0xF0E74, size: 0x8, addend: 0x0, symName: '+[TenjinSDK initialize:andSharedSecret:andAppSubversion:]', symObjAddr: 0x397, symBinAddr: 0x7277, symSize: 0xFC }
+  - { offset: 0xF0E9E, size: 0x8, addend: 0x0, symName: '_initialize:andSharedSecret:andAppSubversion:.onceToken', symObjAddr: 0x33EF0, symBinAddr: 0x54168, symSize: 0x0 }
+  - { offset: 0xF0FA7, size: 0x8, addend: 0x0, symName: '+[TenjinSDK getInstance:]', symObjAddr: 0x536, symBinAddr: 0x7416, symSize: 0xA8 }
+  - { offset: 0xF0FD1, size: 0x8, addend: 0x0, symName: '_getInstance:.onceToken', symObjAddr: 0x33EF8, symBinAddr: 0x54170, symSize: 0x0 }
+  - { offset: 0xF105A, size: 0x8, addend: 0x0, symName: '+[TenjinSDK getInstance:andSharedSecret:]', symObjAddr: 0x626, symBinAddr: 0x7506, symSize: 0xD6 }
+  - { offset: 0xF1084, size: 0x8, addend: 0x0, symName: '_getInstance:andSharedSecret:.onceToken', symObjAddr: 0x33F00, symBinAddr: 0x54178, symSize: 0x0 }
+  - { offset: 0xF114D, size: 0x8, addend: 0x0, symName: '+[TenjinSDK getInstance:andAppSubversion:]', symObjAddr: 0x746, symBinAddr: 0x7626, symSize: 0xD6 }
+  - { offset: 0xF1177, size: 0x8, addend: 0x0, symName: '_getInstance:andAppSubversion:.onceToken', symObjAddr: 0x33F08, symBinAddr: 0x54180, symSize: 0x0 }
+  - { offset: 0xF1240, size: 0x8, addend: 0x0, symName: '+[TenjinSDK getInstance:andSharedSecret:andAppSubversion:]', symObjAddr: 0x865, symBinAddr: 0x7745, symSize: 0xFC }
+  - { offset: 0xF126A, size: 0x8, addend: 0x0, symName: '_getInstance:andSharedSecret:andAppSubversion:.onceToken', symObjAddr: 0x33F10, symBinAddr: 0x54188, symSize: 0x0 }
+  - { offset: 0xF1381, size: 0x8, addend: 0x0, symName: '+[TenjinSDK sharedInstanceWithToken:]', symObjAddr: 0x1D32, symBinAddr: 0x8C12, symSize: 0xA8 }
+  - { offset: 0xF13AD, size: 0x8, addend: 0x0, symName: '_sharedInstanceWithToken:.onceToken', symObjAddr: 0x33F18, symBinAddr: 0x54190, symSize: 0x0 }
+  - { offset: 0xF14E1, size: 0x8, addend: 0x0, symName: '___24+[TenjinSDK initialize:]_block_invoke', symObjAddr: 0xA8, symBinAddr: 0x6FA8, symSize: 0x48 }
+  - { offset: 0xF1548, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s, symObjAddr: 0xF0, symBinAddr: 0x6FF0, symSize: 0x1E }
+  - { offset: 0xF157B, size: 0x8, addend: 0x0, symName: '___40+[TenjinSDK initialize:andSharedSecret:]_block_invoke', symObjAddr: 0x1E4, symBinAddr: 0x70E4, symSize: 0x4A }
+  - { offset: 0xF15F2, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s, symObjAddr: 0x22E, symBinAddr: 0x712E, symSize: 0x2A }
+  - { offset: 0xF1633, size: 0x8, addend: 0x0, symName: '___41+[TenjinSDK initialize:andAppSubversion:]_block_invoke', symObjAddr: 0x34E, symBinAddr: 0x722E, symSize: 0x49 }
+  - { offset: 0xF16AA, size: 0x8, addend: 0x0, symName: '___57+[TenjinSDK initialize:andSharedSecret:andAppSubversion:]_block_invoke', symObjAddr: 0x493, symBinAddr: 0x7373, symSize: 0x4B }
+  - { offset: 0xF1731, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s, symObjAddr: 0x4DE, symBinAddr: 0x73BE, symSize: 0x2C }
+  - { offset: 0xF177E, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s, symObjAddr: 0x50A, symBinAddr: 0x73EA, symSize: 0x2C }
+  - { offset: 0xF17C1, size: 0x8, addend: 0x0, symName: '___25+[TenjinSDK getInstance:]_block_invoke', symObjAddr: 0x5DE, symBinAddr: 0x74BE, symSize: 0x48 }
+  - { offset: 0xF1828, size: 0x8, addend: 0x0, symName: '___41+[TenjinSDK getInstance:andSharedSecret:]_block_invoke', symObjAddr: 0x6FC, symBinAddr: 0x75DC, symSize: 0x4A }
+  - { offset: 0xF189F, size: 0x8, addend: 0x0, symName: '___42+[TenjinSDK getInstance:andAppSubversion:]_block_invoke', symObjAddr: 0x81C, symBinAddr: 0x76FC, symSize: 0x49 }
+  - { offset: 0xF1916, size: 0x8, addend: 0x0, symName: '___58+[TenjinSDK getInstance:andSharedSecret:andAppSubversion:]_block_invoke', symObjAddr: 0x961, symBinAddr: 0x7841, symSize: 0x4B }
+  - { offset: 0xF199D, size: 0x8, addend: 0x0, symName: '+[TenjinSDK sharedInstance]', symObjAddr: 0x9AC, symBinAddr: 0x788C, symSize: 0x2E }
+  - { offset: 0xF19F1, size: 0x8, addend: 0x0, symName: '+[TenjinSDK connect]', symObjAddr: 0x9DA, symBinAddr: 0x78BA, symSize: 0x7E }
+  - { offset: 0xF1A7D, size: 0x8, addend: 0x0, symName: '+[TenjinSDK connectWithDeferredDeeplink:]', symObjAddr: 0xA58, symBinAddr: 0x7938, symSize: 0x87 }
+  - { offset: 0xF1B14, size: 0x8, addend: 0x0, symName: '+[TenjinSDK sendEventWithName:]', symObjAddr: 0xADF, symBinAddr: 0x79BF, symSize: 0x87 }
+  - { offset: 0xF1BAB, size: 0x8, addend: 0x0, symName: '+[TenjinSDK sendEventWithName:andEventValue:]', symObjAddr: 0xB66, symBinAddr: 0x7A46, symSize: 0x11B }
+  - { offset: 0xF1CD3, size: 0x8, addend: 0x0, symName: '+[TenjinSDK sendEventWithName:andValue:]', symObjAddr: 0xC81, symBinAddr: 0x7B61, symSize: 0x94 }
+  - { offset: 0xF1D7A, size: 0x8, addend: 0x0, symName: '+[TenjinSDK transaction:]', symObjAddr: 0xD15, symBinAddr: 0x7BF5, symSize: 0x87 }
+  - { offset: 0xF1E11, size: 0x8, addend: 0x0, symName: '+[TenjinSDK transaction:andReceipt:]', symObjAddr: 0xD9C, symBinAddr: 0x7C7C, symSize: 0xA9 }
+  - { offset: 0xF1ED0, size: 0x8, addend: 0x0, symName: '+[TenjinSDK transactionWithProductName:andCurrencyCode:andQuantity:andUnitPrice:]', symObjAddr: 0xE45, symBinAddr: 0x7D25, symSize: 0xCF }
+  - { offset: 0xF1FC7, size: 0x8, addend: 0x0, symName: '+[TenjinSDK transactionWithProductName:andCurrencyCode:andQuantity:andUnitPrice:andTransactionId:andReceipt:]', symObjAddr: 0xF14, symBinAddr: 0x7DF4, symSize: 0x112 }
+  - { offset: 0xF210C, size: 0x8, addend: 0x0, symName: '+[TenjinSDK transactionWithProductName:andCurrencyCode:andQuantity:andUnitPrice:andTransactionId:andBase64Receipt:]', symObjAddr: 0x1026, symBinAddr: 0x7F06, symSize: 0x112 }
+  - { offset: 0xF2251, size: 0x8, addend: 0x0, symName: '+[TenjinSDK optIn]', symObjAddr: 0x1138, symBinAddr: 0x8018, symSize: 0x7E }
+  - { offset: 0xF22CF, size: 0x8, addend: 0x0, symName: '+[TenjinSDK optOut]', symObjAddr: 0x11B6, symBinAddr: 0x8096, symSize: 0x7E }
+  - { offset: 0xF234D, size: 0x8, addend: 0x0, symName: '+[TenjinSDK optInParams:]', symObjAddr: 0x1234, symBinAddr: 0x8114, symSize: 0x87 }
+  - { offset: 0xF23E6, size: 0x8, addend: 0x0, symName: '+[TenjinSDK optOutParams:]', symObjAddr: 0x12BB, symBinAddr: 0x819B, symSize: 0x87 }
+  - { offset: 0xF247F, size: 0x8, addend: 0x0, symName: '+[TenjinSDK optInOutUsingCMP]', symObjAddr: 0x1342, symBinAddr: 0x8222, symSize: 0x6E }
+  - { offset: 0xF24F3, size: 0x8, addend: 0x0, symName: '+[TenjinSDK optOutGoogleDMA]', symObjAddr: 0x13B0, symBinAddr: 0x8290, symSize: 0x6A }
+  - { offset: 0xF2563, size: 0x8, addend: 0x0, symName: '+[TenjinSDK optInGoogleDMA]', symObjAddr: 0x141A, symBinAddr: 0x82FA, symSize: 0x6A }
+  - { offset: 0xF25D3, size: 0x8, addend: 0x0, symName: '+[TenjinSDK appendAppSubversion:]', symObjAddr: 0x1484, symBinAddr: 0x8364, symSize: 0x87 }
+  - { offset: 0xF266C, size: 0x8, addend: 0x0, symName: '+[TenjinSDK updatePostbackConversionValue:]', symObjAddr: 0x150B, symBinAddr: 0x83EB, symSize: 0x12 }
+  - { offset: 0xF26B9, size: 0x8, addend: 0x0, symName: '+[TenjinSDK updatePostbackConversionValue:coarseValue:]', symObjAddr: 0x151D, symBinAddr: 0x83FD, symSize: 0x16C }
+  - { offset: 0xF2833, size: 0x8, addend: 0x0, symName: '+[TenjinSDK updatePostbackConversionValue:coarseValue:lockWindow:]', symObjAddr: 0x1689, symBinAddr: 0x8569, symSize: 0x187 }
+  - { offset: 0xF29A1, size: 0x8, addend: 0x0, symName: '+[TenjinSDK updateConversionValueSKAdNetwork:]', symObjAddr: 0x1810, symBinAddr: 0x86F0, symSize: 0xDB }
+  - { offset: 0xF2A4A, size: 0x8, addend: 0x0, symName: '+[TenjinSDK updateConversionValue:]', symObjAddr: 0x18EB, symBinAddr: 0x87CB, symSize: 0x113 }
+  - { offset: 0xF2B0B, size: 0x8, addend: 0x0, symName: '+[TenjinSDK setCustomerUserId:]', symObjAddr: 0x19FE, symBinAddr: 0x88DE, symSize: 0x95 }
+  - { offset: 0xF2BB2, size: 0x8, addend: 0x0, symName: '+[TenjinSDK getCustomerUserId]', symObjAddr: 0x1A93, symBinAddr: 0x8973, symSize: 0x8E }
+  - { offset: 0xF2C34, size: 0x8, addend: 0x0, symName: '+[TenjinSDK setCacheEventSetting:]', symObjAddr: 0x1B21, symBinAddr: 0x8A01, symSize: 0x6C }
+  - { offset: 0xF2CB5, size: 0x8, addend: 0x0, symName: '+[TenjinSDK setEncryptRequestsSetting:]', symObjAddr: 0x1B8D, symBinAddr: 0x8A6D, symSize: 0x6C }
+  - { offset: 0xF2D36, size: 0x8, addend: 0x0, symName: '+[TenjinSDK registerAppForAdNetworkAttribution]', symObjAddr: 0x1BF9, symBinAddr: 0x8AD9, symSize: 0xEA }
+  - { offset: 0xF2DCC, size: 0x8, addend: 0x0, symName: '+[TenjinSDK requestTrackingAuthorizationWithCompletionHandler:]', symObjAddr: 0x1CE3, symBinAddr: 0x8BC3, symSize: 0x4F }
+  - { offset: 0xF2E31, size: 0x8, addend: 0x0, symName: '___37+[TenjinSDK sharedInstanceWithToken:]_block_invoke', symObjAddr: 0x1DDA, symBinAddr: 0x8CBA, symSize: 0x48 }
+  - { offset: 0xF2E9C, size: 0x8, addend: 0x0, symName: '+[TenjinSDK sharedInstanceWithToken:andDeferredDeeplink:]', symObjAddr: 0x1E22, symBinAddr: 0x8D02, symSize: 0x89 }
+  - { offset: 0xF2F3E, size: 0x8, addend: 0x0, symName: '+[TenjinSDK init]', symObjAddr: 0x1EAB, symBinAddr: 0x8D8B, symSize: 0x8 }
+  - { offset: 0xF2F72, size: 0x8, addend: 0x0, symName: '+[TenjinSDK init:]', symObjAddr: 0x1EB3, symBinAddr: 0x8D93, symSize: 0x19 }
+  - { offset: 0xF2FC1, size: 0x8, addend: 0x0, symName: '+[TenjinSDK init:andSharedSecret:]', symObjAddr: 0x1ECC, symBinAddr: 0x8DAC, symSize: 0x19 }
+  - { offset: 0xF301F, size: 0x8, addend: 0x0, symName: '+[TenjinSDK init:andAppSubversion:]', symObjAddr: 0x1EE5, symBinAddr: 0x8DC5, symSize: 0x19 }
+  - { offset: 0xF307D, size: 0x8, addend: 0x0, symName: '+[TenjinSDK init:andSharedSecret:andAppSubversion:]', symObjAddr: 0x1EFE, symBinAddr: 0x8DDE, symSize: 0x19 }
+  - { offset: 0xF30EA, size: 0x8, addend: 0x0, symName: '+[TenjinSDK updateSkAdNetworkConversionValue:]', symObjAddr: 0x1F17, symBinAddr: 0x8DF7, symSize: 0x12 }
+  - { offset: 0xF3137, size: 0x8, addend: 0x0, symName: '-[TenjinSDK registerDeepLinkHandler:]', symObjAddr: 0x1F29, symBinAddr: 0x8E09, symSize: 0x12 }
+  - { offset: 0xF3184, size: 0x8, addend: 0x0, symName: '-[TenjinSDK handleSubscriptionPurchase:]', symObjAddr: 0x1F3B, symBinAddr: 0x8E1B, symSize: 0x16 }
+  - { offset: 0xF31D3, size: 0x8, addend: 0x0, symName: '-[TenjinSDK initWithToken:ping:]', symObjAddr: 0x1F51, symBinAddr: 0x8E31, symSize: 0x26 }
+  - { offset: 0xF3239, size: 0x8, addend: 0x0, symName: '-[TenjinSDK initWithToken:andSharedSecret:ping:]', symObjAddr: 0x1F77, symBinAddr: 0x8E57, symSize: 0x25 }
+  - { offset: 0xF32B0, size: 0x8, addend: 0x0, symName: '-[TenjinSDK initWithToken:andAppSubversion:ping:]', symObjAddr: 0x1F9C, symBinAddr: 0x8E7C, symSize: 0x2A }
+  - { offset: 0xF3327, size: 0x8, addend: 0x0, symName: '-[TenjinSDK initWithToken:andSharedSecret:andAppSubversion:ping:]', symObjAddr: 0x1FC6, symBinAddr: 0x8EA6, symSize: 0x22 }
+  - { offset: 0xF33AF, size: 0x8, addend: 0x0, symName: '-[TenjinSDK initWithToken:andSharedSecret:andAppSubversion:andDeferredDeeplink:ping:]', symObjAddr: 0x1FE8, symBinAddr: 0x8EC8, symSize: 0x17B }
+  - { offset: 0xF3520, size: 0x8, addend: 0x0, symName: '-[TenjinSDK initWithToken:andDeferredDeeplink:ping:]', symObjAddr: 0x2163, symBinAddr: 0x9043, symSize: 0x27 }
+  - { offset: 0xF3597, size: 0x8, addend: 0x0, symName: '-[TenjinSDK initWithToken:andSharedSecret:andDeferredDeeplink:ping:]', symObjAddr: 0x218A, symBinAddr: 0x906A, symSize: 0x28 }
+  - { offset: 0xF361F, size: 0x8, addend: 0x0, symName: '-[TenjinSDK dealloc]', symObjAddr: 0x21B2, symBinAddr: 0x9092, symSize: 0x84 }
+  - { offset: 0xF3683, size: 0x8, addend: 0x0, symName: '-[TenjinSDK onApplicationDidBecomeActive:]', symObjAddr: 0x2236, symBinAddr: 0x9116, symSize: 0x3D }
+  - { offset: 0xF36E8, size: 0x8, addend: 0x0, symName: '+[TenjinSDK verboseLogs]', symObjAddr: 0x2273, symBinAddr: 0x9153, symSize: 0x1E }
+  - { offset: 0xF3724, size: 0x8, addend: 0x0, symName: '+[TenjinSDK debugLogs]', symObjAddr: 0x2291, symBinAddr: 0x9171, symSize: 0x1B }
+  - { offset: 0xF3760, size: 0x8, addend: 0x0, symName: '+[TenjinSDK setLogHandler:]', symObjAddr: 0x22AC, symBinAddr: 0x918C, symSize: 0x19 }
+  - { offset: 0xF37AB, size: 0x8, addend: 0x0, symName: '+[TenjinSDK sdkVersion]', symObjAddr: 0x22C5, symBinAddr: 0x91A5, symSize: 0xD }
+  - { offset: 0xF37DF, size: 0x8, addend: 0x0, symName: '+[TenjinSDK setWrapperVersion:]', symObjAddr: 0x22D2, symBinAddr: 0x91B2, symSize: 0x19 }
+  - { offset: 0xF382A, size: 0x8, addend: 0x0, symName: '+[TenjinSDK setValue:forKey:]', symObjAddr: 0x22EB, symBinAddr: 0x91CB, symSize: 0xA9 }
+  - { offset: 0xF38EC, size: 0x8, addend: 0x0, symName: '-[TenjinSDK getAttributionInfo:]', symObjAddr: 0x2394, symBinAddr: 0x9274, symSize: 0x69 }
+  - { offset: 0xF396D, size: 0x8, addend: 0x0, symName: '+[TenjinSDK getAnalyticsInstallationId]', symObjAddr: 0x23FD, symBinAddr: 0x92DD, symSize: 0x7A }
+  - { offset: 0xF39E1, size: 0x8, addend: 0x0, symName: '-[TenjinSDK setGoogleDMAParametersWithAdPersonalization:adUserData:]', symObjAddr: 0x2477, symBinAddr: 0x9357, symSize: 0x19 }
+  - { offset: 0xF3A53, size: 0x8, addend: 0x0, symName: '+[TenjinSDK getUserProfile]', symObjAddr: 0x2490, symBinAddr: 0x9370, symSize: 0x57 }
+  - { offset: 0xF3AAB, size: 0x8, addend: 0x0, symName: '+[TenjinSDK getUserProfileAsDictionary]', symObjAddr: 0x24E7, symBinAddr: 0x93C7, symSize: 0x57 }
+  - { offset: 0xF3B03, size: 0x8, addend: 0x0, symName: '+[TenjinSDK resetUserProfile]', symObjAddr: 0x253E, symBinAddr: 0x941E, symSize: 0x44 }
+  - { offset: 0xF3B57, size: 0x8, addend: 0x0, symName: '-[TenjinSDK cachedPingUrls]', symObjAddr: 0x2582, symBinAddr: 0x9462, symSize: 0xA }
+  - { offset: 0xF3B8C, size: 0x8, addend: 0x0, symName: '-[TenjinSDK setCachedPingUrls:]', symObjAddr: 0x258C, symBinAddr: 0x946C, symSize: 0x11 }
+  - { offset: 0xF3BCD, size: 0x8, addend: 0x0, symName: '-[TenjinSDK apiClient]', symObjAddr: 0x259D, symBinAddr: 0x947D, symSize: 0xA }
+  - { offset: 0xF3C02, size: 0x8, addend: 0x0, symName: '-[TenjinSDK setApiClient:]', symObjAddr: 0x25A7, symBinAddr: 0x9487, symSize: 0x11 }
+  - { offset: 0xF3C43, size: 0x8, addend: 0x0, symName: '-[TenjinSDK deeplinkHandler]', symObjAddr: 0x25B8, symBinAddr: 0x9498, symSize: 0xA }
+  - { offset: 0xF3C78, size: 0x8, addend: 0x0, symName: '-[TenjinSDK setDeeplinkHandler:]', symObjAddr: 0x25C2, symBinAddr: 0x94A2, symSize: 0xF }
+  - { offset: 0xF3CB7, size: 0x8, addend: 0x0, symName: '-[TenjinSDK skAdNetworkRegistered]', symObjAddr: 0x25D1, symBinAddr: 0x94B1, symSize: 0x9 }
+  - { offset: 0xF3CEC, size: 0x8, addend: 0x0, symName: '-[TenjinSDK setSkAdNetworkRegistered:]', symObjAddr: 0x25DA, symBinAddr: 0x94BA, symSize: 0x9 }
+  - { offset: 0xF3D29, size: 0x8, addend: 0x0, symName: '-[TenjinSDK .cxx_destruct]', symObjAddr: 0x25E3, symBinAddr: 0x94C3, symSize: 0x3D }
+...

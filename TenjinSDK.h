@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.15.1
+//  Version 1.15.2
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -227,7 +227,6 @@ andDeferredDeeplink:(NSURL *)url
 
 @end
 
-
 //
 // Created by Tenjin
 // Copyright (c) 2022 Tenjin. All rights reserved.
@@ -240,6 +239,7 @@ andDeferredDeeplink:(NSURL *)url
 + (void)topOnImpressionFromDict:(NSDictionary *)adImpression;
 + (void)topOnImpressionFromJSON:(NSString *)jsonString;
 @end
+
 //
 // Created by Tenjin
 // Copyright (c) 2022 Tenjin. All rights reserved.
@@ -252,6 +252,7 @@ andDeferredDeeplink:(NSURL *)url
 + (void)subscribeAppLovinImpressions;
 + (void)appLovinImpressionFromJSON:(NSString *)jsonString;
 @end
+
 //
 // Created by Tenjin
 // Copyright (c) 2022 Tenjin. All rights reserved.
@@ -264,6 +265,7 @@ andDeferredDeeplink:(NSURL *)url
 + (void)hyperBidImpressionFromDict:(NSDictionary *)adImpression;
 + (void)hyperBidImpressionFromJSON:(NSString *)jsonString;
 @end
+
 //
 // Created by Tenjin
 // Copyright (c) 2022 Tenjin. All rights reserved.
@@ -278,6 +280,7 @@ andDeferredDeeplink:(NSURL *)url
 + (void)handleAdMobILRD:(NSObject *)adView :(GADAdValue *)adValue;
 + (void)adMobImpressionFromJSON:(NSString *)jsonString;
 @end
+
 //
 // Created by Tenjin
 // Copyright (c) 2022 Tenjin. All rights reserved.

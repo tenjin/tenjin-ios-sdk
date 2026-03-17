@@ -1,3 +1,5 @@
+- Improve event concurrency before `connect` calls
+
 v1.0.0
 ----
 - First release to measure app opens and installs
