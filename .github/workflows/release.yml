@@ -1,6 +1,12 @@
 name: Release
 
 on:
+  push:
+    branches: [master]
+    paths:
+      - 'TenjinSDK.xcframework/**'
+      - 'TenjinSDK.h'
+      - 'TenjinSDK.podspec'
   workflow_dispatch:
 
 permissions:
@@ -10,15 +16,8 @@ jobs:
   github_release:
     runs-on: macos-latest
     steps:
-      - id: get-token
-        uses: tibdex/github-app-token@v2
-        with:
-          app_id: ${{ vars.CODE_OPS_APP_ID }}
-          private_key: ${{ secrets.CODE_OPS_APP_PRIVATE_KEY }}
-
       - uses: actions/checkout@v4
         with:
-          token: ${{ steps.get-token.outputs.token }}
           fetch-depth: 0
 
       - name: Get version from podspec
@@ -30,7 +29,7 @@ jobs:
       - name: Ensure tag does not already exist
         run: |
           if git rev-parse -q --verify "refs/tags/${{ steps.version.outputs.version }}" >/dev/null; then
-            echo "Tag ${{ steps.version.outputs.version }} already exists; aborting release."
+            echo "Tag ${{ steps.version.outputs.version }} already exists; skipping release."
             exit 1
           fi
 
@@ -40,21 +39,27 @@ jobs:
           VERSION="${{ steps.version.outputs.version }}"
           # Extract only the bullet points for the current version from RELEASE_NOTES.md
           NOTES=$(awk "/^v${VERSION}\$/{found=1; next} /^----\$/{if(found) {capture=1; next}} /^v[0-9]/{if(capture) exit} capture && /^- /{print}" RELEASE_NOTES.md)
-          # Use EOF delimiter for multiline output
           {
             echo "notes<<EOF"
             echo "$NOTES"
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
+      - name: Package release assets
+        run: |
+          zip -r TenjinSDK.xcframework.zip TenjinSDK.xcframework
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
-        env:
-          GITHUB_TOKEN: ${{ steps.get-token.outputs.token }}
         with:
           tag_name: ${{ steps.version.outputs.version }}
           name: ${{ steps.version.outputs.version }}
           body: ${{ steps.release_notes.outputs.notes }}
+          files: |
+            TenjinSDK.xcframework.zip
+            TenjinSDK.h
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   cocoapods_release:
     needs: [github_release]
