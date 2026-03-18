@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
                   }
 
   s.author       = { "Tenjin" => "engineering@tenjin.com" }
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "12.0"
 
   s.source       = { :git => "https://github.com/tenjin/tenjin-ios-sdk.git", :tag => "#{s.version}" }
   s.source_files = "*.{h,m}"
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'TenjinSDK.xcframework'
   s.vendored_frameworks = "TenjinSDK.xcframework"
 
-  s.frameworks = "AdSupport", "AppTrackingTransparency", "iAd", "StoreKit"
+  s.frameworks = "AdSupport", "AppTrackingTransparency", "StoreKit"
   s.weak_frameworks = "AdServices"
   s.xcconfig = { "OTHER_LINKER_FLAGS" => "-ObjC -all_load", 'OTHER_LDFLAGS' => '-framework TenjinSDK' }
 end
