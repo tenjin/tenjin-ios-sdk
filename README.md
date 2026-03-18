@@ -44,7 +44,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 If you use pods, add `pod 'TenjinSDK'` to your `Podfile` then run `pod install` and skip to step 4 under Steps for Objective-C projects.
 
 ## Swift Package Manager
-If you use SPM, add Tenjin’s SDK package through Xcode with this repository [here](https://github.com/tenjin/tenjin-ios-spm) and skip to step 4 under Steps for Swift projects.
+If you use SPM, add Tenjin’s SDK package through Xcode with this repository [here](https://github.com/tenjin/tenjin-ios-sdk) and skip to step 4 under Steps for Swift projects.
 
 1. Download the latest SDK release [here][38].
 
@@ -90,23 +90,22 @@ If you use SPM, add Tenjin’s SDK package through Xcode with this repository [h
 
 ## Steps for Swift projects
 
-4. Add Objective-C Bridging Header file for swift projects,
-    <ol type="a">
+4. Add `#import “TenjinSDK.h”` to your Objective-C Bridging Header file. If your project does not already have a bridging header, create one:
+    <ol type=”a”>
       <li>Create a header file
-        <ol type="i">
+        <ol type=”i”>
           <li>File -> New -> File -> “Sources”</li>
-          <li>Choose “Header” File - > Click Next</li>
-          <li>The header file name should “YourProjectName-Bridging-Header” -> Under “Targets” -> Select the app target -> Click "Next"</li>
-           </li>
+          <li>Choose “Header” File -> Click Next</li>
+          <li>The header file name should be “YourProjectName-Bridging-Header” -> Under “Targets” -> Select the app target -> Click “Next”</li>
         </ol>
       </li>
       <li>In the header file - “YourProjectName-Bridging-Header.h”
-        <ol type="i">
-          <li>Add - `#import "TenjinSDK.h"`</li>
+        <ol type=”i”>
+          <li>Add - `#import “TenjinSDK.h”`</li>
         </ol>
       </li>
       <li>Go to the app target and under “Build Settings”
-        <ol type="i">
+        <ol type=”i”>
           <li>Go to the section “Swift Compiler - General”</li>
           <li>Go to the sub-section “Objective-C Bridging Header” and drag the header file - “YourProjectName-Bridging-Header.h” to the field.</li>
         </ol>

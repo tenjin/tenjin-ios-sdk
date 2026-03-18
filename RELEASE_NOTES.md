@@ -382,3 +382,7 @@ v1.15.0
 v1.15.1
 ----
 - Improve LiveOps feature for plugins
+
+v1.15.2
+----
+- Improve event concurrency before `connect` calls
