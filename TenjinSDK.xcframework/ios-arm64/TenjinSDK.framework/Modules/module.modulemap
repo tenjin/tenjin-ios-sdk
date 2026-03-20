@@ -9,6 +9,11 @@ framework module TenjinSDK {
         header "TJNOperationQueue.h"
         header "CreateRequestOperation.h"
         header "TenjinUtil.h"
+        header "TenjinImpl.h"
+        header "TenjinIAPHelper.h"
+        header "TenjinConfig.h"
+        header "PersistedFileStore.h"
+        header "DataStore.h"
     }
 }
 

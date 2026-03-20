@@ -386,3 +386,8 @@ v1.15.1
 v1.15.2
 ----
 - Improve event concurrency before `connect` calls
+
+v1.16.0
+----
+- Add subscriptions tracking support
+- Add StoreKit 2 `Transaction` methods through `TenjinPurchasesManager`

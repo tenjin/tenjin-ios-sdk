@@ -494,6 +494,15 @@ SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
 @end
 
 
+@class TenjinImpl;
+
+SWIFT_CLASS("_TtC9TenjinSDK22TenjinPurchasesManager") SWIFT_AVAILABILITY(ios,introduced=16.0)
+@interface TenjinPurchasesManager : NSObject
++ (TenjinPurchasesManager * _Nonnull)sharedWith:(TenjinImpl * _Nonnull)apiClient SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinRepository")
 @interface TenjinRepository : NSObject
@@ -1008,6 +1017,15 @@ SWIFT_CLASS("_TtC9TenjinSDK16TenjinDatasource")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+@class TenjinImpl;
+
+SWIFT_CLASS("_TtC9TenjinSDK22TenjinPurchasesManager") SWIFT_AVAILABILITY(ios,introduced=16.0)
+@interface TenjinPurchasesManager : NSObject
++ (TenjinPurchasesManager * _Nonnull)sharedWith:(TenjinImpl * _Nonnull)apiClient SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC9TenjinSDK16TenjinRepository")
