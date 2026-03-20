@@ -612,6 +612,219 @@
       },
       {
         "kind": "Import",
+        "name": "StoreKit",
+        "printedName": "StoreKit",
+        "declKind": "Import",
+        "moduleName": "TenjinSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TenjinSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TenjinPurchasesManager",
+        "printedName": "TenjinPurchasesManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "shared",
+            "printedName": "shared(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TenjinPurchasesManager",
+                "printedName": "TenjinSDK.TenjinPurchasesManager",
+                "usr": "c:@M@TenjinSDK@objc(cs)TenjinPurchasesManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TenjinImpl",
+                "printedName": "TenjinSDK.TenjinImpl",
+                "usr": "c:objc(cs)TenjinImpl"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TenjinSDK@objc(cs)TenjinPurchasesManager(cm)sharedWith:",
+            "mangledName": "$s9TenjinSDK0A16PurchasesManagerC6shared4withACSo0A4ImplC_tFZ",
+            "moduleName": "TenjinSDK",
+            "static": true,
+            "objc_name": "sharedWith:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "transaction",
+            "printedName": "transaction(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Transaction",
+                "printedName": "StoreKit.Transaction",
+                "usr": "s:8StoreKit11TransactionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TenjinSDK0A16PurchasesManagerC11transactionyy8StoreKit11TransactionVF",
+            "mangledName": "$s9TenjinSDK0A16PurchasesManagerC11transactionyy8StoreKit11TransactionVF",
+            "moduleName": "TenjinSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscription",
+            "printedName": "subscription(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Transaction",
+                "printedName": "StoreKit.Transaction",
+                "usr": "s:8StoreKit11TransactionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TenjinSDK0A16PurchasesManagerC12subscriptionyy8StoreKit11TransactionVF",
+            "mangledName": "$s9TenjinSDK0A16PurchasesManagerC12subscriptionyy8StoreKit11TransactionVF",
+            "moduleName": "TenjinSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TenjinPurchasesManager",
+                "printedName": "TenjinSDK.TenjinPurchasesManager",
+                "usr": "c:@M@TenjinSDK@objc(cs)TenjinPurchasesManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TenjinSDK@objc(cs)TenjinPurchasesManager(im)init",
+            "mangledName": "$s9TenjinSDK0A16PurchasesManagerCACycfc",
+            "moduleName": "TenjinSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TenjinSDK@objc(cs)TenjinPurchasesManager",
+        "mangledName": "$s9TenjinSDK0A16PurchasesManagerC",
+        "moduleName": "TenjinSDK",
+        "intro_iOS": "16.0",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "Available"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -7443,7 +7656,7 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/TenjinRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 316,
+      "offset": 312,
       "length": 1,
       "value": "3"
     },

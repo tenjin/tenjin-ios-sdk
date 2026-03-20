@@ -6,6 +6,7 @@ import AdServices
 import CoreData
 import Foundation
 import Network
+import StoreKit
 import Swift
 @_exported import TenjinSDK
 import UIKit
@@ -31,6 +32,13 @@ import _SwiftConcurrencyShims
   }
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   public typealias ID = Swift.ObjectIdentifier
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 16.0, *)
+@objc public class TenjinPurchasesManager : ObjectiveC.NSObject {
+  @objc public class func shared(with apiClient: TenjinImpl) -> TenjinPurchasesManager
+  public func transaction(_ transaction: StoreKit.Transaction)
+  public func subscription(_ transaction: StoreKit.Transaction)
   @objc deinit
 }
 @objc public enum PurposeConsentStatus : Swift.Int {
