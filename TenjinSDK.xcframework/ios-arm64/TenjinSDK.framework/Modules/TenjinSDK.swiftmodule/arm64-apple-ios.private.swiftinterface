@@ -37,6 +37,7 @@ import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers @available(iOS 16.0, *)
 @objc public class TenjinPurchasesManager : ObjectiveC.NSObject {
   @objc public class func shared(with apiClient: TenjinImpl) -> TenjinPurchasesManager
+  @objc public static func handleSubscription(productId: Swift.String, currencyCode: Swift.String, unitPrice: Foundation.NSDecimalNumber)
   public func transaction(_ transaction: StoreKit.Transaction)
   public func subscription(_ transaction: StoreKit.Transaction)
   @objc deinit

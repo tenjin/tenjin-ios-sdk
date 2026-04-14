@@ -391,3 +391,7 @@ v1.16.0
 ----
 - Add subscriptions tracking support
 - Add StoreKit 2 `Transaction` methods through `TenjinPurchasesManager`
+
+v1.16.1
+----
+- Add `subscriptionWithStoreKitForProductId` method through `TenjinPurchasesManager`
