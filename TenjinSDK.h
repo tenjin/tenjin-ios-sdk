@@ -1,6 +1,6 @@
 //
 // Created by Tenjin on 2016-05-20.
-//  Version 1.16.0
+//  Version 1.16.1
 
 //  Copyright (c) 2016 Tenjin. All rights reserved.
 //
@@ -148,6 +148,12 @@ andDeferredDeeplink:(NSURL *)url
          andOriginalTransactionId:(NSString *)originalTransactionId
                   andBase64Receipt:(NSString *)receipt
                  andSKTransaction:(NSString *)skTransaction;
+
+//track subscription by fetching the latest SK2 transaction natively
+//recommended for IAP libraries that don't expose SK2 data (e.g., RevenueCat)
++ (void)subscriptionWithStoreKitForProductId:(NSString *)productId
+                            andCurrencyCode:(NSString *)currencyCode
+                               andUnitPrice:(NSDecimalNumber *)price API_AVAILABLE(ios(16.0));
 
 // GDPR opt-out
 + (void)optOut;

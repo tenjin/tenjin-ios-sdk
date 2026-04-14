@@ -664,6 +664,49 @@
           },
           {
             "kind": "Function",
+            "name": "handleSubscription",
+            "printedName": "handleSubscription(productId:currencyCode:unitPrice:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDecimalNumber",
+                "printedName": "Foundation.NSDecimalNumber",
+                "usr": "c:objc(cs)NSDecimalNumber"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TenjinSDK@objc(cs)TenjinPurchasesManager(cm)handleSubscriptionWithProductId:currencyCode:unitPrice:",
+            "mangledName": "$s9TenjinSDK0A16PurchasesManagerC18handleSubscription9productId12currencyCode9unitPriceySS_SSSo15NSDecimalNumberCtFZ",
+            "moduleName": "TenjinSDK",
+            "static": true,
+            "objc_name": "handleSubscriptionWithProductId:currencyCode:unitPrice:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "transaction",
             "printedName": "transaction(_:)",
             "children": [
