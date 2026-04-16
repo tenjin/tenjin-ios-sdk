@@ -25,6 +25,7 @@ The Tenjin iOS SDK allows users to track events and installs in their iOS apps. 
 	- [Device-Related Parameters][8]
 - [Purchase Events][9]
 	- [Subscription IAP][10]
+	- [Subscription Tracking][44]
 - [Custom Events][11]
 - [Deferred Deeplink][12]
 - [Server-to-server integration][13]
@@ -448,6 +449,34 @@ In the example timeline below, a transaction event should only be sent at the "F
 
 For more information on subscriptions, please see: <a href="https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Chapters/Subscriptions.html">Apple documentation on Working with Subscriptions</a>
 
+## <a id="subscription-tracking"></a> Subscription Tracking
+
+Track subscription purchases with Tenjin for server-side verification and attribution. See [SUBSCRIPTIONS_TRACKING.md](SUBSCRIPTIONS_TRACKING.md) for the full guide, including integration examples with StoreKit 2 and RevenueCat.
+
+Pass all SK2 transaction data manually:
+
+```swift
+TenjinSDK.subscription(
+    withProductName: productId,
+    andCurrencyCode: currencyCode,
+    andUnitPrice: NSDecimalNumber(decimal: price),
+    andTransactionId: transactionId,
+    andOriginalTransactionId: originalTransactionId,
+    andBase64Receipt: jwsRepresentation,
+    andSKTransaction: jsonRepresentation
+)
+```
+
+For IAP libraries that don't expose SK2 transaction data (e.g., RevenueCat), use `subscriptionWithStoreKit` — it fetches the SK2 data natively (iOS 16+):
+
+```swift
+TenjinSDK.subscriptionWithStoreKit(
+    forProductId: productId,
+    andCurrencyCode: currencyCode,
+    andUnitPrice: NSDecimalNumber(decimal: price)
+)
+```
+
 # <a id="custom-events"></a>Custom Events
 
 **IMPORTANT: DO NOT SEND CUSTOM EVENTS BEFORE THE CONNECT/INITIALIZATION** event (above). The initialization must come before sending any custom events.
@@ -720,6 +749,7 @@ You can enable/disable retrying and caching events and IAP when requests fail or
 [41]: #optin-cmp
 [42]: #google-dma
 [43]: #user-profile
+[44]: #subscription-tracking
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
 [image-3]:	https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png
