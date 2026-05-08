@@ -98,6 +98,7 @@ import _SwiftConcurrencyShims
   case topOn
   case cas
   case tradPlus
+  case cloudX
   public var identifier: Swift.String {
     get
   }
