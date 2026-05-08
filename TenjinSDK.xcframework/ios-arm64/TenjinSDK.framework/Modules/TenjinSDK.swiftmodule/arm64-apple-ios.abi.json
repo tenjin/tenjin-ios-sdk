@@ -3280,6 +3280,47 @@
           },
           {
             "kind": "Var",
+            "name": "cloudX",
+            "printedName": "cloudX",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(TenjinSDK.TJNAdNetwork.Type) -> TenjinSDK.TJNAdNetwork",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TJNAdNetwork",
+                    "printedName": "TenjinSDK.TJNAdNetwork",
+                    "usr": "c:@M@TenjinSDK@E@TJNAdNetwork"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "TenjinSDK.TJNAdNetwork.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TJNAdNetwork",
+                        "printedName": "TenjinSDK.TJNAdNetwork",
+                        "usr": "c:@M@TenjinSDK@E@TJNAdNetwork"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@TenjinSDK@E@TJNAdNetwork@TJNAdNetworkCloudX",
+            "mangledName": "$s9TenjinSDK12TJNAdNetworkO6cloudXyA2CmF",
+            "moduleName": "TenjinSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
             "name": "identifier",
             "printedName": "identifier",
             "children": [
@@ -7562,6 +7603,13 @@
       "offset": 244,
       "length": 8,
       "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/UserProfile\/TJNAdNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 262,
+      "length": 6,
+      "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/UserProfile\/TJNUserProfileData.swift",

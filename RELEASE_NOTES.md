@@ -395,3 +395,7 @@ v1.16.0
 v1.16.1
 ----
 - Add `subscriptionWithStoreKitForProductId` method through `TenjinPurchasesManager`
+
+v1.17.0
+----
+- Add CloudX Integration

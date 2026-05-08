@@ -32,6 +32,10 @@
 		<data>
 		yxTFE5MSV/y0rpgvQ5L1lrpAs8E=
 		</data>
+		<key>Headers/TenjinSDK+CloudXILRD.h</key>
+		<data>
+		/Hr5QrK0Be/Yf0YNv3+gB03+R5A=
+		</data>
 		<key>Headers/TenjinSDK+HyperBidILRD.h</key>
 		<data>
 		0J59noOF/Vt/F0MdXHUVaR8Jcn0=
@@ -50,7 +54,7 @@
 		</data>
 		<key>Headers/TenjinSDK-Swift.h</key>
 		<data>
-		V9t4BV3EaE36pjgWg679mBDKJzQ=
+		kV+WPQp3Q71kCh4Dj9k3KhNQEOw=
 		</data>
 		<key>Headers/TenjinSDK.h</key>
 		<data>
@@ -62,11 +66,11 @@
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		F9u1o3RFhx/skZnat36hI+fLeKE=
+		YXDcy4ITSxnLyUuyO93/vvgVteE=
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hR3BJm9x+HI04p/Lszs+x/UkJ0I=
+		qQcKh/sFgYQCbijF6f1o5UQkWJk=
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,19 +78,19 @@
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hR3BJm9x+HI04p/Lszs+x/UkJ0I=
+		qQcKh/sFgYQCbijF6f1o5UQkWJk=
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		M+TGJ+MTRvTy7IdQEKcuJ5eSZBI=
+		BnJhCcIqgj1RWi1eGl5XAAFP3EY=
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		F9u1o3RFhx/skZnat36hI+fLeKE=
+		YXDcy4ITSxnLyUuyO93/vvgVteE=
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		82kFqyJ8RL/c93HE2GhHaUADsBk=
+		oMf/R5XYnuLUUjrSSHIBUqTsr2E=
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -94,11 +98,11 @@
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		82kFqyJ8RL/c93HE2GhHaUADsBk=
+		oMf/R5XYnuLUUjrSSHIBUqTsr2E=
 		</data>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VPS3HNrlDf2OafkratDI17Fi6lc=
+		+fVUQuU6hwqC4AQQrOsbctBsMCw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -142,7 +146,7 @@
 		</data>
 		<key>PrivateHeaders/TenjinConst.h</key>
 		<data>
-		I1rsgPP2LQ9Q/YRGgh1PjxMY158=
+		1JAFukAQAJ5v+YULZwGbmz/GUgE=
 		</data>
 		<key>PrivateHeaders/TenjinIAPHelper.h</key>
 		<data>
@@ -220,6 +224,13 @@
 			mURcsZIGvi1MZbvg9d2qrm79YA1dshlLbpnv0jTKx3M=
 			</data>
 		</dict>
+		<key>Headers/TenjinSDK+CloudXILRD.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			taJpz51YLiWnb8pLZxXGSy1ukvHDFsPG2TF+Jur7Mtg=
+			</data>
+		</dict>
 		<key>Headers/TenjinSDK+HyperBidILRD.h</key>
 		<dict>
 			<key>hash2</key>
@@ -252,7 +263,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/b8mKZ+/M29Pl77IpZIpwrzDZx6tvTbX0wFVfkLUGf8=
+			sE8zSriMq7P1ou78DLNLaDNOK3cUClaP9e6OTTVq45Y=
 			</data>
 		</dict>
 		<key>Headers/TenjinSDK.h</key>
@@ -266,14 +277,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UspXUnFtTNz5ua5ZVZjn5wEkf6oHSPRVoEQwEDftdfQ=
+			ThHRXtL2myPIWe+3Bv9aAuCl2Si0kjo7pZFqP25w5eA=
 			</data>
 		</dict>
 		<key>Modules/TenjinSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0KIJ3wuDnKH0bRcO86AXuLzafTol0hDr4+a/Vs35L8g=
+			s87acCjGt2YZKQI2gncduyLwpKV/DDQ0oM04ZF39RGQ=
 			</data>
 		</dict>
 		<key>Modules/TenjinSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -287,28 +298,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0KIJ3wuDnKH0bRcO86AXuLzafTol0hDr4+a/Vs35L8g=
+			s87acCjGt2YZKQI2gncduyLwpKV/DDQ0oM04ZF39RGQ=
 			</data>
 		</dict>
 		<key>Modules/TenjinSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w/woWvUZ7y+93ja4awhNamXjXoL9KsBlYNH48qn27oA=
+			fSn/eoM55iV2GN4LYTD1PwoLeYgXdH3Q5l17jCZZMr8=
 			</data>
 		</dict>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UspXUnFtTNz5ua5ZVZjn5wEkf6oHSPRVoEQwEDftdfQ=
+			ThHRXtL2myPIWe+3Bv9aAuCl2Si0kjo7pZFqP25w5eA=
 			</data>
 		</dict>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8VeWtbAa9MF0PGFpM8AH50SFnx+KguD/Hv4Ebx+rgcM=
+			QaQaiBmCrsnzEQOvB0AKM5bFXs/w53ezCFE1kaG9IAE=
 			</data>
 		</dict>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -322,14 +333,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8VeWtbAa9MF0PGFpM8AH50SFnx+KguD/Hv4Ebx+rgcM=
+			QaQaiBmCrsnzEQOvB0AKM5bFXs/w53ezCFE1kaG9IAE=
 			</data>
 		</dict>
 		<key>Modules/TenjinSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CrW3Ymr4Q9HoQqweWknV+1b7XiAnxYrSWfr3SRKLIZs=
+			Kewzy4SGmm9jkqV92nlIQiwwDpb6iROlpDwvTUQx9Fk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -406,7 +417,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KC7WuDRtChjCzMx+iWSmd1iY41jBxTFaNa+xkZWks2E=
+			j+KIn9qIJNEIxBeo3fP9W84+HzqmKDc8uLW4Z2+yKxg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/TenjinIAPHelper.h</key>
