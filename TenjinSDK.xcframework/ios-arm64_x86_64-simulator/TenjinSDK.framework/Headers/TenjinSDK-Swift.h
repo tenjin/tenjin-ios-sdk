@@ -398,6 +398,7 @@ typedef SWIFT_ENUM(NSInteger, TJNAdNetwork, open) {
   TJNAdNetworkCas = 5,
   TJNAdNetworkTradPlus = 6,
   TJNAdNetworkCloudX = 7,
+  TJNAdNetworkCustom = 8,
 };
 
 @class NSData;
@@ -925,6 +926,7 @@ typedef SWIFT_ENUM(NSInteger, TJNAdNetwork, open) {
   TJNAdNetworkCas = 5,
   TJNAdNetworkTradPlus = 6,
   TJNAdNetworkCloudX = 7,
+  TJNAdNetworkCustom = 8,
 };
 
 @class NSData;
