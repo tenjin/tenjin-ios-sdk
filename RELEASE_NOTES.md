@@ -399,3 +399,7 @@ v1.16.1
 v1.17.0
 ----
 - Add CloudX Integration
+
+v1.17.1
+----
+- Add `customImpressionFromJSON:` method to send ILRD impressions for custom mediation providers without a dedicated Tenjin integration
