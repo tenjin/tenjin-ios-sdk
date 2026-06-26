@@ -191,6 +191,8 @@ extension CoreData.NSManagedObjectContext {
   @objc public static func getAnalyticsInstallationId() -> Swift.String
   @objc public static func setInitializedAt(_ timestamp: Swift.String)
   @objc public static func getInitializedAt() -> Swift.String?
+  @objc public static func setLastConnectTimestamp(_ timestamp: Swift.Double)
+  @objc public static func getLastConnectTimestamp() -> Swift.Double
   @objc override dynamic public init()
   @objc deinit
 }
@@ -212,7 +214,7 @@ extension CoreData.NSManagedObjectContext {
 }
 @objc public protocol EventGating {
   @objc var canSendEvents: Swift.Bool { get }
-  @objc func tryBeginConnect() -> Swift.Bool
+  @objc func tryBeginConnect(flushHandler: @escaping ([Swift.String : Any]) -> Swift.Void) -> Swift.Bool
   @objc func handleConnectCompletion(success: Swift.Bool, processHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc func queueEvent(_ eventData: [Swift.String : Any], sendHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc func ensureConnected(connectHandler: @escaping () -> Swift.Void)
@@ -222,16 +224,21 @@ extension CoreData.NSManagedObjectContext {
   @objc final public var canSendEvents: Swift.Bool {
     @objc get
   }
-  @objc final public var connectSent: Swift.Bool {
-    @objc get
-  }
   @objc final public var connectInProgress: Swift.Bool {
     @objc get
   }
   @objc final public var queuedEventCount: Swift.Int {
     @objc get
   }
-  @objc final public func tryBeginConnect() -> Swift.Bool
+  @objc final public var connectInterval: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc final public var maxQueueSize: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc final public func tryBeginConnect(flushHandler: @escaping ([Swift.String : Any]) -> Swift.Void) -> Swift.Bool
   @objc final public func handleConnectCompletion(success: Swift.Bool, processHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc final public func queueEvent(_ eventData: [Swift.String : Any], sendHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc final public func ensureConnected(connectHandler: @escaping () -> Swift.Void)

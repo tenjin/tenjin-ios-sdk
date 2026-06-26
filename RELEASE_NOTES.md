@@ -403,3 +403,11 @@ v1.17.0
 v1.17.1
 ----
 - Add `customImpressionFromJSON:` method to send ILRD impressions for custom mediation providers without a dedicated Tenjin integration
+
+## [1.17.2]
+
+
+### Bug Fixes
+
+* Improve `connect` calls reliability
+
