@@ -404,11 +404,10 @@ v1.17.1
 ----
 - Add `customImpressionFromJSON:` method to send ILRD impressions for custom mediation providers without a dedicated Tenjin integration
 
-## [1.17.2](https://github.com/tenjin/ios-sdk/compare/1.17.1...1.17.2) (2026-06-25)
+## [1.17.2]
 
 
 ### Bug Fixes
 
-* improve connect calls reliability ([#233](https://github.com/tenjin/ios-sdk/issues/233)) ([1401a38](https://github.com/tenjin/ios-sdk/commit/1401a38bfdf17727c7f1550ea8a76ba19bca12e3))
-* remediate security vulnerabilities in ios-sdk ([#234](https://github.com/tenjin/ios-sdk/issues/234)) ([3f55a0f](https://github.com/tenjin/ios-sdk/commit/3f55a0ff3f95e10ca4c8aedabc0607f52d723835))
+* Improve `connect` calls reliability
 
