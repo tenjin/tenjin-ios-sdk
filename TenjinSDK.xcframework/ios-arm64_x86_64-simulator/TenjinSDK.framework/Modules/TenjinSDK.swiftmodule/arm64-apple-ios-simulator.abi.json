@@ -5338,6 +5338,59 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "setLastConnectTimestamp",
+            "printedName": "setLastConnectTimestamp(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TenjinSDK@objc(cs)TenjinDatasource(cm)setLastConnectTimestamp:",
+            "mangledName": "$s9TenjinSDK0A10DatasourceC23setLastConnectTimestampyySdFZ",
+            "moduleName": "TenjinSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLastConnectTimestamp",
+            "printedName": "getLastConnectTimestamp()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TenjinSDK@objc(cs)TenjinDatasource(cm)getLastConnectTimestamp",
+            "mangledName": "$s9TenjinSDK0A10DatasourceC23getLastConnectTimestampSdyFZ",
+            "moduleName": "TenjinSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -6669,18 +6722,49 @@
           {
             "kind": "Function",
             "name": "tryBeginConnect",
-            "printedName": "tryBeginConnect()",
+            "printedName": "tryBeginConnect(flushHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TenjinSDK@objc(pl)EventGating(im)tryBeginConnect",
-            "mangledName": "$s9TenjinSDK11EventGatingP15tryBeginConnectSbyF",
+            "usr": "c:@M@TenjinSDK@objc(pl)EventGating(im)tryBeginConnectWithFlushHandler:",
+            "mangledName": "$s9TenjinSDK11EventGatingP15tryBeginConnect12flushHandlerSbySDySSypGc_tF",
             "moduleName": "TenjinSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : TenjinSDK.EventGating>",
             "sugared_genericSig": "<Self where Self : TenjinSDK.EventGating>",
@@ -7005,52 +7089,6 @@
           },
           {
             "kind": "Var",
-            "name": "connectSent",
-            "printedName": "connectSent",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@TenjinSDK@objc(cs)EventGatingManager(py)connectSent",
-            "mangledName": "$s9TenjinSDK18EventGatingManagerC11connectSentSbvp",
-            "moduleName": "TenjinSDK",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@TenjinSDK@objc(cs)EventGatingManager(im)connectSent",
-                "mangledName": "$s9TenjinSDK18EventGatingManagerC11connectSentSbvg",
-                "moduleName": "TenjinSDK",
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "connectInProgress",
             "printedName": "connectInProgress",
             "children": [
@@ -7142,22 +7180,241 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "connectInterval",
+            "printedName": "connectInterval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TenjinSDK@objc(cs)EventGatingManager(py)connectInterval",
+            "mangledName": "$s9TenjinSDK18EventGatingManagerC15connectIntervalSdvp",
+            "moduleName": "TenjinSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TenjinSDK@objc(cs)EventGatingManager(im)connectInterval",
+                "mangledName": "$s9TenjinSDK18EventGatingManagerC15connectIntervalSdvg",
+                "moduleName": "TenjinSDK",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TenjinSDK@objc(cs)EventGatingManager(im)setConnectInterval:",
+                "mangledName": "$s9TenjinSDK18EventGatingManagerC15connectIntervalSdvs",
+                "moduleName": "TenjinSDK",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TenjinSDK18EventGatingManagerC15connectIntervalSdvM",
+                "mangledName": "$s9TenjinSDK18EventGatingManagerC15connectIntervalSdvM",
+                "moduleName": "TenjinSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxQueueSize",
+            "printedName": "maxQueueSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@TenjinSDK@objc(cs)EventGatingManager(py)maxQueueSize",
+            "mangledName": "$s9TenjinSDK18EventGatingManagerC12maxQueueSizeSivp",
+            "moduleName": "TenjinSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TenjinSDK@objc(cs)EventGatingManager(im)maxQueueSize",
+                "mangledName": "$s9TenjinSDK18EventGatingManagerC12maxQueueSizeSivg",
+                "moduleName": "TenjinSDK",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@TenjinSDK@objc(cs)EventGatingManager(im)setMaxQueueSize:",
+                "mangledName": "$s9TenjinSDK18EventGatingManagerC12maxQueueSizeSivs",
+                "moduleName": "TenjinSDK",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9TenjinSDK18EventGatingManagerC12maxQueueSizeSivM",
+                "mangledName": "$s9TenjinSDK18EventGatingManagerC12maxQueueSizeSivM",
+                "moduleName": "TenjinSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "tryBeginConnect",
-            "printedName": "tryBeginConnect()",
+            "printedName": "tryBeginConnect(flushHandler:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@TenjinSDK@objc(cs)EventGatingManager(im)tryBeginConnect",
-            "mangledName": "$s9TenjinSDK18EventGatingManagerC15tryBeginConnectSbyF",
+            "usr": "c:@M@TenjinSDK@objc(cs)EventGatingManager(im)tryBeginConnectWithFlushHandler:",
+            "mangledName": "$s9TenjinSDK18EventGatingManagerC15tryBeginConnect12flushHandlerSbySDySSypGc_tF",
             "moduleName": "TenjinSDK",
-            "objc_name": "tryBeginConnect",
+            "objc_name": "tryBeginConnectWithFlushHandler:",
             "declAttributes": [
               "Final",
               "ObjC",
@@ -7821,6 +8078,20 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Network\/TJNHTTPClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 388,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Network\/TJNHTTPClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 448,
+      "length": 4,
+      "value": "60.0"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/TJNConstants.swift",
       "kind": "StringLiteral",
       "offset": 218,
@@ -7879,44 +8150,170 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/TJNConstants.swift",
       "kind": "StringLiteral",
-      "offset": 744,
+      "offset": 753,
+      "length": 31,
+      "value": "\"TENJIN_LAST_CONNECT_TIMESTAMP\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/TJNConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 817,
       "length": 26,
       "value": "\"https:\/\/track.tenjin.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/TJNConstants.swift",
       "kind": "StringLiteral",
-      "offset": 803,
+      "offset": 876,
       "length": 24,
       "value": "\"com.tenjin.userProfile\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 734,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 784,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "StringLiteral",
-      "offset": 670,
+      "offset": 834,
       "length": 28,
       "value": "\"com.tenjin.ios.eventgating\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 732,
+      "offset": 902,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 775,
+      "offset": 945,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "Array",
-      "offset": 827,
+      "offset": 1164,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2287,
+      "length": 54,
+      "value": "\"Connect already in progress, ignoring duplicate ping\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2503,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2527,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2636,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2712,
+      "length": 112,
+      "value": "\"Connect sent \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2743,
+      "length": 6,
+      "value": "\"%.1f\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2760,
+      "length": 1,
+      "value": "\"s ago (interval: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2796,
+      "length": 1,
+      "value": "\"s), ignoring duplicate ping\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2867,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3077,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3189,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3243,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3353,
+      "length": 57,
+      "value": "\"Connect deduped, flushing \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3395,
+      "length": 6,
+      "value": "\" queued events\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3537,
+      "length": 5,
+      "value": "false"
     }
   ]
 }
