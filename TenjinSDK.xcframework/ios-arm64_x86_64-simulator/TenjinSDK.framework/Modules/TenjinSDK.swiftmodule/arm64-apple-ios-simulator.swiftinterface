@@ -176,6 +176,11 @@ import _SwiftConcurrencyShims
   @objc public func fetchAggregateConversionInfo()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class FirebaseAnalyticsManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func appInstanceId() -> Swift.String?
+  @objc deinit
+}
 extension CoreData.NSManagedObjectContext {
   public func executeAndMergeChanges(using batchDeleteRequest: CoreData.NSBatchDeleteRequest) throws
 }

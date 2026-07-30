@@ -411,3 +411,16 @@ v1.17.1
 
 * Improve `connect` calls reliability
 
+
+## [1.18.0](https://github.com/tenjin/ios-sdk/compare/1.17.2...1.18.0) (2026-07-30)
+
+
+### Features
+
+* ingest Firebase app instance ID automatically as a parameter ([e39e180](https://github.com/tenjin/ios-sdk/commit/e39e18054feca033c4ae46afe5dd049d956ca20d))
+
+
+### Bug Fixes
+
+* bump faraday to 1.10.6 to resolve CVE-2026-54297 ([5d1e3a2](https://github.com/tenjin/ios-sdk/commit/5d1e3a23150ba181019abfe87d29ff9ac9cae1eb))
+
