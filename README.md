@@ -718,7 +718,7 @@ You can enable/disable retrying and caching events and IAP when requests fail or
 ```
 
 > [!IMPORTANT]
-> This setting is stored on the device and persists across app sessions. Once a build has enabled it, removing the `setCacheEventSetting:` call in a later release will **not** disable caching for existing users — the previously stored value stays in effect. To turn it off, explicitly call:
+> This setting is stored on the device and persists across app sessions. Once a build has enabled it, removing the `setCacheEventSetting:` call in a later release will **not** disable caching for existing users, because the previously stored value stays in effect. To turn it off, explicitly call:
 >
 > ```objectivec
 > [TenjinSDK setCacheEventSetting:false];
