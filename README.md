@@ -530,16 +530,43 @@ This data will appear within DataVault, where you will be able to run reports us
 
 # <a id="ilrd"></a>Impression Level Ad Revenue Integration
 
-Tenjin supports the ability to integrate with the Impression Level Ad Revenue (ILRD) feature from,
-- AppLovin
-- Unity LevelPlay
-- HyperBid
-- AdMob
-- TopOn
-- CAS
-- TradPlus
+Tenjin supports the ability to integrate with the Impression Level Ad Revenue (ILRD) feature from the mediation providers below. Each method receives the impression payload from the mediation callback as a JSON string; follow the linked guide for the full setup of each provider.
 
-This feature allows you to receive events which correspond to your ad revenue that is affected by each advertisement show to a user. Access to the integration guide is [here](https://tenjin.com/docs/category/ad-revenue-ad-mediation-setup/).
+| Provider | Method | Setup guide |
+|----------|--------|-------------|
+| AppLovin MAX | `[TenjinSDK appLovinImpressionFromJSON:]` | [Guide](https://tenjin.com/docs/ios-applovin-max/) |
+| Unity LevelPlay | `[TenjinSDK ironSourceImpressionFromJSON:]` | [Guide](https://tenjin.com/docs/ios-unity-levelplay/) |
+| AdMob | `[TenjinSDK adMobImpressionFromJSON:]` | [Guide](https://tenjin.com/docs/ios-admob/) |
+| HyperBid | `[TenjinSDK hyperBidImpressionFromJSON:]` | |
+| TopOn | `[TenjinSDK topOnImpressionFromJSON:]` | [Guide](https://tenjin.com/docs/ios-topon/) |
+| CAS | `[TenjinSDK casImpressionFromJSON:]` | [Guide](https://tenjin.com/docs/ios-cas/) |
+| TradPlus | `[TenjinSDK tradPlusImpressionFromJSON:]` | [Guide](https://tenjin.com/docs/ios-tradplus/) |
+| CloudX | `[TenjinSDK cloudXImpressionFromJSON:]` | [Guide](https://tenjin.com/docs/ios-cloudx/) |
+| Other providers | `[TenjinSDK customImpressionFromJSON:]` | See [Custom mediation](#custom-mediation) |
+
+This feature allows you to receive events which correspond to your ad revenue that is affected by each advertisement show to a user. Access to the full documentation is [here](https://tenjin.com/docs/category/ad-revenue/).
+
+## Custom mediation
+
+If your mediation provider is not on the list above, you can report impressions with the generic custom mediation method, available since v1.17.1. Pass a JSON object string with your impression data. Required fields are `network_name`, `currency`, and either `revenue_decimal` (revenue for this impression) or `revenue_cpm` (revenue per 1,000 impressions); the full list of accepted fields is in the [ILRD API documentation](https://tenjin.com/docs/impression-level-revenue-data-api-s2s/). Impressions sent this way are reported under the `custom` mediation source, with `ad_revenue_mediation` and the device parameters set automatically by the SDK.
+
+```objectivec
+NSString *impressionJSON = @"{"
+    "\"network_name\":\"my_network\","
+    "\"mediation_country\":\"US\","
+    "\"currency\":\"USD\","
+    "\"ad_unit_id\":\"my_ad_unit_id\","
+    "\"ad_format\":\"banner\","
+    "\"revenue_decimal\":0.001,"
+    "\"precision\":\"BID\","
+    "\"creative_id\":\"my_creative\","
+    "\"placement\":\"my_placement\","
+    "\"network_placement\":\"my_network_placement\","
+    "\"auction_id\":\"my_auction_id\""
+"}";
+[TenjinSDK customImpressionFromJSON:impressionJSON];
+```
+
 # <a id="attributionInfo"></a>Live Ops Campaigns
 
 Tenjin supports retrieving of user Attribution information, like sourcing Ad Network and campaign, from the SDK. This will allow developers to collect and analyze user-level Attribution data in real-time. Here are the possible use cases using Tenjin LiveOps Campaigns:
@@ -716,6 +743,13 @@ You can enable/disable retrying and caching events and IAP when requests fail or
 ```objectivec
 [TenjinSDK setCacheEventSetting:true];
 ```
+
+> [!IMPORTANT]
+> This setting is stored on the device and persists across app sessions. Once a build has enabled it, removing the `setCacheEventSetting:` call in a later release will **not** disable caching for existing users, because the previously stored value stays in effect. To turn it off, explicitly call:
+>
+> ```objectivec
+> [TenjinSDK setCacheEventSetting:false];
+> ```
 
 [1]:	#sdk-integration
 [2]:	#attrackingmanager
