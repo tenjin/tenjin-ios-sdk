@@ -540,6 +540,28 @@ Tenjin supports the ability to integrate with the Impression Level Ad Revenue (I
 - TradPlus
 
 This feature allows you to receive events which correspond to your ad revenue that is affected by each advertisement show to a user. Access to the integration guide is [here](https://tenjin.com/docs/category/ad-revenue-ad-mediation-setup/).
+
+## Custom mediation
+
+If your mediation provider is not on the list above, you can report impressions with the generic custom mediation method, available since v1.17.1. Pass a JSON object string with your impression data and include the revenue as `revenue_decimal` (revenue for this impression) or `revenue_cpm` (revenue per 1,000 impressions). Impressions sent this way are reported under the `custom` mediation source.
+
+```objectivec
+NSString *impressionJSON = @"{"
+    "\"network_name\":\"my_network\","
+    "\"mediation_country\":\"US\","
+    "\"currency\":\"USD\","
+    "\"ad_unit_id\":\"my_ad_unit_id\","
+    "\"ad_format\":\"banner\","
+    "\"revenue_decimal\":0.001,"
+    "\"precision\":\"BID\","
+    "\"creative_id\":\"my_creative\","
+    "\"placement\":\"my_placement\","
+    "\"network_placement\":\"my_network_placement\","
+    "\"auction_id\":\"my_auction_id\""
+"}";
+[TenjinSDK customImpressionFromJSON:impressionJSON];
+```
+
 # <a id="attributionInfo"></a>Live Ops Campaigns
 
 Tenjin supports retrieving of user Attribution information, like sourcing Ad Network and campaign, from the SDK. This will allow developers to collect and analyze user-level Attribution data in real-time. Here are the possible use cases using Tenjin LiveOps Campaigns:
