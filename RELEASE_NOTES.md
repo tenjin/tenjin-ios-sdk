@@ -424,3 +424,17 @@ v1.17.1
 
 * bump faraday to 1.10.6 to resolve CVE-2026-54297 ([5d1e3a2](https://github.com/tenjin/ios-sdk/commit/5d1e3a23150ba181019abfe87d29ff9ac9cae1eb))
 
+
+## [1.19.0](https://github.com/tenjin/ios-sdk/compare/1.18.0...1.19.0) (2026-08-12)
+
+
+### Features
+
+* Capture the deeplink an app is opened with and report it on the app-open event, so re-engagement conversions can be attributed to the originating campaign ([b8deeb0](https://github.com/tenjin/ios-sdk/commit/b8deeb0fa957c4b0e9da0e2e1edf10327b8c8cb7))
+
+
+### Bug Fixes
+
+* preserve request-specific parameters (such as purchase and event data) for privacy opted-out users when refreshing device parameters ([35951a1](https://github.com/tenjin/ios-sdk/commit/35951a17b10ee85b9beb78240d0485a55062daf5))
+* send retry counts as strings so retried events are accepted by the backend ([d2465b7](https://github.com/tenjin/ios-sdk/commit/d2465b740894a2208a31348e89d14e4427d64941))
+
