@@ -220,6 +220,7 @@ extension CoreData.NSManagedObjectContext {
 @objc public protocol EventGating {
   @objc var canSendEvents: Swift.Bool { get }
   @objc func tryBeginConnect(flushHandler: @escaping ([Swift.String : Any]) -> Swift.Void) -> Swift.Bool
+  @objc func tryBeginConnect(force: Swift.Bool, flushHandler: @escaping ([Swift.String : Any]) -> Swift.Void) -> Swift.Bool
   @objc func handleConnectCompletion(success: Swift.Bool, processHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc func queueEvent(_ eventData: [Swift.String : Any], sendHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc func ensureConnected(connectHandler: @escaping () -> Swift.Void)
@@ -244,11 +245,17 @@ extension CoreData.NSManagedObjectContext {
     @objc set
   }
   @objc final public func tryBeginConnect(flushHandler: @escaping ([Swift.String : Any]) -> Swift.Void) -> Swift.Bool
+  @objc final public func tryBeginConnect(force: Swift.Bool, flushHandler: @escaping ([Swift.String : Any]) -> Swift.Void) -> Swift.Bool
   @objc final public func handleConnectCompletion(success: Swift.Bool, processHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc final public func queueEvent(_ eventData: [Swift.String : Any], sendHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc final public func ensureConnected(connectHandler: @escaping () -> Swift.Void)
   @objc final public func reset()
   @objc deinit
+}
+@objc final public class TJNOpenDeeplinkObserver : ObjectiveC.NSObject {
+  @objc(initWithOnOpenURL:) public init(onOpenURL: @escaping (Foundation.URL) -> Swift.Void)
+  @objc deinit
+  public static func launchURL(fromLaunchOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]) -> Foundation.URL?
 }
 extension PurposeConsentStatus : Swift.Equatable {}
 extension PurposeConsentStatus : Swift.Hashable {}

@@ -6939,6 +6939,68 @@
           },
           {
             "kind": "Function",
+            "name": "tryBeginConnect",
+            "printedName": "tryBeginConnect(force:flushHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TenjinSDK@objc(pl)EventGating(im)tryBeginConnectWithForce:flushHandler:",
+            "mangledName": "$s9TenjinSDK11EventGatingP15tryBeginConnect5force12flushHandlerS2b_ySDySSypGctF",
+            "moduleName": "TenjinSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : TenjinSDK.EventGating>",
+            "sugared_genericSig": "<Self where Self : TenjinSDK.EventGating>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "handleConnectCompletion",
             "printedName": "handleConnectCompletion(success:processHandler:)",
             "children": [
@@ -7587,6 +7649,68 @@
           },
           {
             "kind": "Function",
+            "name": "tryBeginConnect",
+            "printedName": "tryBeginConnect(force:flushHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TenjinSDK@objc(cs)EventGatingManager(im)tryBeginConnectWithForce:flushHandler:",
+            "mangledName": "$s9TenjinSDK18EventGatingManagerC15tryBeginConnect5force12flushHandlerS2b_ySDySSypGctF",
+            "moduleName": "TenjinSDK",
+            "objc_name": "tryBeginConnectWithForce:flushHandler:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "handleConnectCompletion",
             "printedName": "handleConnectCompletion(success:processHandler:)",
             "children": [
@@ -7807,6 +7931,226 @@
             "usr": "c:@M@TenjinSDK@objc(pl)EventGating",
             "mangledName": "$s9TenjinSDK11EventGatingP"
           },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TenjinSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TenjinSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TJNOpenDeeplinkObserver",
+        "printedName": "TJNOpenDeeplinkObserver",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(onOpenURL:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TJNOpenDeeplinkObserver",
+                "printedName": "TenjinSDK.TJNOpenDeeplinkObserver",
+                "usr": "c:@M@TenjinSDK@objc(cs)TJNOpenDeeplinkObserver"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URL) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TenjinSDK@objc(cs)TJNOpenDeeplinkObserver(im)initWithOnOpenURL:",
+            "mangledName": "$s9TenjinSDK23TJNOpenDeeplinkObserverC9onOpenURLACy10Foundation0H0Vc_tcfc",
+            "moduleName": "TenjinSDK",
+            "objc_name": "initWithOnOpenURL:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "launchURL",
+            "printedName": "launchURL(fromLaunchOptions:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[UIKit.UIApplication.LaunchOptionsKey : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LaunchOptionsKey",
+                    "printedName": "UIKit.UIApplication.LaunchOptionsKey",
+                    "usr": "c:@T@UIApplicationLaunchOptionsKey"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9TenjinSDK23TJNOpenDeeplinkObserverC9launchURL17fromLaunchOptions10Foundation0G0VSgSDySo013UIApplicationiJ3KeyaypG_tFZ",
+            "mangledName": "$s9TenjinSDK23TJNOpenDeeplinkObserverC9launchURL17fromLaunchOptions10Foundation0G0VSgSDySo013UIApplicationiJ3KeyaypG_tFZ",
+            "moduleName": "TenjinSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TJNOpenDeeplinkObserver",
+                "printedName": "TenjinSDK.TJNOpenDeeplinkObserver",
+                "usr": "c:@M@TenjinSDK@objc(cs)TJNOpenDeeplinkObserver"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TenjinSDK@objc(cs)TJNOpenDeeplinkObserver(im)init",
+            "mangledName": "$s9TenjinSDK23TJNOpenDeeplinkObserverCACycfc",
+            "moduleName": "TenjinSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TenjinSDK@objc(cs)TJNOpenDeeplinkObserver",
+        "mangledName": "$s9TenjinSDK23TJNOpenDeeplinkObserverC",
+        "moduleName": "TenjinSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
           {
             "kind": "Conformance",
             "name": "Copyable",
@@ -8347,147 +8691,147 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "FloatLiteral",
-      "offset": 734,
+      "offset": 829,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 784,
+      "offset": 879,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "StringLiteral",
-      "offset": 834,
+      "offset": 929,
       "length": 28,
       "value": "\"com.tenjin.ios.eventgating\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 902,
+      "offset": 997,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 945,
+      "offset": 1040,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "Array",
-      "offset": 1164,
+      "offset": 1259,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "StringLiteral",
-      "offset": 2287,
+      "offset": 2749,
       "length": 54,
       "value": "\"Connect already in progress, ignoring duplicate ping\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2503,
+      "offset": 2975,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2527,
+      "offset": 2999,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2636,
+      "offset": 3108,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "StringLiteral",
-      "offset": 2712,
+      "offset": 3184,
       "length": 112,
       "value": "\"Connect sent \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "StringLiteral",
-      "offset": 2743,
+      "offset": 3215,
       "length": 6,
       "value": "\"%.1f\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "StringLiteral",
-      "offset": 2760,
+      "offset": 3232,
       "length": 1,
       "value": "\"s ago (interval: \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "StringLiteral",
-      "offset": 2796,
+      "offset": 3268,
       "length": 1,
       "value": "\"s), ignoring duplicate ping\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2867,
+      "offset": 3339,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3077,
+      "offset": 3549,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3189,
+      "offset": 3661,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3243,
+      "offset": 3715,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "StringLiteral",
-      "offset": 3353,
+      "offset": 3825,
       "length": 57,
       "value": "\"Connect deduped, flushing \""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "StringLiteral",
-      "offset": 3395,
+      "offset": 3867,
       "length": 6,
       "value": "\" queued events\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/EventGatingManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3537,
+      "offset": 4009,
       "length": 5,
       "value": "false"
     }
