@@ -39,6 +39,7 @@ The guide walks the assistant through the complete integration. For more details
 	- [Subscription Tracking][44]
 - [Custom Events][11]
 - [Deferred Deeplink][12]
+- [App-Open Deeplink][45]
 - [Server-to-server integration][13]
 - [App Subversion][14]
 - [Impression Level Ad Revenue Integration][15]
@@ -512,6 +513,72 @@ Custom events can also pass an `NSInteger` `eventValue`. Tenjin will use this `e
 [TenjinSDK sendEventWithName:@"swipe_right" andValue:1];
 ```
 
+# <a id="app-open-deeplink"></a>App-Open Deeplink
+
+As of SDK v1.19.0, Tenjin can capture the deeplink URL (custom scheme or Universal Link) an app is opened with and report it on the app-open event, so re-engagement conversions can be attributed to the originating campaign.
+
+**Cold launches are captured automatically for `UIApplicationDelegate`-only apps** — no integration change needed. **Warm opens, and any launch on `UISceneDelegate`-based apps (cold or warm), must be reported explicitly** by calling `handleOpenURL:` from every place your app receives an incoming URL:
+
+```objectivec
+#import "TenjinSDK.h"
+
+@implementation TJNAppDelegate
+
+// Warm opens via custom scheme
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options
+{
+    [TenjinSDK handleOpenURL:url];
+    return YES;
+}
+
+// Warm opens via Universal Link
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> *))restorationHandler
+{
+    if (userActivity.webpageURL) {
+        [TenjinSDK handleOpenURL:userActivity.webpageURL];
+    }
+    return YES;
+}
+
+@end
+```
+
+If your app uses `UISceneDelegate`, call `handleOpenURL:` from the equivalent scene-based methods instead — `scene:openURLContexts:` and `scene:continueUserActivity:` for warm opens, and `connectionOptions` in `scene:willConnectToSession:options:` for cold launches, since the automatic capture does not cover scene-based apps:
+
+```objectivec
+- (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions
+{
+    if (connectionOptions.URLContexts.anyObject.URL) {
+        [TenjinSDK handleOpenURL:connectionOptions.URLContexts.anyObject.URL];
+    } else if (connectionOptions.userActivities.anyObject.webpageURL) {
+        [TenjinSDK handleOpenURL:connectionOptions.userActivities.anyObject.webpageURL];
+    }
+    // ... rest of scene setup
+}
+
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts
+{
+    if (URLContexts.anyObject.URL) {
+        [TenjinSDK handleOpenURL:URLContexts.anyObject.URL];
+    }
+}
+
+- (void)scene:(UIScene *)scene continueUserActivity:(NSUserActivity *)userActivity
+{
+    if (userActivity.webpageURL) {
+        [TenjinSDK handleOpenURL:userActivity.webpageURL];
+    }
+}
+```
+
+In Swift:
+
+```swift
+TenjinSDK.handleOpenURL(url)
+```
+
+It is safe to call `handleOpenURL:` before `TenjinSDK` is initialized — plugin wrappers (Unity, Flutter, React Native) that receive the URL off the main thread can use the raw-string variant, `handleOpenURLString:`, and the URL is cached and sent with the first connect.
+
 # <a id="server-to-server"></a>Server-to-server integration
 
 Tenjin offers [server-to-server integration](https://tenjin.com/docs/server-to-server-s2s-setup/). This allows you to send your Install and post-Install events directly from your servers to Tenjin servers without needing an SDK integration.
@@ -795,6 +862,7 @@ You can enable/disable retrying and caching events and IAP when requests fail or
 [42]: #google-dma
 [43]: #user-profile
 [44]: #subscription-tracking
+[45]: #app-open-deeplink
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
 [image-3]:	https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png
