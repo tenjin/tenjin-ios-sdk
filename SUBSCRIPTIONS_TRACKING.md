@@ -2,6 +2,10 @@
 
 Track subscription purchases with Tenjin for server-side verification and attribution.
 
+> **Subscription tracking is opt-in.** Connecting/initializing the SDK does **not** automatically capture subscription or purchase events. You must explicitly call one of the methods below from your StoreKit 2 purchase-handling code.
+>
+> **Troubleshooting:** if general events (session, custom events, etc.) are arriving on the dashboard but subscription events are not, this is the most common cause. Check that one of the methods below is actually being called at purchase time.
+
 ## Methods
 
 ### `subscription(withProductName:...)` — Manual Parameters
