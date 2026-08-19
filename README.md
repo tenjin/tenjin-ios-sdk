@@ -464,6 +464,8 @@ For more information on subscriptions, please see: <a href="https://developer.ap
 
 Track subscription purchases with Tenjin for server-side verification and attribution. See [SUBSCRIPTIONS_TRACKING.md](SUBSCRIPTIONS_TRACKING.md) for the full guide, including integration examples with StoreKit 2 and RevenueCat.
 
+**Subscription tracking is opt-in and is not automatic just from initializing/connecting the SDK.** You must explicitly call one of `subscription(withProductName:...)`, `subscriptionWithStoreKit(forProductId:...)`, or `purchasesManager().subscription(_:)` from your StoreKit 2 purchase-handling code. If general events are showing up on the dashboard but subscription events are not, this is the most common cause.
+
 Pass all SK2 transaction data manually:
 
 ```swift
