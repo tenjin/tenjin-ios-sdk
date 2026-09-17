@@ -4,10 +4,10 @@
 //
 
 #import <SystemConfiguration/SystemConfiguration.h>
-#import "TenjinIAPHelper.h"
-#import "TenjinConfig.h"
-#import "PersistedFileStore.h"
-#import "DataStore.h"
+#import <TenjinSDK/TenjinIAPHelper.h>
+#import <TenjinSDK/TenjinConfig.h>
+#import <TenjinSDK/PersistedFileStore.h>
+#import <TenjinSDK/DataStore.h>
 
 @class SKPaymentTransaction;
 @class TJNHTTPClient;
