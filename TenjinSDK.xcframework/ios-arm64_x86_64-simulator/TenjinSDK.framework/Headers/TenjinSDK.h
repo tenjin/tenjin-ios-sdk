@@ -257,3 +257,14 @@ andDeferredDeeplink:(NSURL *)url
 - (void)setGoogleDMAParametersWithAdPersonalization:(BOOL)adPersonalization adUserData:(BOOL)adUserData;
 
 @end
+
+// Impression Level Ad Revenue (ILRD) integrations
+#import <TenjinSDK/TenjinSDK+AdMobILRD.h>
+#import <TenjinSDK/TenjinSDK+AppLovinILRD.h>
+#import <TenjinSDK/TenjinSDK+CASILRD.h>
+#import <TenjinSDK/TenjinSDK+CloudXILRD.h>
+#import <TenjinSDK/TenjinSDK+CustomILRD.h>
+#import <TenjinSDK/TenjinSDK+HyperBidILRD.h>
+#import <TenjinSDK/TenjinSDK+IronSourceILRD.h>
+#import <TenjinSDK/TenjinSDK+TopOnILRD.h>
+#import <TenjinSDK/TenjinSDK+TradPlusILRD.h>

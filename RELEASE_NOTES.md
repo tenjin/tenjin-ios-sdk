@@ -432,3 +432,11 @@ v1.17.1
 
 * Capture the deeplink an app is opened with and report it on the app-open event, so re-engagement conversions can be attributed to the originating campaign ([b8deeb0](https://github.com/tenjin/ios-sdk/commit/b8deeb0fa957c4b0e9da0e2e1edf10327b8c8cb7))
 
+
+## [1.19.1](https://github.com/tenjin/ios-sdk/compare/1.19.0...1.19.1) (2026-09-17)
+
+
+### Bug Fixes
+
+* Resolve Xcode 27 archive failures when using ILRD methods ([67628d0](https://github.com/tenjin/ios-sdk/commit/67628d01081f42e20e18bd2437d6301152358a5d))
+
