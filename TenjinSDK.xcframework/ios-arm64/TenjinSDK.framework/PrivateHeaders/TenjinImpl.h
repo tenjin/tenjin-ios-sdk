@@ -24,6 +24,8 @@
 //TODO: remove serial queue and manage attribution retries with NSOperation instances
 @property(nonatomic, strong) dispatch_queue_t serialQueue;
 @property(atomic, assign) BOOL hasCheckedAttribution;
+// auto subscription tracking waits for the first ping so the app can set consent first
+@property(atomic, assign) BOOL hasPinged;
 
 //TODO:move deferredDeeplink into attribution params
 @property(nonatomic, strong) NSString *deferredDeeplink;
@@ -126,6 +128,22 @@
 - (void)subscriptionWithParams:(NSDictionary *)subscriptionParams;
 
 - (void)handleSubscriptionPurchase:(SKPaymentTransaction *)transaction;
+
+- (void)startAutoTrackingIfEnabled;
+
+- (void)enableAutoSubscriptionTracking;
+
+- (void)stopAutoSubscriptionTracking;
+
+- (BOOL)autoSubscriptionTrackingEnabled;
+
+- (void)enableAutoPurchaseTracking;
+
+- (void)stopAutoPurchaseTracking;
+
+- (BOOL)autoPurchaseTrackingEnabled;
+
+- (BOOL)isOptedOut;
 
 - (void)trackConversionValue:(int)conversionValue
                  coarseValue:(NSString*)coarseValue

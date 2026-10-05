@@ -707,6 +707,116 @@
           },
           {
             "kind": "Function",
+            "name": "startAutoTracking",
+            "printedName": "startAutoTracking(allowingNonProduction:subscriptions:purchases:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TenjinSDK@objc(cs)TenjinPurchasesManager(im)startAutoTrackingAllowingNonProduction:subscriptions:purchases:",
+            "mangledName": "$s9TenjinSDK0A16PurchasesManagerC17startAutoTracking21allowingNonProduction13subscriptions9purchasesySb_S2btF",
+            "moduleName": "TenjinSDK",
+            "objc_name": "startAutoTrackingAllowingNonProduction:subscriptions:purchases:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopAutoTracking",
+            "printedName": "stopAutoTracking()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TenjinSDK@objc(cs)TenjinPurchasesManager(im)stopAutoTracking",
+            "mangledName": "$s9TenjinSDK0A16PurchasesManagerC16stopAutoTrackingyyF",
+            "moduleName": "TenjinSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reportUntrackedEntitlements",
+            "printedName": "reportUntrackedEntitlements()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TenjinSDK@objc(cs)TenjinPurchasesManager(im)reportUntrackedEntitlements",
+            "mangledName": "$s9TenjinSDK0A16PurchasesManagerC27reportUntrackedEntitlementsyyF",
+            "moduleName": "TenjinSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "recordReportedTransaction",
+            "printedName": "recordReportedTransaction(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TenjinSDK@objc(cs)TenjinPurchasesManager(im)recordReportedTransaction:",
+            "mangledName": "$s9TenjinSDK0A16PurchasesManagerC25recordReportedTransactionyySSF",
+            "moduleName": "TenjinSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "transaction",
             "printedName": "transaction(_:)",
             "children": [
@@ -8339,6 +8449,62 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/TenjinPurchasesManager.swift",
+      "kind": "Array",
+      "offset": 3279,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/TenjinPurchasesManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3319,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/TenjinPurchasesManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3362,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/TenjinPurchasesManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3401,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/TenjinPurchasesManager.swift",
+      "kind": "Dictionary",
+      "offset": 14419,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/TenjinPurchasesManager.swift",
+      "kind": "StringLiteral",
+      "offset": 16138,
+      "length": 60,
+      "value": "\"com.tenjin.autoSubscriptionTracking.reportedTransactionIds\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/TenjinPurchasesManager.swift",
+      "kind": "StringLiteral",
+      "offset": 16234,
+      "length": 44,
+      "value": "\"com.tenjin.autoSubscriptionTracking.seeded\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/TenjinPurchasesManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16305,
+      "length": 3,
+      "value": "200"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/GDPRHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 232,
@@ -8570,6 +8736,13 @@
       "value": "\"FIRAnalytics\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/TenjinDatasource.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3498,
+      "length": 3,
+      "value": "500"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/TenjinRepository.swift",
       "kind": "IntegerLiteral",
       "offset": 312,
@@ -8577,25 +8750,18 @@
       "value": "3"
     },
     {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/TenjinRepository.swift",
+      "kind": "BooleanLiteral",
+      "offset": 563,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/Core Data\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 428,
+      "offset": 356,
       "length": 13,
       "value": "\"TenjinEvent\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/Core Data\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 549,
-      "length": 24,
-      "value": "\"Unresolved error \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/Core Data\/CoreDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 572,
-      "length": 4,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Network\/TJNHTTPClient.swift",

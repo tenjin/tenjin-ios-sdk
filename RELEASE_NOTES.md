@@ -440,3 +440,17 @@ v1.17.1
 
 * Resolve Xcode 27 archive failures when using ILRD methods ([67628d0](https://github.com/tenjin/ios-sdk/commit/67628d01081f42e20e18bd2437d6301152358a5d))
 
+
+## [1.20.0](https://github.com/tenjin/ios-sdk/compare/1.19.1...1.20.0) (2026-10-05)
+
+
+### Features
+
+* Add opt-in automatic StoreKit 2 subscription and purchase tracking ([81e113f](https://github.com/tenjin/ios-sdk/commit/81e113ff53e18e13bb60078adf54f5b709323f80))
+
+
+### Bug Fixes
+
+* Improve getAttributionInfo error handling ([80486f9](https://github.com/tenjin/ios-sdk/commit/80486f97699c56c65738fd00c653438a14152d38))
+* Improve reliability of offline event caching ([e14739a](https://github.com/tenjin/ios-sdk/commit/e14739a75fe6abb10ad680a16dcfde23b884d1ea))
+
