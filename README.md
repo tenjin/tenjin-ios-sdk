@@ -31,6 +31,7 @@ The guide walks the assistant through the complete integration. For more details
 			- [Configuring a user tracking description][4]
 	- [SKAdNetwork and Conversion value][5]
 		- [SKAdNetwork and iOS 15+ Advertiser Postbacks][6]
+	- [Google Ads On-Device Conversion Measurement (ICM / ODM)][46]
 	- [Tenjin and GDPR][7]
         - [Opt in/Opt out using CMP consents][41]
 	- [Device-Related Parameters][8]
@@ -290,6 +291,41 @@ To specify Tenjin as the destination for your [SK Ad Network postbacks][22], do 
 5. Enter `https://tenjin-skan.com`
 
 These steps are an adaption from Apple's instructions at [https://developer.apple.com/documentation/storekit/skadnetwork/configuring\_an\_advertised\_app][23].
+
+## <a id="google-odm"></a> Google Ads On-Device Conversion Measurement (ICM / ODM)
+
+> [!NOTE]
+> Only needed if you run Google Ads campaigns for your iOS app.
+
+Tenjin iOS SDK v1.14.8+ collects Google's on-device conversion data automatically when Google's `GoogleAdsOnDeviceConversion` SDK is in your app. There is no Tenjin method to call.
+
+1. Add Google's SDK to your app target:
+    - CocoaPods: add `pod 'GoogleAdsOnDeviceConversion'` to your `Podfile`, then run `pod install`.
+    - Swift Package Manager: add `https://github.com/googleads/google-ads-on-device-conversion-ios-sdk`.
+
+    If your app uses Firebase Analytics, it already includes `GoogleAdsOnDeviceConversion` (check `Podfile.lock` or `Package.resolved`): don't add it again.
+
+2. Google's SDK needs a moment after Tenjin is initialized to produce its data. Call the first `connect` at least 3 seconds after initialization:
+
+    ```objectivec
+    [TenjinSDK initialize:@"<SDK_KEY>"];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [TenjinSDK connect];
+    });
+    ```
+
+    ```swift
+    TenjinSDK.getInstance("<SDK_KEY>")
+
+    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        TenjinSDK.connect()
+    }
+    ```
+
+    If you call `connect` from the ATT completion handler, make sure that call also happens at least 3 seconds after initialization. Later `connect` calls need no delay.
+
+With `[TenjinSDK debugLogs]` enabled, the first request body contains `omd_info` once Google's SDK has returned data.
 
 ## <a id="gdpr"></a> GDPR
 
@@ -865,6 +901,7 @@ You can enable/disable retrying and caching events and IAP when requests fail or
 [43]: #user-profile
 [44]: #subscription-tracking
 [45]: #app-open-deeplink
+[46]: #google-odm
 [image-1]:	https://github.com/tenjin/tenjin-ios-sdk/blob/master/assets/ios_link_binary.png?raw=true "dashboard"
 [image-2]:	https://github.com/tenjin/tenjin-ios-sdk/raw/master/assets/ios_linker_flags.png?raw=true "dashboard"
 [image-3]:	https://s3.amazonaws.com/tenjin-instructions/sdk_live_open_events.png
