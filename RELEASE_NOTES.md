@@ -454,3 +454,12 @@ v1.17.1
 * Improve getAttributionInfo error handling ([80486f9](https://github.com/tenjin/ios-sdk/commit/80486f97699c56c65738fd00c653438a14152d38))
 * Improve reliability of offline event caching ([e14739a](https://github.com/tenjin/ios-sdk/commit/e14739a75fe6abb10ad680a16dcfde23b884d1ea))
 
+
+## [1.20.1](https://github.com/tenjin/ios-sdk/compare/1.20.0...1.20.1) (2026-10-14)
+
+
+### Bug Fixes
+
+* convert CAS and TradPlus CPM to per-impression revenue for User Profile ([19dc3a0](https://github.com/tenjin/ios-sdk/commit/19dc3a049642b6101fd1be3338d3c41867fdd259))
+* stop dividing AdMob ILRD revenue by 1e6 for User Profile ([4c5066f](https://github.com/tenjin/ios-sdk/commit/4c5066fbad3d973d5c373030f6f4c7233a47947d))
+
