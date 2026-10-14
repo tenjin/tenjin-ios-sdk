@@ -71,6 +71,26 @@ jobs:
         run: gem install cocoapods
 
       - name: Publish to CocoaPods
-        run: pod trunk push TenjinSDK.podspec
+        run: |
+          if pod trunk push TenjinSDK.podspec; then
+            exit 0
+          fi
+
+          # Trunk can time out on its own GitHub commit after the spec was already added to
+          # CocoaPods/Specs, and a retry then fails as a duplicate. Treat the push as successful
+          # if the spec for this version is in CocoaPods/Specs.
+          VERSION=$(grep -m1 "s.version" TenjinSDK.podspec | sed "s/.*\"\(.*\)\"/\1/")
+          SHARD=$(printf "TenjinSDK" | md5 -q | cut -c1-3 | sed 's/./&\//g')
+          SPEC_PATH="Specs/${SHARD}TenjinSDK/${VERSION}/TenjinSDK.podspec.json"
+          for attempt in 1 2 3 4 5 6; do
+            if gh api "repos/CocoaPods/Specs/contents/${SPEC_PATH}" --silent 2>/dev/null; then
+              echo "pod trunk push failed, but ${SPEC_PATH} is in CocoaPods/Specs; TenjinSDK ${VERSION} is published."
+              exit 0
+            fi
+            sleep 20
+          done
+          echo "TenjinSDK ${VERSION} is not in CocoaPods/Specs (${SPEC_PATH}); the publish failed."
+          exit 1
         env:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
