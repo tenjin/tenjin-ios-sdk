@@ -5255,6 +5255,169 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "TenjinSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "TenjinSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MetaAnonymousIdManager",
+        "printedName": "MetaAnonymousIdManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MetaAnonymousIdManager",
+                "printedName": "TenjinSDK.MetaAnonymousIdManager",
+                "usr": "c:@M@TenjinSDK@objc(cs)MetaAnonymousIdManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@TenjinSDK@objc(cs)MetaAnonymousIdManager(im)init",
+            "mangledName": "$s9TenjinSDK22MetaAnonymousIdManagerCACycfc",
+            "moduleName": "TenjinSDK",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "Convenience",
+              "AccessControl"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "anonymousId",
+            "printedName": "anonymousId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@TenjinSDK@objc(cs)MetaAnonymousIdManager(im)anonymousId",
+            "mangledName": "$s9TenjinSDK22MetaAnonymousIdManagerC09anonymousE0SSSgyF",
+            "moduleName": "TenjinSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@TenjinSDK@objc(cs)MetaAnonymousIdManager",
+        "mangledName": "$s9TenjinSDK22MetaAnonymousIdManagerC",
+        "moduleName": "TenjinSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
@@ -8734,6 +8897,55 @@
       "offset": 318,
       "length": 14,
       "value": "\"FIRAnalytics\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/MetaAnonymousIdManager.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 19,
+      "value": "\"FBSDKBasicUtility\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/MetaAnonymousIdManager.swift",
+      "kind": "StringLiteral",
+      "offset": 503,
+      "length": 30,
+      "value": "\"retrievePersistedAnonymousID\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/MetaAnonymousIdManager.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 4,
+      "value": "\"XZ\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/MetaAnonymousIdManager.swift",
+      "kind": "StringLiteral",
+      "offset": 625,
+      "length": 15,
+      "value": "\"FBSDKSettings\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/MetaAnonymousIdManager.swift",
+      "kind": "StringLiteral",
+      "offset": 689,
+      "length": 27,
+      "value": "\"isAutoLogAppEventsEnabled\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/MetaAnonymousIdManager.swift",
+      "kind": "StringLiteral",
+      "offset": 884,
+      "length": 8,
+      "value": "\"19.0.0\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Helpers\/MetaAnonymousIdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1092,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-sdk\/ios-sdk\/TenjinSDK\/TenjinSDK\/Data\/TenjinDatasource.swift",

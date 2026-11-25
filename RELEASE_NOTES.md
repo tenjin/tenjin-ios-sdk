@@ -463,3 +463,16 @@ v1.17.1
 * convert CAS and TradPlus CPM to per-impression revenue for User Profile ([19dc3a0](https://github.com/tenjin/ios-sdk/commit/19dc3a049642b6101fd1be3338d3c41867fdd259))
 * stop dividing AdMob ILRD revenue by 1e6 for User Profile ([4c5066f](https://github.com/tenjin/ios-sdk/commit/4c5066fbad3d973d5c373030f6f4c7233a47947d))
 
+
+## [1.21.0](https://github.com/tenjin/ios-sdk/compare/1.20.1...1.21.0) (2026-11-24)
+
+
+### Features
+
+* ingest Meta anonymous ID automatically as a parameter ([dc91e3b](https://github.com/tenjin/ios-sdk/commit/dc91e3b19559fcec31900cf76e9e04bc2b1d2db9))
+
+
+### Bug Fixes
+
+* declare purchase history, product interaction and user ID in privacy manifest ([599626b](https://github.com/tenjin/ios-sdk/commit/599626bf08113b0f3df70911c445e7b1fb887504))
+
